@@ -1,140 +1,99 @@
-# MDRIIA Group 07: Autonomous Mobile Manipulator for Hospital Clutter Classification and Grasp Planning
-**Course:** Modern Day Robotics and Its Industrial Applications (MDRIIA - Course Code: 702CO0E012)  
-**Academic Term:** Academic Year 2026–2027 | Semester VI (B.Tech CSBS)  
-**Institution:** SVKM's NMIMS MPSTME, Mumbai  
+# Group 07 hospital care support robot
 
----
+A MuJoCo mobile manipulator sorts 16 rigid clutter objects in a hospital-room
+scene. The accompanying CSBS model separates staff capacity, elapsed room time
+and cash expenditure. This repository contains simulated evidence, not a clinical
+deployment or measured hospital benefit.
 
-## 1. Authorized Research Title & Problem Statement
+## Install and run
 
-> "How can an autonomous mobile manipulator simulated in MuJoCo for clutter classification and grasp planning reduce daily patient-room turnaround time for hospital housekeeping staff from the baseline 10-20 minutes per room?"
-
-### Core Engineering Focus
-* **Physics & Kinematics:** Google DeepMind MuJoCo multi-body dynamic physics simulation (`models/hospital_clutter_manipulator.xml`).
-* **Autonomous Control:** Closed-loop Python control architecture with student implementation boundaries (`src/clutter_manipulator_controller.py`).
-* **Technoeconomic Evaluation:** Dimensionless CSBS operational economics and return on investment model (`analytics/nosocomial_turnover_economics.py`).
-* **Empirical Validation:** Reproducible benchmark trials and statistical hypothesis testing (`analytics/clutter_manipulation_real_trials.csv`).
-
----
-
-> [!NOTE]
-> ### The Devil's Advocate: Reality Check & Theoretical Roast
-> *"Training a mobile manipulator with a 6-DOF articulated arm to classify and declutter post-operative recovery rooms, whose neural network will inevitably classify a patient's unlabelled prescription spectacles as biohazard waste and deposit them into the recycling bin with sub-millimeter precision."*
-
----
-
-## 2. Student Engineering Team Matrix
-
-| Roll No | SAP ID | Student Name | Technical Role | Assigned Git Branch | Core Viva Defense Area |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `E050` | `70362400035` | **Soumil Patro** | Lead Mobile Base Navigation & SLAM Engineer | `feat/e050-lead-mobile-base-nav` | Holonomic mobile base positioning, hospital bedside clearance, obstacle avoidance in narrow patient suites, and coordinated base-arm docking. |
-| `E062` | `70362400075` | **Aditya Raju Shah** | Manipulator Arm Kinematics & Vision-Based Grasping Specialist | `feat/e062-manipulator-arm-kine` | Inverse kinematics Jacobian damping, 6-DOF grasp pose generation, push-to-grasp non-prehensile primitives, and bedside clutter classification. |
-| `E066` | `70362400078` | **Priyansh Thakkar** | CSBS Hospital Workflow Efficiency & Room Turnover Business Analyst | `feat/e066-csbs-hospital-workfl` | Hospital room turnaround time reduction (from 15 min to < 6 min), bed vacancy acceleration, and housekeeping labor cost parity models. |
-
-
-### Student Engineering Commendation & Acknowledgments
-SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to **Soumil Patro (E050)**, **Aditya Raju Shah (E062)**, and **Priyansh Thakkar (E066)** for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester VI. Your rigorous work in DeepMind MuJoCo physics modeling, closed-loop telemetry instrumentation, and Computer Science & Business Systems (CSBS) technoeconomic modeling exemplifies the highest standards of undergraduate engineering inquiry.
-
-> *"Scientists discover the world that exists; engineers create the world that never was."*  
-> — **Theodore von Kármán**
-
-> *"There is no substitute for hard work. Genius is one percent inspiration and ninety-nine percent perspiration."*  
-> — **Thomas A. Edison**
-
----
-
-## 3. Foundational Literature Benchmarks (Strict 2 Seminal : 4 Recent Ratio)
-
-The research project is theoretically anchored on six foundational peer-reviewed publications validated against global bibliographic databases.
-
-| # | Author (Year) | Type | Paper Title | Venue / Indexing | Active DOI Link | Primary Extracted Formulation | Student Lead |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Murali et al. (2020)** | Recent | *6-DOF Grasping for Target-driven Object Manipulation in Clutter* | IEEE International Conference on Robotics and Automation (ICRA) | [https://doi.org/10.1109/ICRA40945.2020.9197318](https://doi.org/10.1109/ICRA40945.2020.9197318) | `Grasp quality metric $Q(g, x) = P(\text{succe...` | Aditya Raju Shah (E062) |
-| 2 | **Mahler et al. (2019)** | Recent | *Learning ambidextrous robot grasping policies* | Science Robotics | [https://doi.org/10.1126/scirobotics.aau4984](https://doi.org/10.1126/scirobotics.aau4984) | `Ferrari-Canny epsilon metric $\epsilon = \min...` | Aditya Raju Shah (E062) |
-| 3 | **Berscheid et al. (2019)** | Recent | *Robot Learning of Shifting Objects for Grasping in Cluttered Environments* | IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) | [https://doi.org/10.1109/IROS40897.2019.8968042](https://doi.org/10.1109/IROS40897.2019.8968042) | `Push trajectory vector $\mathbf{p}_{\text{pus...` | Aditya Raju Shah (E062) & Soumil Patro (E050) |
-| 4 | **Dogar & Srinivasa (2012)** | Seminal | *Physics-Based Grasp Planning Through Clutter* | Robotics: Science and Systems (RSS) | [https://doi.org/10.15607/RSS.2012.VIII.008](https://doi.org/10.15607/RSS.2012.VIII.008) | `Limit surface friction relationship $\mathbf{...` | Soumil Patro (E050) |
-| 5 | **Carling & Bartley (2010)** | Seminal | *Evaluating hygienic cleaning in health care settings: What you do not know can harm your patients* | American Journal of Infection Control | [https://doi.org/10.1016/j.ajic.2010.03.004](https://doi.org/10.1016/j.ajic.2010.03.004) | `Turnaround interval $T_{\text{turn}} = T_{\te...` | Priyansh Thakkar (E066) |
-| 6 | **Wang et al. (2025)** | Recent | *Learning Dual-Arm Push and Grasp Synergy in Dense Clutter* | IEEE Robotics and Automation Letters | [https://doi.org/10.1109/LRA.2025.3557753](https://doi.org/10.1109/LRA.2025.3557753) | `Synergy action-value function $Q(s, a_{\text{...` | Priyansh Thakkar (E066) & Aditya Raju Shah (E062) |
-
-For the exhaustive literature analysis, mathematical derivations, and viva defense questions, refer to:
-* [`docs/LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md`](docs/LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md)
-* [`docs/RESEARCH_PAPER_MANUSCRIPT_BLUEPRINT.md`](docs/RESEARCH_PAPER_MANUSCRIPT_BLUEPRINT.md)
-
----
-
-## 4. Project Demonstration & Academic Showcase (LinkedIn)
-
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
-
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
-* **Student Presenters:** **Soumil Patro (E050)**, **Aditya Raju Shah (E062)**, **Priyansh Thakkar (E066)**
-* **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Industry 4.0 Robotics
-* **Submission Protocol:** Record a 60–90 second demonstration of your MuJoCo simulation and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
-
----
-
-## 5. Repository Directory Architecture
-
-```
-.
-|-- README.md                                          <- Front-page research charter, student roster & literature
-|-- RESEARCH_AND_IMPLEMENTATION_GUIDE.md               <- Comprehensive technical engineering guide
-|-- docs/
-|   |-- TEAM_ROSTER.json                               <- Machine-readable team configuration
-|   |-- LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md   <- Exhaustive literature dossier (6 verified papers)
-|   |-- RESEARCH_PAPER_MANUSCRIPT_BLUEPRINT.md         <- 4-page IEEE conference manuscript blueprint
-|   `-- figures/
-|       |-- figure1_system_architecture.png            <- 300 DPI system architecture diagram
-|       |-- figure2_kinematic_telemetry.png            <- 300 DPI kinematics and simulation telemetry
-|       `-- figure3_comparative_performance.png        <- 300 DPI comparative benchmark visualization
-|-- models/
-|   |-- .gitkeep
-|   `-- hospital_clutter_manipulator.xml                                    <- MuJoCo MJCF simulation model
-|-- src/
-|   |-- test_env.py                                    <- Physics validation & environment tester
-|   `-- clutter_manipulator_controller.py                                      <- Autonomous control loop (# TODO student boundaries)
-`-- analytics/
-    |-- .gitkeep
-    |-- nosocomial_turnover_economics.py                                      <- CSBS dimensionless technoeconomic model
-    |-- generate_paper_figures.py                      <- Standalone 300 DPI publication figure generator
-    `-- SIMULATED_clutter_manipulation_benchmark.csv                                    <- SIMULATED starter targets (np.random), NOT results
-```
-
----
-
-## 5. Pedagogical Boundaries: Guidance vs Student Ownership
-
-To ensure academic rigor and authentic student learning, this repository enforces strict boundaries between scaffolding and student deliverables:
-
-* **Provided by Course Scaffolding:**
-  * Validated physical model architecture in MuJoCo MJCF (`models/hospital_clutter_manipulator.xml`).
-  * Verification toolchain and smoke test script (`src/test_env.py`).
-  * Literature foundation, mathematical formulations, and conference paper blueprint (`docs/`).
-  * Dimensionless technoeconomic framework (`analytics/nosocomial_turnover_economics.py`).
-* **Student Technical Deliverables (Required for Evaluation):**
-  * Implement and tune the control algorithm in `src/clutter_manipulator_controller.py` (filling all marked `# TODO [Student Roll / Name]` blocks).
-  * Run physics simulation trials to collect and expand empirical data in `analytics/clutter_manipulation_real_trials.csv`.
-  * Re-run `analytics/generate_paper_figures.py` to regenerate publication figures with live experimental telemetry.
-  * Author the final 4-page IEEE conference paper in `docs/RESEARCH_PAPER_MANUSCRIPT_BLUEPRINT.md` and defend individual Git commits during the oral viva.
-
----
-
-## 6. Sprint 0 Onboarding & Physics Environment Verification
-
-Verify your local Python and MuJoCo simulation environment:
+From this group folder, create a fresh environment and install the tested packages:
 
 ```powershell
-# Step 1: Clone repository and navigate to group directory
-git clone <repository_url>
-cd <repository_root>/Group_07_Soumil_Aditya_Priyansh
-
-# Step 2: Checkout your individual feature branch
-# Example for lead student:
-git checkout -b feat/e050-lead-mobile-base-nav
-
-# Step 3: Run environment smoke test
-python src/test_env.py
-
-# Step 4: Verify 300 DPI publication figures
-python analytics/generate_paper_figures.py
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
+
+Then open START_CAPSTONE.cmd for the robot, START_BUSINESS.cmd for the final
+business dashboard, or START_FAILURE_DEMO.cmd for the separately reproduced
+seed-2011 SAFE_STOP example. Launchers prefer this folder's .venv when present.
+The failure demonstration is separate from the 100 reported trials.
+
+Viewer controls: C changes camera, O toggles cinematic movement, D toggles
+diagnostics, Space pauses/resumes, and 1/2/3 select half/normal/double speed.
+New live-demo logs are kept outside the submitted frozen evidence and ignored by Git.
+
+## Files
+
+| Folder | Contents |
+| --- | --- |
+| src/ and models/ | Runnable controller, robot, physical room and imported visual meshes |
+| analytics/ | Business scripts/dashboard, summary tables and complete measured CSV export |
+| experiments/assessment_final_v1/ | Frozen protocol, baseline/proposed sources, scenarios, audit report and run support records |
+| docs/final_evidence/ | Final statistical report, plots and provenance |
+| docs/business_final/ | Final business assumptions, calculations and sensitivity plots |
+| docs/ | Word/PDF dossier, recording guide, work allocation and viva notes |
+| tests/ and tools/ | Calculation, export, geometry and development checks/helpers |
+
+## Actual results
+
+50 baseline and 50 proposed runs were audited. Fully cleared rooms: 0/50 and
+28/50 respectively. Failures remain in the analysis under the prespecified
+1800-second restricted-time rule. See docs/final_evidence/FINAL_RESULTS.md.
+Default business assumptions produce about 0.150 staff-hours/day of reallocated
+capacity, cash NCRI -0.10 and no finite payback; capacity is not automatic cash saving.
+
+## Measured data and reproduction
+
+analytics/submission_trials/ includes every recorded 500 Hz row for all 100
+reported runs, with selected original measured columns and lossless gzip CSV
+compression. No rows were removed, rounded or downsampled. Force, pose/reference,
+contact and state/event evidence reproduces the reported metrics. The manifest
+maps shards to source hashes; support records retain final states and events.
+Verbose joint diagnostics and interrupted attempts remain in the local archive.
+Their omission is documented; the reduced export does not support every possible
+future diagnostic analysis.
+
+The export was independently verified for every run. To repeat that substantial
+data check (it reads the whole dataset), run from this folder:
+
+```powershell
+.\.venv\Scripts\python.exe -B analytics/reproduce_submission_metrics.py --verify-only --export-dir analytics/submission_trials
+```
+
+The frozen bundle must retain its bytes; .gitattributes prevents Git from changing
+line endings. Keep that file when copying into the course repository.
+Historical integration notes and the small pilot fixture describe development;
+they do not replace the final 100-run report.
+
+To re-verify every submitted CSV run and rebuild the comparison/tracking figures:
+
+```powershell
+.\.venv\Scripts\python.exe -B tools/rebuild_submission_figures.py --verify
+```
+
+Omitting --verify reuses the saved all-run CSV verification, checks its primary
+metrics against the audited report and reads the actual two example-run CSVs.
+That quick rebuild was checked against the reported statistics. It does not
+repeat a full audit of every measurement file. Output is docs/rebuilt_figures/.
+
+## Dossier and submission status
+
+The team's supplied Word dossier and its matching eight-page PDF are in docs/.
+All three supplied signatures are present. The final local showcase is 03:24.43;
+the team supplied LinkedIn URL is https://lnkd.in/p/di2s32-6. The MP4 is delivered
+separately through Teams/LinkedIn and is not committed to Git.
+
+The supplied dossier still labels personal and peer-review entries provisional;
+Group 01's best-moment timestamp is unavailable. Individual historical authorship,
+original AI-tool attribution and proposed FMEA ratings still request confirmation.
+Preserve those qualifications when assessing this submission. The team's entered
+commit-share values are declarations, not independently verified Git statistics.
+
+Each member must make genuine commits from their own account and turn in the
+required files personally on Teams. Faculty requested the full project there as
+well; a smaller Teams package excludes the large CSVs, which are included here.
+
+This is the contents of the assigned course group folder. Do not nest a second
+capstone/ or delivery/ folder inside it. See docs/GITHUB_PUSH_GUIDE.md for the
+upload sequence and docs/ASSET_PROVENANCE.md for asset origins.

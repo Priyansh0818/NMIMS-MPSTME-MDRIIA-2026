@@ -1,0 +1,47 @@
+[
+  {
+    "name": "paper_carry",
+    "source": "analytics/reliability/baseline_seed0_v2/011_plan_drop_paper_2",
+    "kind": "actual development checkpoint, not a final evaluation trial"
+  },
+  {
+    "name": "glove_drop",
+    "source": "analytics/reliability/baseline_seed0_v2/019_plan_drop_glove_1",
+    "kind": "actual development checkpoint, not a final evaluation trial"
+  },
+  {
+    "name": "bottle_drop",
+    "source": "analytics/reliability/baseline_seed0_v2/022_plan_drop_bottle_2",
+    "kind": "actual development checkpoint, not a final evaluation trial"
+  },
+  {
+    "name": "towel_observation",
+    "source": "analytics/reliability/baseline_seed1_v2/007_nav_approach_personal_2",
+    "kind": "actual development checkpoint, not a final evaluation trial"
+  },
+  {
+    "name": "paper_release",
+    "source": "analytics/reliability/revision2_seed1",
+    "kind": "actual development checkpoint; offline regressions only"
+  },
+  {
+    "name": "plastic_release",
+    "source": "analytics/reliability/revision3_seed0",
+    "kind": "actual development checkpoint; offline regressions only"
+  },
+  {
+    "name": "paper_transport",
+    "source": "analytics/reliability/revision4_seed1",
+    "kind": "actual development checkpoint; offline regressions only"
+  },
+  {
+    "name": "return_tray",
+    "source": "analytics/reliability/revision4_seed0",
+    "kind": "actual development checkpoint; offline regressions only"
+  },
+  {
+    "name": "plastic_variation",
+    "source": "analytics/reliability/revision5_seed2",
+    "kind": "actual development checkpoint; exercises honest misplaced detection and retained recovery hazard, offline only"
+  }
+]

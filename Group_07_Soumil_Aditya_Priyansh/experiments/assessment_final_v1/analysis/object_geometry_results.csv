@@ -1,0 +1,9 @@
+condition,object_type,scheduled_objects,correct_final_placements,grasp_attempts,verified_lifts,completed_grasp_cycles,mean_completed_grasp_cycle_s
+baseline,cup,100,84,100,100,100,9.728399999999999
+baseline,bottle,100,76,100,100,100,8.687399999999995
+baseline,slipper,50,23,43,40,40,9.514500000000005
+baseline,paper,100,61,109,109,109,7.0082568807339465
+proposed,cup,100,88,88,88,88,9.692272727272725
+proposed,bottle,100,82,83,83,83,8.399277108433731
+proposed,slipper,50,37,50,50,50,7.293600000000002
+proposed,paper,100,86,86,86,86,6.961162790697672

@@ -1,0 +1,6341 @@
+{
+  "source_archive": "Hospital messy room (1).zip",
+  "source_archive_sha256": "f6807f0e09dcbdcb8f38ff0141a7971fc8e4843b10d2542e03067ea180a9c394",
+  "source_selection": "Final out/simulation/scene_spec.json, 310 named parts",
+  "omitted_without_host_wall": [
+    "suite07__room__bed_ceiling_luminaire_housing",
+    "suite07__room__bed_ceiling_luminaire_diffuser"
+  ],
+  "model": "hospital_nova3d.xml",
+  "visual_include": "hospital_nova3d_visual.xml",
+  "geometry_group": 5,
+  "collision_masks": [
+    0,
+    0
+  ],
+  "mass": 0,
+  "source_units": "metres, right-handed Z-up, world coordinates",
+  "fitted_assemblies": {
+    "visitor_sofa": {
+      "angle": -90,
+      "scale": [
+        0.78,
+        1.0,
+        1.0
+      ]
+    },
+    "visitor_chair": {
+      "angle": 90,
+      "scale": [
+        0.74,
+        0.8,
+        1.0
+      ]
+    },
+    "coffee_table": {
+      "angle": 90,
+      "scale": [
+        0.73,
+        1.0,
+        1.0
+      ]
+    },
+    "medical_cart": {
+      "angle": 0,
+      "scale": [
+        0.8,
+        0.76,
+        1.0
+      ]
+    },
+    "bedside_table": {
+      "angle": 0,
+      "scale": [
+        1.0,
+        0.87,
+        1.0
+      ]
+    },
+    "hospital_bed": {
+      "angle": 0,
+      "scale": [
+        0.925,
+        0.89,
+        1.0
+      ]
+    },
+    "sink_counter": {
+      "angle": -90,
+      "scale": [
+        0.8,
+        0.95,
+        1.0
+      ]
+    }
+  },
+  "original_visible_supports": [
+    "blanket",
+    "pillow",
+    "sofa_cushion"
+  ],
+  "hidden_physical_geoms": [
+    "bed_frame",
+    "mattress",
+    "bed_leg1",
+    "bed_leg2",
+    "bed_leg3",
+    "bed_leg4",
+    "rail_left",
+    "rail_right",
+    "table_top",
+    "leg1",
+    "leg2",
+    "leg3",
+    "leg4",
+    "table_shelf",
+    "c_rail",
+    "sofa_seat",
+    "sofa_back",
+    "sofa_arm_l",
+    "sofa_arm_r",
+    "sofa_leg1",
+    "sofa_leg2",
+    "sofa_leg3",
+    "sofa_leg4",
+    "chair_seat",
+    "chair_back",
+    "chair_leg1",
+    "chair_leg2",
+    "chair_leg3",
+    "chair_leg4",
+    "ctable_top",
+    "ctable_leg1",
+    "ctable_leg2",
+    "ctable_leg3",
+    "ctable_leg4",
+    "cart_top",
+    "cart_shelf",
+    "cart_leg1",
+    "cart_leg2",
+    "cart_leg3",
+    "cart_leg4",
+    "bin_outer",
+    "bin_inner",
+    "bin_label",
+    "counter_top",
+    "counter_body",
+    "soap_disp",
+    "mirror",
+    "trash_bin_floor",
+    "trash_bin_wall_n",
+    "trash_bin_wall_s",
+    "trash_bin_wall_e",
+    "trash_bin_wall_w",
+    "trash_bin_label",
+    "recycling_bin_floor",
+    "recycling_bin_wall_n",
+    "recycling_bin_wall_s",
+    "recycling_bin_wall_e",
+    "recycling_bin_wall_w",
+    "recycling_bin_label",
+    "laundry_basket_floor",
+    "laundry_basket_wall_n",
+    "laundry_basket_wall_s",
+    "laundry_basket_wall_e",
+    "laundry_basket_wall_w",
+    "laundry_basket_label",
+    "return_base",
+    "return_wall1",
+    "return_wall2",
+    "return_wall3",
+    "return_wall4",
+    "return_label",
+    "return_leg1",
+    "return_leg2",
+    "return_leg3",
+    "return_leg4"
+  ],
+  "visual_parts": 308,
+  "triangles": 98854,
+  "parts": [
+    {
+      "name": "nova_suite07__hospital_bed__caster_tires",
+      "assembly": "hospital_bed",
+      "part": "caster_tires",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__caster_tires.obj",
+      "bounds_m": [
+        [
+          1.6235249999999999,
+          -1.2965499999999999,
+          0.0
+        ],
+        [
+          2.376475,
+          0.29655,
+          0.13
+        ]
+      ],
+      "triangles": 1536
+    },
+    {
+      "name": "nova_suite07__hospital_bed__caster_hubs_and_stems",
+      "assembly": "hospital_bed",
+      "part": "caster_hubs_and_stems",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__caster_hubs_and_stems.obj",
+      "bounds_m": [
+        [
+          1.6221375,
+          -1.2682035,
+          0.03185
+        ],
+        [
+          2.3778625,
+          0.26820350000000004,
+          0.1495
+        ]
+      ],
+      "triangles": 448
+    },
+    {
+      "name": "nova_suite07__hospital_bed__caster_forks",
+      "assembly": "hospital_bed",
+      "part": "caster_forks",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__caster_forks.obj",
+      "bounds_m": [
+        [
+          1.61335,
+          -1.263175,
+          0.0675
+        ],
+        [
+          2.3866500000000004,
+          0.26317499999999994,
+          0.1325
+        ]
+      ],
+      "triangles": 1760
+    },
+    {
+      "name": "nova_suite07__hospital_bed__lower_chassis",
+      "assembly": "hospital_bed",
+      "part": "lower_chassis",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__lower_chassis.obj",
+      "bounds_m": [
+        [
+          1.67625,
+          -1.2654,
+          0.1675
+        ],
+        [
+          2.32375,
+          0.26539999999999997,
+          0.2425
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__chassis_inset",
+      "assembly": "hospital_bed",
+      "part": "chassis_inset",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__chassis_inset.obj",
+      "bounds_m": [
+        [
+          1.745625,
+          -1.18085,
+          0.241
+        ],
+        [
+          2.254375,
+          0.18085000000000007,
+          0.259
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__lift_column_lower",
+      "assembly": "hospital_bed",
+      "part": "lift_column_lower",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__lift_column_lower.obj",
+      "bounds_m": [
+        [
+          1.86125,
+          -0.6779999999999999,
+          0.235
+        ],
+        [
+          2.13875,
+          -0.32199999999999995,
+          0.465
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__lift_column_upper",
+      "assembly": "hospital_bed",
+      "part": "lift_column_upper",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__lift_column_upper.obj",
+      "bounds_m": [
+        [
+          1.8936250000000001,
+          -0.64685,
+          0.35
+        ],
+        [
+          2.1063750000000003,
+          -0.35315,
+          0.55
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__mattress_deck",
+      "assembly": "hospital_bed",
+      "part": "mattress_deck",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__mattress_deck.obj",
+      "bounds_m": [
+        [
+          1.56525,
+          -1.4033499999999999,
+          0.5475
+        ],
+        [
+          2.43475,
+          0.4033500000000001,
+          0.6125
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__deck_teal_bumper",
+      "assembly": "hospital_bed",
+      "part": "deck_teal_bumper",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__deck_teal_bumper.obj",
+      "bounds_m": [
+        [
+          1.5532249999999999,
+          -1.4167,
+          0.565
+        ],
+        [
+          2.446775,
+          0.41670000000000007,
+          0.591
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__mattress_visual_cover",
+      "assembly": "hospital_bed",
+      "part": "mattress_visual_cover",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__mattress_visual_cover.obj",
+      "bounds_m": [
+        [
+          1.593,
+          -1.3854256314,
+          0.613
+        ],
+        [
+          2.407,
+          0.3854256314000001,
+          0.734
+        ]
+      ],
+      "triangles": 2012
+    },
+    {
+      "name": "nova_suite07__hospital_bed__mattress_lower_welt",
+      "assembly": "hospital_bed",
+      "part": "mattress_lower_welt",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__mattress_lower_welt.obj",
+      "bounds_m": [
+        [
+          1.59115,
+          -1.38733,
+          0.624
+        ],
+        [
+          2.40885,
+          0.38733000000000006,
+          0.632
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__headboard_outer_moulding",
+      "assembly": "hospital_bed",
+      "part": "headboard_outer_moulding",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__headboard_outer_moulding.obj",
+      "bounds_m": [
+        [
+          1.5375,
+          -1.485675,
+          0.54
+        ],
+        [
+          2.4625,
+          -1.427825,
+          1.05
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__headboard_teal_insert",
+      "assembly": "hospital_bed",
+      "part": "headboard_teal_insert",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__headboard_teal_insert.obj",
+      "bounds_m": [
+        [
+          1.6115,
+          -1.42738,
+          0.66
+        ],
+        [
+          2.3885,
+          -1.41492,
+          0.97
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__headboard_oak_accent",
+      "assembly": "hospital_bed",
+      "part": "headboard_oak_accent",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__headboard_oak_accent.obj",
+      "bounds_m": [
+        [
+          1.6485,
+          -1.4193699999999998,
+          0.71
+        ],
+        [
+          2.3514999999999997,
+          -1.4051299999999998,
+          0.75
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__footboard_outer_moulding",
+      "assembly": "hospital_bed",
+      "part": "footboard_outer_moulding",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__footboard_outer_moulding.obj",
+      "bounds_m": [
+        [
+          1.542125,
+          0.427825,
+          0.535
+        ],
+        [
+          2.457875,
+          0.48567499999999997,
+          0.875
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__footboard_teal_insert",
+      "assembly": "hospital_bed",
+      "part": "footboard_teal_insert",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__footboard_teal_insert.obj",
+      "bounds_m": [
+        [
+          1.6161249999999998,
+          0.41492000000000007,
+          0.615
+        ],
+        [
+          2.383875,
+          0.4273800000000001,
+          0.815
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__footboard_chart_mount",
+      "assembly": "hospital_bed",
+      "part": "footboard_chart_mount",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__footboard_chart_mount.obj",
+      "bounds_m": [
+        [
+          1.884375,
+          0.48701000000000005,
+          0.655
+        ],
+        [
+          2.115625,
+          0.5030300000000001,
+          0.785
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__footboard_identity_card",
+      "assembly": "hospital_bed",
+      "part": "footboard_identity_card",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__footboard_identity_card.obj",
+      "bounds_m": [
+        [
+          1.902875,
+          0.5039200000000001,
+          0.675
+        ],
+        [
+          2.097125,
+          0.5074800000000002,
+          0.765
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__footboard_identity_text",
+      "assembly": "hospital_bed",
+      "part": "footboard_identity_text",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__footboard_identity_text.obj",
+      "bounds_m": [
+        [
+          1.96002678175,
+          0.5085925,
+          0.6925
+        ],
+        [
+          2.03997321825,
+          0.5099274999999999,
+          0.7475
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__hospital_bed__left_lowered_side_rail",
+      "assembly": "hospital_bed",
+      "part": "left_lowered_side_rail",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__left_lowered_side_rail.obj",
+      "bounds_m": [
+        [
+          1.5328750000000002,
+          -1.1835200000000001,
+          0.575
+        ],
+        [
+          1.5661749999999999,
+          0.06781999999999999,
+          0.8149999999999998
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__hospital_bed__left_rail_release_housing",
+      "assembly": "hospital_bed",
+      "part": "left_rail_release_housing",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__left_rail_release_housing.obj",
+      "bounds_m": [
+        [
+          1.5287125,
+          -0.09059999999999996,
+          0.5675
+        ],
+        [
+          1.5703375,
+          0.03400000000000003,
+          0.6325
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__left_rail_lower_member",
+      "assembly": "hospital_bed",
+      "part": "left_rail_lower_member",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__left_rail_lower_member.obj",
+      "bounds_m": [
+        [
+          1.53935,
+          -1.1585999999999999,
+          0.589
+        ],
+        [
+          1.5596999999999999,
+          0.03400000000000003,
+          0.611
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__hospital_bed__left_rail_pivots",
+      "assembly": "hospital_bed",
+      "part": "left_rail_pivots",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__left_rail_pivots.obj",
+      "bounds_m": [
+        [
+          1.5486,
+          -1.16216,
+          0.556
+        ],
+        [
+          1.55045,
+          0.03756000000000004,
+          0.564
+        ]
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "nova_suite07__hospital_bed__right_lowered_side_rail",
+      "assembly": "hospital_bed",
+      "part": "right_lowered_side_rail",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__right_lowered_side_rail.obj",
+      "bounds_m": [
+        [
+          2.4338249999999997,
+          -1.1835200000000001,
+          0.575
+        ],
+        [
+          2.467125,
+          0.06781999999999999,
+          0.8149999999999998
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__hospital_bed__right_rail_release_housing",
+      "assembly": "hospital_bed",
+      "part": "right_rail_release_housing",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__right_rail_release_housing.obj",
+      "bounds_m": [
+        [
+          2.4296625,
+          -0.09059999999999996,
+          0.5675
+        ],
+        [
+          2.4712875,
+          0.03400000000000003,
+          0.6325
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__hospital_bed__right_rail_lower_member",
+      "assembly": "hospital_bed",
+      "part": "right_rail_lower_member",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__right_rail_lower_member.obj",
+      "bounds_m": [
+        [
+          2.4403,
+          -1.1585999999999999,
+          0.589
+        ],
+        [
+          2.4606500000000002,
+          0.03400000000000003,
+          0.611
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__hospital_bed__right_rail_pivots",
+      "assembly": "hospital_bed",
+      "part": "right_rail_pivots",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__right_rail_pivots.obj",
+      "bounds_m": [
+        [
+          2.4495500000000003,
+          -1.16216,
+          0.556
+        ],
+        [
+          2.4514,
+          0.03756000000000004,
+          0.564
+        ]
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "nova_suite07__hospital_bed__headboard_grip",
+      "assembly": "hospital_bed",
+      "part": "headboard_grip",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__headboard_grip.obj",
+      "bounds_m": [
+        [
+          1.77985,
+          -1.47544,
+          1.02
+        ],
+        [
+          2.22015,
+          -1.4434,
+          1.093
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__hospital_bed__brake_pedal",
+      "assembly": "hospital_bed",
+      "part": "brake_pedal",
+      "mesh": "assets/nova3d/meshes/suite07__hospital_bed__brake_pedal.obj",
+      "bounds_m": [
+        [
+          1.926,
+          0.267625,
+          0.139
+        ],
+        [
+          2.074,
+          0.31657500000000005,
+          0.161
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__caster_tires",
+      "assembly": "bedside_table",
+      "part": "caster_tires",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__caster_tires.obj",
+      "bounds_m": [
+        [
+          0.793,
+          0.12165000000000001,
+          0.0
+        ],
+        [
+          1.207,
+          0.47835,
+          0.07
+        ]
+      ],
+      "triangles": 1536
+    },
+    {
+      "name": "nova_suite07__bedside_table__caster_hubs_and_stems",
+      "assembly": "bedside_table",
+      "part": "caster_hubs_and_stems",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__caster_hubs_and_stems.obj",
+      "bounds_m": [
+        [
+          0.7915,
+          0.1365705,
+          0.01715
+        ],
+        [
+          1.2085,
+          0.4634295,
+          0.1195
+        ]
+      ],
+      "triangles": 448
+    },
+    {
+      "name": "nova_suite07__bedside_table__caster_forks",
+      "assembly": "bedside_table",
+      "part": "caster_forks",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__caster_forks.obj",
+      "bounds_m": [
+        [
+          0.782,
+          0.12817499999999998,
+          0.0375
+        ],
+        [
+          1.218,
+          0.471825,
+          0.1025
+        ]
+      ],
+      "triangles": 1760
+    },
+    {
+      "name": "nova_suite07__bedside_table__plinth",
+      "assembly": "bedside_table",
+      "part": "plinth",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__plinth.obj",
+      "bounds_m": [
+        [
+          0.78,
+          0.126,
+          0.095
+        ],
+        [
+          1.22,
+          0.474,
+          0.155
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__case_left",
+      "assembly": "bedside_table",
+      "part": "case_left",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__case_left.obj",
+      "bounds_m": [
+        [
+          0.761,
+          0.11295000000000002,
+          0.155
+        ],
+        [
+          0.779,
+          0.48705,
+          0.685
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__case_right",
+      "assembly": "bedside_table",
+      "part": "case_right",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__case_right.obj",
+      "bounds_m": [
+        [
+          1.221,
+          0.11295000000000002,
+          0.155
+        ],
+        [
+          1.239,
+          0.48705,
+          0.685
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__case_back",
+      "assembly": "bedside_table",
+      "part": "case_back",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__case_back.obj",
+      "bounds_m": [
+        [
+          0.77,
+          0.11295000000000002,
+          0.155
+        ],
+        [
+          1.23,
+          0.12339,
+          0.685
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__case_bottom",
+      "assembly": "bedside_table",
+      "part": "case_bottom",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__case_bottom.obj",
+      "bounds_m": [
+        [
+          0.77,
+          0.11729999999999999,
+          0.151
+        ],
+        [
+          1.23,
+          0.4827,
+          0.169
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__open_shelf",
+      "assembly": "bedside_table",
+      "part": "open_shelf",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__open_shelf.obj",
+      "bounds_m": [
+        [
+          0.78,
+          0.126,
+          0.371
+        ],
+        [
+          1.22,
+          0.474,
+          0.389
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__upper_cabinet_face_visual",
+      "assembly": "bedside_table",
+      "part": "upper_cabinet_face_visual",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__upper_cabinet_face_visual.obj",
+      "bounds_m": [
+        [
+          0.779,
+          0.4827,
+          0.413
+        ],
+        [
+          1.221,
+          0.49836,
+          0.683
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__upper_face_handle",
+      "assembly": "bedside_table",
+      "part": "upper_face_handle",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__upper_face_handle.obj",
+      "bounds_m": [
+        [
+          0.918,
+          0.50097,
+          0.608
+        ],
+        [
+          1.082,
+          0.54186,
+          0.622
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__bedside_table__tabletop_visual_skin",
+      "assembly": "bedside_table",
+      "part": "tabletop_visual_skin",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__tabletop_visual_skin.obj",
+      "bounds_m": [
+        [
+          0.75,
+          0.09990000000000002,
+          0.699
+        ],
+        [
+          1.25,
+          0.5001,
+          0.734
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__tabletop_oak_apron",
+      "assembly": "bedside_table",
+      "part": "tabletop_oak_apron",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__tabletop_oak_apron.obj",
+      "bounds_m": [
+        [
+          0.76,
+          0.1086,
+          0.674
+        ],
+        [
+          1.24,
+          0.4914,
+          0.699
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__bedside_table__handle_mounting_caps",
+      "assembly": "bedside_table",
+      "part": "handle_mounting_caps",
+      "mesh": "assets/nova3d/meshes/suite07__bedside_table__handle_mounting_caps.obj",
+      "bounds_m": [
+        [
+          0.921,
+          0.50097,
+          0.611
+        ],
+        [
+          1.079,
+          0.50271,
+          0.619
+        ]
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__legs",
+      "assembly": "visitor_sofa",
+      "part": "legs",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__legs.obj",
+      "bounds_m": [
+        [
+          -1.767,
+          -1.48126,
+          0.015
+        ],
+        [
+          -1.2329999999999999,
+          -0.51874,
+          0.15
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__floor_pads",
+      "assembly": "visitor_sofa",
+      "part": "floor_pads",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__floor_pads.obj",
+      "bounds_m": [
+        [
+          -1.774,
+          -1.48672,
+          0.0
+        ],
+        [
+          -1.226,
+          -0.51328,
+          0.015
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__oak_base_rail",
+      "assembly": "visitor_sofa",
+      "part": "oak_base_rail",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__oak_base_rail.obj",
+      "bounds_m": [
+        [
+          -1.825,
+          -1.5537999999999998,
+          0.15
+        ],
+        [
+          -1.175,
+          -0.44620000000000004,
+          0.26
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__upholstered_deck",
+      "assembly": "visitor_sofa",
+      "part": "upholstered_deck",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__upholstered_deck.obj",
+      "bounds_m": [
+        [
+          -1.82,
+          -1.5459999999999998,
+          0.25
+        ],
+        [
+          -1.18,
+          -0.45399999999999985,
+          0.35
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__left_seat_visual_cover",
+      "assembly": "visitor_sofa",
+      "part": "left_seat_visual_cover",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__left_seat_visual_cover.obj",
+      "bounds_m": [
+        [
+          -1.71,
+          -0.99415,
+          0.35
+        ],
+        [
+          -1.2,
+          -0.4988499999999999,
+          0.439
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__left_seat_welt",
+      "assembly": "visitor_sofa",
+      "part": "left_seat_welt",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__left_seat_welt.obj",
+      "bounds_m": [
+        [
+          -1.709,
+          -0.9929800000000001,
+          0.3625
+        ],
+        [
+          -1.201,
+          -0.5000199999999999,
+          0.3695
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__left_back_cushion",
+      "assembly": "visitor_sofa",
+      "part": "left_back_cushion",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__left_back_cushion.obj",
+      "bounds_m": [
+        [
+          -1.825,
+          -0.99415,
+          0.4
+        ],
+        [
+          -1.685,
+          -0.4988499999999999,
+          0.85
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__right_seat_visual_cover",
+      "assembly": "visitor_sofa",
+      "part": "right_seat_visual_cover",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__right_seat_visual_cover.obj",
+      "bounds_m": [
+        [
+          -1.71,
+          -1.50115,
+          0.35
+        ],
+        [
+          -1.2,
+          -1.0058500000000001,
+          0.439
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__right_seat_welt",
+      "assembly": "visitor_sofa",
+      "part": "right_seat_welt",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__right_seat_welt.obj",
+      "bounds_m": [
+        [
+          -1.709,
+          -1.49998,
+          0.3625
+        ],
+        [
+          -1.2009999999999998,
+          -1.0070199999999998,
+          0.3695
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__right_back_cushion",
+      "assembly": "visitor_sofa",
+      "part": "right_back_cushion",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__right_back_cushion.obj",
+      "bounds_m": [
+        [
+          -1.825,
+          -1.50115,
+          0.4
+        ],
+        [
+          -1.685,
+          -1.0058500000000001,
+          0.85
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__back_shell",
+      "assembly": "visitor_sofa",
+      "part": "back_shell",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__back_shell.obj",
+      "bounds_m": [
+        [
+          -1.86,
+          -1.5459999999999998,
+          0.34
+        ],
+        [
+          -1.78,
+          -0.45399999999999985,
+          0.8
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__left_arm_upholstery",
+      "assembly": "visitor_sofa",
+      "part": "left_arm_upholstery",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__left_arm_upholstery.obj",
+      "bounds_m": [
+        [
+          -1.83,
+          -0.4930000000000001,
+          0.35
+        ],
+        [
+          -1.1700000000000002,
+          -0.4072000000000001,
+          0.63
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__left_oak_arm_cap",
+      "assembly": "visitor_sofa",
+      "part": "left_oak_arm_cap",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__left_oak_arm_cap.obj",
+      "bounds_m": [
+        [
+          -1.775,
+          -0.4969,
+          0.618
+        ],
+        [
+          -1.195,
+          -0.4032999999999999,
+          0.646
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__right_arm_upholstery",
+      "assembly": "visitor_sofa",
+      "part": "right_arm_upholstery",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__right_arm_upholstery.obj",
+      "bounds_m": [
+        [
+          -1.83,
+          -1.5928,
+          0.35
+        ],
+        [
+          -1.17,
+          -1.5070000000000001,
+          0.63
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_sofa__right_oak_arm_cap",
+      "assembly": "visitor_sofa",
+      "part": "right_oak_arm_cap",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_sofa__right_oak_arm_cap.obj",
+      "bounds_m": [
+        [
+          -1.775,
+          -1.5967,
+          0.618
+        ],
+        [
+          -1.1949999999999998,
+          -1.5030999999999999,
+          0.646
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_chair__legs",
+      "assembly": "visitor_chair",
+      "part": "legs",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__legs.obj",
+      "bounds_m": [
+        [
+          -1.6816,
+          0.6098200000000001,
+          0.015
+        ],
+        [
+          -1.3184,
+          0.99018,
+          0.32
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__visitor_chair__floor_pads",
+      "assembly": "visitor_chair",
+      "part": "floor_pads",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__floor_pads.obj",
+      "bounds_m": [
+        [
+          -1.6872,
+          0.6046400000000001,
+          0.0
+        ],
+        [
+          -1.3128,
+          0.99536,
+          0.015
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__visitor_chair__seat_underframe",
+      "assembly": "visitor_chair",
+      "part": "seat_underframe",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__seat_underframe.obj",
+      "bounds_m": [
+        [
+          -1.712,
+          0.5965000000000001,
+          0.2925
+        ],
+        [
+          -1.288,
+          1.0035,
+          0.3475
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_chair__seat_visual_cover",
+      "assembly": "visitor_chair",
+      "part": "seat_visual_cover",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__seat_visual_cover.obj",
+      "bounds_m": [
+        [
+          -1.676,
+          0.6039000000000001,
+          0.358
+        ],
+        [
+          -1.284,
+          0.9961,
+          0.449
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_chair__back_cushion",
+      "assembly": "visitor_chair",
+      "part": "back_cushion",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__back_cushion.obj",
+      "bounds_m": [
+        [
+          -1.742,
+          0.6039000000000001,
+          0.395
+        ],
+        [
+          -1.65,
+          0.9961,
+          0.865
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__visitor_chair__back_oak_shell",
+      "assembly": "visitor_chair",
+      "part": "back_oak_shell",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__back_oak_shell.obj",
+      "bounds_m": [
+        [
+          -1.7576,
+          0.6002000000000001,
+          0.39
+        ],
+        [
+          -1.7352,
+          0.9998,
+          0.87
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_chair__left_arm_support",
+      "assembly": "visitor_chair",
+      "part": "left_arm_support",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__left_arm_support.obj",
+      "bounds_m": [
+        [
+          -1.6872,
+          0.5713400000000001,
+          0.31
+        ],
+        [
+          -1.3368,
+          0.5920600000000001,
+          0.604
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__visitor_chair__left_oak_arm_cap",
+      "assembly": "visitor_chair",
+      "part": "left_oak_arm_cap",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__left_oak_arm_cap.obj",
+      "bounds_m": [
+        [
+          -1.704,
+          0.56024,
+          0.588
+        ],
+        [
+          -1.3199999999999998,
+          0.60316,
+          0.618
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__visitor_chair__right_arm_support",
+      "assembly": "visitor_chair",
+      "part": "right_arm_support",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__right_arm_support.obj",
+      "bounds_m": [
+        [
+          -1.6872,
+          1.00794,
+          0.31
+        ],
+        [
+          -1.3368,
+          1.02866,
+          0.604
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__visitor_chair__right_oak_arm_cap",
+      "assembly": "visitor_chair",
+      "part": "right_oak_arm_cap",
+      "mesh": "assets/nova3d/meshes/suite07__visitor_chair__right_oak_arm_cap.obj",
+      "bounds_m": [
+        [
+          -1.704,
+          0.9968400000000001,
+          0.588
+        ],
+        [
+          -1.3199999999999998,
+          1.03976,
+          0.618
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__coffee_table__legs",
+      "assembly": "coffee_table",
+      "part": "legs",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__legs.obj",
+      "bounds_m": [
+        [
+          -1.657,
+          -0.28870999999999997,
+          0.015
+        ],
+        [
+          -1.343,
+          0.18870999999999993,
+          0.34
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__coffee_table__floor_pads",
+      "assembly": "coffee_table",
+      "part": "floor_pads",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__floor_pads.obj",
+      "bounds_m": [
+        [
+          -1.664,
+          -0.29382,
+          0.0
+        ],
+        [
+          -1.336,
+          0.19382000000000005,
+          0.015
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__coffee_table__oak_apron",
+      "assembly": "coffee_table",
+      "part": "oak_apron",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__oak_apron.obj",
+      "bounds_m": [
+        [
+          -1.69,
+          -0.3273999999999999,
+          0.306
+        ],
+        [
+          -1.31,
+          0.22739999999999994,
+          0.356
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__coffee_table__top_visual_skin",
+      "assembly": "coffee_table",
+      "part": "top_visual_skin",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__top_visual_skin.obj",
+      "bounds_m": [
+        [
+          -1.72,
+          -0.34929999999999994,
+          0.356
+        ],
+        [
+          -1.28,
+          0.24929999999999997,
+          0.391
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__coffee_table__lower_magazine_shelf",
+      "assembly": "coffee_table",
+      "part": "lower_magazine_shelf",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__lower_magazine_shelf.obj",
+      "bounds_m": [
+        [
+          -1.65,
+          -0.28724999999999995,
+          0.136
+        ],
+        [
+          -1.35,
+          0.18724999999999997,
+          0.154
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__coffee_table__lower_shelf_front_support",
+      "assembly": "coffee_table",
+      "part": "lower_shelf_front_support",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__lower_shelf_front_support.obj",
+      "bounds_m": [
+        [
+          -1.37,
+          -0.27630000000000005,
+          0.125
+        ],
+        [
+          -1.35,
+          0.1763,
+          0.145
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__coffee_table__lower_shelf_rear_support",
+      "assembly": "coffee_table",
+      "part": "lower_shelf_rear_support",
+      "mesh": "assets/nova3d/meshes/suite07__coffee_table__lower_shelf_rear_support.obj",
+      "bounds_m": [
+        [
+          -1.65,
+          -0.27630000000000005,
+          0.125
+        ],
+        [
+          -1.63,
+          0.1763,
+          0.145
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__medical_cart__caster_tires",
+      "assembly": "medical_cart",
+      "part": "caster_tires",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__caster_tires.obj",
+      "bounds_m": [
+        [
+          -0.2136,
+          -1.87252,
+          0.0
+        ],
+        [
+          0.2136,
+          -1.5274800000000002,
+          0.094
+        ]
+      ],
+      "triangles": 1536
+    },
+    {
+      "name": "nova_suite07__medical_cart__caster_hubs_and_stems",
+      "assembly": "medical_cart",
+      "part": "caster_hubs_and_stems",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__caster_hubs_and_stems.obj",
+      "bounds_m": [
+        [
+          -0.21480000000000002,
+          -1.8550172,
+          0.02303
+        ],
+        [
+          0.21480000000000002,
+          -1.5449827999999999,
+          0.1315
+        ]
+      ],
+      "triangles": 448
+    },
+    {
+      "name": "nova_suite07__medical_cart__caster_forks",
+      "assembly": "medical_cart",
+      "part": "caster_forks",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__caster_forks.obj",
+      "bounds_m": [
+        [
+          -0.22240000000000004,
+          -1.8577,
+          0.0495
+        ],
+        [
+          0.22240000000000004,
+          -1.5423,
+          0.1145
+        ]
+      ],
+      "triangles": 1760
+    },
+    {
+      "name": "nova_suite07__medical_cart__lower_chassis",
+      "assembly": "medical_cart",
+      "part": "lower_chassis",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__lower_chassis.obj",
+      "bounds_m": [
+        [
+          -0.24,
+          -1.871,
+          0.1275
+        ],
+        [
+          0.24,
+          -1.5290000000000001,
+          0.1725
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__lower_open_shelf",
+      "assembly": "medical_cart",
+      "part": "lower_open_shelf",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__lower_open_shelf.obj",
+      "bounds_m": [
+        [
+          -0.22000000000000003,
+          -1.8519999999999999,
+          0.2075
+        ],
+        [
+          0.22000000000000003,
+          -1.548,
+          0.2325
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__left_case_side",
+      "assembly": "medical_cart",
+      "part": "left_case_side",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__left_case_side.obj",
+      "bounds_m": [
+        [
+          -0.2312,
+          -1.8558,
+          0.3
+        ],
+        [
+          -0.21680000000000002,
+          -1.5442,
+          0.67
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__right_case_side",
+      "assembly": "medical_cart",
+      "part": "right_case_side",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__right_case_side.obj",
+      "bounds_m": [
+        [
+          0.21680000000000002,
+          -1.8558,
+          0.3
+        ],
+        [
+          0.2312,
+          -1.5442,
+          0.67
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__case_back",
+      "assembly": "medical_cart",
+      "part": "case_back",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__case_back.obj",
+      "bounds_m": [
+        [
+          -0.22000000000000003,
+          -1.85998,
+          0.3
+        ],
+        [
+          0.22000000000000003,
+          -1.84858,
+          0.67
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_1_visual",
+      "assembly": "medical_cart",
+      "part": "storage_face_1_visual",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_visual.obj",
+      "bounds_m": [
+        [
+          -0.21480000000000002,
+          -1.54648,
+          0.31
+        ],
+        [
+          0.21480000000000002,
+          -1.5328,
+          0.44
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_1_handle",
+      "assembly": "medical_cart",
+      "part": "storage_face_1_handle",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_handle.obj",
+      "bounds_m": [
+        [
+          -0.0736,
+          -1.52976,
+          0.378
+        ],
+        [
+          0.0736,
+          -1.49404,
+          0.392
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_1_label_holder",
+      "assembly": "medical_cart",
+      "part": "storage_face_1_label_holder",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_label_holder.obj",
+      "bounds_m": [
+        [
+          -0.18000000000000002,
+          -1.53166,
+          0.379
+        ],
+        [
+          -0.124,
+          -1.52938,
+          0.401
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_2_visual",
+      "assembly": "medical_cart",
+      "part": "storage_face_2_visual",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_visual.obj",
+      "bounds_m": [
+        [
+          -0.21480000000000002,
+          -1.54648,
+          0.455
+        ],
+        [
+          0.21480000000000002,
+          -1.5328,
+          0.585
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_2_handle",
+      "assembly": "medical_cart",
+      "part": "storage_face_2_handle",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_handle.obj",
+      "bounds_m": [
+        [
+          -0.0736,
+          -1.52976,
+          0.523
+        ],
+        [
+          0.0736,
+          -1.49404,
+          0.537
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_2_label_holder",
+      "assembly": "medical_cart",
+      "part": "storage_face_2_label_holder",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_label_holder.obj",
+      "bounds_m": [
+        [
+          -0.18000000000000002,
+          -1.53166,
+          0.524
+        ],
+        [
+          -0.124,
+          -1.52938,
+          0.546
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_3_visual",
+      "assembly": "medical_cart",
+      "part": "storage_face_3_visual",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_visual.obj",
+      "bounds_m": [
+        [
+          -0.21480000000000002,
+          -1.54648,
+          0.5925
+        ],
+        [
+          0.21480000000000002,
+          -1.5328,
+          0.6675
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_3_handle",
+      "assembly": "medical_cart",
+      "part": "storage_face_3_handle",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_handle.obj",
+      "bounds_m": [
+        [
+          -0.0736,
+          -1.52976,
+          0.633
+        ],
+        [
+          0.0736,
+          -1.49404,
+          0.647
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__medical_cart__storage_face_3_label_holder",
+      "assembly": "medical_cart",
+      "part": "storage_face_3_label_holder",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_label_holder.obj",
+      "bounds_m": [
+        [
+          -0.18000000000000002,
+          -1.53166,
+          0.634
+        ],
+        [
+          -0.124,
+          -1.52938,
+          0.656
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__top_visual_skin",
+      "assembly": "medical_cart",
+      "part": "top_visual_skin",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__top_visual_skin.obj",
+      "bounds_m": [
+        [
+          -0.248,
+          -1.8786,
+          0.695
+        ],
+        [
+          0.248,
+          -1.5214,
+          0.731
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__medical_cart__left_corner_frame",
+      "assembly": "medical_cart",
+      "part": "left_corner_frame",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__left_corner_frame.obj",
+      "bounds_m": [
+        [
+          -0.2384,
+          -1.85428,
+          0.15
+        ],
+        [
+          -0.21760000000000002,
+          -1.83452,
+          0.69
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__medical_cart__right_corner_frame",
+      "assembly": "medical_cart",
+      "part": "right_corner_frame",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__right_corner_frame.obj",
+      "bounds_m": [
+        [
+          0.21760000000000002,
+          -1.85428,
+          0.15
+        ],
+        [
+          0.2384,
+          -1.83452,
+          0.69
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__medical_cart__push_handle",
+      "assembly": "medical_cart",
+      "part": "push_handle",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__push_handle.obj",
+      "bounds_m": [
+        [
+          -0.3224,
+          -1.80108,
+          0.637
+        ],
+        [
+          -0.24,
+          -1.54572,
+          0.663
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__medical_cart__push_handle_grip",
+      "assembly": "medical_cart",
+      "part": "push_handle_grip",
+      "mesh": "assets/nova3d/meshes/suite07__medical_cart__push_handle_grip.obj",
+      "bounds_m": [
+        [
+          -0.32480000000000003,
+          -1.7456,
+          0.634
+        ],
+        [
+          -0.2992,
+          -1.6012,
+          0.666
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__recessed_plinth",
+      "assembly": "sink_counter",
+      "part": "recessed_plinth",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__recessed_plinth.obj",
+      "bounds_m": [
+        [
+          -2.2375,
+          -2.408,
+          0.0
+        ],
+        [
+          -1.7625,
+          -1.592,
+          0.1
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__left_case_side",
+      "assembly": "sink_counter",
+      "part": "left_case_side",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__left_case_side.obj",
+      "bounds_m": [
+        [
+          -2.27075,
+          -1.576,
+          0.1
+        ],
+        [
+          -1.72925,
+          -1.56,
+          0.84
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__right_case_side",
+      "assembly": "sink_counter",
+      "part": "right_case_side",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__right_case_side.obj",
+      "bounds_m": [
+        [
+          -2.27075,
+          -2.44,
+          0.1
+        ],
+        [
+          -1.72925,
+          -2.424,
+          0.84
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__cabinet_bottom",
+      "assembly": "sink_counter",
+      "part": "cabinet_bottom",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__cabinet_bottom.obj",
+      "bounds_m": [
+        [
+          -2.26125,
+          -2.424,
+          0.106
+        ],
+        [
+          -1.73875,
+          -1.576,
+          0.124
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__cabinet_back",
+      "assembly": "sink_counter",
+      "part": "cabinet_back",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__cabinet_back.obj",
+      "bounds_m": [
+        [
+          -2.270275,
+          -2.424,
+          0.11
+        ],
+        [
+          -2.2560249999999997,
+          -1.576,
+          0.83
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__left_cabinet_face_visual",
+      "assembly": "sink_counter",
+      "part": "left_cabinet_face_visual",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__left_cabinet_face_visual.obj",
+      "bounds_m": [
+        [
+          -1.7359,
+          -1.996,
+          0.12
+        ],
+        [
+          -1.7168999999999999,
+          -1.5768,
+          0.83
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__left_cabinet_handle",
+      "assembly": "sink_counter",
+      "part": "left_cabinet_handle",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__left_cabinet_handle.obj",
+      "bounds_m": [
+        [
+          -1.71215,
+          -1.848,
+          0.738
+        ],
+        [
+          -1.6675,
+          -1.7248,
+          0.752
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__sink_counter__right_cabinet_face_visual",
+      "assembly": "sink_counter",
+      "part": "right_cabinet_face_visual",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__right_cabinet_face_visual.obj",
+      "bounds_m": [
+        [
+          -1.7359,
+          -2.4232,
+          0.12
+        ],
+        [
+          -1.7168999999999999,
+          -2.004,
+          0.83
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__right_cabinet_handle",
+      "assembly": "sink_counter",
+      "part": "right_cabinet_handle",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__right_cabinet_handle.obj",
+      "bounds_m": [
+        [
+          -1.71215,
+          -2.2752,
+          0.738
+        ],
+        [
+          -1.6675,
+          -2.152,
+          0.752
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__sink_counter__counter_with_sink_cutout",
+      "assembly": "sink_counter",
+      "part": "counter_with_sink_cutout",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__counter_with_sink_cutout.obj",
+      "bounds_m": [
+        [
+          -2.2849999999999997,
+          -2.448,
+          0.845
+        ],
+        [
+          -1.7149999999999999,
+          -1.552,
+          0.88
+        ]
+      ],
+      "triangles": 224
+    },
+    {
+      "name": "nova_suite07__sink_counter__basin_rolled_rim",
+      "assembly": "sink_counter",
+      "part": "basin_rolled_rim",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__basin_rolled_rim.obj",
+      "bounds_m": [
+        [
+          -2.18525,
+          -2.2039999999999997,
+          0.876
+        ],
+        [
+          -1.8147499999999999,
+          -1.796,
+          0.888
+        ]
+      ],
+      "triangles": 224
+    },
+    {
+      "name": "nova_suite07__sink_counter__basin_inner_surface",
+      "assembly": "sink_counter",
+      "part": "basin_inner_surface",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__basin_inner_surface.obj",
+      "bounds_m": [
+        [
+          -2.168625,
+          -2.19,
+          0.72
+        ],
+        [
+          -1.831375,
+          -1.81,
+          0.87
+        ]
+      ],
+      "triangles": 138
+    },
+    {
+      "name": "nova_suite07__sink_counter__basin_drain",
+      "assembly": "sink_counter",
+      "part": "basin_drain",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__basin_drain.obj",
+      "bounds_m": [
+        [
+          -2.0199499999999997,
+          -2.0168,
+          0.7215
+        ],
+        [
+          -1.98005,
+          -1.9832,
+          0.7245
+        ]
+      ],
+      "triangles": 80
+    },
+    {
+      "name": "nova_suite07__sink_counter__tap_deck_rosette",
+      "assembly": "sink_counter",
+      "part": "tap_deck_rosette",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__tap_deck_rosette.obj",
+      "bounds_m": [
+        [
+          -2.26125,
+          -2.024,
+          0.882
+        ],
+        [
+          -2.20425,
+          -1.9760000000000002,
+          0.894
+        ]
+      ],
+      "triangles": 80
+    },
+    {
+      "name": "nova_suite07__sink_counter__tap_swan_spout",
+      "assembly": "sink_counter",
+      "part": "tap_swan_spout",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__tap_swan_spout.obj",
+      "bounds_m": [
+        [
+          -2.24605,
+          -2.0112,
+          0.89
+        ],
+        [
+          -2.058309461,
+          -1.9888000000000001,
+          1.14846154
+        ]
+      ],
+      "triangles": 336
+    },
+    {
+      "name": "nova_suite07__sink_counter__tap_lever",
+      "assembly": "sink_counter",
+      "part": "tap_lever",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__tap_lever.obj",
+      "bounds_m": [
+        [
+          -2.2403500000000003,
+          -2.088,
+          0.922689508
+        ],
+        [
+          -2.22515,
+          -2.025400712,
+          0.958
+        ]
+      ],
+      "triangles": 96
+    },
+    {
+      "name": "nova_suite07__sink_counter__backsplash",
+      "assembly": "sink_counter",
+      "part": "backsplash",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__backsplash.obj",
+      "bounds_m": [
+        [
+          -2.2963999999999998,
+          -2.448,
+          0.865
+        ],
+        [
+          -2.2793,
+          -1.552,
+          1.035
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sink_counter__backsplash_teal_cap",
+      "assembly": "sink_counter",
+      "part": "backsplash_teal_cap",
+      "mesh": "assets/nova3d/meshes/suite07__sink_counter__backsplash_teal_cap.obj",
+      "bounds_m": [
+        [
+          -2.2983000000000002,
+          -2.448,
+          1.0355
+        ],
+        [
+          -2.2773999999999996,
+          -1.552,
+          1.0505
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__outer_skin_left",
+      "assembly": "trash_bin",
+      "part": "outer_skin_left",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__outer_skin_left.obj",
+      "bounds_m": [
+        [
+          -0.666,
+          1.834,
+          0.02
+        ],
+        [
+          -0.657,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__outer_skin_right",
+      "assembly": "trash_bin",
+      "part": "outer_skin_right",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__outer_skin_right.obj",
+      "bounds_m": [
+        [
+          -0.343,
+          1.834,
+          0.02
+        ],
+        [
+          -0.334,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__outer_skin_front",
+      "assembly": "trash_bin",
+      "part": "outer_skin_front",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__outer_skin_front.obj",
+      "bounds_m": [
+        [
+          -0.657,
+          1.834,
+          0.02
+        ],
+        [
+          -0.343,
+          1.843,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__outer_skin_back",
+      "assembly": "trash_bin",
+      "part": "outer_skin_back",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__outer_skin_back.obj",
+      "bounds_m": [
+        [
+          -0.657,
+          2.157,
+          0.02
+        ],
+        [
+          -0.343,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__rim_left",
+      "assembly": "trash_bin",
+      "part": "rim_left",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__rim_left.obj",
+      "bounds_m": [
+        [
+          -0.673,
+          1.83,
+          0.387
+        ],
+        [
+          -0.657,
+          2.17,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__rim_right",
+      "assembly": "trash_bin",
+      "part": "rim_right",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__rim_right.obj",
+      "bounds_m": [
+        [
+          -0.343,
+          1.83,
+          0.387
+        ],
+        [
+          -0.327,
+          2.17,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__rim_front",
+      "assembly": "trash_bin",
+      "part": "rim_front",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__rim_front.obj",
+      "bounds_m": [
+        [
+          -0.657,
+          1.827,
+          0.387
+        ],
+        [
+          -0.343,
+          1.843,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__rim_back",
+      "assembly": "trash_bin",
+      "part": "rim_back",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__rim_back.obj",
+      "bounds_m": [
+        [
+          -0.657,
+          2.157,
+          0.387
+        ],
+        [
+          -0.343,
+          2.173,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__front_label_backing",
+      "assembly": "trash_bin",
+      "part": "front_label_backing",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__front_label_backing.obj",
+      "bounds_m": [
+        [
+          -0.63,
+          1.8305,
+          0.14
+        ],
+        [
+          -0.37,
+          1.8335,
+          0.28
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__trash_bin__front_label_caption",
+      "assembly": "trash_bin",
+      "part": "front_label_caption",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__front_label_caption.obj",
+      "bounds_m": [
+        [
+          -0.545571429,
+          1.82925,
+          0.199
+        ],
+        [
+          -0.454428571,
+          1.83075,
+          0.221
+        ]
+      ],
+      "triangles": 588
+    },
+    {
+      "name": "nova_suite07__trash_bin__front_label_number",
+      "assembly": "trash_bin",
+      "part": "front_label_number",
+      "mesh": "assets/nova3d/meshes/suite07__trash_bin__front_label_number.obj",
+      "bounds_m": [
+        [
+          -0.526714286,
+          1.82925,
+          0.239
+        ],
+        [
+          -0.478142857,
+          1.83075,
+          0.273
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__recycling_bin__outer_skin_left",
+      "assembly": "recycling_bin",
+      "part": "outer_skin_left",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_left.obj",
+      "bounds_m": [
+        [
+          0.034,
+          1.834,
+          0.02
+        ],
+        [
+          0.043,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__outer_skin_right",
+      "assembly": "recycling_bin",
+      "part": "outer_skin_right",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_right.obj",
+      "bounds_m": [
+        [
+          0.357,
+          1.834,
+          0.02
+        ],
+        [
+          0.366,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__outer_skin_front",
+      "assembly": "recycling_bin",
+      "part": "outer_skin_front",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_front.obj",
+      "bounds_m": [
+        [
+          0.043,
+          1.834,
+          0.02
+        ],
+        [
+          0.357,
+          1.843,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__outer_skin_back",
+      "assembly": "recycling_bin",
+      "part": "outer_skin_back",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_back.obj",
+      "bounds_m": [
+        [
+          0.043,
+          2.157,
+          0.02
+        ],
+        [
+          0.357,
+          2.166,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__rim_left",
+      "assembly": "recycling_bin",
+      "part": "rim_left",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__rim_left.obj",
+      "bounds_m": [
+        [
+          0.027,
+          1.83,
+          0.387
+        ],
+        [
+          0.043,
+          2.17,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__rim_right",
+      "assembly": "recycling_bin",
+      "part": "rim_right",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__rim_right.obj",
+      "bounds_m": [
+        [
+          0.357,
+          1.83,
+          0.387
+        ],
+        [
+          0.373,
+          2.17,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__rim_front",
+      "assembly": "recycling_bin",
+      "part": "rim_front",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__rim_front.obj",
+      "bounds_m": [
+        [
+          0.043,
+          1.827,
+          0.387
+        ],
+        [
+          0.357,
+          1.843,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__rim_back",
+      "assembly": "recycling_bin",
+      "part": "rim_back",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__rim_back.obj",
+      "bounds_m": [
+        [
+          0.043,
+          2.157,
+          0.387
+        ],
+        [
+          0.357,
+          2.173,
+          0.4
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__front_label_backing",
+      "assembly": "recycling_bin",
+      "part": "front_label_backing",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__front_label_backing.obj",
+      "bounds_m": [
+        [
+          0.07,
+          1.8305,
+          0.14
+        ],
+        [
+          0.33,
+          1.8335,
+          0.28
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__recycling_bin__front_label_caption",
+      "assembly": "recycling_bin",
+      "part": "front_label_caption",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__front_label_caption.obj",
+      "bounds_m": [
+        [
+          0.135571429,
+          1.82925,
+          0.199
+        ],
+        [
+          0.264428571,
+          1.83075,
+          0.221
+        ]
+      ],
+      "triangles": 684
+    },
+    {
+      "name": "nova_suite07__recycling_bin__front_label_number",
+      "assembly": "recycling_bin",
+      "part": "front_label_number",
+      "mesh": "assets/nova3d/meshes/suite07__recycling_bin__front_label_number.obj",
+      "bounds_m": [
+        [
+          0.173285714,
+          1.82925,
+          0.239
+        ],
+        [
+          0.226714286,
+          1.83075,
+          0.273
+        ]
+      ],
+      "triangles": 252
+    },
+    {
+      "name": "nova_suite07__laundry_basket__outer_skin_left",
+      "assembly": "laundry_basket",
+      "part": "outer_skin_left",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_left.obj",
+      "bounds_m": [
+        [
+          0.704,
+          1.844,
+          0.02
+        ],
+        [
+          0.713,
+          2.156,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__outer_skin_right",
+      "assembly": "laundry_basket",
+      "part": "outer_skin_right",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_right.obj",
+      "bounds_m": [
+        [
+          1.087,
+          1.844,
+          0.02
+        ],
+        [
+          1.096,
+          2.156,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__outer_skin_front",
+      "assembly": "laundry_basket",
+      "part": "outer_skin_front",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_front.obj",
+      "bounds_m": [
+        [
+          0.713,
+          1.844,
+          0.02
+        ],
+        [
+          1.087,
+          1.853,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__outer_skin_back",
+      "assembly": "laundry_basket",
+      "part": "outer_skin_back",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_back.obj",
+      "bounds_m": [
+        [
+          0.713,
+          2.147,
+          0.02
+        ],
+        [
+          1.087,
+          2.156,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__rim_left",
+      "assembly": "laundry_basket",
+      "part": "rim_left",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__rim_left.obj",
+      "bounds_m": [
+        [
+          0.697,
+          1.84,
+          0.347
+        ],
+        [
+          0.713,
+          2.16,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__rim_right",
+      "assembly": "laundry_basket",
+      "part": "rim_right",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__rim_right.obj",
+      "bounds_m": [
+        [
+          1.087,
+          1.84,
+          0.347
+        ],
+        [
+          1.103,
+          2.16,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__rim_front",
+      "assembly": "laundry_basket",
+      "part": "rim_front",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__rim_front.obj",
+      "bounds_m": [
+        [
+          0.713,
+          1.837,
+          0.347
+        ],
+        [
+          1.087,
+          1.853,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__rim_back",
+      "assembly": "laundry_basket",
+      "part": "rim_back",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__rim_back.obj",
+      "bounds_m": [
+        [
+          0.713,
+          2.147,
+          0.347
+        ],
+        [
+          1.087,
+          2.163,
+          0.36
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__front_label_backing",
+      "assembly": "laundry_basket",
+      "part": "front_label_backing",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__front_label_backing.obj",
+      "bounds_m": [
+        [
+          0.74,
+          1.8405,
+          0.12
+        ],
+        [
+          1.06,
+          1.8435,
+          0.26
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__laundry_basket__front_label_caption",
+      "assembly": "laundry_basket",
+      "part": "front_label_caption",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__front_label_caption.obj",
+      "bounds_m": [
+        [
+          0.854428571,
+          1.83925,
+          0.179
+        ],
+        [
+          0.945571429,
+          1.84075,
+          0.201
+        ]
+      ],
+      "triangles": 612
+    },
+    {
+      "name": "nova_suite07__laundry_basket__front_label_number",
+      "assembly": "laundry_basket",
+      "part": "front_label_number",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__front_label_number.obj",
+      "bounds_m": [
+        [
+          0.873285714,
+          1.83925,
+          0.219
+        ],
+        [
+          0.926714286,
+          1.84075,
+          0.253
+        ]
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "nova_suite07__laundry_basket__left_vent_recess_decals",
+      "assembly": "laundry_basket",
+      "part": "left_vent_recess_decals",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__left_vent_recess_decals.obj",
+      "bounds_m": [
+        [
+          0.702,
+          1.884,
+          0.07
+        ],
+        [
+          0.704,
+          2.116,
+          0.279
+        ]
+      ],
+      "triangles": 4400
+    },
+    {
+      "name": "nova_suite07__laundry_basket__right_vent_recess_decals",
+      "assembly": "laundry_basket",
+      "part": "right_vent_recess_decals",
+      "mesh": "assets/nova3d/meshes/suite07__laundry_basket__right_vent_recess_decals.obj",
+      "bounds_m": [
+        [
+          1.096,
+          1.884,
+          0.07
+        ],
+        [
+          1.098,
+          2.116,
+          0.279
+        ]
+      ],
+      "triangles": 4400
+    },
+    {
+      "name": "nova_suite07__return_tray__outer_skin_left",
+      "assembly": "return_tray",
+      "part": "outer_skin_left",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__outer_skin_left.obj",
+      "bounds_m": [
+        [
+          1.414,
+          1.854,
+          0.61
+        ],
+        [
+          1.423,
+          2.146,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__outer_skin_right",
+      "assembly": "return_tray",
+      "part": "outer_skin_right",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__outer_skin_right.obj",
+      "bounds_m": [
+        [
+          1.777,
+          1.854,
+          0.61
+        ],
+        [
+          1.786,
+          2.146,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__outer_skin_front",
+      "assembly": "return_tray",
+      "part": "outer_skin_front",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__outer_skin_front.obj",
+      "bounds_m": [
+        [
+          1.423,
+          1.854,
+          0.61
+        ],
+        [
+          1.777,
+          1.863,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__outer_skin_back",
+      "assembly": "return_tray",
+      "part": "outer_skin_back",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__outer_skin_back.obj",
+      "bounds_m": [
+        [
+          1.423,
+          2.137,
+          0.61
+        ],
+        [
+          1.777,
+          2.146,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__rim_left",
+      "assembly": "return_tray",
+      "part": "rim_left",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__rim_left.obj",
+      "bounds_m": [
+        [
+          1.407,
+          1.85,
+          0.697
+        ],
+        [
+          1.423,
+          2.15,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__rim_right",
+      "assembly": "return_tray",
+      "part": "rim_right",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__rim_right.obj",
+      "bounds_m": [
+        [
+          1.777,
+          1.85,
+          0.697
+        ],
+        [
+          1.793,
+          2.15,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__rim_front",
+      "assembly": "return_tray",
+      "part": "rim_front",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__rim_front.obj",
+      "bounds_m": [
+        [
+          1.423,
+          1.847,
+          0.697
+        ],
+        [
+          1.777,
+          1.863,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__rim_back",
+      "assembly": "return_tray",
+      "part": "rim_back",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__rim_back.obj",
+      "bounds_m": [
+        [
+          1.423,
+          2.137,
+          0.697
+        ],
+        [
+          1.777,
+          2.153,
+          0.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__front_label_backing",
+      "assembly": "return_tray",
+      "part": "front_label_backing",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__front_label_backing.obj",
+      "bounds_m": [
+        [
+          1.45,
+          1.8505,
+          0.625
+        ],
+        [
+          1.75,
+          1.8535,
+          0.695
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__front_label_caption",
+      "assembly": "return_tray",
+      "part": "front_label_caption",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__front_label_caption.obj",
+      "bounds_m": [
+        [
+          1.545,
+          1.84925,
+          0.649
+        ],
+        [
+          1.655,
+          1.85075,
+          0.671
+        ]
+      ],
+      "triangles": 792
+    },
+    {
+      "name": "nova_suite07__return_tray__legs",
+      "assembly": "return_tray",
+      "part": "legs",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__legs.obj",
+      "bounds_m": [
+        [
+          1.438,
+          1.878,
+          0.015
+        ],
+        [
+          1.762,
+          2.122,
+          0.6
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__return_tray__floor_pads",
+      "assembly": "return_tray",
+      "part": "floor_pads",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__floor_pads.obj",
+      "bounds_m": [
+        [
+          1.431,
+          1.871,
+          0.0
+        ],
+        [
+          1.769,
+          2.129,
+          0.015
+        ]
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "nova_suite07__return_tray__undertray_frame_front",
+      "assembly": "return_tray",
+      "part": "undertray_frame_front",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__undertray_frame_front.obj",
+      "bounds_m": [
+        [
+          1.435,
+          1.8745,
+          0.58
+        ],
+        [
+          1.765,
+          1.8995,
+          0.605
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__return_tray__undertray_frame_back",
+      "assembly": "return_tray",
+      "part": "undertray_frame_back",
+      "mesh": "assets/nova3d/meshes/suite07__return_tray__undertray_frame_back.obj",
+      "bounds_m": [
+        [
+          1.435,
+          2.1005,
+          0.58
+        ],
+        [
+          1.765,
+          2.1255,
+          0.605
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__oak_identification_rail",
+      "assembly": "sorting_station",
+      "part": "oak_identification_rail",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__oak_identification_rail.obj",
+      "bounds_m": [
+        [
+          -0.83,
+          2.4425,
+          0.95
+        ],
+        [
+          1.93,
+          2.4775,
+          1.25
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__ivory_header_panel",
+      "assembly": "sorting_station",
+      "part": "ivory_header_panel",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__ivory_header_panel.obj",
+      "bounds_m": [
+        [
+          -0.81,
+          2.4315,
+          0.98
+        ],
+        [
+          1.91,
+          2.4405,
+          1.22
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__sorting_station_title",
+      "assembly": "sorting_station",
+      "part": "sorting_station_title",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__sorting_station_title.obj",
+      "bounds_m": [
+        [
+          0.130428571,
+          2.42925,
+          1.097
+        ],
+        [
+          0.969571429,
+          2.43075,
+          1.163
+        ]
+      ],
+      "triangles": 1716
+    },
+    {
+      "name": "nova_suite07__sorting_station__trash_bin_direction_marker",
+      "assembly": "sorting_station",
+      "part": "trash_bin_direction_marker",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__trash_bin_direction_marker.obj",
+      "bounds_m": [
+        [
+          -0.65,
+          2.4285,
+          0.865
+        ],
+        [
+          -0.35,
+          2.4375,
+          0.955
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__trash_bin_wall_label",
+      "assembly": "sorting_station",
+      "part": "trash_bin_wall_label",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__trash_bin_wall_label.obj",
+      "bounds_m": [
+        [
+          -0.551785714,
+          2.42525,
+          0.8975
+        ],
+        [
+          -0.448214286,
+          2.42675,
+          0.9225
+        ]
+      ],
+      "triangles": 588
+    },
+    {
+      "name": "nova_suite07__sorting_station__recycling_bin_direction_marker",
+      "assembly": "sorting_station",
+      "part": "recycling_bin_direction_marker",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__recycling_bin_direction_marker.obj",
+      "bounds_m": [
+        [
+          0.05,
+          2.4285,
+          0.865
+        ],
+        [
+          0.35,
+          2.4375,
+          0.955
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__recycling_bin_wall_label",
+      "assembly": "sorting_station",
+      "part": "recycling_bin_wall_label",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__recycling_bin_wall_label.obj",
+      "bounds_m": [
+        [
+          0.126785714,
+          2.42525,
+          0.8975
+        ],
+        [
+          0.273214286,
+          2.42675,
+          0.9225
+        ]
+      ],
+      "triangles": 684
+    },
+    {
+      "name": "nova_suite07__sorting_station__laundry_basket_direction_marker",
+      "assembly": "sorting_station",
+      "part": "laundry_basket_direction_marker",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__laundry_basket_direction_marker.obj",
+      "bounds_m": [
+        [
+          0.75,
+          2.4285,
+          0.865
+        ],
+        [
+          1.05,
+          2.4375,
+          0.955
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__laundry_basket_wall_label",
+      "assembly": "sorting_station",
+      "part": "laundry_basket_wall_label",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__laundry_basket_wall_label.obj",
+      "bounds_m": [
+        [
+          0.848214286,
+          2.42525,
+          0.8975
+        ],
+        [
+          0.951785714,
+          2.42675,
+          0.9225
+        ]
+      ],
+      "triangles": 612
+    },
+    {
+      "name": "nova_suite07__sorting_station__return_tray_direction_marker",
+      "assembly": "sorting_station",
+      "part": "return_tray_direction_marker",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__return_tray_direction_marker.obj",
+      "bounds_m": [
+        [
+          1.45,
+          2.4285,
+          0.865
+        ],
+        [
+          1.75,
+          2.4375,
+          0.955
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__sorting_station__return_tray_wall_label",
+      "assembly": "sorting_station",
+      "part": "return_tray_wall_label",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__return_tray_wall_label.obj",
+      "bounds_m": [
+        [
+          1.5375,
+          2.42525,
+          0.8975
+        ],
+        [
+          1.6625,
+          2.42675,
+          0.9225
+        ]
+      ],
+      "triangles": 792
+    },
+    {
+      "name": "nova_suite07__sorting_station__rail_mounting_screws",
+      "assembly": "sorting_station",
+      "part": "rail_mounting_screws",
+      "mesh": "assets/nova3d/meshes/suite07__sorting_station__rail_mounting_screws.obj",
+      "bounds_m": [
+        [
+          -0.754,
+          2.433,
+          1.096
+        ],
+        [
+          1.854,
+          2.435,
+          1.104
+        ]
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "nova_suite07__linen_shelves__wall_backboard",
+      "assembly": "linen_shelves",
+      "part": "wall_backboard",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__wall_backboard.obj",
+      "bounds_m": [
+        [
+          -2.73,
+          2.4025,
+          0.67
+        ],
+        [
+          -2.13,
+          2.4375,
+          2.09
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__left_upright",
+      "assembly": "linen_shelves",
+      "part": "left_upright",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__left_upright.obj",
+      "bounds_m": [
+        [
+          -2.732,
+          2.09,
+          0.66
+        ],
+        [
+          -2.708,
+          2.43,
+          2.1
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__right_upright",
+      "assembly": "linen_shelves",
+      "part": "right_upright",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__right_upright.obj",
+      "bounds_m": [
+        [
+          -2.152,
+          2.09,
+          0.66
+        ],
+        [
+          -2.128,
+          2.43,
+          2.1
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__top_cap",
+      "assembly": "linen_shelves",
+      "part": "top_cap",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__top_cap.obj",
+      "bounds_m": [
+        [
+          -2.735,
+          2.085,
+          2.097
+        ],
+        [
+          -2.125,
+          2.435,
+          2.123
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__bottom_cap",
+      "assembly": "linen_shelves",
+      "part": "bottom_cap",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__bottom_cap.obj",
+      "bounds_m": [
+        [
+          -2.735,
+          2.085,
+          0.637
+        ],
+        [
+          -2.125,
+          2.435,
+          0.663
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.1,
+          0.969
+        ],
+        [
+          -2.15,
+          2.42,
+          0.991
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_oak_nosing",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_oak_nosing",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_oak_nosing.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.086,
+          0.967
+        ],
+        [
+          -2.15,
+          2.104,
+          0.993
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_support_pins",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_support_pins",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_support_pins.obj",
+      "bounds_m": [
+        [
+          -2.708,
+          2.136,
+          0.959
+        ],
+        [
+          -2.152,
+          2.374,
+          0.967
+        ]
+      ],
+      "triangles": 128
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          0.992
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.036
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.0075
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.0105
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.038
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.082
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.0535
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.0565
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.084
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.128
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_left_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_left_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.0995
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.1025
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          0.992
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.036
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.0075
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.0105
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.038
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.082
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.0535
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.0565
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.084
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.128
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_1_right_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_1_right_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.0995
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.1025
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.1,
+          1.319
+        ],
+        [
+          -2.15,
+          2.42,
+          1.341
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_oak_nosing",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_oak_nosing",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_oak_nosing.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.086,
+          1.317
+        ],
+        [
+          -2.15,
+          2.104,
+          1.343
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_support_pins",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_support_pins",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_support_pins.obj",
+      "bounds_m": [
+        [
+          -2.708,
+          2.136,
+          1.309
+        ],
+        [
+          -2.152,
+          2.374,
+          1.317
+        ]
+      ],
+      "triangles": 128
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.342
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.386
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.3575
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.3605
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.388
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.432
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.4035
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.4065
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.434
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.478
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_left_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_left_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.4495
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.4525
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.342
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.386
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.3575
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.3605
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.388
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.432
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.4035
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.4065
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.434
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.478
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_2_right_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_2_right_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.4495
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.4525
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.1,
+          1.669
+        ],
+        [
+          -2.15,
+          2.42,
+          1.691
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_oak_nosing",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_oak_nosing",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_oak_nosing.obj",
+      "bounds_m": [
+        [
+          -2.71,
+          2.086,
+          1.667
+        ],
+        [
+          -2.15,
+          2.104,
+          1.693
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_support_pins",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_support_pins",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_support_pins.obj",
+      "bounds_m": [
+        [
+          -2.708,
+          2.136,
+          1.659
+        ],
+        [
+          -2.152,
+          2.374,
+          1.667
+        ]
+      ],
+      "triangles": 128
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.692
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.736
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.7075
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.7105
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.738
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.782
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.7535
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.7565
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.6905,
+          2.12,
+          1.784
+        ],
+        [
+          -2.4455,
+          2.38,
+          1.828
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_left_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_left_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.668,
+          2.1175,
+          1.7995
+        ],
+        [
+          -2.468,
+          2.1205,
+          1.8025
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_linen_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_linen_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_1.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.692
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.736
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_fold_1",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_fold_1",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_1.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.7075
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.7105
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_linen_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_linen_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_2.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.738
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.782
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_fold_2",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_fold_2",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_2.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.7535
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.7565
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_linen_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_linen_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_3.obj",
+      "bounds_m": [
+        [
+          -2.4145,
+          2.12,
+          1.784
+        ],
+        [
+          -2.1695,
+          2.38,
+          1.828
+        ]
+      ],
+      "triangles": 360
+    },
+    {
+      "name": "nova_suite07__linen_shelves__shelf_3_right_fold_3",
+      "assembly": "linen_shelves",
+      "part": "shelf_3_right_fold_3",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_3.obj",
+      "bounds_m": [
+        [
+          -2.392,
+          2.1175,
+          1.7995
+        ],
+        [
+          -2.192,
+          2.1205,
+          1.8025
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__linen_header_backing",
+      "assembly": "linen_shelves",
+      "part": "linen_header_backing",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__linen_header_backing.obj",
+      "bounds_m": [
+        [
+          -2.685,
+          2.073,
+          1.93
+        ],
+        [
+          -2.175,
+          2.085,
+          2.03
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__linen_shelves__linen_header_text",
+      "assembly": "linen_shelves",
+      "part": "linen_header_text",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__linen_header_text.obj",
+      "bounds_m": [
+        [
+          -2.57857143,
+          2.07025,
+          1.964
+        ],
+        [
+          -2.28142857,
+          2.07175,
+          1.996
+        ]
+      ],
+      "triangles": 1188
+    },
+    {
+      "name": "nova_suite07__linen_shelves__wall_fixing_heads",
+      "assembly": "linen_shelves",
+      "part": "wall_fixing_heads",
+      "mesh": "assets/nova3d/meshes/suite07__linen_shelves__wall_fixing_heads.obj",
+      "bounds_m": [
+        [
+          -2.654,
+          2.399,
+          0.736
+        ],
+        [
+          -2.206,
+          2.401,
+          2.024
+        ]
+      ],
+      "triangles": 128
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__ceiling_track_outer",
+      "assembly": "privacy_curtain",
+      "part": "ceiling_track_outer",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__ceiling_track_outer.obj",
+      "bounds_m": [
+        [
+          1.7,
+          -2.33,
+          2.412
+        ],
+        [
+          3.318,
+          0.508,
+          2.448
+        ]
+      ],
+      "triangles": 192
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__ceiling_track_shadow_channel",
+      "assembly": "privacy_curtain",
+      "part": "ceiling_track_shadow_channel",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__ceiling_track_shadow_channel.obj",
+      "bounds_m": [
+        [
+          1.7,
+          -2.33,
+          2.411
+        ],
+        [
+          3.305,
+          0.495,
+          2.421
+        ]
+      ],
+      "triangles": 192
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_1_plate",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_1_plate",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_plate.obj",
+      "bounds_m": [
+        [
+          3.4805,
+          -2.245,
+          2.325
+        ],
+        [
+          3.4935,
+          -2.155,
+          2.455
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_1_arm",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_1_arm",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_arm.obj",
+      "bounds_m": [
+        [
+          3.3,
+          -2.211,
+          2.419
+        ],
+        [
+          3.485,
+          -2.189,
+          2.441
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_1_brace",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_1_brace",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_brace.obj",
+      "bounds_m": [
+        [
+          3.32107791,
+          -2.208,
+          2.3330274
+        ],
+        [
+          3.48892209,
+          -2.192,
+          2.4369726
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_2_plate",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_2_plate",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_plate.obj",
+      "bounds_m": [
+        [
+          3.4805,
+          -0.945,
+          2.325
+        ],
+        [
+          3.4935,
+          -0.855,
+          2.455
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_2_arm",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_2_arm",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_arm.obj",
+      "bounds_m": [
+        [
+          3.3,
+          -0.911,
+          2.419
+        ],
+        [
+          3.485,
+          -0.889,
+          2.441
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_2_brace",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_2_brace",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_brace.obj",
+      "bounds_m": [
+        [
+          3.32107791,
+          -0.908,
+          2.3330274
+        ],
+        [
+          3.48892209,
+          -0.892,
+          2.4369726
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_3_plate",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_3_plate",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_plate.obj",
+      "bounds_m": [
+        [
+          3.4805,
+          0.355,
+          2.325
+        ],
+        [
+          3.4935,
+          0.445,
+          2.455
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_3_arm",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_3_arm",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_arm.obj",
+      "bounds_m": [
+        [
+          3.3,
+          0.389,
+          2.419
+        ],
+        [
+          3.485,
+          0.411,
+          2.441
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__wall_bracket_3_brace",
+      "assembly": "privacy_curtain",
+      "part": "wall_bracket_3_brace",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_brace.obj",
+      "bounds_m": [
+        [
+          3.32107791,
+          0.392,
+          2.3330274
+        ],
+        [
+          3.48892209,
+          0.408,
+          2.4369726
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__gathered_curtain_fabric",
+      "assembly": "privacy_curtain",
+      "part": "gathered_curtain_fabric",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__gathered_curtain_fabric.obj",
+      "bounds_m": [
+        [
+          3.243,
+          -2.14,
+          0.602
+        ],
+        [
+          3.357,
+          -1.56,
+          2.19
+        ]
+      ],
+      "triangles": 4208
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__gathered_header_fabric",
+      "assembly": "privacy_curtain",
+      "part": "gathered_header_fabric",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__gathered_header_fabric.obj",
+      "bounds_m": [
+        [
+          3.243,
+          -2.14,
+          2.182
+        ],
+        [
+          3.357,
+          -1.56,
+          2.37
+        ]
+      ],
+      "triangles": 4208
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_1",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_1",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_1.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -2.143,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -2.137,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_2",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_2",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_2.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -2.085,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -2.079,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_3",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_3",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_3.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -2.027,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -2.021,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_4",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_4",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_4.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.969,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.963,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_5",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_5",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_5.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.911,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.905,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_6",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_6",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_6.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.853,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.847,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_7",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_7",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_7.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.795,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.789,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_8",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_8",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_8.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.737,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.731,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_9",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_9",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_9.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.679,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.673,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_10",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_10",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_10.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.621,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.615,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_hanger_11",
+      "assembly": "privacy_curtain",
+      "part": "curtain_hanger_11",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_11.obj",
+      "bounds_m": [
+        [
+          3.297,
+          -1.563,
+          2.35262213
+        ],
+        [
+          3.33682913,
+          -1.557,
+          2.415
+        ]
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_tieback",
+      "assembly": "privacy_curtain",
+      "part": "curtain_tieback",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_tieback.obj",
+      "bounds_m": [
+        [
+          3.2365,
+          -2.1,
+          1.2775
+        ],
+        [
+          3.3635,
+          -1.6,
+          1.3225
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__privacy_curtain__curtain_tieback_wall_anchor",
+      "assembly": "privacy_curtain",
+      "part": "curtain_tieback_wall_anchor",
+      "mesh": "assets/nova3d/meshes/suite07__privacy_curtain__curtain_tieback_wall_anchor.obj",
+      "bounds_m": [
+        [
+          3.34,
+          -1.858,
+          1.292
+        ],
+        [
+          3.49,
+          -1.842,
+          1.308
+        ]
+      ],
+      "triangles": 48
+    },
+    {
+      "name": "nova_suite07__room__north_wall_panel_west",
+      "assembly": "room",
+      "part": "north_wall_panel_west",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_panel_west.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          2.5,
+          0.0
+        ],
+        [
+          -0.7,
+          2.62,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__north_wall_panel_centre",
+      "assembly": "room",
+      "part": "north_wall_panel_centre",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_panel_centre.obj",
+      "bounds_m": [
+        [
+          -0.7,
+          2.5,
+          0.0
+        ],
+        [
+          1.4,
+          2.62,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__north_wall_panel_east",
+      "assembly": "room",
+      "part": "north_wall_panel_east",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_panel_east.obj",
+      "bounds_m": [
+        [
+          1.4,
+          2.5,
+          0.0
+        ],
+        [
+          3.5,
+          2.62,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__north_wall_wainscot",
+      "assembly": "room",
+      "part": "north_wall_wainscot",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_wainscot.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          2.482,
+          0.09
+        ],
+        [
+          3.5,
+          2.5,
+          0.87
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__north_wall_oak_cap",
+      "assembly": "room",
+      "part": "north_wall_oak_cap",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_oak_cap.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          2.463,
+          0.87
+        ],
+        [
+          3.5,
+          2.489,
+          0.905
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_wall_coved_skirt",
+      "assembly": "room",
+      "part": "north_wall_coved_skirt",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_coved_skirt.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          2.465,
+          0.0
+        ],
+        [
+          3.5,
+          2.489,
+          0.09
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_wall_upper_trim",
+      "assembly": "room",
+      "part": "north_wall_upper_trim",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_upper_trim.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          2.47,
+          2.58
+        ],
+        [
+          3.5,
+          2.5,
+          2.635
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_wall_south_pier",
+      "assembly": "room",
+      "part": "east_wall_south_pier",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_south_pier.obj",
+      "bounds_m": [
+        [
+          3.5,
+          -2.5,
+          0.0
+        ],
+        [
+          3.62,
+          -0.1,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_wall_north_pier",
+      "assembly": "room",
+      "part": "east_wall_north_pier",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_north_pier.obj",
+      "bounds_m": [
+        [
+          3.5,
+          1.95,
+          0.0
+        ],
+        [
+          3.62,
+          2.5,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_wall_window_spandrel",
+      "assembly": "room",
+      "part": "east_wall_window_spandrel",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_window_spandrel.obj",
+      "bounds_m": [
+        [
+          3.5,
+          -0.1,
+          0.0
+        ],
+        [
+          3.62,
+          1.95,
+          1.34
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_wall_window_header",
+      "assembly": "room",
+      "part": "east_wall_window_header",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_window_header.obj",
+      "bounds_m": [
+        [
+          3.5,
+          -0.1,
+          2.35
+        ],
+        [
+          3.62,
+          1.95,
+          2.65
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_wall_wainscot",
+      "assembly": "room",
+      "part": "east_wall_wainscot",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_wainscot.obj",
+      "bounds_m": [
+        [
+          3.482,
+          -2.5,
+          0.09
+        ],
+        [
+          3.5,
+          2.5,
+          0.87
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_wall_oak_cap",
+      "assembly": "room",
+      "part": "east_wall_oak_cap",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_oak_cap.obj",
+      "bounds_m": [
+        [
+          3.463,
+          -2.5,
+          0.87
+        ],
+        [
+          3.489,
+          2.5,
+          0.905
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_wall_coved_skirt",
+      "assembly": "room",
+      "part": "east_wall_coved_skirt",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_coved_skirt.obj",
+      "bounds_m": [
+        [
+          3.465,
+          -2.5,
+          0.0
+        ],
+        [
+          3.489,
+          2.5,
+          0.09
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_wall_upper_trim",
+      "assembly": "room",
+      "part": "east_wall_upper_trim",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_upper_trim.obj",
+      "bounds_m": [
+        [
+          3.47,
+          -2.5,
+          2.58
+        ],
+        [
+          3.5,
+          2.5,
+          2.635
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_lower_frame",
+      "assembly": "room",
+      "part": "east_glazing_lower_frame",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_lower_frame.obj",
+      "bounds_m": [
+        [
+          3.485,
+          -0.1,
+          1.34
+        ],
+        [
+          3.575,
+          1.95,
+          1.385
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_upper_frame",
+      "assembly": "room",
+      "part": "east_glazing_upper_frame",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_upper_frame.obj",
+      "bounds_m": [
+        [
+          3.485,
+          -0.1,
+          2.305
+        ],
+        [
+          3.575,
+          1.95,
+          2.35
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_south_mullion",
+      "assembly": "room",
+      "part": "east_glazing_south_mullion",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_south_mullion.obj",
+      "bounds_m": [
+        [
+          3.485,
+          -0.1,
+          1.385
+        ],
+        [
+          3.575,
+          -0.055,
+          2.305
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_middle_mullion",
+      "assembly": "room",
+      "part": "east_glazing_middle_mullion",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_middle_mullion.obj",
+      "bounds_m": [
+        [
+          3.485,
+          0.9025,
+          1.385
+        ],
+        [
+          3.575,
+          0.9475,
+          2.305
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_north_mullion",
+      "assembly": "room",
+      "part": "east_glazing_north_mullion",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_north_mullion.obj",
+      "bounds_m": [
+        [
+          3.485,
+          1.905,
+          1.385
+        ],
+        [
+          3.575,
+          1.95,
+          2.305
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_south_glass",
+      "assembly": "room",
+      "part": "east_glazing_south_glass",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_south_glass.obj",
+      "bounds_m": [
+        [
+          3.547,
+          -0.05425,
+          1.386
+        ],
+        [
+          3.553,
+          0.90175,
+          2.304
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_glazing_north_glass",
+      "assembly": "room",
+      "part": "east_glazing_north_glass",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_glazing_north_glass.obj",
+      "bounds_m": [
+        [
+          3.547,
+          0.94825,
+          1.386
+        ],
+        [
+          3.553,
+          1.90425,
+          2.304
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__east_window_oak_sill",
+      "assembly": "room",
+      "part": "east_window_oak_sill",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_window_oak_sill.obj",
+      "bounds_m": [
+        [
+          3.39,
+          -0.15,
+          1.305
+        ],
+        [
+          3.56,
+          2.0,
+          1.34
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_wall_clock_backplate",
+      "assembly": "room",
+      "part": "north_wall_clock_backplate",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_clock_backplate.obj",
+      "bounds_m": [
+        [
+          2.675,
+          2.45,
+          2.025
+        ],
+        [
+          2.925,
+          2.478,
+          2.275
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_wall_clock_face",
+      "assembly": "room",
+      "part": "north_wall_clock_face",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_clock_face.obj",
+      "bounds_m": [
+        [
+          2.699,
+          2.4405,
+          2.049
+        ],
+        [
+          2.901,
+          2.4475,
+          2.251
+        ]
+      ],
+      "triangles": 192
+    },
+    {
+      "name": "nova_suite07__room__north_wall_clock_hands",
+      "assembly": "room",
+      "part": "north_wall_clock_hands",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_clock_hands.obj",
+      "bounds_m": [
+        [
+          2.796,
+          2.4375,
+          2.147
+        ],
+        [
+          2.854,
+          2.4405,
+          2.206
+        ]
+      ],
+      "triangles": 24
+    },
+    {
+      "name": "nova_suite07__room__north_wall_clock_ticks",
+      "assembly": "room",
+      "part": "north_wall_clock_ticks",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_wall_clock_ticks.obj",
+      "bounds_m": [
+        [
+          2.713,
+          2.4365,
+          2.063
+        ],
+        [
+          2.887,
+          2.4395,
+          2.237
+        ]
+      ],
+      "triangles": 384
+    },
+    {
+      "name": "nova_suite07__room__north_air_grille_frame",
+      "assembly": "room",
+      "part": "north_air_grille_frame",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_air_grille_frame.obj",
+      "bounds_m": [
+        [
+          -1.3,
+          2.445,
+          2.195
+        ],
+        [
+          -0.5,
+          2.48,
+          2.385
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_air_grille_shadow",
+      "assembly": "room",
+      "part": "north_air_grille_shadow",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_air_grille_shadow.obj",
+      "bounds_m": [
+        [
+          -1.265,
+          2.4385,
+          2.225
+        ],
+        [
+          -0.535,
+          2.4435,
+          2.355
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_air_grille_louvres",
+      "assembly": "room",
+      "part": "north_air_grille_louvres",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_air_grille_louvres.obj",
+      "bounds_m": [
+        [
+          -1.265,
+          2.4235,
+          2.2265
+        ],
+        [
+          -0.535,
+          2.4385,
+          2.3535
+        ]
+      ],
+      "triangles": 72
+    },
+    {
+      "name": "nova_suite07__room__north_air_grille_fasteners",
+      "assembly": "room",
+      "part": "north_air_grille_fasteners",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_air_grille_fasteners.obj",
+      "bounds_m": [
+        [
+          -1.284,
+          2.44,
+          2.286
+        ],
+        [
+          -0.516,
+          2.442,
+          2.294
+        ]
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "nova_suite07__room__east_wall_protection_rail",
+      "assembly": "room",
+      "part": "east_wall_protection_rail",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_protection_rail.obj",
+      "bounds_m": [
+        [
+          3.4615,
+          -1.655,
+          0.995
+        ],
+        [
+          3.4865,
+          -0.305,
+          1.105
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__east_wall_protection_rail_backing",
+      "assembly": "room",
+      "part": "east_wall_protection_rail_backing",
+      "mesh": "assets/nova3d/meshes/suite07__room__east_wall_protection_rail_backing.obj",
+      "bounds_m": [
+        [
+          3.486,
+          -1.645,
+          1.0175
+        ],
+        [
+          3.498,
+          -0.315,
+          1.0825
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_patient_information_backing",
+      "assembly": "room",
+      "part": "north_patient_information_backing",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_patient_information_backing.obj",
+      "bounds_m": [
+        [
+          2.495,
+          2.451,
+          1.2
+        ],
+        [
+          3.105,
+          2.481,
+          1.74
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_patient_information_face",
+      "assembly": "room",
+      "part": "north_patient_information_face",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_patient_information_face.obj",
+      "bounds_m": [
+        [
+          2.525,
+          2.444,
+          1.23
+        ],
+        [
+          3.075,
+          2.45,
+          1.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_patient_information_header",
+      "assembly": "room",
+      "part": "north_patient_information_header",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_patient_information_header.obj",
+      "bounds_m": [
+        [
+          2.525,
+          2.4405,
+          1.61
+        ],
+        [
+          3.075,
+          2.4435,
+          1.71
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__north_patient_information_title",
+      "assembly": "room",
+      "part": "north_patient_information_title",
+      "mesh": "assets/nova3d/meshes/suite07__room__north_patient_information_title.obj",
+      "bounds_m": [
+        [
+          2.6675,
+          2.43825,
+          1.6425
+        ],
+        [
+          2.9325,
+          2.43975,
+          1.6775
+        ]
+      ],
+      "triangles": 960
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_1_label",
+      "assembly": "room",
+      "part": "care_board_row_1_label",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_1_label.obj",
+      "bounds_m": [
+        [
+          2.6065,
+          2.44025,
+          1.5295
+        ],
+        [
+          2.6935,
+          2.44175,
+          1.5505
+        ]
+      ],
+      "triangles": 648
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_1_rule",
+      "assembly": "room",
+      "part": "care_board_row_1_rule",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_1_rule.obj",
+      "bounds_m": [
+        [
+          2.765,
+          2.439,
+          1.521
+        ],
+        [
+          3.035,
+          2.441,
+          1.523
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_2_label",
+      "assembly": "room",
+      "part": "care_board_row_2_label",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_2_label.obj",
+      "bounds_m": [
+        [
+          2.6065,
+          2.44025,
+          1.4095
+        ],
+        [
+          2.6935,
+          2.44175,
+          1.4305
+        ]
+      ],
+      "triangles": 636
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_2_rule",
+      "assembly": "room",
+      "part": "care_board_row_2_rule",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_2_rule.obj",
+      "bounds_m": [
+        [
+          2.765,
+          2.439,
+          1.401
+        ],
+        [
+          3.035,
+          2.441,
+          1.403
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_3_label",
+      "assembly": "room",
+      "part": "care_board_row_3_label",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_3_label.obj",
+      "bounds_m": [
+        [
+          2.6155,
+          2.44025,
+          1.2895
+        ],
+        [
+          2.6845,
+          2.44175,
+          1.3105
+        ]
+      ],
+      "triangles": 492
+    },
+    {
+      "name": "nova_suite07__room__care_board_row_3_rule",
+      "assembly": "room",
+      "part": "care_board_row_3_rule",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_row_3_rule.obj",
+      "bounds_m": [
+        [
+          2.765,
+          2.439,
+          1.281
+        ],
+        [
+          3.035,
+          2.441,
+          1.283
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__care_board_mounting_caps",
+      "assembly": "room",
+      "part": "care_board_mounting_caps",
+      "mesh": "assets/nova3d/meshes/suite07__room__care_board_mounting_caps.obj",
+      "bounds_m": [
+        [
+          2.516,
+          2.447,
+          1.236
+        ],
+        [
+          3.084,
+          2.449,
+          1.704
+        ]
+      ],
+      "triangles": 128
+    },
+    {
+      "name": "nova_suite07__room__vinyl_floor_visual",
+      "assembly": "room",
+      "part": "vinyl_floor_visual",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_floor_visual.obj",
+      "bounds_m": [
+        [
+          -2.8,
+          -2.5,
+          -0.02
+        ],
+        [
+          3.5,
+          2.5,
+          -0.002
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_heat_weld_seam_1",
+      "assembly": "room",
+      "part": "vinyl_heat_weld_seam_1",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_heat_weld_seam_1.obj",
+      "bounds_m": [
+        [
+          -0.701,
+          -2.5,
+          -0.002
+        ],
+        [
+          -0.699,
+          2.5,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_heat_weld_seam_2",
+      "assembly": "room",
+      "part": "vinyl_heat_weld_seam_2",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_heat_weld_seam_2.obj",
+      "bounds_m": [
+        [
+          1.399,
+          -2.5,
+          -0.002
+        ],
+        [
+          1.401,
+          2.5,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_teal_perimeter_north",
+      "assembly": "room",
+      "part": "vinyl_teal_perimeter_north",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_north.obj",
+      "bounds_m": [
+        [
+          -2.67,
+          2.3375,
+          -0.002
+        ],
+        [
+          3.37,
+          2.3725,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_teal_perimeter_south",
+      "assembly": "room",
+      "part": "vinyl_teal_perimeter_south",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_south.obj",
+      "bounds_m": [
+        [
+          -2.67,
+          -2.3725,
+          -0.002
+        ],
+        [
+          3.37,
+          -2.3375,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_teal_perimeter_east",
+      "assembly": "room",
+      "part": "vinyl_teal_perimeter_east",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_east.obj",
+      "bounds_m": [
+        [
+          3.3375,
+          -2.3375,
+          -0.002
+        ],
+        [
+          3.3725,
+          2.3375,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__vinyl_teal_perimeter_west",
+      "assembly": "room",
+      "part": "vinyl_teal_perimeter_west",
+      "mesh": "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_west.obj",
+      "bounds_m": [
+        [
+          -2.6725,
+          -2.3375,
+          -0.002
+        ],
+        [
+          -2.6375,
+          2.3375,
+          -0.0012
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "name": "nova_suite07__room__visitor_ceiling_luminaire_housing",
+      "assembly": "room",
+      "part": "visitor_ceiling_luminaire_housing",
+      "mesh": "assets/nova3d/meshes/suite07__room__visitor_ceiling_luminaire_housing.obj",
+      "bounds_m": [
+        [
+          -1.85,
+          2.31,
+          2.534
+        ],
+        [
+          -0.65,
+          2.49,
+          2.586
+        ]
+      ],
+      "triangles": 220
+    },
+    {
+      "name": "nova_suite07__room__visitor_ceiling_luminaire_diffuser",
+      "assembly": "room",
+      "part": "visitor_ceiling_luminaire_diffuser",
+      "mesh": "assets/nova3d/meshes/suite07__room__visitor_ceiling_luminaire_diffuser.obj",
+      "bounds_m": [
+        [
+          -1.81,
+          2.335,
+          2.524
+        ],
+        [
+          -0.69,
+          2.465,
+          2.536
+        ]
+      ],
+      "triangles": 220
+    }
+  ],
+  "limitations": [
+    "PBR/soft area light appearance approximated by MuJoCo renderer",
+    "Decorative shells are not physical obstacles; original collision shapes remain authoritative",
+    "New wall fixtures are presentation assets excluded from sensing",
+    "Task reliability remains subject to the previously documented failures"
+  ],
+  "asset_sha256": {
+    "assets/nova3d/meshes/suite07__bedside_table__case_back.obj": "fef8c35457e0c8d5af5558d822e12c3ff9d33ae9865503a4443f0a0644cecbfb",
+    "assets/nova3d/meshes/suite07__bedside_table__case_bottom.obj": "d623de6ce1f291c71cb15de6ce352e758797fdb0613ee461cd9d2f64a4af0383",
+    "assets/nova3d/meshes/suite07__bedside_table__case_left.obj": "70979e290f5e0bae4857d7c230ddc7d9f73c4a686a6d28d1024302a17e3a1392",
+    "assets/nova3d/meshes/suite07__bedside_table__case_right.obj": "e6ed6270a1d67c706bf016093ade425e3d1922f7b333744be85ad37652291c8c",
+    "assets/nova3d/meshes/suite07__bedside_table__caster_forks.obj": "30f9b3ee55eaf061617ca5ef454f7b28448e5cd49e1975067596a3ea2e7dd7a3",
+    "assets/nova3d/meshes/suite07__bedside_table__caster_hubs_and_stems.obj": "dca6c9cf5d64b0ce4a08ec30857fb08cc47b4add620cdf582f2674608d383023",
+    "assets/nova3d/meshes/suite07__bedside_table__caster_tires.obj": "36392c9e684cdf41c7ab9679a40d1307164a034a2d94d719846efaa2b30e3c0d",
+    "assets/nova3d/meshes/suite07__bedside_table__handle_mounting_caps.obj": "6a2341e41a61f4a69ba409afde503642d3bb239c942a749c42e637c26f159e8e",
+    "assets/nova3d/meshes/suite07__bedside_table__open_shelf.obj": "5ab248ce974986fbc919f4b0a90b61bd56613477def41ab9246a5a98ea68bfa1",
+    "assets/nova3d/meshes/suite07__bedside_table__plinth.obj": "73596ae679d9a73f225e18be6527a59e784bb7c4c8f4d6d544a798ddda5d4c9b",
+    "assets/nova3d/meshes/suite07__bedside_table__tabletop_oak_apron.obj": "e85c9d7ca8abf844b740f8f29e78e7e66c3ee4e95668d51da2c1f0a3fc06fe7d",
+    "assets/nova3d/meshes/suite07__bedside_table__tabletop_visual_skin.obj": "b4184269b62bae4146c87f65148283e68aedf84a6791ed05f181422ff23e0bc8",
+    "assets/nova3d/meshes/suite07__bedside_table__upper_cabinet_face_visual.obj": "45eae21ac0849b762e9b16926501a763616db5df5c1df9d58a777e76806876ff",
+    "assets/nova3d/meshes/suite07__bedside_table__upper_face_handle.obj": "2dceb0a7d059d06507040491d73fb434e89f04088406dd5b62653178f641c6fb",
+    "assets/nova3d/meshes/suite07__coffee_table__floor_pads.obj": "6bb01a79b12057df4dfb26fd3b54626a627ec46d84b354df5ac9d795e126531f",
+    "assets/nova3d/meshes/suite07__coffee_table__legs.obj": "b56e97f32ac7b8cff8ffd27cb3b39e4ae30867f1ad07159d9cadb9e2870cf41a",
+    "assets/nova3d/meshes/suite07__coffee_table__lower_magazine_shelf.obj": "c9d9de8950942bcf65a795a3b7c1870f5b056027fad23cd8b80d6ee40c7fd8e8",
+    "assets/nova3d/meshes/suite07__coffee_table__lower_shelf_front_support.obj": "884626e052b0d8ee5ec0422c35ffb4b6dfacd210431e3b42bd3bf512f73853c6",
+    "assets/nova3d/meshes/suite07__coffee_table__lower_shelf_rear_support.obj": "6ab594848c0671a404215255a5011ad0d2ae7a0dcc8ae74d84bf7f8770648ca5",
+    "assets/nova3d/meshes/suite07__coffee_table__oak_apron.obj": "b4b692b1dbfed80228819c092d36ec86934d5808187bde91fe31a0bab16a5126",
+    "assets/nova3d/meshes/suite07__coffee_table__top_visual_skin.obj": "09cd01c1a79ab82e91be93437e5c5c65387b7d5eeaeaf0413d7bc2ddc909f1fe",
+    "assets/nova3d/meshes/suite07__hospital_bed__brake_pedal.obj": "ce563f7d619407e4089c77efe32964e725de1a428e9dd4ce9675da763836db34",
+    "assets/nova3d/meshes/suite07__hospital_bed__caster_forks.obj": "49dacfa6f110f6b0a2cc15847499e69376b1d406e30fcd76fb96513c56500186",
+    "assets/nova3d/meshes/suite07__hospital_bed__caster_hubs_and_stems.obj": "7a034b9d0b13954bd491c5d4b25f9e849ed3b506eceb2240bc1fee3e6c14dc2a",
+    "assets/nova3d/meshes/suite07__hospital_bed__caster_tires.obj": "778e1d32e43006ff70af3ca97043ed83183a1e29bdb407d76911d5c44c1624a7",
+    "assets/nova3d/meshes/suite07__hospital_bed__chassis_inset.obj": "0b41cabad69491839f69d972da2453e8c92edccf392917510465f84a2d7d9e81",
+    "assets/nova3d/meshes/suite07__hospital_bed__deck_teal_bumper.obj": "443a66a47a562d6f5d6738974b3d837b793d5e64739a85cc2dc1171b1b744d8d",
+    "assets/nova3d/meshes/suite07__hospital_bed__footboard_chart_mount.obj": "9cc7f764e6988aa83759a93552ecf339bd256086ca16e90d609ba26c37a6c73e",
+    "assets/nova3d/meshes/suite07__hospital_bed__footboard_identity_card.obj": "e5ca378248baccafe4028439d46687777cbc7497030b7716e4be244076e573b6",
+    "assets/nova3d/meshes/suite07__hospital_bed__footboard_identity_text.obj": "25e8d7aa025aae1c2aaac845b522cc1e0fcb4129eea87ff14bcd8f2d3a01dad7",
+    "assets/nova3d/meshes/suite07__hospital_bed__footboard_outer_moulding.obj": "a9dc6e4a8f2e6f51b280fc5c740bcb1053e7d1edb38d88601dcab9afff5e2e6a",
+    "assets/nova3d/meshes/suite07__hospital_bed__footboard_teal_insert.obj": "452e2124fd970d5ae30b3118f86cb0d02fcdca24509d267aaaca7c0f6cd02609",
+    "assets/nova3d/meshes/suite07__hospital_bed__headboard_grip.obj": "23c899cb4965b511462e1a10aae5a71f688fdccd48d76704512816f029c1e538",
+    "assets/nova3d/meshes/suite07__hospital_bed__headboard_oak_accent.obj": "8fff61d39d046aa195d9df890e2efe50f7f8ce619bd1622d3c3a752253077ee4",
+    "assets/nova3d/meshes/suite07__hospital_bed__headboard_outer_moulding.obj": "726b69120eebbfd740982871f51476aec9f7f01dbaa7b931bf3146c7fdd945a3",
+    "assets/nova3d/meshes/suite07__hospital_bed__headboard_teal_insert.obj": "c557dbd7d90c44c8f98bff075e11dbafc928b3cfd64e7568d30af69fca918746",
+    "assets/nova3d/meshes/suite07__hospital_bed__left_lowered_side_rail.obj": "5991dce820d47dc9d295b7824b5a791e0327fdecf819b146bb692d403a2d3c7d",
+    "assets/nova3d/meshes/suite07__hospital_bed__left_rail_lower_member.obj": "c3c3a2c5241e37c9ca89098a7654f02b414f9f64e4dc6ef6191520c08aafd6bb",
+    "assets/nova3d/meshes/suite07__hospital_bed__left_rail_pivots.obj": "7946106d4253e98e8a36c1a7f543972941827fcd5a8181b2bfa9af3f13661fea",
+    "assets/nova3d/meshes/suite07__hospital_bed__left_rail_release_housing.obj": "c1d2d8caa854afd268d0c91cc7162b29b1c8220de4872d1354af8ac2bd7fe11d",
+    "assets/nova3d/meshes/suite07__hospital_bed__lift_column_lower.obj": "6dc66df9417a02f365fd35460d43b4b9e61fbb1ef9ea04ea1eba10d78224ba58",
+    "assets/nova3d/meshes/suite07__hospital_bed__lift_column_upper.obj": "dea19f21d3352f2585fd4c1cfaf8b89ec283ed781c88813581058e06af8c8b48",
+    "assets/nova3d/meshes/suite07__hospital_bed__lower_chassis.obj": "0e0929f5b1dd414399d865009ff4aaee246ea8cd048ec99722c6fdee24efd3af",
+    "assets/nova3d/meshes/suite07__hospital_bed__mattress_deck.obj": "d780cdaf15cc7806b1b0d204574bbca5ba27463e6159bdc03e0a0b17dee39503",
+    "assets/nova3d/meshes/suite07__hospital_bed__mattress_lower_welt.obj": "722d72823add4da5c40a5a7b6372b3d05043f4d8d9ab6ab46541c248a68155ae",
+    "assets/nova3d/meshes/suite07__hospital_bed__mattress_visual_cover.obj": "423e6dd9e7a6c5be09a26982e482f3f0ab0e1250c270b5fb8c3daa16c18e1a14",
+    "assets/nova3d/meshes/suite07__hospital_bed__right_lowered_side_rail.obj": "cafd490820cbd29227136ac8e56fb50d72793ff72e59536dbed374a7bd996edc",
+    "assets/nova3d/meshes/suite07__hospital_bed__right_rail_lower_member.obj": "e0c8e19ee3f8d5bfee673ba2c58218af682fce98261551f8a01c4bb332addca4",
+    "assets/nova3d/meshes/suite07__hospital_bed__right_rail_pivots.obj": "542d5ec33f7c3d4692b222bc69c394cc9faa5d788960a92434dfd6ac617a0cc4",
+    "assets/nova3d/meshes/suite07__hospital_bed__right_rail_release_housing.obj": "f3be67f11caca560012dcea5f0736f10d0876d0d6425659397e213f553372297",
+    "assets/nova3d/meshes/suite07__laundry_basket__front_label_backing.obj": "f5368f092d86f29b0a183058d47ec80e1a796eb7c8c56d0fdcf8ef56699eeda8",
+    "assets/nova3d/meshes/suite07__laundry_basket__front_label_caption.obj": "3cbb675a0acaeb9d5b8967a1f28dcdc757cd8171dcda5beed4fa9a97170563cf",
+    "assets/nova3d/meshes/suite07__laundry_basket__front_label_number.obj": "d29511fe93b03328354d2ddd16b5a353c1a9b520158e081a15da03848173404b",
+    "assets/nova3d/meshes/suite07__laundry_basket__left_vent_recess_decals.obj": "afbfee5c5907414254c8c176ec9b1e6ee37a90c5ee4a74e293b789a74f4e892c",
+    "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_back.obj": "1bafed7a691efd0d17ee28b506afe8eadf296e7b61976a0e59ecb0fb0060cc98",
+    "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_front.obj": "1907ea1f1866f3c6afa122960b11ff46a6c5803a59d3788e54167018b01bb06a",
+    "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_left.obj": "54b981dd1f401f5db625447ba548fb6a217b2eb8da768b63a0b93bebb0d42530",
+    "assets/nova3d/meshes/suite07__laundry_basket__outer_skin_right.obj": "eae93a3c3e6800e4b790a7b8ff899afc85c1d448fc8a8f6a058eb552071aca6f",
+    "assets/nova3d/meshes/suite07__laundry_basket__right_vent_recess_decals.obj": "39ebfe0b0191741686343d3fc0ac5802e52b46e926c66fa1a7aeafe868bdef49",
+    "assets/nova3d/meshes/suite07__laundry_basket__rim_back.obj": "4570cbe8d9b58832b56aac03e6e54b461b6f16e9f75dad3a7db35bb9195a4a2c",
+    "assets/nova3d/meshes/suite07__laundry_basket__rim_front.obj": "893759791aa3c5c63a6689e664844965e4fc7aa7f08ce1be11787a9997be21b2",
+    "assets/nova3d/meshes/suite07__laundry_basket__rim_left.obj": "7db26bd2f50cf20c5a9ab07a3115be853da7dafa4fac55b8c444973f3091c604",
+    "assets/nova3d/meshes/suite07__laundry_basket__rim_right.obj": "f30b62d84c37930c25a7d1768ba94bfecd257fbfb046e00b02e008adb68ea86e",
+    "assets/nova3d/meshes/suite07__linen_shelves__bottom_cap.obj": "670522124acc17a41d55b743ab01989378a81b8f5ca9cbbb5290c90f139bd069",
+    "assets/nova3d/meshes/suite07__linen_shelves__left_upright.obj": "38337ae2b8a2eead4168cfa6e44b65f9b685ea3c6fe804e299b5530d3e834cac",
+    "assets/nova3d/meshes/suite07__linen_shelves__linen_header_backing.obj": "e047c79b9b7522a45a05e57f7e04e51b84cfc2b0813bba81f446cf356b38ae99",
+    "assets/nova3d/meshes/suite07__linen_shelves__linen_header_text.obj": "8591834acee0d4c32dff8da8044ffc594ab8db24e1b60f1bb402e5b983263b9f",
+    "assets/nova3d/meshes/suite07__linen_shelves__right_upright.obj": "ef628cd10074e8227ab1f44684ab85b1f70d499bc0faba95b0322dc5a73ebab6",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1.obj": "eeaec4f1ca8eecf558f83eb0cdb48631bdd1be693b54b22cc03c174b619a1c16",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_1.obj": "549092cbc15abd57a1a77a6fe6a09f056a0c96748e23086d8bc6610eb38349a0",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_2.obj": "40bcfa581f1075ceb639d4105b70b6102cce4ee7b06ce52c1f3c0e43fa07294a",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_3.obj": "9d849040afdf11c7ccceedbcc45f9dc0943c1740fb2e5505beca5f87956fec59",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_1.obj": "d14ece7b705e4ea0007d382c3378bd30a490a7a40e15a2fedccf8361d5c045e2",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_2.obj": "8b6c30726f71d3091f2054eced023a4b0f71d04abae504b9faec3a075e885611",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_3.obj": "7371fac8f01713a76107aa2d67b598323bf82e98d918e990465791728441d7dd",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_oak_nosing.obj": "a01a58c94095de931ec8a70a094d51946b6956cc8964869219ff220c3dee25fb",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_1.obj": "7f471691f6c3c10d142127044bf158308478899ba0abfa45fce7615fafc4d2bd",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_2.obj": "7f38b591593a7ca7b11757a3806f457dc7776637168b6b9ef763b3e4b1579c29",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_3.obj": "e241fce61e75be235dce63081cdd5f3cc4ddc08031fdb8264d771b8bcecd140a",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_1.obj": "f95f807f5e113b8d94678e4bc058ccc68733cfc006908221f33160705be7578c",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_2.obj": "c25550924869f8f456dd4f1cf8c652298bf2d21cb71b9f675e6c8ecf8efd1d1b",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_3.obj": "2965b146e09be648d35c548d8385d537e072c59c5384a925a578c2adeb59ec20",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_1_support_pins.obj": "e071b32a940e279c0df7a7ec7101697458f14d33954f1133dc9fd42516dd0e1f",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2.obj": "377d60dc566a08f6efa098b2bfcef34b72768d0f5f744ab4eb0ce8a469c788a4",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_1.obj": "c802af7b88cff837b0d4928ebb0057ba1f7f5ab0bf4958c79b9655b6252cf201",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_2.obj": "0616488deaa22a828454972a52f388a0b283eae262be2ddca0fb80ffc208bfd6",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_3.obj": "4970b4bd6b55daa2b8ae6cc960459f27d6fca7718b7626e6a40151c33b964688",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_1.obj": "46107ea3f95d993cede34f669b9db86fa03239f665c02d0c3203703bc22529a5",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_2.obj": "04dae68084b8fa0eb19469e09a32a82e49ce6fb17ee5832c504479f7b2d8f1fb",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_3.obj": "cefbacd3df20344d56e8f098ce0352b665a623750f065ba4d1c23f0e01826b92",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_oak_nosing.obj": "77f8977e83c74fb022a3b9fc15478e053fdb81c751943166076ed94935d5d45f",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_1.obj": "97e2649c86baa40530b3295d7cb4ee54b442bbe3acce83e2a4ada988f8b8e83b",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_2.obj": "b4ed644996f5c4912770e349d714b5b46a1f735ba4653865d950f1c9bf03907a",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_3.obj": "1b693fceef604e085efe5b815b6a06f63d6f08bdb68fddaf95e5c7392e4d1ce5",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_1.obj": "4348f97098945cd00064e44692a5dcaad58bf9a792812d577cb8c4d9fd24fb86",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_2.obj": "19d5c1a63e23f6ae4bdd76ab6d0db68eefb9d660e2e69e9d53156c8bf2d3b98c",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_3.obj": "340beaccf5deb10b9a8c27e122e5fcb7376daa598c5e47306b3372751b691d23",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_2_support_pins.obj": "f23f0d2f0ae6c51304abaa1abd33f91128cb766c00b3d59789d4d7ce92f90fb3",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3.obj": "344967e76f322a552ba72960984d05d4bf7e5893a69e3db6c8013bf64a22406b",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_1.obj": "cdf851272816e6810d0f9a9b7569c8b3b7ad09dd792e1c0213315a550ceac358",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_2.obj": "30665217f78c731df52f1f044bd070e7d2dfded4d0c905384fe418ddb09b74a7",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_3.obj": "03d68e68770012f837f38cf4241ebbdb00687a6c87783c8899f3fb3f6c248948",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_1.obj": "448a5af2ddbfb1518836a272ad7ddb89fc28c0f43968c1399abd63d41e6e2fc9",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_2.obj": "6146a192e72a5bc192a9bf03a3d05256f46d79ea5ec67e64301bce4e41d8b9b9",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_3.obj": "49f7244a2573823c2838d2d7526339b8ad8f32d2bdd8c4a546aae8bd3d19ee99",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_oak_nosing.obj": "b4eba7ab1e6c64a5743f7d89349fd76e180bd3506d6cb7b341977de03908f7f8",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_1.obj": "0ded8e4d345227fa0ff1672a96382401fa0251cb2b14816861d71b33c26a36f9",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_2.obj": "46847fc5a572bab594deed5522b10caea2ee21596d4dea94c14ea791f468bed6",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_3.obj": "2f2237c84456bfcf35d043ee0c468767a2cc7655170e097efa173e3d28168d56",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_1.obj": "2ecc889109297848acbd025c1ce94436942c2fa067f982fef9e0d4994c59c6e9",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_2.obj": "8bad046da289bd754bad957048f0ecb7a72f362b5a977b7f5b4a2dfe11afd928",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_3.obj": "534878687fa297a78b9edaf5d0855cf70db531f98a7166bf4acff6911933afdd",
+    "assets/nova3d/meshes/suite07__linen_shelves__shelf_3_support_pins.obj": "5f70fe80919f1d82c016f278ddd24cb5f1e7270240679cc5ebed0fe6b22891c0",
+    "assets/nova3d/meshes/suite07__linen_shelves__top_cap.obj": "8eb838fc219094f400d80affd89d14710fbc731727ff98f6de2123e5db441ac8",
+    "assets/nova3d/meshes/suite07__linen_shelves__wall_backboard.obj": "f67b93e5364657b04c7e5cc7e223d9a9f8f2582d1f99f612b3c9f4def00ba8a6",
+    "assets/nova3d/meshes/suite07__linen_shelves__wall_fixing_heads.obj": "23e9efda2f5336aa68a00fc29b1b87b43cdcdc7fd5b90e8fba875771f1fd91db",
+    "assets/nova3d/meshes/suite07__medical_cart__case_back.obj": "02c84f2cd4a40b4ee9d9e02acf1b404f03b11e1829c2c331c1f4f0473a20a5b0",
+    "assets/nova3d/meshes/suite07__medical_cart__caster_forks.obj": "a32cc3853c3366a2ca18774041f046d3a32fe856bfc580beb36cb433c0d6537e",
+    "assets/nova3d/meshes/suite07__medical_cart__caster_hubs_and_stems.obj": "a259d3ce9a4b4290bc944005b80d064e9f9324ecd6f584f382912dd34db201bb",
+    "assets/nova3d/meshes/suite07__medical_cart__caster_tires.obj": "ff85bce263b3c637787838c41490fa208dc3e6f2806c21eb3db217134ee7e416",
+    "assets/nova3d/meshes/suite07__medical_cart__left_case_side.obj": "bf6f1865381dd62843134c2a96fef0d923c5e5d4dde440dabca901717659fac8",
+    "assets/nova3d/meshes/suite07__medical_cart__left_corner_frame.obj": "a12df40cc7dec1976edc1857859fb7490f85aba1c4d18969d6b31aea0af98596",
+    "assets/nova3d/meshes/suite07__medical_cart__lower_chassis.obj": "d5fc524e7115c8cb62c9cd48f1f9d59f1963814849253a07177e658de348e6e1",
+    "assets/nova3d/meshes/suite07__medical_cart__lower_open_shelf.obj": "1cf460f3294a6c635bca68d67ca99b2243269bbac580dddb7c816dcf7bbcd15e",
+    "assets/nova3d/meshes/suite07__medical_cart__push_handle.obj": "b51708c0d401ef2b2827f3de91de834b7a71c472f7f063f0802dbb0055729463",
+    "assets/nova3d/meshes/suite07__medical_cart__push_handle_grip.obj": "b9aff5a17f10676287e4b0aa2ff3998bc520ebe59a055ae0e84ca5b35beb968a",
+    "assets/nova3d/meshes/suite07__medical_cart__right_case_side.obj": "bf52fcbb6ad19db8a9ee4a644cf4aa2eaa04107d0d66d12d174a14d563914b8c",
+    "assets/nova3d/meshes/suite07__medical_cart__right_corner_frame.obj": "cea11ac9ca920a81c94870ef87b53c3545073d9ee5d75be6bd318bb74487d105",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_handle.obj": "339a61ebe815f3e88320a95cc5b7f98a0980dd9fe324c25f683fcf0392d5da60",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_label_holder.obj": "b8a0732fcb8bd97b0020f0085d01679938a4e19cc6b95d4cd58c91c6030ee798",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_1_visual.obj": "4d7f7d0c4b035f9dcd4380846c24167ba19a6fa6585b0580fdd8c73e07211593",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_handle.obj": "0c77993d76bd56b4db6881a0a909eeab70e040a062ddebbaba1703f7c5a53ad9",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_label_holder.obj": "fdb26f0d0b989e3806cc4941f8c4eb96ac3b3361bc29508b371940286928f457",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_2_visual.obj": "8097b0b570cd34b69cc0df4723285b1179d04341e1da473907aa0173c5cc3378",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_handle.obj": "3315bbb4816a03f48846e9085255cf283a8925de16a475ec046f90044254b39f",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_label_holder.obj": "3f005440f6d5e419a5bad4bf18a52e34aeea384e175034b7b775dba69ff5ffc2",
+    "assets/nova3d/meshes/suite07__medical_cart__storage_face_3_visual.obj": "eada658aa25dc960099b67cd5627a35943e69f275cee8d0e89663048d19505b5",
+    "assets/nova3d/meshes/suite07__medical_cart__top_visual_skin.obj": "b3583ec7b9bf4df0595eb9d89f356669f8dd67fa2403e15da93eeb2c7dd048ae",
+    "assets/nova3d/meshes/suite07__privacy_curtain__ceiling_track_outer.obj": "e6af9d2ab1b152037c4b3e59edf2891e36d30d393415000c214d433e5c457bd2",
+    "assets/nova3d/meshes/suite07__privacy_curtain__ceiling_track_shadow_channel.obj": "3629b3190ca66018051780fd0306c93fbdf1c1eb3edbbc939cc03d4a8b29ec44",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_1.obj": "772eb74a71d227e423abed27249816bb31b4963291bec1195e507433e42fbbd5",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_10.obj": "1cf07b1b450b65a0cd784577902427d6a29be36db9fbe70dc20c4a3ef60aa37e",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_11.obj": "4049283cf246ecb138910fa33c258d233744604ca9f0e519c84b591a071757b2",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_2.obj": "07bb4259734d7bce139a8494d62b73943c63d5892b3ba215250843614ac3221b",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_3.obj": "ea7a7c019a0d805fa544ee441af48ace796a7eae14b6a324c89cb72169dae147",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_4.obj": "c65dc75968802f27fee52777f9499de51a7016f6557b6c005ea563db39654ae4",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_5.obj": "bc8bc76bd0f9fe6e0bc58857501fac158d2e4206b380d202887514961aac5efe",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_6.obj": "95acf513dd4b372ed77564d5599cfbe71e34dd04ca9360a0db6e47bfb6931841",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_7.obj": "f2e992d334bf16ef83a8bc6dccee771e4a56ec1156e72acaca266cc2eece6434",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_8.obj": "7feed7bfce620b362364726b1b0db00a6f970d8329d4a97590bf69e585361403",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_hanger_9.obj": "24822af57fe446f07b95660e6ef474c5d7705ec99a651191ab28099f277cfef4",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_tieback.obj": "ae02965f5a4dc66fea44ef6387fdcf6711bc9aea6db4d4df574e2967d9bbb7a7",
+    "assets/nova3d/meshes/suite07__privacy_curtain__curtain_tieback_wall_anchor.obj": "7f8f0e5f4495d2bf8c195c5389005e9980995766b35defcad3bbfe313841405b",
+    "assets/nova3d/meshes/suite07__privacy_curtain__gathered_curtain_fabric.obj": "cd29be36d53d5ab04fee101165fc27a1ed7255e56b388f0ca8cebb8b6d8b2b75",
+    "assets/nova3d/meshes/suite07__privacy_curtain__gathered_header_fabric.obj": "6e1b2353846da8f8c00308d5ae8fae28706c6b186719ec1a16cc12bfec3eef94",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_arm.obj": "009dfabcb8a07ffb7f3f1af8181fc8ee810777cf64633c8b7a8ea121fc6fc9a1",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_brace.obj": "ceb16e46c9651852a4630d969020446e45b7e4982fcc63880288dd42d9391e9e",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_plate.obj": "984526260c2196471a57b42c8ce9890566d8e9dbfd4385546a998d1feb86ffdd",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_arm.obj": "4cecb0998a183486064b0842c552348ff91ffd838e57e47a1f4bca37c8cc2fdd",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_brace.obj": "66730a290f8e692d880b932455fc02c38773efd5d3d4a73774b526726b1a7116",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_plate.obj": "ed0955b27e8a0bac5139c2f97d78b0549dfeec6ed21b7a18e9ef82977889ad66",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_arm.obj": "ca1e2abdf26f8e012b0bd5e64f75327dc29118ce1ae73d737f08a96fc66851bc",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_brace.obj": "142c959531b19900c6847614735474570a327c9f9ab4775cd53b1589b38a425c",
+    "assets/nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_plate.obj": "4e50f2dccba283494e6b7b014aabfd6ef5e0f7d02d6a43ffc169cbd78f1d086a",
+    "assets/nova3d/meshes/suite07__recycling_bin__front_label_backing.obj": "89ee64c9f7127bcdb03a3189ea4c710a317d02efb4f003b0ec224ee812473239",
+    "assets/nova3d/meshes/suite07__recycling_bin__front_label_caption.obj": "9200361cb0e228b0acc147e8e0a6a529f1b47b0f106c14f8893ce13e55f4e5d3",
+    "assets/nova3d/meshes/suite07__recycling_bin__front_label_number.obj": "9667a62702fdb2b3b73ed8ae6aec1288104b6e0eb852f83ffdc856459333f714",
+    "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_back.obj": "a2fd3803cb071040b72b0939bef0f8183779a14d3c51f138df8e0d9f88f4bae7",
+    "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_front.obj": "a9583ad12a98db379ad66e0dd4f6e8abe2bac33ad315434f8dd2d446e17d050f",
+    "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_left.obj": "cf1f3ecc0062b79048099babbcf96104f56d29ace6f24f513727c8fdeb12401a",
+    "assets/nova3d/meshes/suite07__recycling_bin__outer_skin_right.obj": "99156b5348951335de03925c8bc49f616de4f179f871716a9838e85b76017aee",
+    "assets/nova3d/meshes/suite07__recycling_bin__rim_back.obj": "b78c4e51540b52d46612eed1d578f4b46a9559e8297bf05f38631b81e7f2b5d5",
+    "assets/nova3d/meshes/suite07__recycling_bin__rim_front.obj": "6545f9d74af530abaaf3827cf7d0de1e02627cbd8398a28ac9507d8711783df1",
+    "assets/nova3d/meshes/suite07__recycling_bin__rim_left.obj": "07040748cc168884cd797bff4c1c4609d37363d954208596b82d5a4d6027863d",
+    "assets/nova3d/meshes/suite07__recycling_bin__rim_right.obj": "fc6ba0bfd0575098af212943be225f394dec74ad4ed05d18b86b9a963419113a",
+    "assets/nova3d/meshes/suite07__return_tray__floor_pads.obj": "a072839b6c404796642c4f64f45a89cba5520c4bef4622d85b348c630fa58d69",
+    "assets/nova3d/meshes/suite07__return_tray__front_label_backing.obj": "9e34727b4fdac7f56a2344eef171b33a237620c5d0980c13e21908a45626768b",
+    "assets/nova3d/meshes/suite07__return_tray__front_label_caption.obj": "f7b1cc43d398c287da33e3fac81193e1800725d8d6dc261e15567c5852818d01",
+    "assets/nova3d/meshes/suite07__return_tray__legs.obj": "c17152785d674188113a4a053cf7265eebf2efc34bbb9c103cc30cd121618bbb",
+    "assets/nova3d/meshes/suite07__return_tray__outer_skin_back.obj": "3d581b070e1a9e0fee2ddb7e93a28958005c81c370512794b1635c3265659666",
+    "assets/nova3d/meshes/suite07__return_tray__outer_skin_front.obj": "7f2a6f783789fbd4a7150c704f584f02dd14d9d5c63a1da39a1cb0963b444262",
+    "assets/nova3d/meshes/suite07__return_tray__outer_skin_left.obj": "1b4879819ceedc2cb92ad75139c4c7f19fa6eee94c1a88779551fc9f70e58bfe",
+    "assets/nova3d/meshes/suite07__return_tray__outer_skin_right.obj": "4c075e4a4ac2b2fac4f6c8736f0120ff9313cb95431fb635a0fdeb03b3cdc0ed",
+    "assets/nova3d/meshes/suite07__return_tray__rim_back.obj": "8e042e619390820e92eef811c3293d16f0c88210cc36935da868504a72e0ab54",
+    "assets/nova3d/meshes/suite07__return_tray__rim_front.obj": "c6265634cb62738e342f6ad948eda1d8cac7d97086a9086e2d2a8acca3b80bfd",
+    "assets/nova3d/meshes/suite07__return_tray__rim_left.obj": "800544e05804801da11b9558ebc48f8825bc17b0f3bc7516748c8db9ee1c50ab",
+    "assets/nova3d/meshes/suite07__return_tray__rim_right.obj": "3be472755d0f37b3f5e6e67a1555cc37df347454014b5882aabcb78de1d381e5",
+    "assets/nova3d/meshes/suite07__return_tray__undertray_frame_back.obj": "cb389d1da6f1c164337661bf7ccfc50b0e12e819812a5f276c562c0a5d02a0cf",
+    "assets/nova3d/meshes/suite07__return_tray__undertray_frame_front.obj": "f3a2aa1b8cb7a1033a7d9fe3625458f88001cdb39d75c38189b4f908120d77a4",
+    "assets/nova3d/meshes/suite07__room__bed_ceiling_luminaire_diffuser.obj": "602bae39a86c2dc4a9c2e94e8eb7d7c35d9a2ab6c83dad2411c4d9a6514264e1",
+    "assets/nova3d/meshes/suite07__room__bed_ceiling_luminaire_housing.obj": "48e2ee30dca15cde5fd6922802e6578a2d4c1a35832631ed6b54c0a6c743f807",
+    "assets/nova3d/meshes/suite07__room__care_board_mounting_caps.obj": "e3d6d54205d70a3e5774a9cb1a03e0a8cb9498f5942769415113246507f1c4ea",
+    "assets/nova3d/meshes/suite07__room__care_board_row_1_label.obj": "1fabc1fa4e9ff902b7bbcbf4060543e22fad143ed13cb16eca07fdad2529c4f8",
+    "assets/nova3d/meshes/suite07__room__care_board_row_1_rule.obj": "dcf2b2806a6e208ad8f5bb316c07c7dfeea82bf9550ba14a672484038c8deaf6",
+    "assets/nova3d/meshes/suite07__room__care_board_row_2_label.obj": "a9c55eb6438617126de11fd6e0874e7311db4114af6b6facb46cd7110aac8b7b",
+    "assets/nova3d/meshes/suite07__room__care_board_row_2_rule.obj": "6f204dd71e0b4f2da4f1923cb2a3e5c58eb944aade775fa5674684eaadc21259",
+    "assets/nova3d/meshes/suite07__room__care_board_row_3_label.obj": "a56592b9f623038edeea7591b7539ba7038a673662b51152826d61181b5ad930",
+    "assets/nova3d/meshes/suite07__room__care_board_row_3_rule.obj": "a460b496fc5796f8fcef9220760347fb7c66e92c8d118f770ad9b45dec2c4d5f",
+    "assets/nova3d/meshes/suite07__room__east_glazing_lower_frame.obj": "8bbac11c8fbd9ae63f26ceff9cb93cd8823ed9b9482371b3882d6a4799d1d5a2",
+    "assets/nova3d/meshes/suite07__room__east_glazing_middle_mullion.obj": "e7aac0fe0f74122d4dd66bd28162ca3b806ec6de85655fd80d0811bee8a6b534",
+    "assets/nova3d/meshes/suite07__room__east_glazing_north_glass.obj": "bc8f3725970a91d0bcedb28f00296a6b84ff9572b7dde62c550b1ee08535e3fe",
+    "assets/nova3d/meshes/suite07__room__east_glazing_north_mullion.obj": "c3e3c604c5ca4e8c145086398995548a2aa900788abe845fbc1bb3eba688b0db",
+    "assets/nova3d/meshes/suite07__room__east_glazing_south_glass.obj": "37aafb481b57a61c0743aee304053d51f8dcf3e3ab01571663f24b4a424df092",
+    "assets/nova3d/meshes/suite07__room__east_glazing_south_mullion.obj": "7ad6dc0157a6d41d13bf885091c720d799e512a7969fd6cd367f6f8829ab4964",
+    "assets/nova3d/meshes/suite07__room__east_glazing_upper_frame.obj": "fbf0b778b27ad8eefd192314a85677abf3c9c0367b86ccb5ee8d23fb876122f6",
+    "assets/nova3d/meshes/suite07__room__east_wall_coved_skirt.obj": "e8fbb3d4cc32b76bb3e29bdb9f6c6692638ad173e772e11b7446728dde74867d",
+    "assets/nova3d/meshes/suite07__room__east_wall_north_pier.obj": "2399258c0768bbc01ccfeef375f9ef1237ff3b526e3fee8e0749e69f94a19bf1",
+    "assets/nova3d/meshes/suite07__room__east_wall_oak_cap.obj": "59143393873e7f3f53f95b7ca05eca168bb4edc2f8dc6f67c60b97f8f618b05d",
+    "assets/nova3d/meshes/suite07__room__east_wall_protection_rail.obj": "11a246f33a80bd8600364364eb2b7c77454bbf659c35504217571a9e4075e357",
+    "assets/nova3d/meshes/suite07__room__east_wall_protection_rail_backing.obj": "b3e32bee35ad451ea1e63cb6fc04d2d1a62bfc907078f0c087921db15b193119",
+    "assets/nova3d/meshes/suite07__room__east_wall_south_pier.obj": "1d62998a70f92d7aa3a9b07446bd9010e3d58bf5fcb8d536eb1ef21655b407e0",
+    "assets/nova3d/meshes/suite07__room__east_wall_upper_trim.obj": "c630299ffbe35ffc84bf92590d85186b3a16e04f25867e77169f4157dc564379",
+    "assets/nova3d/meshes/suite07__room__east_wall_wainscot.obj": "0327f8ad2066f1f399b328dd2a0e8823d46655602062a23cfa6da1c0788c113c",
+    "assets/nova3d/meshes/suite07__room__east_wall_window_header.obj": "bdc5fa9049ccc0b24df64267cae520e89329f3029144d638cdbd17e902f16d0c",
+    "assets/nova3d/meshes/suite07__room__east_wall_window_spandrel.obj": "c5f2ded4709a671c0e2c7e6e8108275c3a0737cf29d2e53a3328a694c3b8cada",
+    "assets/nova3d/meshes/suite07__room__east_window_oak_sill.obj": "2973e5d9296157ab890bde30aa781ac17137a6e1a65ca1de0e61c14af6590b78",
+    "assets/nova3d/meshes/suite07__room__north_air_grille_fasteners.obj": "6e2cc2d1a82967edeb266143f148a89f019d04e32dcbeca82c02410d8d23c23e",
+    "assets/nova3d/meshes/suite07__room__north_air_grille_frame.obj": "e49e04279b454f6bbf7ee3fd54ff51467399b7ca0998109f0ad46f1510cf9a30",
+    "assets/nova3d/meshes/suite07__room__north_air_grille_louvres.obj": "f27434361aa75d142748292003e0bae2b2d782c80c1b5139d736fb3b41d27777",
+    "assets/nova3d/meshes/suite07__room__north_air_grille_shadow.obj": "a320c43121b2f4e94ef87526939be297c48a5750f5a9da64a16fc3f701d223f8",
+    "assets/nova3d/meshes/suite07__room__north_patient_information_backing.obj": "1d78429043084a37ba379a2f70547f7a1e61d54510b951ae2a712e452da14dc2",
+    "assets/nova3d/meshes/suite07__room__north_patient_information_face.obj": "d70f8effecb741464fda934b7add38a9160ce72ebc0e28a56c00bfb81c3cedb3",
+    "assets/nova3d/meshes/suite07__room__north_patient_information_header.obj": "eebce74bcdcc36863793f2504ab788174df9146b52fabe37ce8248597ca63a76",
+    "assets/nova3d/meshes/suite07__room__north_patient_information_title.obj": "2b36a16020f3385885f63c2fa3f2fd8904452a5bd83a5a7f2074e15ecc4f800f",
+    "assets/nova3d/meshes/suite07__room__north_wall_clock_backplate.obj": "74edf8206a3ef1a1fceaa540c075cfa4a1ed49828090361317405d0aab503608",
+    "assets/nova3d/meshes/suite07__room__north_wall_clock_face.obj": "07ab9bffb74ce50750ce18a1e029f13f06f7ed141a45325de3e619b089d0fa11",
+    "assets/nova3d/meshes/suite07__room__north_wall_clock_hands.obj": "8ec80a08fa7f3428f47d4b7fff01c1c3a9515003219565824b527cfdb44d398a",
+    "assets/nova3d/meshes/suite07__room__north_wall_clock_ticks.obj": "845445ceff214f9ff7440256d14baaffd34e6a1208583990bedf16ce2010c286",
+    "assets/nova3d/meshes/suite07__room__north_wall_coved_skirt.obj": "357d6adc1a8a416154c3776daed38fa6e3133c977e7522cac6a5ac0a4ee2ffa9",
+    "assets/nova3d/meshes/suite07__room__north_wall_oak_cap.obj": "45eb950f68123e4ceef64930324e0d9c5a338f466f8caf61723a2d25fb95b742",
+    "assets/nova3d/meshes/suite07__room__north_wall_panel_centre.obj": "c01b371bc882e31720ad32d15a9065055ecc3dc7c023694c073d12521aaf86f5",
+    "assets/nova3d/meshes/suite07__room__north_wall_panel_east.obj": "d57bfbacd8ad7c3e0951d734b6f21305d74e2bc654c4208dc57030e2ce41844c",
+    "assets/nova3d/meshes/suite07__room__north_wall_panel_west.obj": "685f3a448aef8671055f5a6d35e54b30a13d76480172f20a42211f36153d3bab",
+    "assets/nova3d/meshes/suite07__room__north_wall_upper_trim.obj": "52499b188076c5f613f48b0c60df35875864aeb12294ce9b4323efee96ab2b7e",
+    "assets/nova3d/meshes/suite07__room__north_wall_wainscot.obj": "5ed18143641cb13af5c72debd96307dd097bdfa6bc9335f5be210e4549337b7f",
+    "assets/nova3d/meshes/suite07__room__vinyl_floor_visual.obj": "8e3fbf42eb9bdd59aca857949d7b93e2b9879899cecda3e0c71cc23c3aa26b9d",
+    "assets/nova3d/meshes/suite07__room__vinyl_heat_weld_seam_1.obj": "318960ed586070af05c9b7209fe2ea57f525d5a7f780e45d2c44005304f653a7",
+    "assets/nova3d/meshes/suite07__room__vinyl_heat_weld_seam_2.obj": "a0f823432a6d682783d98bd72074bb9533a05de526eea1c5c8c9344915907ebc",
+    "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_east.obj": "500fbc86203fcc2aa28e38eba32debf84ca134ea1ee2b986ae6992b2fa7c00b7",
+    "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_north.obj": "92998916993c91c3b6141fb921693e22f046a04fa9b5f92bcc4b716bec5f0bfb",
+    "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_south.obj": "f0f5acfbccb81fd24dce2a8e5cbab93cf58f17deed5d7656499ed6f42b2d8b5a",
+    "assets/nova3d/meshes/suite07__room__vinyl_teal_perimeter_west.obj": "c13cb1932e55b8a58683e8975597d62f41ee0c8f441adb2c11fec5f2b3edeb13",
+    "assets/nova3d/meshes/suite07__room__visitor_ceiling_luminaire_diffuser.obj": "4670e5525ea9af26e104fc78fb0cd2e2c0312fa9233f86988617dd94f261dd4b",
+    "assets/nova3d/meshes/suite07__room__visitor_ceiling_luminaire_housing.obj": "6a491a7f3560a7fcb35a98b4460491da93c0ca524e76bb0ce5ec890676071a3e",
+    "assets/nova3d/meshes/suite07__sink_counter__backsplash.obj": "77ff802e2b01c96dbb467834a2f527167fc2ad29cd2775460a72f3514160b470",
+    "assets/nova3d/meshes/suite07__sink_counter__backsplash_teal_cap.obj": "99c8c2c04123b076a503eddfc247e6897f976952fb289bdfe9a95422bfe1ba1e",
+    "assets/nova3d/meshes/suite07__sink_counter__basin_drain.obj": "8f6a5d56296d043e3f8b1a542735bf23066728ae84515c750df881795873b73c",
+    "assets/nova3d/meshes/suite07__sink_counter__basin_inner_surface.obj": "8766a178384cd069d6909325f40aedbadd2206fdb601b9a8ba161d077e73843f",
+    "assets/nova3d/meshes/suite07__sink_counter__basin_rolled_rim.obj": "12427d730e4901c4807e5733e0d07c8b55180be3eaf63c58c93cdaba49c1ab6a",
+    "assets/nova3d/meshes/suite07__sink_counter__cabinet_back.obj": "b9d427672bbcb9dee2fe0ce000290b27933f0155fd81daf5f50d1d17b2ede2a8",
+    "assets/nova3d/meshes/suite07__sink_counter__cabinet_bottom.obj": "8128687b00dd1717d5f6af0d8975657e2e699fcc65ad18ab4aa09afadf6e2d47",
+    "assets/nova3d/meshes/suite07__sink_counter__counter_with_sink_cutout.obj": "73b639c8193e16a9c10b070b7eb3cde509640ea36a43069d2ae4d40f06ae5f99",
+    "assets/nova3d/meshes/suite07__sink_counter__left_cabinet_face_visual.obj": "576ad0487fc48fd3be4dc9a6c4695e9fd5119d2082794eb1f4d56e9bef1e33e9",
+    "assets/nova3d/meshes/suite07__sink_counter__left_cabinet_handle.obj": "fa2723dde8664b7aa329580c58e3a9e2df1fcb94bc1b8fc1a4585f4cc3f75945",
+    "assets/nova3d/meshes/suite07__sink_counter__left_case_side.obj": "e2f3504890d5001b38d9dbdd52917b808ef56bb2c44eb48cb069b105f4207295",
+    "assets/nova3d/meshes/suite07__sink_counter__recessed_plinth.obj": "f4ea79bd3c90aecaf2cd12485d1a73c327796f405f127db4ae33e447431e36fe",
+    "assets/nova3d/meshes/suite07__sink_counter__right_cabinet_face_visual.obj": "cc621f1748bccaf4bf66d277a35b6a9d88b75ca5e8c0087a7e8328cb48cdff04",
+    "assets/nova3d/meshes/suite07__sink_counter__right_cabinet_handle.obj": "3de93d20444fd285e12c0e347ba35a9547f38cb0ac15eefed61b5cfb2ce85a35",
+    "assets/nova3d/meshes/suite07__sink_counter__right_case_side.obj": "75cb9cd17a2403d811583747c7d051f4fa2c4a5d71d79158322ea73592adfae3",
+    "assets/nova3d/meshes/suite07__sink_counter__tap_deck_rosette.obj": "b5fed3acf0a7e260edc93639e6cfdfea3f4725d2df13d5050228d7d45da300e9",
+    "assets/nova3d/meshes/suite07__sink_counter__tap_lever.obj": "26bedf81a2d47bed8f9f7238f15caec7936fe8b2b4fe8ab0c0ab8ba787471ebd",
+    "assets/nova3d/meshes/suite07__sink_counter__tap_swan_spout.obj": "0855a9a191a1ad49deb40f243facd6ca0302a90d57cf66f73e76f9504f358724",
+    "assets/nova3d/meshes/suite07__sorting_station__ivory_header_panel.obj": "e88b9de023017d4521a4313c3f1677c3b4858dd9c756bf6cc7e66005bd4d7f8a",
+    "assets/nova3d/meshes/suite07__sorting_station__laundry_basket_direction_marker.obj": "0a8f801a180c1e0dc34389587d526fe2a842cdc673d30f63988b2659f6df2562",
+    "assets/nova3d/meshes/suite07__sorting_station__laundry_basket_wall_label.obj": "5b23e7c5557f2f6d32a03098c04e0055ca4d327bc268a803ff938c45bf85c5a5",
+    "assets/nova3d/meshes/suite07__sorting_station__oak_identification_rail.obj": "a811ae8ec06df496ffca30f570193e1eeb337bdf73706792f5509437ad48b5cf",
+    "assets/nova3d/meshes/suite07__sorting_station__rail_mounting_screws.obj": "64fc98edda5f80e4e5698d2de1f458e992f8959f1befb44ee96146b894831af5",
+    "assets/nova3d/meshes/suite07__sorting_station__recycling_bin_direction_marker.obj": "8f6a7a57fa871a8b58036b3e2e8acb465cf1b48945b8c7235e7dc659a7022fcc",
+    "assets/nova3d/meshes/suite07__sorting_station__recycling_bin_wall_label.obj": "2862af1a7e356dc692cd2ada2678a2b83b9890eaec7372445d799898c5de63c4",
+    "assets/nova3d/meshes/suite07__sorting_station__return_tray_direction_marker.obj": "4b9246ad34ce429c57d22bebb4cb6a03687461e5b067ec54d53c30dd31b3580d",
+    "assets/nova3d/meshes/suite07__sorting_station__return_tray_wall_label.obj": "681c2853befd309147b97ed0e573045db12f38c125bdcc04e514aa168ddae2b4",
+    "assets/nova3d/meshes/suite07__sorting_station__sorting_station_title.obj": "dee862501a93989f4696b41d52a5e92999d99f697c90a8fbc53cc9b4da78601f",
+    "assets/nova3d/meshes/suite07__sorting_station__trash_bin_direction_marker.obj": "50a8a5e7edf2e891bd23d6bc0ebd8006d2738e6cd73b5415be567ad5e2511a52",
+    "assets/nova3d/meshes/suite07__sorting_station__trash_bin_wall_label.obj": "404b5c7a03c8e6379ef70fd0459415ad74fe6107495574bf6ebe911f2d2234b0",
+    "assets/nova3d/meshes/suite07__trash_bin__front_label_backing.obj": "599edc04565a046bbc9e7a3aef70114332641378f5e074ccdaa702212c90c9e6",
+    "assets/nova3d/meshes/suite07__trash_bin__front_label_caption.obj": "51b3b52d4602bc4b76ba98dd62a5454850ec8e9bfa8dcf191be635b10c390c95",
+    "assets/nova3d/meshes/suite07__trash_bin__front_label_number.obj": "eb1587390c6327737d3c3f8c2d5f7bada30918cf1c1240f5657662c37aba0009",
+    "assets/nova3d/meshes/suite07__trash_bin__outer_skin_back.obj": "3ee222e661306b321a078d4d3f9b48d1b40a24515fa34be1e0b7e6fcb882ebd7",
+    "assets/nova3d/meshes/suite07__trash_bin__outer_skin_front.obj": "b67ce3c8d1eb702944d294a1f6c8e26e6a1d8b3015ad1e50a794241479e78d6c",
+    "assets/nova3d/meshes/suite07__trash_bin__outer_skin_left.obj": "b13af95ec790cc35230e68b0139605bad2462ce361d331440a8fe4c0eae4a38e",
+    "assets/nova3d/meshes/suite07__trash_bin__outer_skin_right.obj": "c43c19ad4e12fc945551871c2aa6d27d6f7ac55eb5c17205c9fc6ba9664a12b5",
+    "assets/nova3d/meshes/suite07__trash_bin__rim_back.obj": "97bc67220fa0cfbcd1f2a9220d1be46fdcd8ab895a2d2c43dc92d3efb6cd5912",
+    "assets/nova3d/meshes/suite07__trash_bin__rim_front.obj": "66517855decda77b2607e1ddc84a9de990166413b8adc61eb5cbbcb3b33ff3c6",
+    "assets/nova3d/meshes/suite07__trash_bin__rim_left.obj": "5141d5fd75853536f518100110b9aa552c223f345fc0e822e576d1330c072143",
+    "assets/nova3d/meshes/suite07__trash_bin__rim_right.obj": "c39154dacf70d99cfb3b4ffc5ddc71e67839b4ae30c9740edcb44a531f3185ce",
+    "assets/nova3d/meshes/suite07__visitor_chair__back_cushion.obj": "8896a4d59065a789223270807e7cec251fc39e2ad5ed9877741017a1ab043764",
+    "assets/nova3d/meshes/suite07__visitor_chair__back_oak_shell.obj": "c40ee17d94424b6c30fa13cd089ac389948c0ef971946b3a5b23b84be92a89b5",
+    "assets/nova3d/meshes/suite07__visitor_chair__floor_pads.obj": "617f38386b9d2e4a31e4850c353d9867b2bf34edf315cca4570298b2fd5e807a",
+    "assets/nova3d/meshes/suite07__visitor_chair__left_arm_support.obj": "3c299b418ac8f219020a10cee144d30bb6951fa6ad58fc8d71f68f7a94aadcc6",
+    "assets/nova3d/meshes/suite07__visitor_chair__left_oak_arm_cap.obj": "26bbaff13788889aa84d9e9fa6781247bd89f584ee1a82edfa8ca809bdb1fa73",
+    "assets/nova3d/meshes/suite07__visitor_chair__legs.obj": "052f7ab6bdc918101fa84323550ed8f1ef4d46704777b7fff19b7690ac6dd007",
+    "assets/nova3d/meshes/suite07__visitor_chair__right_arm_support.obj": "1215f06ce18b1c0215f7f592961854f6dc705547d27c51bed1cea740dd349bb9",
+    "assets/nova3d/meshes/suite07__visitor_chair__right_oak_arm_cap.obj": "c8cf362c9ae8065a62d3c0ecd8defcf07251526e66178885ad009b9ec75146be",
+    "assets/nova3d/meshes/suite07__visitor_chair__seat_underframe.obj": "ed523d154bdef69f49bf35975a0a32b9e6168e95f605f5667387fe3dcc4f0f75",
+    "assets/nova3d/meshes/suite07__visitor_chair__seat_visual_cover.obj": "36f5a9b11311234c895cb50d78688b5b2c4890f0972c2d0c2be7c120f94a45d1",
+    "assets/nova3d/meshes/suite07__visitor_sofa__back_shell.obj": "a4da4ed9bf6b93023ee44c4bc66fdda93fbffe0052071bcd86e228a925fee57a",
+    "assets/nova3d/meshes/suite07__visitor_sofa__floor_pads.obj": "7114907c86c6e1902d6bf88055eff00c4879b17e639a54065d5f406f7657e2d0",
+    "assets/nova3d/meshes/suite07__visitor_sofa__left_arm_upholstery.obj": "73f2245fb5dcb55c79f8a202ff9e35733bd4cdf587d8a648ec0ac41bc205033d",
+    "assets/nova3d/meshes/suite07__visitor_sofa__left_back_cushion.obj": "5a557632453df12647a9517ad3fefc248e99473817a5108f0d0034a246fae261",
+    "assets/nova3d/meshes/suite07__visitor_sofa__left_oak_arm_cap.obj": "87b1852a0ccde44de89f710a6d4e900e5c107c2d3244a0fb0f5347f7ebd26a11",
+    "assets/nova3d/meshes/suite07__visitor_sofa__left_seat_visual_cover.obj": "d6675393d2a0b896074ac890e81f2bbba0c74e26758489f9ac800e6b0f0025cb",
+    "assets/nova3d/meshes/suite07__visitor_sofa__left_seat_welt.obj": "02d90d3aad02917ef2e28ae0456ec90736c5b115e71bb5837a147c6217f1a757",
+    "assets/nova3d/meshes/suite07__visitor_sofa__legs.obj": "e1d39f2abfd174de1eb2d047e6b00a1b11d683efa8fecacaaa14cf27260c9288",
+    "assets/nova3d/meshes/suite07__visitor_sofa__oak_base_rail.obj": "f91f9d82578ed1b437a749d716e9bac9da3389a9c358decede937552d9cb9baf",
+    "assets/nova3d/meshes/suite07__visitor_sofa__right_arm_upholstery.obj": "c9930f55c898a27e4657e0319e5134b9e4da40d82c39735b232293f139cf685a",
+    "assets/nova3d/meshes/suite07__visitor_sofa__right_back_cushion.obj": "4091d104ab62483dc987fe0aa11fa2f7d6e2f6b9aa8e89c4659c16267b21ef3d",
+    "assets/nova3d/meshes/suite07__visitor_sofa__right_oak_arm_cap.obj": "a01b38ff32e89d50c3be1b5659ec3087e277b784335c062fdaac741f0afa710f",
+    "assets/nova3d/meshes/suite07__visitor_sofa__right_seat_visual_cover.obj": "212096103bc6a8e560d84f4078d9499526a2b270fe3469384f13dbfae17a3124",
+    "assets/nova3d/meshes/suite07__visitor_sofa__right_seat_welt.obj": "3641391354c934aab04c570e1ce4c9c32574af549ef7db36fe695a3ba91cc65b",
+    "assets/nova3d/meshes/suite07__visitor_sofa__upholstered_deck.obj": "d660c7e19dd97252c4407fa68edf9e6379fb183ff1bc2f75313e0f4e640b70e9",
+    "assets/nova3d/textures/suite_light_diffuser.png": "d77166704ac9424191d49dfacc6a7da90d7d6127df483eb1ae4e58ce7b5e2894",
+    "assets/nova3d/textures/suite_oak_edge.png": "8303e5285c79fb9d391feb1d667866947781ad83b6c0addde99f4d0713ed74cc",
+    "assets/nova3d/textures/suite_powder_coat.png": "1387d6b8f22b1297be2275b426deeade3991974904577e4772f32b223692d77c",
+    "assets/nova3d/textures/suite_return_oak.png": "6608bd2c43d871deb05df4633a205c23339b97bbf9450b19b68f514b88890a71",
+    "assets/nova3d/textures/suite_satin_metal.png": "5eaaf95fe584700c0d5cba2932bb66320d09d5ca7d09ab98a5a162b1b7025de2",
+    "assets/nova3d/textures/suite_teal_upholstery.png": "9fe94e580042600a6be957e0111df42eec0c0c645a88039d321cab5356334d1f",
+    "assets/nova3d/textures/suite_vinyl_warm_grey.png": "7d5abc9c1a0e7050b6ac109390a8e4670e625cdcb1879b6d4bee5639cb14bb1a",
+    "assets/nova3d/textures/suite_warm_oak.png": "0530bd4f82b5766361afa8648303299ebd1060afb77de8e825c3552d5834d517",
+    "assets/nova3d/textures/suite_white_linen.png": "8f06fd90e61b6a04a263568af9d836f68d216b825e330e405e598125972ebe61"
+  }
+}

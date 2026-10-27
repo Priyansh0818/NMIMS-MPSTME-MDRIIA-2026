@@ -1,0 +1,1001 @@
+condition,seed,actuator,squared_effort_integral,units
+baseline,1000,left_wheel_vel,258890.91486466987,(N m)^2 s
+baseline,1000,right_wheel_vel,230152.00657384584,(N m)^2 s
+baseline,1000,lift,70678.89524616285,N^2 s
+baseline,1000,arm,2312.692008344281,(N m)^2 s
+baseline,1000,wrist_yaw,3.3280468332815984,(N m)^2 s
+baseline,1000,wrist_pitch,17.681624062565284,(N m)^2 s
+baseline,1000,wrist_roll,3.6396300042045406,(N m)^2 s
+baseline,1000,gripper,580023.1873993574,N^2 s
+baseline,1000,head_pan,6.493348940871625e-05,(N m)^2 s
+baseline,1000,head_tilt,0.020640015594377177,(N m)^2 s
+baseline,1001,left_wheel_vel,122086.67323531119,(N m)^2 s
+baseline,1001,right_wheel_vel,161505.97511405218,(N m)^2 s
+baseline,1001,lift,57750.1653965617,N^2 s
+baseline,1001,arm,4644.525035642899,(N m)^2 s
+baseline,1001,wrist_yaw,5.293677501824196,(N m)^2 s
+baseline,1001,wrist_pitch,91.83571644372583,(N m)^2 s
+baseline,1001,wrist_roll,5.870203535335767,(N m)^2 s
+baseline,1001,gripper,725767.1914674842,N^2 s
+baseline,1001,head_pan,7.761310478960378e-05,(N m)^2 s
+baseline,1001,head_tilt,0.011551670211977524,(N m)^2 s
+baseline,1002,left_wheel_vel,82224.92335931234,(N m)^2 s
+baseline,1002,right_wheel_vel,102560.92104410128,(N m)^2 s
+baseline,1002,lift,56273.337750384904,N^2 s
+baseline,1002,arm,6687.733694738062,(N m)^2 s
+baseline,1002,wrist_yaw,13.204871378205464,(N m)^2 s
+baseline,1002,wrist_pitch,288.3487553131405,(N m)^2 s
+baseline,1002,wrist_roll,16.185894578028563,(N m)^2 s
+baseline,1002,gripper,488393.1906094182,N^2 s
+baseline,1002,head_pan,4.993156319985685e-05,(N m)^2 s
+baseline,1002,head_tilt,0.00822830784316562,(N m)^2 s
+baseline,1003,left_wheel_vel,158203.73548312834,(N m)^2 s
+baseline,1003,right_wheel_vel,189059.86478782032,(N m)^2 s
+baseline,1003,lift,53653.911927697205,N^2 s
+baseline,1003,arm,4359.861995811569,(N m)^2 s
+baseline,1003,wrist_yaw,1.1781267766457775,(N m)^2 s
+baseline,1003,wrist_pitch,137.38439246888396,(N m)^2 s
+baseline,1003,wrist_roll,1.8758030126101406,(N m)^2 s
+baseline,1003,gripper,576614.1858923392,N^2 s
+baseline,1003,head_pan,6.508119873324528e-05,(N m)^2 s
+baseline,1003,head_tilt,0.014853092492515351,(N m)^2 s
+baseline,1004,left_wheel_vel,194630.8187072716,(N m)^2 s
+baseline,1004,right_wheel_vel,171209.95949791878,(N m)^2 s
+baseline,1004,lift,129599.98011053845,N^2 s
+baseline,1004,arm,2625.8482894641775,(N m)^2 s
+baseline,1004,wrist_yaw,13.665182293571178,(N m)^2 s
+baseline,1004,wrist_pitch,31.377602869617128,(N m)^2 s
+baseline,1004,wrist_roll,3.913295935272442,(N m)^2 s
+baseline,1004,gripper,601814.5792150412,N^2 s
+baseline,1004,head_pan,7.595744842671123e-05,(N m)^2 s
+baseline,1004,head_tilt,0.017991914673271214,(N m)^2 s
+baseline,1005,left_wheel_vel,112134.31656018348,(N m)^2 s
+baseline,1005,right_wheel_vel,133473.87736413808,(N m)^2 s
+baseline,1005,lift,69098.1322385276,N^2 s
+baseline,1005,arm,2479.6086011573548,(N m)^2 s
+baseline,1005,wrist_yaw,0.8501736357092083,(N m)^2 s
+baseline,1005,wrist_pitch,10.872459553330165,(N m)^2 s
+baseline,1005,wrist_roll,1.4341977989292993,(N m)^2 s
+baseline,1005,gripper,532110.6273316167,N^2 s
+baseline,1005,head_pan,5.397053170743077e-05,(N m)^2 s
+baseline,1005,head_tilt,0.011803631930687859,(N m)^2 s
+baseline,1006,left_wheel_vel,204806.35641175255,(N m)^2 s
+baseline,1006,right_wheel_vel,246239.1040590594,(N m)^2 s
+baseline,1006,lift,58427.88059255931,N^2 s
+baseline,1006,arm,2456.0076313872655,(N m)^2 s
+baseline,1006,wrist_yaw,2.6020604071703706,(N m)^2 s
+baseline,1006,wrist_pitch,11.887536277999647,(N m)^2 s
+baseline,1006,wrist_roll,2.9809663138521896,(N m)^2 s
+baseline,1006,gripper,658566.6147215695,N^2 s
+baseline,1006,head_pan,7.903607550339616e-05,(N m)^2 s
+baseline,1006,head_tilt,0.018400254149266014,(N m)^2 s
+baseline,1007,left_wheel_vel,147683.84302753952,(N m)^2 s
+baseline,1007,right_wheel_vel,253499.1960050158,(N m)^2 s
+baseline,1007,lift,72238.91539951532,N^2 s
+baseline,1007,arm,7044.941120947223,(N m)^2 s
+baseline,1007,wrist_yaw,73.15487010455283,(N m)^2 s
+baseline,1007,wrist_pitch,298.6642579844546,(N m)^2 s
+baseline,1007,wrist_roll,112.81399543366415,(N m)^2 s
+baseline,1007,gripper,944680.6646556982,N^2 s
+baseline,1007,head_pan,8.33355204721983e-05,(N m)^2 s
+baseline,1007,head_tilt,0.012560891596438067,(N m)^2 s
+baseline,1008,left_wheel_vel,120401.78295959908,(N m)^2 s
+baseline,1008,right_wheel_vel,154435.45824779372,(N m)^2 s
+baseline,1008,lift,43906.94232712624,N^2 s
+baseline,1008,arm,6903.740641616656,(N m)^2 s
+baseline,1008,wrist_yaw,5.045238164421245,(N m)^2 s
+baseline,1008,wrist_pitch,274.7475297779545,(N m)^2 s
+baseline,1008,wrist_roll,5.561868455246883,(N m)^2 s
+baseline,1008,gripper,628795.6254457835,N^2 s
+baseline,1008,head_pan,6.187015051096468e-05,(N m)^2 s
+baseline,1008,head_tilt,0.010075130036186502,(N m)^2 s
+baseline,1009,left_wheel_vel,191803.1054717308,(N m)^2 s
+baseline,1009,right_wheel_vel,248262.99818860972,(N m)^2 s
+baseline,1009,lift,91656.81377252798,N^2 s
+baseline,1009,arm,2559.6106863330265,(N m)^2 s
+baseline,1009,wrist_yaw,1.0127061501333547,(N m)^2 s
+baseline,1009,wrist_pitch,11.85041279000656,(N m)^2 s
+baseline,1009,wrist_roll,1.659493194034864,(N m)^2 s
+baseline,1009,gripper,655710.9859505699,N^2 s
+baseline,1009,head_pan,7.762410242582284e-05,(N m)^2 s
+baseline,1009,head_tilt,0.018242684130173402,(N m)^2 s
+baseline,1010,left_wheel_vel,185853.01169618394,(N m)^2 s
+baseline,1010,right_wheel_vel,204705.4035221838,(N m)^2 s
+baseline,1010,lift,60617.22055742989,N^2 s
+baseline,1010,arm,4071.749926110376,(N m)^2 s
+baseline,1010,wrist_yaw,2.753977447705937,(N m)^2 s
+baseline,1010,wrist_pitch,37.362453400689965,(N m)^2 s
+baseline,1010,wrist_roll,2.2455141541811057,(N m)^2 s
+baseline,1010,gripper,687930.587198018,N^2 s
+baseline,1010,head_pan,7.947190292392462e-05,(N m)^2 s
+baseline,1010,head_tilt,0.020790102704105376,(N m)^2 s
+baseline,1011,left_wheel_vel,98436.40852587907,(N m)^2 s
+baseline,1011,right_wheel_vel,127393.3980874466,(N m)^2 s
+baseline,1011,lift,67736.34746804627,N^2 s
+baseline,1011,arm,2451.127817598362,(N m)^2 s
+baseline,1011,wrist_yaw,2.141237396022428,(N m)^2 s
+baseline,1011,wrist_pitch,14.13009331158175,(N m)^2 s
+baseline,1011,wrist_roll,1.6401180734422394,(N m)^2 s
+baseline,1011,gripper,516564.18049980234,N^2 s
+baseline,1011,head_pan,6.270583737589042e-05,(N m)^2 s
+baseline,1011,head_tilt,0.011001152209183308,(N m)^2 s
+baseline,1012,left_wheel_vel,249064.52635639656,(N m)^2 s
+baseline,1012,right_wheel_vel,267485.719864136,(N m)^2 s
+baseline,1012,lift,70958.58395576778,N^2 s
+baseline,1012,arm,3837.240618391426,(N m)^2 s
+baseline,1012,wrist_yaw,42.397943722519116,(N m)^2 s
+baseline,1012,wrist_pitch,84.03265781120436,(N m)^2 s
+baseline,1012,wrist_roll,72.28159197971296,(N m)^2 s
+baseline,1012,gripper,883621.4544120822,N^2 s
+baseline,1012,head_pan,0.00014691949522797307,(N m)^2 s
+baseline,1012,head_tilt,0.04521166577724516,(N m)^2 s
+baseline,1013,left_wheel_vel,145512.28890390188,(N m)^2 s
+baseline,1013,right_wheel_vel,177774.7207871767,(N m)^2 s
+baseline,1013,lift,47582.52048467671,N^2 s
+baseline,1013,arm,2877.167691343748,(N m)^2 s
+baseline,1013,wrist_yaw,5.443177153340439,(N m)^2 s
+baseline,1013,wrist_pitch,34.101711112607575,(N m)^2 s
+baseline,1013,wrist_roll,4.664243843551235,(N m)^2 s
+baseline,1013,gripper,596631.5991971114,N^2 s
+baseline,1013,head_pan,6.311814803200668e-05,(N m)^2 s
+baseline,1013,head_tilt,0.012337141927714412,(N m)^2 s
+baseline,1014,left_wheel_vel,170409.79456570378,(N m)^2 s
+baseline,1014,right_wheel_vel,137747.67277541786,(N m)^2 s
+baseline,1014,lift,80435.24176759255,N^2 s
+baseline,1014,arm,17507.692182370454,(N m)^2 s
+baseline,1014,wrist_yaw,35.69693676304761,(N m)^2 s
+baseline,1014,wrist_pitch,889.8898001970753,(N m)^2 s
+baseline,1014,wrist_roll,34.29590238670266,(N m)^2 s
+baseline,1014,gripper,574406.1059603136,N^2 s
+baseline,1014,head_pan,7.630334125119529e-05,(N m)^2 s
+baseline,1014,head_tilt,0.01490831811462377,(N m)^2 s
+baseline,1015,left_wheel_vel,134328.70234026085,(N m)^2 s
+baseline,1015,right_wheel_vel,166344.30441987378,(N m)^2 s
+baseline,1015,lift,48455.84984149387,N^2 s
+baseline,1015,arm,3018.209711327406,(N m)^2 s
+baseline,1015,wrist_yaw,6.65475836636684,(N m)^2 s
+baseline,1015,wrist_pitch,43.31044556291398,(N m)^2 s
+baseline,1015,wrist_roll,5.666305197222178,(N m)^2 s
+baseline,1015,gripper,541551.8155746143,N^2 s
+baseline,1015,head_pan,5.9251755162091604e-05,(N m)^2 s
+baseline,1015,head_tilt,0.01318976579716292,(N m)^2 s
+baseline,1016,left_wheel_vel,200491.4023562895,(N m)^2 s
+baseline,1016,right_wheel_vel,242226.0152273104,(N m)^2 s
+baseline,1016,lift,98644.86623744816,N^2 s
+baseline,1016,arm,2461.111071084534,(N m)^2 s
+baseline,1016,wrist_yaw,0.8812057280052966,(N m)^2 s
+baseline,1016,wrist_pitch,13.367961126277184,(N m)^2 s
+baseline,1016,wrist_roll,1.503332170283449,(N m)^2 s
+baseline,1016,gripper,765549.6763814349,N^2 s
+baseline,1016,head_pan,8.643000282422817e-05,(N m)^2 s
+baseline,1016,head_tilt,0.020145968763554345,(N m)^2 s
+baseline,1017,left_wheel_vel,116342.1608848702,(N m)^2 s
+baseline,1017,right_wheel_vel,148754.30912166997,(N m)^2 s
+baseline,1017,lift,61521.656429844064,N^2 s
+baseline,1017,arm,7246.413854980446,(N m)^2 s
+baseline,1017,wrist_yaw,6.034846017790695,(N m)^2 s
+baseline,1017,wrist_pitch,296.79174842807976,(N m)^2 s
+baseline,1017,wrist_roll,7.553022611632267,(N m)^2 s
+baseline,1017,gripper,539485.1401200388,N^2 s
+baseline,1017,head_pan,5.5780637483556345e-05,(N m)^2 s
+baseline,1017,head_tilt,0.011415698050295974,(N m)^2 s
+baseline,1018,left_wheel_vel,329027.4078290711,(N m)^2 s
+baseline,1018,right_wheel_vel,354034.31033001095,(N m)^2 s
+baseline,1018,lift,83688.32994331516,N^2 s
+baseline,1018,arm,2881.7111611505215,(N m)^2 s
+baseline,1018,wrist_yaw,6.563722033875662,(N m)^2 s
+baseline,1018,wrist_pitch,44.80637601389192,(N m)^2 s
+baseline,1018,wrist_roll,5.919866372067845,(N m)^2 s
+baseline,1018,gripper,734472.2777104854,N^2 s
+baseline,1018,head_pan,8.589755153159887e-05,(N m)^2 s
+baseline,1018,head_tilt,0.024436966609519682,(N m)^2 s
+baseline,1019,left_wheel_vel,127076.64040684795,(N m)^2 s
+baseline,1019,right_wheel_vel,177949.68258846842,(N m)^2 s
+baseline,1019,lift,79346.0699720556,N^2 s
+baseline,1019,arm,2776.161511078355,(N m)^2 s
+baseline,1019,wrist_yaw,0.9818384499476024,(N m)^2 s
+baseline,1019,wrist_pitch,18.88833409009947,(N m)^2 s
+baseline,1019,wrist_roll,1.6428836954962724,(N m)^2 s
+baseline,1019,gripper,637633.2623800456,N^2 s
+baseline,1019,head_pan,7.436060741710294e-05,(N m)^2 s
+baseline,1019,head_tilt,0.014005826652520599,(N m)^2 s
+baseline,1020,left_wheel_vel,108156.54510723174,(N m)^2 s
+baseline,1020,right_wheel_vel,143954.0699604023,(N m)^2 s
+baseline,1020,lift,39227.21929317554,N^2 s
+baseline,1020,arm,3796.563120651511,(N m)^2 s
+baseline,1020,wrist_yaw,1.2514835257532637,(N m)^2 s
+baseline,1020,wrist_pitch,82.14315433866074,(N m)^2 s
+baseline,1020,wrist_roll,1.74511992850868,(N m)^2 s
+baseline,1020,gripper,590573.9751132804,N^2 s
+baseline,1020,head_pan,5.7279892725696465e-05,(N m)^2 s
+baseline,1020,head_tilt,0.010275220331487148,(N m)^2 s
+baseline,1021,left_wheel_vel,99050.49199462951,(N m)^2 s
+baseline,1021,right_wheel_vel,118830.98989393646,(N m)^2 s
+baseline,1021,lift,57017.90833968935,N^2 s
+baseline,1021,arm,2918.6298671677782,(N m)^2 s
+baseline,1021,wrist_yaw,2.8940689903158456,(N m)^2 s
+baseline,1021,wrist_pitch,36.860597614703615,(N m)^2 s
+baseline,1021,wrist_roll,2.5446986342789937,(N m)^2 s
+baseline,1021,gripper,537999.9734481301,N^2 s
+baseline,1021,head_pan,5.298090182213341e-05,(N m)^2 s
+baseline,1021,head_tilt,0.008392290902093267,(N m)^2 s
+baseline,1022,left_wheel_vel,91146.33199181844,(N m)^2 s
+baseline,1022,right_wheel_vel,109471.22765247292,(N m)^2 s
+baseline,1022,lift,43170.89787649854,N^2 s
+baseline,1022,arm,3198.1217078556056,(N m)^2 s
+baseline,1022,wrist_yaw,2.1489719088987673,(N m)^2 s
+baseline,1022,wrist_pitch,72.10573640236524,(N m)^2 s
+baseline,1022,wrist_roll,2.449920993420577,(N m)^2 s
+baseline,1022,gripper,505253.3326266133,N^2 s
+baseline,1022,head_pan,5.925378723169687e-05,(N m)^2 s
+baseline,1022,head_tilt,0.008058695187550856,(N m)^2 s
+baseline,1023,left_wheel_vel,103965.93434912225,(N m)^2 s
+baseline,1023,right_wheel_vel,122232.54569248173,(N m)^2 s
+baseline,1023,lift,68305.19654079173,N^2 s
+baseline,1023,arm,2620.732048793039,(N m)^2 s
+baseline,1023,wrist_yaw,1.3417327214389274,(N m)^2 s
+baseline,1023,wrist_pitch,28.57945297534289,(N m)^2 s
+baseline,1023,wrist_roll,1.4104750413329576,(N m)^2 s
+baseline,1023,gripper,486931.6189473427,N^2 s
+baseline,1023,head_pan,5.101191666665008e-05,(N m)^2 s
+baseline,1023,head_tilt,0.009696392509876715,(N m)^2 s
+baseline,1024,left_wheel_vel,101019.32900141954,(N m)^2 s
+baseline,1024,right_wheel_vel,148487.41738893164,(N m)^2 s
+baseline,1024,lift,33511.023832605075,N^2 s
+baseline,1024,arm,2627.7551681225254,(N m)^2 s
+baseline,1024,wrist_yaw,6.447615418449149,(N m)^2 s
+baseline,1024,wrist_pitch,27.84757736760349,(N m)^2 s
+baseline,1024,wrist_roll,5.6061948414350455,(N m)^2 s
+baseline,1024,gripper,593694.9433870175,N^2 s
+baseline,1024,head_pan,6.00048600979344e-05,(N m)^2 s
+baseline,1024,head_tilt,0.010743267003961313,(N m)^2 s
+baseline,1025,left_wheel_vel,241476.97865544254,(N m)^2 s
+baseline,1025,right_wheel_vel,176468.5082005347,(N m)^2 s
+baseline,1025,lift,61256.0045507379,N^2 s
+baseline,1025,arm,4256.287215689333,(N m)^2 s
+baseline,1025,wrist_yaw,28.352022866343603,(N m)^2 s
+baseline,1025,wrist_pitch,136.24354170368147,(N m)^2 s
+baseline,1025,wrist_roll,12.505678944236367,(N m)^2 s
+baseline,1025,gripper,726121.2031034088,N^2 s
+baseline,1025,head_pan,0.00011762503085169284,(N m)^2 s
+baseline,1025,head_tilt,0.049281130983827345,(N m)^2 s
+baseline,1026,left_wheel_vel,212444.9847287524,(N m)^2 s
+baseline,1026,right_wheel_vel,197705.09978840192,(N m)^2 s
+baseline,1026,lift,65918.50541354253,N^2 s
+baseline,1026,arm,6669.494860722678,(N m)^2 s
+baseline,1026,wrist_yaw,2.331206978778221,(N m)^2 s
+baseline,1026,wrist_pitch,273.90464742698003,(N m)^2 s
+baseline,1026,wrist_roll,2.6399299341491345,(N m)^2 s
+baseline,1026,gripper,605596.738929296,N^2 s
+baseline,1026,head_pan,8.50302870767377e-05,(N m)^2 s
+baseline,1026,head_tilt,0.020262290334206207,(N m)^2 s
+baseline,1027,left_wheel_vel,95052.08165438814,(N m)^2 s
+baseline,1027,right_wheel_vel,116305.35528865996,(N m)^2 s
+baseline,1027,lift,36144.16788265577,N^2 s
+baseline,1027,arm,4580.612434171939,(N m)^2 s
+baseline,1027,wrist_yaw,1.192942768210937,(N m)^2 s
+baseline,1027,wrist_pitch,159.07322255788273,(N m)^2 s
+baseline,1027,wrist_roll,1.5946202921974428,(N m)^2 s
+baseline,1027,gripper,504691.3805290217,N^2 s
+baseline,1027,head_pan,4.607283895204802e-05,(N m)^2 s
+baseline,1027,head_tilt,0.008225464167491713,(N m)^2 s
+baseline,1028,left_wheel_vel,159517.09072658324,(N m)^2 s
+baseline,1028,right_wheel_vel,170854.52564864012,(N m)^2 s
+baseline,1028,lift,67601.29394959203,N^2 s
+baseline,1028,arm,3067.185586667263,(N m)^2 s
+baseline,1028,wrist_yaw,3.051633270400335,(N m)^2 s
+baseline,1028,wrist_pitch,22.92426257295854,(N m)^2 s
+baseline,1028,wrist_roll,2.9227623652116246,(N m)^2 s
+baseline,1028,gripper,550071.2541042996,N^2 s
+baseline,1028,head_pan,6.771985014879355e-05,(N m)^2 s
+baseline,1028,head_tilt,0.012447950534187293,(N m)^2 s
+baseline,1029,left_wheel_vel,146285.08811924444,(N m)^2 s
+baseline,1029,right_wheel_vel,177198.7596116441,(N m)^2 s
+baseline,1029,lift,106213.75813729383,N^2 s
+baseline,1029,arm,69398.9224797924,(N m)^2 s
+baseline,1029,wrist_yaw,560.7908859707036,(N m)^2 s
+baseline,1029,wrist_pitch,28.387166530791614,(N m)^2 s
+baseline,1029,wrist_roll,293.9047724747691,(N m)^2 s
+baseline,1029,gripper,599038.6430915771,N^2 s
+baseline,1029,head_pan,8.091114872471668e-05,(N m)^2 s
+baseline,1029,head_tilt,0.013841589718956845,(N m)^2 s
+baseline,1030,left_wheel_vel,91308.60721299452,(N m)^2 s
+baseline,1030,right_wheel_vel,109855.420797607,(N m)^2 s
+baseline,1030,lift,58963.84647774555,N^2 s
+baseline,1030,arm,4375.05867115798,(N m)^2 s
+baseline,1030,wrist_yaw,0.6498105424255324,(N m)^2 s
+baseline,1030,wrist_pitch,139.40120422278696,(N m)^2 s
+baseline,1030,wrist_roll,1.0668086300261586,(N m)^2 s
+baseline,1030,gripper,546217.1541546546,N^2 s
+baseline,1030,head_pan,5.4880101266928175e-05,(N m)^2 s
+baseline,1030,head_tilt,0.008002324148030617,(N m)^2 s
+baseline,1031,left_wheel_vel,167083.03563786976,(N m)^2 s
+baseline,1031,right_wheel_vel,181955.68456471205,(N m)^2 s
+baseline,1031,lift,95041.09034539216,N^2 s
+baseline,1031,arm,2502.557176615814,(N m)^2 s
+baseline,1031,wrist_yaw,5.8121475555928095,(N m)^2 s
+baseline,1031,wrist_pitch,16.71792749532983,(N m)^2 s
+baseline,1031,wrist_roll,10.4494220789162,(N m)^2 s
+baseline,1031,gripper,595363.058888524,N^2 s
+baseline,1031,head_pan,6.730760786331534e-05,(N m)^2 s
+baseline,1031,head_tilt,0.01717378393314461,(N m)^2 s
+baseline,1032,left_wheel_vel,96231.23880973145,(N m)^2 s
+baseline,1032,right_wheel_vel,130318.2672428304,(N m)^2 s
+baseline,1032,lift,46265.11735096509,N^2 s
+baseline,1032,arm,2922.9914060810565,(N m)^2 s
+baseline,1032,wrist_yaw,2.141197767551801,(N m)^2 s
+baseline,1032,wrist_pitch,40.04257391098787,(N m)^2 s
+baseline,1032,wrist_roll,2.6623165351502593,(N m)^2 s
+baseline,1032,gripper,538966.4806728486,N^2 s
+baseline,1032,head_pan,5.4104179345524064e-05,(N m)^2 s
+baseline,1032,head_tilt,0.008330011925104675,(N m)^2 s
+baseline,1033,left_wheel_vel,262557.21991239866,(N m)^2 s
+baseline,1033,right_wheel_vel,302165.00200472533,(N m)^2 s
+baseline,1033,lift,121088.02681407344,N^2 s
+baseline,1033,arm,2587.726529504484,(N m)^2 s
+baseline,1033,wrist_yaw,4.428413056870623,(N m)^2 s
+baseline,1033,wrist_pitch,22.552026353376622,(N m)^2 s
+baseline,1033,wrist_roll,4.850327262339145,(N m)^2 s
+baseline,1033,gripper,694289.6037669547,N^2 s
+baseline,1033,head_pan,7.928644282141652e-05,(N m)^2 s
+baseline,1033,head_tilt,0.02708274613070397,(N m)^2 s
+baseline,1034,left_wheel_vel,152171.52142903124,(N m)^2 s
+baseline,1034,right_wheel_vel,195409.4245349588,(N m)^2 s
+baseline,1034,lift,60535.11039860587,N^2 s
+baseline,1034,arm,9048.695915773831,(N m)^2 s
+baseline,1034,wrist_yaw,22.30777253614402,(N m)^2 s
+baseline,1034,wrist_pitch,396.7027614859116,(N m)^2 s
+baseline,1034,wrist_roll,20.300486420076073,(N m)^2 s
+baseline,1034,gripper,736531.7470803824,N^2 s
+baseline,1034,head_pan,6.831281554138036e-05,(N m)^2 s
+baseline,1034,head_tilt,0.013813964974852244,(N m)^2 s
+baseline,1035,left_wheel_vel,125594.27299474826,(N m)^2 s
+baseline,1035,right_wheel_vel,168267.38365808368,(N m)^2 s
+baseline,1035,lift,67466.77468533893,N^2 s
+baseline,1035,arm,6476.6933854360805,(N m)^2 s
+baseline,1035,wrist_yaw,16.17777808801939,(N m)^2 s
+baseline,1035,wrist_pitch,266.45994654235693,(N m)^2 s
+baseline,1035,wrist_roll,19.55871367335143,(N m)^2 s
+baseline,1035,gripper,579138.0864146599,N^2 s
+baseline,1035,head_pan,6.167489249812127e-05,(N m)^2 s
+baseline,1035,head_tilt,0.011997366247347853,(N m)^2 s
+baseline,1036,left_wheel_vel,155035.769281093,(N m)^2 s
+baseline,1036,right_wheel_vel,199270.9259179715,(N m)^2 s
+baseline,1036,lift,81171.66112319502,N^2 s
+baseline,1036,arm,2572.0664646013574,(N m)^2 s
+baseline,1036,wrist_yaw,1.4852195157565633,(N m)^2 s
+baseline,1036,wrist_pitch,24.749286350796115,(N m)^2 s
+baseline,1036,wrist_roll,1.6814858731127726,(N m)^2 s
+baseline,1036,gripper,640966.8420866058,N^2 s
+baseline,1036,head_pan,6.501636650679188e-05,(N m)^2 s
+baseline,1036,head_tilt,0.015793855096083453,(N m)^2 s
+baseline,1037,left_wheel_vel,119251.32444657877,(N m)^2 s
+baseline,1037,right_wheel_vel,157015.53534081826,(N m)^2 s
+baseline,1037,lift,37382.28810330813,N^2 s
+baseline,1037,arm,2732.591103656809,(N m)^2 s
+baseline,1037,wrist_yaw,2.741034946585971,(N m)^2 s
+baseline,1037,wrist_pitch,29.644787446998354,(N m)^2 s
+baseline,1037,wrist_roll,2.646348099779585,(N m)^2 s
+baseline,1037,gripper,637997.5373956242,N^2 s
+baseline,1037,head_pan,6.150806110219527e-05,(N m)^2 s
+baseline,1037,head_tilt,0.010456632896606552,(N m)^2 s
+baseline,1038,left_wheel_vel,86877.71592255565,(N m)^2 s
+baseline,1038,right_wheel_vel,104529.07079874956,(N m)^2 s
+baseline,1038,lift,32394.81498947445,N^2 s
+baseline,1038,arm,4448.289225717564,(N m)^2 s
+baseline,1038,wrist_yaw,1.8568197759153333,(N m)^2 s
+baseline,1038,wrist_pitch,143.9213332653229,(N m)^2 s
+baseline,1038,wrist_roll,2.48572575997078,(N m)^2 s
+baseline,1038,gripper,480182.9172736662,N^2 s
+baseline,1038,head_pan,5.062719920569517e-05,(N m)^2 s
+baseline,1038,head_tilt,0.008866880665788774,(N m)^2 s
+baseline,1039,left_wheel_vel,229645.19043179468,(N m)^2 s
+baseline,1039,right_wheel_vel,310072.4676982216,(N m)^2 s
+baseline,1039,lift,73244.65342323006,N^2 s
+baseline,1039,arm,7239.521771038899,(N m)^2 s
+baseline,1039,wrist_yaw,4.174085814587872,(N m)^2 s
+baseline,1039,wrist_pitch,302.73413277391273,(N m)^2 s
+baseline,1039,wrist_roll,4.351278883746221,(N m)^2 s
+baseline,1039,gripper,673968.1464155097,N^2 s
+baseline,1039,head_pan,9.852647246952836e-05,(N m)^2 s
+baseline,1039,head_tilt,0.021619675648750985,(N m)^2 s
+baseline,1040,left_wheel_vel,81667.33143623985,(N m)^2 s
+baseline,1040,right_wheel_vel,101567.6403560198,(N m)^2 s
+baseline,1040,lift,33735.37003595663,N^2 s
+baseline,1040,arm,5607.64790244093,(N m)^2 s
+baseline,1040,wrist_yaw,11.359018768218476,(N m)^2 s
+baseline,1040,wrist_pitch,213.65315127818897,(N m)^2 s
+baseline,1040,wrist_roll,14.223503071327665,(N m)^2 s
+baseline,1040,gripper,525908.352520562,N^2 s
+baseline,1040,head_pan,4.5936462345202964e-05,(N m)^2 s
+baseline,1040,head_tilt,0.007704523444823565,(N m)^2 s
+baseline,1041,left_wheel_vel,139855.75803248718,(N m)^2 s
+baseline,1041,right_wheel_vel,159166.134458722,(N m)^2 s
+baseline,1041,lift,73654.34389705272,N^2 s
+baseline,1041,arm,10645.194443560362,(N m)^2 s
+baseline,1041,wrist_yaw,31.979657063392885,(N m)^2 s
+baseline,1041,wrist_pitch,532.7858296487553,(N m)^2 s
+baseline,1041,wrist_roll,31.86748964932041,(N m)^2 s
+baseline,1041,gripper,548450.672505663,N^2 s
+baseline,1041,head_pan,6.469560878567892e-05,(N m)^2 s
+baseline,1041,head_tilt,0.01098335707797068,(N m)^2 s
+baseline,1042,left_wheel_vel,108549.90322296094,(N m)^2 s
+baseline,1042,right_wheel_vel,127771.7232703882,(N m)^2 s
+baseline,1042,lift,39319.525611183926,N^2 s
+baseline,1042,arm,2733.2242058815646,(N m)^2 s
+baseline,1042,wrist_yaw,1.618289629141985,(N m)^2 s
+baseline,1042,wrist_pitch,33.42351804983312,(N m)^2 s
+baseline,1042,wrist_roll,2.1946716032931346,(N m)^2 s
+baseline,1042,gripper,582683.8074930524,N^2 s
+baseline,1042,head_pan,6.433254799618213e-05,(N m)^2 s
+baseline,1042,head_tilt,0.009069894378185136,(N m)^2 s
+baseline,1043,left_wheel_vel,111902.2848762049,(N m)^2 s
+baseline,1043,right_wheel_vel,136117.8001986157,(N m)^2 s
+baseline,1043,lift,71627.41771813338,N^2 s
+baseline,1043,arm,2714.217831234061,(N m)^2 s
+baseline,1043,wrist_yaw,1.6018811130607562,(N m)^2 s
+baseline,1043,wrist_pitch,15.570623975801963,(N m)^2 s
+baseline,1043,wrist_roll,2.287073238226797,(N m)^2 s
+baseline,1043,gripper,523336.9871276949,N^2 s
+baseline,1043,head_pan,5.319356189403436e-05,(N m)^2 s
+baseline,1043,head_tilt,0.012277044549825275,(N m)^2 s
+baseline,1044,left_wheel_vel,98682.1277943077,(N m)^2 s
+baseline,1044,right_wheel_vel,123413.03234266317,(N m)^2 s
+baseline,1044,lift,39000.24499164115,N^2 s
+baseline,1044,arm,2764.6763835055267,(N m)^2 s
+baseline,1044,wrist_yaw,1.0881556420255092,(N m)^2 s
+baseline,1044,wrist_pitch,35.01644588071676,(N m)^2 s
+baseline,1044,wrist_roll,1.3240678791943505,(N m)^2 s
+baseline,1044,gripper,566830.8716601017,N^2 s
+baseline,1044,head_pan,5.667185031845786e-05,(N m)^2 s
+baseline,1044,head_tilt,0.010844438897216192,(N m)^2 s
+baseline,1045,left_wheel_vel,176542.12128694923,(N m)^2 s
+baseline,1045,right_wheel_vel,211503.92806827027,(N m)^2 s
+baseline,1045,lift,87265.66486486523,N^2 s
+baseline,1045,arm,2636.2160457261734,(N m)^2 s
+baseline,1045,wrist_yaw,1.0811415574621608,(N m)^2 s
+baseline,1045,wrist_pitch,23.253889455921268,(N m)^2 s
+baseline,1045,wrist_roll,1.6891501164272296,(N m)^2 s
+baseline,1045,gripper,614111.7766059306,N^2 s
+baseline,1045,head_pan,7.870189041965934e-05,(N m)^2 s
+baseline,1045,head_tilt,0.0182512646461781,(N m)^2 s
+baseline,1046,left_wheel_vel,148773.35664111332,(N m)^2 s
+baseline,1046,right_wheel_vel,182687.9269012528,(N m)^2 s
+baseline,1046,lift,90205.62002092779,N^2 s
+baseline,1046,arm,3340.428419985436,(N m)^2 s
+baseline,1046,wrist_yaw,7.4134067293268995,(N m)^2 s
+baseline,1046,wrist_pitch,46.184090420742685,(N m)^2 s
+baseline,1046,wrist_roll,7.06675432235106,(N m)^2 s
+baseline,1046,gripper,680305.1305877842,N^2 s
+baseline,1046,head_pan,7.214083374010523e-05,(N m)^2 s
+baseline,1046,head_tilt,0.013202487398982138,(N m)^2 s
+baseline,1047,left_wheel_vel,93795.25378299312,(N m)^2 s
+baseline,1047,right_wheel_vel,111501.12860050482,(N m)^2 s
+baseline,1047,lift,35073.07106158811,N^2 s
+baseline,1047,arm,2555.61642655573,(N m)^2 s
+baseline,1047,wrist_yaw,1.6747541460450108,(N m)^2 s
+baseline,1047,wrist_pitch,23.991811348223273,(N m)^2 s
+baseline,1047,wrist_roll,1.9549485572921261,(N m)^2 s
+baseline,1047,gripper,534682.3863263613,N^2 s
+baseline,1047,head_pan,5.034532355556073e-05,(N m)^2 s
+baseline,1047,head_tilt,0.008181995165633293,(N m)^2 s
+baseline,1048,left_wheel_vel,202165.01830961788,(N m)^2 s
+baseline,1048,right_wheel_vel,192811.49120417604,(N m)^2 s
+baseline,1048,lift,53138.24931583806,N^2 s
+baseline,1048,arm,3049.513183621694,(N m)^2 s
+baseline,1048,wrist_yaw,4.233398424457858,(N m)^2 s
+baseline,1048,wrist_pitch,45.98949980203505,(N m)^2 s
+baseline,1048,wrist_roll,4.932913083556334,(N m)^2 s
+baseline,1048,gripper,653389.2924333151,N^2 s
+baseline,1048,head_pan,0.00012871299648169171,(N m)^2 s
+baseline,1048,head_tilt,0.035849216375544696,(N m)^2 s
+baseline,1049,left_wheel_vel,135037.24909710407,(N m)^2 s
+baseline,1049,right_wheel_vel,156244.71290124333,(N m)^2 s
+baseline,1049,lift,53270.920649308675,N^2 s
+baseline,1049,arm,3053.7522000720523,(N m)^2 s
+baseline,1049,wrist_yaw,2.537456978050486,(N m)^2 s
+baseline,1049,wrist_pitch,51.12129351767671,(N m)^2 s
+baseline,1049,wrist_roll,2.9059532647723905,(N m)^2 s
+baseline,1049,gripper,629089.8342123604,N^2 s
+baseline,1049,head_pan,7.848806266110314e-05,(N m)^2 s
+baseline,1049,head_tilt,0.01291701361991883,(N m)^2 s
+proposed,2000,left_wheel_vel,95714.11349360771,(N m)^2 s
+proposed,2000,right_wheel_vel,106652.42975121569,(N m)^2 s
+proposed,2000,lift,32648.039600722528,N^2 s
+proposed,2000,arm,2470.0628406367155,(N m)^2 s
+proposed,2000,wrist_yaw,0.6963297447644027,(N m)^2 s
+proposed,2000,wrist_pitch,0.2153617488248962,(N m)^2 s
+proposed,2000,wrist_roll,1.1733790337918995,(N m)^2 s
+proposed,2000,gripper,439242.74171070737,N^2 s
+proposed,2000,head_pan,5.900804635080778e-05,(N m)^2 s
+proposed,2000,head_tilt,0.00848768317854608,(N m)^2 s
+proposed,2001,left_wheel_vel,112145.58531595844,(N m)^2 s
+proposed,2001,right_wheel_vel,119399.2996700279,(N m)^2 s
+proposed,2001,lift,37011.89250556829,N^2 s
+proposed,2001,arm,2498.066197787704,(N m)^2 s
+proposed,2001,wrist_yaw,0.7144202644752583,(N m)^2 s
+proposed,2001,wrist_pitch,0.2381428107112799,(N m)^2 s
+proposed,2001,wrist_roll,1.1777233659140394,(N m)^2 s
+proposed,2001,gripper,427980.8193032017,N^2 s
+proposed,2001,head_pan,6.32570905514149e-05,(N m)^2 s
+proposed,2001,head_tilt,0.009022583451403074,(N m)^2 s
+proposed,2002,left_wheel_vel,105363.58525430814,(N m)^2 s
+proposed,2002,right_wheel_vel,115782.49079801727,(N m)^2 s
+proposed,2002,lift,36932.715059508984,N^2 s
+proposed,2002,arm,2553.1131902860348,(N m)^2 s
+proposed,2002,wrist_yaw,0.6547950184241847,(N m)^2 s
+proposed,2002,wrist_pitch,0.2367087273789342,(N m)^2 s
+proposed,2002,wrist_roll,1.0786834155396374,(N m)^2 s
+proposed,2002,gripper,432078.7616585183,N^2 s
+proposed,2002,head_pan,5.9660889646536223e-05,(N m)^2 s
+proposed,2002,head_tilt,0.009144883515458224,(N m)^2 s
+proposed,2003,left_wheel_vel,109380.10127429714,(N m)^2 s
+proposed,2003,right_wheel_vel,118796.45635477555,(N m)^2 s
+proposed,2003,lift,39681.33786933031,N^2 s
+proposed,2003,arm,2717.655899238933,(N m)^2 s
+proposed,2003,wrist_yaw,0.8968589462278342,(N m)^2 s
+proposed,2003,wrist_pitch,0.5615356980645146,(N m)^2 s
+proposed,2003,wrist_roll,1.3773426007457779,(N m)^2 s
+proposed,2003,gripper,541287.4426320572,N^2 s
+proposed,2003,head_pan,6.501962357049808e-05,(N m)^2 s
+proposed,2003,head_tilt,0.009519573765890271,(N m)^2 s
+proposed,2004,left_wheel_vel,95755.38561086591,(N m)^2 s
+proposed,2004,right_wheel_vel,113712.23784248221,(N m)^2 s
+proposed,2004,lift,50277.841173100955,N^2 s
+proposed,2004,arm,2777.991326942989,(N m)^2 s
+proposed,2004,wrist_yaw,7.94577329376512,(N m)^2 s
+proposed,2004,wrist_pitch,0.3139984851499248,(N m)^2 s
+proposed,2004,wrist_roll,3.9140993233644172,(N m)^2 s
+proposed,2004,gripper,437214.0406417933,N^2 s
+proposed,2004,head_pan,5.5092769458734935e-05,(N m)^2 s
+proposed,2004,head_tilt,0.008734305960341266,(N m)^2 s
+proposed,2005,left_wheel_vel,95384.80462408687,(N m)^2 s
+proposed,2005,right_wheel_vel,107564.48360329318,(N m)^2 s
+proposed,2005,lift,33917.4134867091,N^2 s
+proposed,2005,arm,2366.9895263790045,(N m)^2 s
+proposed,2005,wrist_yaw,0.6993996911821123,(N m)^2 s
+proposed,2005,wrist_pitch,0.22317963778889074,(N m)^2 s
+proposed,2005,wrist_roll,1.141369026433012,(N m)^2 s
+proposed,2005,gripper,432810.17065665446,N^2 s
+proposed,2005,head_pan,4.773117786167247e-05,(N m)^2 s
+proposed,2005,head_tilt,0.008375351828507455,(N m)^2 s
+proposed,2006,left_wheel_vel,92450.85794036112,(N m)^2 s
+proposed,2006,right_wheel_vel,100325.96198373967,(N m)^2 s
+proposed,2006,lift,34199.55481354553,N^2 s
+proposed,2006,arm,2525.2254185300917,(N m)^2 s
+proposed,2006,wrist_yaw,0.7199363670873982,(N m)^2 s
+proposed,2006,wrist_pitch,0.2193332616373275,(N m)^2 s
+proposed,2006,wrist_roll,1.1772846624148379,(N m)^2 s
+proposed,2006,gripper,424760.4422271113,N^2 s
+proposed,2006,head_pan,4.747766249689365e-05,(N m)^2 s
+proposed,2006,head_tilt,0.008192815920700884,(N m)^2 s
+proposed,2007,left_wheel_vel,105520.06340550556,(N m)^2 s
+proposed,2007,right_wheel_vel,112552.42085172456,(N m)^2 s
+proposed,2007,lift,47110.56175792347,N^2 s
+proposed,2007,arm,2630.0037361557484,(N m)^2 s
+proposed,2007,wrist_yaw,15.436650410757334,(N m)^2 s
+proposed,2007,wrist_pitch,0.4208674687314816,(N m)^2 s
+proposed,2007,wrist_roll,1.1428632802988963,(N m)^2 s
+proposed,2007,gripper,413820.7075235322,N^2 s
+proposed,2007,head_pan,5.674127401963344e-05,(N m)^2 s
+proposed,2007,head_tilt,0.00930322736228964,(N m)^2 s
+proposed,2008,left_wheel_vel,55419.90087006026,(N m)^2 s
+proposed,2008,right_wheel_vel,61597.32219030173,(N m)^2 s
+proposed,2008,lift,22371.77159105852,N^2 s
+proposed,2008,arm,1768.8015752348897,(N m)^2 s
+proposed,2008,wrist_yaw,0.5369601743500341,(N m)^2 s
+proposed,2008,wrist_pitch,0.14436466660440467,(N m)^2 s
+proposed,2008,wrist_roll,0.8771587937964768,(N m)^2 s
+proposed,2008,gripper,294432.317830254,N^2 s
+proposed,2008,head_pan,3.2952841374197526e-05,(N m)^2 s
+proposed,2008,head_tilt,0.005472915501967665,(N m)^2 s
+proposed,2009,left_wheel_vel,103985.67199509317,(N m)^2 s
+proposed,2009,right_wheel_vel,113338.09281746359,(N m)^2 s
+proposed,2009,lift,34516.06599345768,N^2 s
+proposed,2009,arm,2431.5387844211705,(N m)^2 s
+proposed,2009,wrist_yaw,0.6842031771981075,(N m)^2 s
+proposed,2009,wrist_pitch,0.21956129514127828,(N m)^2 s
+proposed,2009,wrist_roll,1.126899681019795,(N m)^2 s
+proposed,2009,gripper,428387.5874928801,N^2 s
+proposed,2009,head_pan,6.616089355819451e-05,(N m)^2 s
+proposed,2009,head_tilt,0.009017462456866972,(N m)^2 s
+proposed,2010,left_wheel_vel,91262.42402385177,(N m)^2 s
+proposed,2010,right_wheel_vel,97073.10372020386,(N m)^2 s
+proposed,2010,lift,32426.685249713024,N^2 s
+proposed,2010,arm,2356.316013526914,(N m)^2 s
+proposed,2010,wrist_yaw,0.624928570726974,(N m)^2 s
+proposed,2010,wrist_pitch,0.2058041408936773,(N m)^2 s
+proposed,2010,wrist_roll,1.0325370363541004,(N m)^2 s
+proposed,2010,gripper,422268.67596668535,N^2 s
+proposed,2010,head_pan,5.065372951650179e-05,(N m)^2 s
+proposed,2010,head_tilt,0.007885871264425222,(N m)^2 s
+proposed,2011,left_wheel_vel,4500.90513790421,(N m)^2 s
+proposed,2011,right_wheel_vel,4609.934308681914,(N m)^2 s
+proposed,2011,lift,2144.4756645312523,N^2 s
+proposed,2011,arm,123.40908859624936,(N m)^2 s
+proposed,2011,wrist_yaw,0.10252599665929651,(N m)^2 s
+proposed,2011,wrist_pitch,0.014123241662380683,(N m)^2 s
+proposed,2011,wrist_roll,0.16770403361807343,(N m)^2 s
+proposed,2011,gripper,36688.12222305613,N^2 s
+proposed,2011,head_pan,3.2926446381485395e-06,(N m)^2 s
+proposed,2011,head_tilt,0.0005944844674804589,(N m)^2 s
+proposed,2012,left_wheel_vel,7033.216863597718,(N m)^2 s
+proposed,2012,right_wheel_vel,7249.166001081774,(N m)^2 s
+proposed,2012,lift,2762.936235059483,N^2 s
+proposed,2012,arm,211.50829349394502,(N m)^2 s
+proposed,2012,wrist_yaw,0.1633810986641061,(N m)^2 s
+proposed,2012,wrist_pitch,0.020229871578927663,(N m)^2 s
+proposed,2012,wrist_roll,0.27334276096604604,(N m)^2 s
+proposed,2012,gripper,40409.468212574815,N^2 s
+proposed,2012,head_pan,6.491787998237834e-06,(N m)^2 s
+proposed,2012,head_tilt,0.0008503811299385236,(N m)^2 s
+proposed,2013,left_wheel_vel,51406.682327849776,(N m)^2 s
+proposed,2013,right_wheel_vel,55382.018883633034,(N m)^2 s
+proposed,2013,lift,22178.149923136854,N^2 s
+proposed,2013,arm,1569.404606190808,(N m)^2 s
+proposed,2013,wrist_yaw,0.4654123897164669,(N m)^2 s
+proposed,2013,wrist_pitch,0.15571342364288854,(N m)^2 s
+proposed,2013,wrist_roll,0.773525821302719,(N m)^2 s
+proposed,2013,gripper,265578.9721843287,N^2 s
+proposed,2013,head_pan,3.8756501167624815e-05,(N m)^2 s
+proposed,2013,head_tilt,0.0053781152737640055,(N m)^2 s
+proposed,2014,left_wheel_vel,93012.17568156066,(N m)^2 s
+proposed,2014,right_wheel_vel,108877.49612924663,(N m)^2 s
+proposed,2014,lift,35556.666703290815,N^2 s
+proposed,2014,arm,2419.6651660536604,(N m)^2 s
+proposed,2014,wrist_yaw,0.7460643033448678,(N m)^2 s
+proposed,2014,wrist_pitch,0.22812270841270949,(N m)^2 s
+proposed,2014,wrist_roll,1.173174625681882,(N m)^2 s
+proposed,2014,gripper,424242.2254170045,N^2 s
+proposed,2014,head_pan,5.64645553847999e-05,(N m)^2 s
+proposed,2014,head_tilt,0.008370406415889663,(N m)^2 s
+proposed,2015,left_wheel_vel,114745.26800068622,(N m)^2 s
+proposed,2015,right_wheel_vel,123156.79233212386,(N m)^2 s
+proposed,2015,lift,39188.99141810402,N^2 s
+proposed,2015,arm,2693.3110165609237,(N m)^2 s
+proposed,2015,wrist_yaw,0.6843804185647782,(N m)^2 s
+proposed,2015,wrist_pitch,0.2506111176843968,(N m)^2 s
+proposed,2015,wrist_roll,1.127173910397307,(N m)^2 s
+proposed,2015,gripper,444092.42550175695,N^2 s
+proposed,2015,head_pan,6.288567141142417e-05,(N m)^2 s
+proposed,2015,head_tilt,0.010356710268803498,(N m)^2 s
+proposed,2016,left_wheel_vel,107561.62435726146,(N m)^2 s
+proposed,2016,right_wheel_vel,117048.40737128188,(N m)^2 s
+proposed,2016,lift,37381.36767117908,N^2 s
+proposed,2016,arm,2426.065514495234,(N m)^2 s
+proposed,2016,wrist_yaw,0.6917315080571337,(N m)^2 s
+proposed,2016,wrist_pitch,0.2337386298054185,(N m)^2 s
+proposed,2016,wrist_roll,1.097927878836032,(N m)^2 s
+proposed,2016,gripper,451617.5130343581,N^2 s
+proposed,2016,head_pan,6.34837653414794e-05,(N m)^2 s
+proposed,2016,head_tilt,0.01012159784398841,(N m)^2 s
+proposed,2017,left_wheel_vel,124184.60696705354,(N m)^2 s
+proposed,2017,right_wheel_vel,124074.5849508353,(N m)^2 s
+proposed,2017,lift,43801.163218415,N^2 s
+proposed,2017,arm,2672.00230946293,(N m)^2 s
+proposed,2017,wrist_yaw,1.8865957660129762,(N m)^2 s
+proposed,2017,wrist_pitch,0.28124458826217635,(N m)^2 s
+proposed,2017,wrist_roll,1.3607351507138354,(N m)^2 s
+proposed,2017,gripper,472720.57051980327,N^2 s
+proposed,2017,head_pan,7.442400764916467e-05,(N m)^2 s
+proposed,2017,head_tilt,0.010240219969106215,(N m)^2 s
+proposed,2018,left_wheel_vel,98642.64972907172,(N m)^2 s
+proposed,2018,right_wheel_vel,110377.35166662329,(N m)^2 s
+proposed,2018,lift,35939.419307949654,N^2 s
+proposed,2018,arm,2364.674866898665,(N m)^2 s
+proposed,2018,wrist_yaw,0.6477752387661698,(N m)^2 s
+proposed,2018,wrist_pitch,0.23699007337932781,(N m)^2 s
+proposed,2018,wrist_roll,1.0567309171062047,(N m)^2 s
+proposed,2018,gripper,427388.12406428705,N^2 s
+proposed,2018,head_pan,5.4211159286880194e-05,(N m)^2 s
+proposed,2018,head_tilt,0.008410553879924133,(N m)^2 s
+proposed,2019,left_wheel_vel,98372.4727414178,(N m)^2 s
+proposed,2019,right_wheel_vel,110577.88693285102,(N m)^2 s
+proposed,2019,lift,34992.65100672394,N^2 s
+proposed,2019,arm,2397.594396645691,(N m)^2 s
+proposed,2019,wrist_yaw,0.6642733518576721,(N m)^2 s
+proposed,2019,wrist_pitch,0.23020201914383867,(N m)^2 s
+proposed,2019,wrist_roll,1.1331003139267044,(N m)^2 s
+proposed,2019,gripper,422174.8496869359,N^2 s
+proposed,2019,head_pan,5.378492975432814e-05,(N m)^2 s
+proposed,2019,head_tilt,0.008454128253655869,(N m)^2 s
+proposed,2020,left_wheel_vel,91902.12587510912,(N m)^2 s
+proposed,2020,right_wheel_vel,97025.45094664101,(N m)^2 s
+proposed,2020,lift,32361.74081871129,N^2 s
+proposed,2020,arm,2414.0673468701157,(N m)^2 s
+proposed,2020,wrist_yaw,0.6906167511859841,(N m)^2 s
+proposed,2020,wrist_pitch,0.20625835849046292,(N m)^2 s
+proposed,2020,wrist_roll,1.1490735623216768,(N m)^2 s
+proposed,2020,gripper,407914.3287916528,N^2 s
+proposed,2020,head_pan,4.562665071846146e-05,(N m)^2 s
+proposed,2020,head_tilt,0.007889217644630304,(N m)^2 s
+proposed,2021,left_wheel_vel,101231.41511522737,(N m)^2 s
+proposed,2021,right_wheel_vel,113891.31775723396,(N m)^2 s
+proposed,2021,lift,37124.88799142573,N^2 s
+proposed,2021,arm,2402.2799837178413,(N m)^2 s
+proposed,2021,wrist_yaw,0.6370610949445188,(N m)^2 s
+proposed,2021,wrist_pitch,0.2390587293161369,(N m)^2 s
+proposed,2021,wrist_roll,1.0323154388539113,(N m)^2 s
+proposed,2021,gripper,430824.54542606033,N^2 s
+proposed,2021,head_pan,5.531060247991251e-05,(N m)^2 s
+proposed,2021,head_tilt,0.008719205000503358,(N m)^2 s
+proposed,2022,left_wheel_vel,7310.914449558397,(N m)^2 s
+proposed,2022,right_wheel_vel,6784.960826611954,(N m)^2 s
+proposed,2022,lift,36063.05648768205,N^2 s
+proposed,2022,arm,319.1549846291596,(N m)^2 s
+proposed,2022,wrist_yaw,74.8954702766943,(N m)^2 s
+proposed,2022,wrist_pitch,11.00502999395075,(N m)^2 s
+proposed,2022,wrist_roll,7.466528504389489,(N m)^2 s
+proposed,2022,gripper,170943.00948576455,N^2 s
+proposed,2022,head_pan,0.4691994503517043,(N m)^2 s
+proposed,2022,head_tilt,17.640074534521013,(N m)^2 s
+proposed,2023,left_wheel_vel,91524.88065453073,(N m)^2 s
+proposed,2023,right_wheel_vel,100320.82564630355,(N m)^2 s
+proposed,2023,lift,35141.58484337681,N^2 s
+proposed,2023,arm,2606.3179495998675,(N m)^2 s
+proposed,2023,wrist_yaw,0.7353589201030029,(N m)^2 s
+proposed,2023,wrist_pitch,0.2217845289598579,(N m)^2 s
+proposed,2023,wrist_roll,1.1900056188307533,(N m)^2 s
+proposed,2023,gripper,422401.0816123228,N^2 s
+proposed,2023,head_pan,4.72386321969903e-05,(N m)^2 s
+proposed,2023,head_tilt,0.007922278699492668,(N m)^2 s
+proposed,2024,left_wheel_vel,66847.40688446049,(N m)^2 s
+proposed,2024,right_wheel_vel,76526.26641011461,(N m)^2 s
+proposed,2024,lift,31802.02280520816,N^2 s
+proposed,2024,arm,2062.332042786458,(N m)^2 s
+proposed,2024,wrist_yaw,0.6364805589874588,(N m)^2 s
+proposed,2024,wrist_pitch,0.18776432564019888,(N m)^2 s
+proposed,2024,wrist_roll,1.0623193635915082,(N m)^2 s
+proposed,2024,gripper,358756.30124082294,N^2 s
+proposed,2024,head_pan,4.308744220379754e-05,(N m)^2 s
+proposed,2024,head_tilt,0.006792980832317595,(N m)^2 s
+proposed,2025,left_wheel_vel,96274.76836649945,(N m)^2 s
+proposed,2025,right_wheel_vel,111807.9942429889,(N m)^2 s
+proposed,2025,lift,34054.75468926103,N^2 s
+proposed,2025,arm,2487.9005978979094,(N m)^2 s
+proposed,2025,wrist_yaw,0.7347447583878192,(N m)^2 s
+proposed,2025,wrist_pitch,0.21950968591646106,(N m)^2 s
+proposed,2025,wrist_roll,1.2336285796573023,(N m)^2 s
+proposed,2025,gripper,403853.41138910607,N^2 s
+proposed,2025,head_pan,5.629393871182994e-05,(N m)^2 s
+proposed,2025,head_tilt,0.008927349733452572,(N m)^2 s
+proposed,2026,left_wheel_vel,110230.80851886312,(N m)^2 s
+proposed,2026,right_wheel_vel,115763.5670425874,(N m)^2 s
+proposed,2026,lift,73516.5491057936,N^2 s
+proposed,2026,arm,2583.690664866918,(N m)^2 s
+proposed,2026,wrist_yaw,6.89662449983926,(N m)^2 s
+proposed,2026,wrist_pitch,3.3541136941681664,(N m)^2 s
+proposed,2026,wrist_roll,1.9977716390822255,(N m)^2 s
+proposed,2026,gripper,537372.7587452347,N^2 s
+proposed,2026,head_pan,6.350652033504859e-05,(N m)^2 s
+proposed,2026,head_tilt,0.01074904774418033,(N m)^2 s
+proposed,2027,left_wheel_vel,116163.22027655371,(N m)^2 s
+proposed,2027,right_wheel_vel,116835.85824503932,(N m)^2 s
+proposed,2027,lift,38633.498914637574,N^2 s
+proposed,2027,arm,2392.4890952573915,(N m)^2 s
+proposed,2027,wrist_yaw,0.7391896529873672,(N m)^2 s
+proposed,2027,wrist_pitch,0.2568460304155503,(N m)^2 s
+proposed,2027,wrist_roll,1.24695805844646,(N m)^2 s
+proposed,2027,gripper,408788.1980676934,N^2 s
+proposed,2027,head_pan,6.966569816586542e-05,(N m)^2 s
+proposed,2027,head_tilt,0.009416742493580672,(N m)^2 s
+proposed,2028,left_wheel_vel,101971.98497908014,(N m)^2 s
+proposed,2028,right_wheel_vel,108254.69170790486,(N m)^2 s
+proposed,2028,lift,35362.2287470104,N^2 s
+proposed,2028,arm,2426.9324340178027,(N m)^2 s
+proposed,2028,wrist_yaw,0.7029931980528418,(N m)^2 s
+proposed,2028,wrist_pitch,0.23055886606778914,(N m)^2 s
+proposed,2028,wrist_roll,1.175724753258626,(N m)^2 s
+proposed,2028,gripper,422339.47984618635,N^2 s
+proposed,2028,head_pan,6.612715480060994e-05,(N m)^2 s
+proposed,2028,head_tilt,0.009044630996859005,(N m)^2 s
+proposed,2029,left_wheel_vel,138031.8828202318,(N m)^2 s
+proposed,2029,right_wheel_vel,155284.4627284582,(N m)^2 s
+proposed,2029,lift,52010.49213413937,N^2 s
+proposed,2029,arm,2646.861116123272,(N m)^2 s
+proposed,2029,wrist_yaw,0.7265198788750382,(N m)^2 s
+proposed,2029,wrist_pitch,0.343136487850383,(N m)^2 s
+proposed,2029,wrist_roll,1.2437447944506244,(N m)^2 s
+proposed,2029,gripper,479067.54083867214,N^2 s
+proposed,2029,head_pan,8.443944200678523e-05,(N m)^2 s
+proposed,2029,head_tilt,0.01230652997917345,(N m)^2 s
+proposed,2030,left_wheel_vel,62679.32970054297,(N m)^2 s
+proposed,2030,right_wheel_vel,67497.62984475512,(N m)^2 s
+proposed,2030,lift,24378.9934044915,N^2 s
+proposed,2030,arm,2283.0957770746904,(N m)^2 s
+proposed,2030,wrist_yaw,0.9905924043475044,(N m)^2 s
+proposed,2030,wrist_pitch,0.22424228601545151,(N m)^2 s
+proposed,2030,wrist_roll,1.660027553276519,(N m)^2 s
+proposed,2030,gripper,295850.363243088,N^2 s
+proposed,2030,head_pan,4.333281537427412e-05,(N m)^2 s
+proposed,2030,head_tilt,0.00630597185437342,(N m)^2 s
+proposed,2031,left_wheel_vel,37524.974688396534,(N m)^2 s
+proposed,2031,right_wheel_vel,21097.709684843547,(N m)^2 s
+proposed,2031,lift,7311.706598848197,N^2 s
+proposed,2031,arm,162.3700153874751,(N m)^2 s
+proposed,2031,wrist_yaw,0.2185628820658825,(N m)^2 s
+proposed,2031,wrist_pitch,0.04792901807134604,(N m)^2 s
+proposed,2031,wrist_roll,0.3147619959348264,(N m)^2 s
+proposed,2031,gripper,44829.46578147251,N^2 s
+proposed,2031,head_pan,1.2090519096648937e-05,(N m)^2 s
+proposed,2031,head_tilt,0.0035806773259669444,(N m)^2 s
+proposed,2032,left_wheel_vel,103401.90783719381,(N m)^2 s
+proposed,2032,right_wheel_vel,112679.88799492473,(N m)^2 s
+proposed,2032,lift,36919.811021148555,N^2 s
+proposed,2032,arm,2449.9680403914635,(N m)^2 s
+proposed,2032,wrist_yaw,0.703875632863569,(N m)^2 s
+proposed,2032,wrist_pitch,0.24055857345958473,(N m)^2 s
+proposed,2032,wrist_roll,1.171299995980709,(N m)^2 s
+proposed,2032,gripper,430277.29074644373,N^2 s
+proposed,2032,head_pan,5.4102293796852865e-05,(N m)^2 s
+proposed,2032,head_tilt,0.008797651866097775,(N m)^2 s
+proposed,2033,left_wheel_vel,102924.1904589263,(N m)^2 s
+proposed,2033,right_wheel_vel,112505.72132842544,(N m)^2 s
+proposed,2033,lift,38834.459265526886,N^2 s
+proposed,2033,arm,4907.581090036409,(N m)^2 s
+proposed,2033,wrist_yaw,13.74300300301587,(N m)^2 s
+proposed,2033,wrist_pitch,0.5256494703166064,(N m)^2 s
+proposed,2033,wrist_roll,18.798934474674425,(N m)^2 s
+proposed,2033,gripper,454077.6777735332,N^2 s
+proposed,2033,head_pan,6.027475160213282e-05,(N m)^2 s
+proposed,2033,head_tilt,0.008981678961866277,(N m)^2 s
+proposed,2034,left_wheel_vel,120274.38496615831,(N m)^2 s
+proposed,2034,right_wheel_vel,123616.35611884459,(N m)^2 s
+proposed,2034,lift,39789.32097664963,N^2 s
+proposed,2034,arm,2470.0006542337146,(N m)^2 s
+proposed,2034,wrist_yaw,0.6325276797113897,(N m)^2 s
+proposed,2034,wrist_pitch,0.2592565250742361,(N m)^2 s
+proposed,2034,wrist_roll,1.0661680190507052,(N m)^2 s
+proposed,2034,gripper,435437.88449606986,N^2 s
+proposed,2034,head_pan,7.379381703623667e-05,(N m)^2 s
+proposed,2034,head_tilt,0.010045756997441655,(N m)^2 s
+proposed,2035,left_wheel_vel,105457.41110237893,(N m)^2 s
+proposed,2035,right_wheel_vel,115090.57335277258,(N m)^2 s
+proposed,2035,lift,37936.2990495358,N^2 s
+proposed,2035,arm,2517.1010902834414,(N m)^2 s
+proposed,2035,wrist_yaw,0.6529850746705732,(N m)^2 s
+proposed,2035,wrist_pitch,0.2573394396072819,(N m)^2 s
+proposed,2035,wrist_roll,1.0574435335664032,(N m)^2 s
+proposed,2035,gripper,425174.0142878943,N^2 s
+proposed,2035,head_pan,6.236792867437246e-05,(N m)^2 s
+proposed,2035,head_tilt,0.009364924295731845,(N m)^2 s
+proposed,2036,left_wheel_vel,92107.60917013799,(N m)^2 s
+proposed,2036,right_wheel_vel,106427.79692300867,(N m)^2 s
+proposed,2036,lift,35788.614943230015,N^2 s
+proposed,2036,arm,2549.7845738181963,(N m)^2 s
+proposed,2036,wrist_yaw,0.6389240450619496,(N m)^2 s
+proposed,2036,wrist_pitch,0.2219307971254391,(N m)^2 s
+proposed,2036,wrist_roll,1.0060748180194132,(N m)^2 s
+proposed,2036,gripper,410818.6701860946,N^2 s
+proposed,2036,head_pan,4.456172442496425e-05,(N m)^2 s
+proposed,2036,head_tilt,0.0084511084586447,(N m)^2 s
+proposed,2037,left_wheel_vel,105677.31018917997,(N m)^2 s
+proposed,2037,right_wheel_vel,113283.0122623615,(N m)^2 s
+proposed,2037,lift,37071.122843969984,N^2 s
+proposed,2037,arm,2506.1137779672285,(N m)^2 s
+proposed,2037,wrist_yaw,0.6608605296294254,(N m)^2 s
+proposed,2037,wrist_pitch,0.25086546088477774,(N m)^2 s
+proposed,2037,wrist_roll,1.0922734321792722,(N m)^2 s
+proposed,2037,gripper,415332.90620004456,N^2 s
+proposed,2037,head_pan,5.9719663106024634e-05,(N m)^2 s
+proposed,2037,head_tilt,0.009042370140311017,(N m)^2 s
+proposed,2038,left_wheel_vel,16759.214284416907,(N m)^2 s
+proposed,2038,right_wheel_vel,18185.906224182476,(N m)^2 s
+proposed,2038,lift,4173.89822942382,N^2 s
+proposed,2038,arm,129.01623387147268,(N m)^2 s
+proposed,2038,wrist_yaw,0.1150740167013839,(N m)^2 s
+proposed,2038,wrist_pitch,0.025056422088876245,(N m)^2 s
+proposed,2038,wrist_roll,0.24768668463030377,(N m)^2 s
+proposed,2038,gripper,53529.96070410165,N^2 s
+proposed,2038,head_pan,1.1896114623389908e-05,(N m)^2 s
+proposed,2038,head_tilt,0.0015421531493684348,(N m)^2 s
+proposed,2039,left_wheel_vel,112985.96146746539,(N m)^2 s
+proposed,2039,right_wheel_vel,124581.17564473295,(N m)^2 s
+proposed,2039,lift,35950.88166524994,N^2 s
+proposed,2039,arm,2380.1759247187024,(N m)^2 s
+proposed,2039,wrist_yaw,0.699107807295377,(N m)^2 s
+proposed,2039,wrist_pitch,0.24226813787964643,(N m)^2 s
+proposed,2039,wrist_roll,1.1817905991726745,(N m)^2 s
+proposed,2039,gripper,414086.3479130415,N^2 s
+proposed,2039,head_pan,8.841717005265387e-05,(N m)^2 s
+proposed,2039,head_tilt,0.011511545684567779,(N m)^2 s
+proposed,2040,left_wheel_vel,115774.02820416517,(N m)^2 s
+proposed,2040,right_wheel_vel,121436.96770960998,(N m)^2 s
+proposed,2040,lift,40592.50422414011,N^2 s
+proposed,2040,arm,2770.223452346318,(N m)^2 s
+proposed,2040,wrist_yaw,2.0227394167576804,(N m)^2 s
+proposed,2040,wrist_pitch,0.7458670604367978,(N m)^2 s
+proposed,2040,wrist_roll,1.4459323120860663,(N m)^2 s
+proposed,2040,gripper,441096.02033565816,N^2 s
+proposed,2040,head_pan,9.344514433155365e-05,(N m)^2 s
+proposed,2040,head_tilt,0.03263312864488724,(N m)^2 s
+proposed,2041,left_wheel_vel,99048.41430758665,(N m)^2 s
+proposed,2041,right_wheel_vel,107055.69245816594,(N m)^2 s
+proposed,2041,lift,34176.44100609515,N^2 s
+proposed,2041,arm,2406.944485252883,(N m)^2 s
+proposed,2041,wrist_yaw,0.7577782079261631,(N m)^2 s
+proposed,2041,wrist_pitch,0.22264578802859775,(N m)^2 s
+proposed,2041,wrist_roll,1.2689865775408546,(N m)^2 s
+proposed,2041,gripper,410839.3410842218,N^2 s
+proposed,2041,head_pan,5.834630296325461e-05,(N m)^2 s
+proposed,2041,head_tilt,0.008439196014842804,(N m)^2 s
+proposed,2042,left_wheel_vel,103681.6373146154,(N m)^2 s
+proposed,2042,right_wheel_vel,112264.41148444815,(N m)^2 s
+proposed,2042,lift,36959.68100627232,N^2 s
+proposed,2042,arm,2542.2969455156285,(N m)^2 s
+proposed,2042,wrist_yaw,0.6472673476243549,(N m)^2 s
+proposed,2042,wrist_pitch,0.2399042118557427,(N m)^2 s
+proposed,2042,wrist_roll,1.0651690077818734,(N m)^2 s
+proposed,2042,gripper,434877.30288379325,N^2 s
+proposed,2042,head_pan,6.218132335866132e-05,(N m)^2 s
+proposed,2042,head_tilt,0.009109514534709179,(N m)^2 s
+proposed,2043,left_wheel_vel,38186.2425903299,(N m)^2 s
+proposed,2043,right_wheel_vel,41766.623163786586,(N m)^2 s
+proposed,2043,lift,18170.302069749043,N^2 s
+proposed,2043,arm,1691.9408153488844,(N m)^2 s
+proposed,2043,wrist_yaw,0.5013417078522091,(N m)^2 s
+proposed,2043,wrist_pitch,0.13634073539800293,(N m)^2 s
+proposed,2043,wrist_roll,0.8179157799394284,(N m)^2 s
+proposed,2043,gripper,253916.47997034618,N^2 s
+proposed,2043,head_pan,2.4378104242589942e-05,(N m)^2 s
+proposed,2043,head_tilt,0.004247894671074947,(N m)^2 s
+proposed,2044,left_wheel_vel,116519.06160658634,(N m)^2 s
+proposed,2044,right_wheel_vel,139567.70995990557,(N m)^2 s
+proposed,2044,lift,43127.18025099527,N^2 s
+proposed,2044,arm,2482.9376588728564,(N m)^2 s
+proposed,2044,wrist_yaw,8.495484433208942,(N m)^2 s
+proposed,2044,wrist_pitch,0.2850001705843098,(N m)^2 s
+proposed,2044,wrist_roll,2.8820052904300706,(N m)^2 s
+proposed,2044,gripper,454792.6716201251,N^2 s
+proposed,2044,head_pan,6.697941261661752e-05,(N m)^2 s
+proposed,2044,head_tilt,0.009959646493197164,(N m)^2 s
+proposed,2045,left_wheel_vel,105791.40583729946,(N m)^2 s
+proposed,2045,right_wheel_vel,111788.26215308938,(N m)^2 s
+proposed,2045,lift,36354.07398253513,N^2 s
+proposed,2045,arm,2422.8859351475585,(N m)^2 s
+proposed,2045,wrist_yaw,0.7128352442601434,(N m)^2 s
+proposed,2045,wrist_pitch,0.23988936602585795,(N m)^2 s
+proposed,2045,wrist_roll,1.1991601183765344,(N m)^2 s
+proposed,2045,gripper,416911.68454762106,N^2 s
+proposed,2045,head_pan,6.422875349000766e-05,(N m)^2 s
+proposed,2045,head_tilt,0.009319493147601355,(N m)^2 s
+proposed,2046,left_wheel_vel,4948.339284101068,(N m)^2 s
+proposed,2046,right_wheel_vel,5086.833370853557,(N m)^2 s
+proposed,2046,lift,2167.7904314921125,N^2 s
+proposed,2046,arm,119.69845890855682,(N m)^2 s
+proposed,2046,wrist_yaw,0.10630563327301733,(N m)^2 s
+proposed,2046,wrist_pitch,0.01459747959106543,(N m)^2 s
+proposed,2046,wrist_roll,0.1792192543781246,(N m)^2 s
+proposed,2046,gripper,36661.91469392749,N^2 s
+proposed,2046,head_pan,3.707948963054959e-06,(N m)^2 s
+proposed,2046,head_tilt,0.0006376514444483783,(N m)^2 s
+proposed,2047,left_wheel_vel,110236.59631710296,(N m)^2 s
+proposed,2047,right_wheel_vel,117195.42674453562,(N m)^2 s
+proposed,2047,lift,39638.57820983243,N^2 s
+proposed,2047,arm,2563.460613855878,(N m)^2 s
+proposed,2047,wrist_yaw,0.7789157611044872,(N m)^2 s
+proposed,2047,wrist_pitch,0.25756362980442404,(N m)^2 s
+proposed,2047,wrist_roll,1.2161501508160444,(N m)^2 s
+proposed,2047,gripper,431372.0383738058,N^2 s
+proposed,2047,head_pan,6.562589461859026e-05,(N m)^2 s
+proposed,2047,head_tilt,0.009489801564010608,(N m)^2 s
+proposed,2048,left_wheel_vel,112022.53561877599,(N m)^2 s
+proposed,2048,right_wheel_vel,121853.07367653729,(N m)^2 s
+proposed,2048,lift,37072.80604279747,N^2 s
+proposed,2048,arm,2480.1961561372887,(N m)^2 s
+proposed,2048,wrist_yaw,0.723533896057083,(N m)^2 s
+proposed,2048,wrist_pitch,0.24212897031451974,(N m)^2 s
+proposed,2048,wrist_roll,1.2111430633315459,(N m)^2 s
+proposed,2048,gripper,466947.1901351719,N^2 s
+proposed,2048,head_pan,6.888567770762751e-05,(N m)^2 s
+proposed,2048,head_tilt,0.009530341191102548,(N m)^2 s
+proposed,2049,left_wheel_vel,111112.11663188062,(N m)^2 s
+proposed,2049,right_wheel_vel,129120.34380854928,(N m)^2 s
+proposed,2049,lift,54583.14108927125,N^2 s
+proposed,2049,arm,5097.258302660134,(N m)^2 s
+proposed,2049,wrist_yaw,11.58025516266992,(N m)^2 s
+proposed,2049,wrist_pitch,57.65610290405635,(N m)^2 s
+proposed,2049,wrist_roll,22.848499941660236,(N m)^2 s
+proposed,2049,gripper,441471.79382624215,N^2 s
+proposed,2049,head_pan,9.12319978919037e-05,(N m)^2 s
+proposed,2049,head_tilt,0.010815334549845262,(N m)^2 s

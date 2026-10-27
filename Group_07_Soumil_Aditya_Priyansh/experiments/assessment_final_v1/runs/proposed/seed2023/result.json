@@ -1,0 +1,708 @@
+{
+  "run_id": "proposed_seed2023_07e08b44",
+  "condition": "proposed",
+  "trial": 0,
+  "seed": 2023,
+  "sim_time_s": 923.8,
+  "objects_total": 16,
+  "detected": 16,
+  "detection_acc": 1.0,
+  "classification_acc": 0.938,
+  "cleaned": 15,
+  "failed": 1,
+  "grasp_attempts": 16,
+  "carry_drops": 0,
+  "grasp_success_rate": 1.0,
+  "nav_legs": 35,
+  "nav_success_rate": 1.0,
+  "collision_events": 0,
+  "collisions_per_object": 0.0,
+  "avg_pickup_s": 21.3,
+  "avg_sort_s": 27.0,
+  "total_clean_time_s": 923.8,
+  "wall_s": 4694.9,
+  "run_status": "exhausted",
+  "study_eligible": true,
+  "elapsed_s": 923.7999999919433,
+  "horizon_s": 1800.0,
+  "restricted_completion_time_s": 1800.0,
+  "physics_hz": 500.0,
+  "samples": 461900,
+  "unexpected_contact_samples": 0,
+  "effort_by_actuator": [
+    91524.88072614149,
+    100320.82571241156,
+    35141.584814947666,
+    2606.31794317824,
+    0.73535891989278,
+    0.22178452928281117,
+    1.1900056175038174,
+    422401.0818933221,
+    4.7238632122949725e-05,
+    0.007922278698228265
+  ],
+  "reach_lift_rmse_m": 0.052614940761466965,
+  "reach_lift_samples": 58680,
+  "navigation_path_rmse_m": 0.01084398824395698,
+  "navigation_samples": 230500,
+  "docking": [
+    {
+      "time_s": 10.140000000000555,
+      "error_m": 0.04368019540278091
+    },
+    {
+      "time_s": 50.42000000001749,
+      "error_m": 0.009585806167160201
+    },
+    {
+      "time_s": 93.71999999995948,
+      "error_m": 0.025175580159576195
+    },
+    {
+      "time_s": 137.75999999993684,
+      "error_m": 0.04705057966901029
+    },
+    {
+      "time_s": 177.22000000012525,
+      "error_m": 0.034904877923489425
+    },
+    {
+      "time_s": 232.16000000038758,
+      "error_m": 0.026110994582946852
+    },
+    {
+      "time_s": 282.3600000006273,
+      "error_m": 0.019996617228799977
+    },
+    {
+      "time_s": 336.8400000008874,
+      "error_m": 0.018122032622101172
+    },
+    {
+      "time_s": 393.3400000011572,
+      "error_m": 0.03449818428646282
+    },
+    {
+      "time_s": 443.8600000013984,
+      "error_m": 0.00662307994705915
+    },
+    {
+      "time_s": 494.72000000164127,
+      "error_m": 0.03326681319368604
+    },
+    {
+      "time_s": 547.440000000843,
+      "error_m": 0.0207905662420777
+    },
+    {
+      "time_s": 605.4799999994706,
+      "error_m": 0.0261240988358841
+    },
+    {
+      "time_s": 664.8199999980674,
+      "error_m": 0.03674707724014344
+    },
+    {
+      "time_s": 726.659999996605,
+      "error_m": 0.031389079847301375
+    },
+    {
+      "time_s": 809.1399999946547,
+      "error_m": 0.010249323267282022
+    },
+    {
+      "time_s": 881.4199999929455,
+      "error_m": 0.02943552685851953
+    },
+    {
+      "time_s": 895.9199999926026,
+      "error_m": 0.03072976958596256
+    },
+    {
+      "time_s": 911.1399999922427,
+      "error_m": 0.023821811811093753
+    }
+  ],
+  "grasp_events": [
+    {
+      "time_s": 17.179999999999723,
+      "object": "paper_1",
+      "type": "paper",
+      "success": true
+    },
+    {
+      "time_s": 57.540000000003396,
+      "object": "cup_2",
+      "type": "cup",
+      "success": true
+    },
+    {
+      "time_s": 105.47999999999615,
+      "object": "cup_1",
+      "type": "cup",
+      "success": true
+    },
+    {
+      "time_s": 144.36000000000004,
+      "object": "plasticpack_1",
+      "type": "plasticpack",
+      "success": true
+    },
+    {
+      "time_s": 187.92000000002233,
+      "object": "wrapper_1",
+      "type": "wrapper",
+      "success": true
+    },
+    {
+      "time_s": 239.54000000004874,
+      "object": "personal_1",
+      "type": "personal",
+      "success": true
+    },
+    {
+      "time_s": 289.4400000000267,
+      "object": "glove_2",
+      "type": "glove",
+      "success": true
+    },
+    {
+      "time_s": 343.3199999999777,
+      "object": "paper_2",
+      "type": "paper",
+      "success": true
+    },
+    {
+      "time_s": 400.0799999999261,
+      "object": "slipper_1",
+      "type": "slipper",
+      "success": true
+    },
+    {
+      "time_s": 455.31999999987585,
+      "object": "towel_2",
+      "type": "towel",
+      "success": true
+    },
+    {
+      "time_s": 501.1999999998341,
+      "object": "personal_2",
+      "type": "personal",
+      "success": true
+    },
+    {
+      "time_s": 556.0999999997842,
+      "object": "bottle_1",
+      "type": "bottle",
+      "success": true
+    },
+    {
+      "time_s": 616.6799999997291,
+      "object": "towel_1",
+      "type": "towel",
+      "success": true
+    },
+    {
+      "time_s": 671.5399999996793,
+      "object": "bottle_2",
+      "type": "bottle",
+      "success": true
+    },
+    {
+      "time_s": 738.5999999996183,
+      "object": "gauze_1",
+      "type": "gauze",
+      "success": true
+    },
+    {
+      "time_s": 815.879999999548,
+      "object": "glove_1",
+      "type": "glove",
+      "success": true
+    }
+  ],
+  "items": {
+    "cup_1": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.11500620545675157,
+        2.0931943904281063,
+        0.05490496750599716
+      ],
+      "half_extents_m": [
+        0.06500636704869985,
+        0.05680579366085258,
+        0.035050982000215274
+      ],
+      "contained": true
+    },
+    "cup_2": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.2720824788284496,
+        2.0861606996635946,
+        0.05483475541511936
+      ],
+      "half_extents_m": [
+        0.06335398361531644,
+        0.06390137235771522,
+        0.0350757131836942
+      ],
+      "contained": true
+    },
+    "bottle_1": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.10373855653789316,
+        1.9448478294470706,
+        0.06146512645865976
+      ],
+      "half_extents_m": [
+        0.053767066247774206,
+        0.09486424085697244,
+        0.0417053630455872
+      ],
+      "contained": true
+    },
+    "bottle_2": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.3198851261268849,
+        2.040163333328558,
+        0.08690556456525335
+      ],
+      "half_extents_m": [
+        0.030160133703016186,
+        0.09391049250699061,
+        0.06710355835651467
+      ],
+      "contained": true
+    },
+    "paper_1": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.19492785624661485,
+        2.035329141333666,
+        0.05988503985939198
+      ],
+      "half_extents_m": [
+        0.049499796093182266,
+        0.0495054766992676,
+        0.04001314883242237
+      ],
+      "contained": true
+    },
+    "paper_2": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.2303681370934407,
+        1.9351043693627417,
+        0.0548922445797838
+      ],
+      "half_extents_m": [
+        0.05152911914886842,
+        0.05280259724565347,
+        0.034999999999999996
+      ],
+      "contained": true
+    },
+    "glove_1": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.51344653872835,
+        2.1235712163341267,
+        0.04989224457978383
+      ],
+      "half_extents_m": [
+        0.035873713027239656,
+        0.02623862447628901,
+        0.030000000000000054
+      ],
+      "contained": true
+    },
+    "glove_2": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.47107100127136853,
+        2.0016650619754146,
+        0.05489224457978376
+      ],
+      "half_extents_m": [
+        0.03396413181057991,
+        0.029931934174216784,
+        0.03500000000049754
+      ],
+      "contained": true
+    },
+    "wrapper_1": {
+      "type": "wrapper",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.4959871483557147,
+        1.9083074937424638,
+        0.044792765221131764
+      ],
+      "half_extents_m": [
+        0.04716047605176777,
+        0.05830034986541481,
+        0.025000000000000053
+      ],
+      "contained": true
+    },
+    "plasticpack_1": {
+      "type": "plasticpack",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.43184996526516617,
+        2.0783653515234413,
+        0.03989224457978384
+      ],
+      "half_extents_m": [
+        0.032687646046056,
+        0.04428436653543666,
+        0.020000000000000007
+      ],
+      "contained": true
+    },
+    "towel_1": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        0.9056011507856738,
+        2.071268924814421,
+        0.05989224457978382
+      ],
+      "half_extents_m": [
+        0.06019479585658947,
+        0.05963198397115954,
+        0.04000000000000003
+      ],
+      "contained": true
+    },
+    "towel_2": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        0.9563860964027243,
+        1.9741086384505906,
+        0.059892244579783815
+      ],
+      "half_extents_m": [
+        0.057563042849128186,
+        0.055096833692499445,
+        0.040000000000000036
+      ],
+      "contained": true
+    },
+    "gauze_1": {
+      "type": "gauze",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.5552591311836222,
+        2.015226014934534,
+        0.04989224457978381
+      ],
+      "half_extents_m": [
+        0.05023563272630309,
+        0.03866577622511347,
+        0.030000000000000013
+      ],
+      "contained": true
+    },
+    "personal_1": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        1.998861418328435,
+        2.411222903358815,
+        0.04489224457978389
+      ],
+      "half_extents_m": [
+        0.03328282694257754,
+        0.03048796239424149,
+        0.04500000000058539
+      ],
+      "contained": false
+    },
+    "personal_2": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        1.6949577115054244,
+        1.922473630054053,
+        0.6378922445797833
+      ],
+      "half_extents_m": [
+        0.021959212003819076,
+        0.04643167730425675,
+        0.028000000000521455
+      ],
+      "contained": true
+    },
+    "slipper_1": {
+      "type": "slipper",
+      "destination": "return_tray",
+      "position_m": [
+        1.5979657656295545,
+        2.0047783854968286,
+        0.6398922445797834
+      ],
+      "half_extents_m": [
+        0.05541433858692431,
+        0.11918796408984605,
+        0.03000000000000002
+      ],
+      "contained": true
+    }
+  },
+  "protocol_sha256": "e67b07d157e177c093f2e5ebe2180f05b16c164d60a5e063a534aa41423b5521",
+  "scenario_state_sha256": "26316ed21d1de4901ce01acaf46c941531bd979667f5b8e3d30c996b1524ed42",
+  "final_source_check": true,
+  "state_events_sha256": "9903ccc895ef0e2bb85a568f8609953c4dc62ce57d730b8b1101f06851a3da6e",
+  "manifest_file": "manifest_proposed_seed2023_07e08b44.json",
+  "raw_files": [
+    {
+      "path": "proposed_seed2023_07e08b44_part001_real_trials.csv.gz",
+      "sha256": "a08e133c18cd19035703f28118f6a81606a30c051c4ca2a67737a59cd1269da4",
+      "bytes": 5634173
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part002_real_trials.csv.gz",
+      "sha256": "22c1a08778e040a02c06af40751fa044b88dfc2f964dd1f4c3793e3bf3aea6ad",
+      "bytes": 5768419
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part003_real_trials.csv.gz",
+      "sha256": "1adc494aa4b5f22cc4a0283dd685044e813403fd351eeb5b6de31f103f6a7a47",
+      "bytes": 5570290
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part004_real_trials.csv.gz",
+      "sha256": "a7a5f78fb9bd257ca60007b4a62b994e67acdd16aaa316d261f06436b668f717",
+      "bytes": 5762790
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part005_real_trials.csv.gz",
+      "sha256": "1dfc11235d7da3f8da02de536b58e5c3e065631ad61ac6a3ea460b9214172e83",
+      "bytes": 5867026
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part006_real_trials.csv.gz",
+      "sha256": "95df36f2a111acc77c184d9577d02ad3372df4b9a81771dc52dc7056f30dc54c",
+      "bytes": 5867990
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part007_real_trials.csv.gz",
+      "sha256": "fbc4bee89781015fbf48edbdc910330eb244b3880f63c69ad2e034816e880d9a",
+      "bytes": 5662253
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part008_real_trials.csv.gz",
+      "sha256": "bed3775bbff32603c4559507d560615f843e4f08225f766ba8b19b1e66b4fa71",
+      "bytes": 5826938
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part009_real_trials.csv.gz",
+      "sha256": "d9ae6e0ef9ffc417996803aa5ece3129d8646414fce77a549bcd1ddae4513b3b",
+      "bytes": 5489203
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part010_real_trials.csv.gz",
+      "sha256": "d790656a222619551347ee4b0bc4b04395732fd0c729e78eaaa06e22e3081c02",
+      "bytes": 5750494
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part011_real_trials.csv.gz",
+      "sha256": "af9bd5fb4f8bd82f9632e39e38215bcced94c3e706447ef6ab6610aa455e1c5d",
+      "bytes": 5657930
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part012_real_trials.csv.gz",
+      "sha256": "19d8f7e00e5d5f0fd0e535350fd58b3b893fb094e84f661046d7928caa8d541b",
+      "bytes": 5806247
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part013_real_trials.csv.gz",
+      "sha256": "9a85f34d524118f5f41e9778d77630dcbf072f483530b608303206cbcdc105a8",
+      "bytes": 5858424
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part014_real_trials.csv.gz",
+      "sha256": "fc21bcc2f6a4b5f76a54a67d00e31b340d52f0be486f92f9895a33e0492d524b",
+      "bytes": 5566282
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part015_real_trials.csv.gz",
+      "sha256": "5c74742ed766ebbac6eb0b9f00be8237a87db4633ca5c9b5f9a794c0360e847e",
+      "bytes": 5753564
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part016_real_trials.csv.gz",
+      "sha256": "9cda17a00e73e77c35acc3f060703172ce9bbd7062504b5aa5f642c568cfdf3f",
+      "bytes": 5648207
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part017_real_trials.csv.gz",
+      "sha256": "793e262e8b844414311611af7926f67b03eaaa2120059b8c99923b9c6d67c8e4",
+      "bytes": 5770192
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part018_real_trials.csv.gz",
+      "sha256": "e1757a8036ab9e20d3b584dd2c70c828b0b7e7a8ab83a376fe726632d8975bfc",
+      "bytes": 5883180
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part019_real_trials.csv.gz",
+      "sha256": "14c870a770160c35cce48adeb64372546c78907c995054a6c8cae26b8dd60351",
+      "bytes": 5657350
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part020_real_trials.csv.gz",
+      "sha256": "374980252b5ac9f4c0b62af6da24fe491537ff7b28cfc0fd1f10bb7bfd0e7566",
+      "bytes": 5989206
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part021_real_trials.csv.gz",
+      "sha256": "9bf75c81f2131442e800ffc9ffc843e12e5c5d968e7a5d1e8241a4669e8a354d",
+      "bytes": 5984606
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part022_real_trials.csv.gz",
+      "sha256": "b07caf7a372f68cca7d7b72b120d8f39a29bfdb11a9d01198c0ae3b1423f32c5",
+      "bytes": 5641251
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part023_real_trials.csv.gz",
+      "sha256": "408e91c78b05583cea16be487d30bf20d4ab46e78ec766e0a29b158957866b6f",
+      "bytes": 5833257
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part024_real_trials.csv.gz",
+      "sha256": "ed4c5e021da276b5963fc2ccde0c80463dfa08fb83eb460548f5e3d2f61bc494",
+      "bytes": 5549165
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part025_real_trials.csv.gz",
+      "sha256": "4aa39f1d07ae125ca35110f2c98e5370098082baa44794b902a2017652efd207",
+      "bytes": 5811161
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part026_real_trials.csv.gz",
+      "sha256": "81786799acd49fa5350023c3d7bf27fa4a84db68a7567667229a1e87b9416bee",
+      "bytes": 5757700
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part027_real_trials.csv.gz",
+      "sha256": "db8c7f302c53ccec9fc01dab78967823f9576822c7ab110fcff44496330bab38",
+      "bytes": 5749185
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part028_real_trials.csv.gz",
+      "sha256": "284009a28ffe748b7212dce21643ed27da62f265f0b15a838720519e2321a043",
+      "bytes": 5841680
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part029_real_trials.csv.gz",
+      "sha256": "bd9621444d2194d378d955c9d954f1fb999fbfbde32ded5385cf0c7561d49797",
+      "bytes": 6032512
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part030_real_trials.csv.gz",
+      "sha256": "2aedc1e0e538c1d2ff88a629b7a6f9c5ab8d33d661884198241409a92f3baaac",
+      "bytes": 5609585
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part031_real_trials.csv.gz",
+      "sha256": "a0a2c7e65943848b02f75545afa2bf206b5d25f28c26e9a5653d2d646e1a0294",
+      "bytes": 5712420
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part032_real_trials.csv.gz",
+      "sha256": "64685950b34892c770023f3ee7424f760c9d17d9397f317529ace0a1c69fdbb4",
+      "bytes": 5860081
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part033_real_trials.csv.gz",
+      "sha256": "ec9d9d3782f71a11d5e80bfdc05a4c7d0592de1de1d326c3859663f661bf413d",
+      "bytes": 5615929
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part034_real_trials.csv.gz",
+      "sha256": "771a4974f12b70975c6a0ba45d5445422ab55160ed51616ea930ad455c3a61e5",
+      "bytes": 5836784
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part035_real_trials.csv.gz",
+      "sha256": "fb50352f8dd4dac4ba4f355414dd3c14c868ef366645bdccb390b7e875eaee81",
+      "bytes": 5995960
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part036_real_trials.csv.gz",
+      "sha256": "1f8892ea16d304d527f2e97e10a327783d7f49a77797bc06fc138452c33f77ef",
+      "bytes": 5602512
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part037_real_trials.csv.gz",
+      "sha256": "f005684f242b163a51694730527b74f04accc0645c4c8375322163ce3ed8bd94",
+      "bytes": 5654906
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part038_real_trials.csv.gz",
+      "sha256": "6fbd68f48e215a72d286ef058d9184a7fb1d6094a830e7de170d99fa9e36e019",
+      "bytes": 5946279
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part039_real_trials.csv.gz",
+      "sha256": "f8d4fc5c3ca5b43f432a2401db64eb6e103287d3c20cde6cacd9b1112f2a11ad",
+      "bytes": 5648166
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part040_real_trials.csv.gz",
+      "sha256": "4b5a5df49f048ac99993ac263599de4b5e97c08ea1852d172eb6b29ab6410c25",
+      "bytes": 5757110
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part041_real_trials.csv.gz",
+      "sha256": "2e8fd281de48e75700cc525f2af31e4582b7782de258e3f301ddff912e15921c",
+      "bytes": 5790535
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part042_real_trials.csv.gz",
+      "sha256": "5353973dcdd88b39f3bd3777df1142d7e95abc929354dc9ae5e928bbef3830e1",
+      "bytes": 5753994
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part043_real_trials.csv.gz",
+      "sha256": "7a79e10534206af77121f74c2bd180dc685c7d88b32755a74ea7836830a8215d",
+      "bytes": 5743127
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part044_real_trials.csv.gz",
+      "sha256": "a717b80679185e77dfd6ced68baf971caeffbfa94e9d95e9a18ed6a343499f52",
+      "bytes": 5736218
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part045_real_trials.csv.gz",
+      "sha256": "425f0bf8ecc2d95e4f3e6750a4d8a26fa58564e27ef63bc8c78f924948b30921",
+      "bytes": 5591334
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part046_real_trials.csv.gz",
+      "sha256": "62b006f0a48c78e4586cd9854177ee6190c2560903d485afe52908ee605deb8d",
+      "bytes": 5554003
+    },
+    {
+      "path": "proposed_seed2023_07e08b44_part047_real_trials.csv.gz",
+      "sha256": "2d8fa2f9f31fa2b4a24341a4caaa77d59c1eca08fabdbd8ed2a90b181ae5d13b",
+      "bytes": 1072570
+    }
+  ]
+}

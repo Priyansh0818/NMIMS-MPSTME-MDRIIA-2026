@@ -1,0 +1,456 @@
+{
+  "run_id": "proposed_seed2031_7afe3268",
+  "seed": 2031,
+  "condition": "proposed",
+  "mujoco": "3.12.0",
+  "scene_model": "hospital_assessment.xml",
+  "sample_columns": [
+    "run_id",
+    "seed",
+    "condition",
+    "time_s",
+    "state",
+    "target",
+    "robot_collision",
+    "contact_count",
+    "base_x",
+    "base_y",
+    "base_yaw",
+    "lift_m",
+    "extension_m",
+    "ee_x",
+    "ee_y",
+    "ee_z",
+    "ref_x",
+    "ref_y",
+    "ref_z",
+    "reference_valid",
+    "error_x",
+    "error_y",
+    "error_z",
+    "base_vx",
+    "base_vy",
+    "base_wz",
+    "command_left_wheel_vel",
+    "command_right_wheel_vel",
+    "command_lift",
+    "command_arm",
+    "command_wrist_yaw",
+    "command_wrist_pitch",
+    "command_wrist_roll",
+    "command_gripper",
+    "command_head_pan",
+    "command_head_tilt",
+    "force_left_wheel_vel",
+    "force_right_wheel_vel",
+    "force_lift",
+    "force_arm",
+    "force_wrist_yaw",
+    "force_wrist_pitch",
+    "force_wrist_roll",
+    "force_gripper",
+    "force_head_pan",
+    "force_head_tilt",
+    "qpos_000",
+    "qpos_001",
+    "qpos_002",
+    "qpos_003",
+    "qpos_004",
+    "qpos_005",
+    "qpos_006",
+    "qpos_007",
+    "qpos_008",
+    "qpos_009",
+    "qpos_010",
+    "qpos_011",
+    "qpos_012",
+    "qpos_013",
+    "qpos_014",
+    "qpos_015",
+    "qpos_016",
+    "qpos_017",
+    "qpos_018",
+    "qpos_019",
+    "qpos_020",
+    "qpos_021",
+    "qpos_022",
+    "qpos_023",
+    "qpos_024",
+    "qpos_025",
+    "qpos_026",
+    "qvel_000",
+    "qvel_001",
+    "qvel_002",
+    "qvel_003",
+    "qvel_004",
+    "qvel_005",
+    "qvel_006",
+    "qvel_007",
+    "qvel_008",
+    "qvel_009",
+    "qvel_010",
+    "qvel_011",
+    "qvel_012",
+    "qvel_013",
+    "qvel_014",
+    "qvel_015",
+    "qvel_016",
+    "qvel_017",
+    "qvel_018",
+    "qvel_019",
+    "qvel_020",
+    "qvel_021",
+    "qvel_022",
+    "qvel_023",
+    "qvel_024",
+    "qvel_025",
+    "reach_lift_tracking_valid",
+    "nav_ref_x",
+    "nav_ref_y",
+    "nav_reference_valid",
+    "nav_path_error_m",
+    "target_state_valid",
+    "target_x",
+    "target_y",
+    "target_z",
+    "target_vx",
+    "target_vy",
+    "target_vz"
+  ],
+  "collision_check_hz": 500.0,
+  "collision_policy": "Robot/environment and unhandled clutter contacts every physics step; floor and intended finger-target/support interactions excluded; episodes separated by a 1 s contact-free gap",
+  "timestep_s": 0.002,
+  "control_hz": 50,
+  "physics_log_hz": 500.0,
+  "reference": "Controller-generated rate-limited lift/extension setpoint path transformed by calibrated top-down kinematics into the current base frame; logged command is the one applied over the sampled physics step. RMSE only PREGRASP/DESCEND/LIFT with top-down wrist validity; not a globally preplanned six-dimensional trajectory.",
+  "effort": "Per actuator integral of actuator_force squared over simulation time; retain force and torque channels separately",
+  "perception": "Simulation ray/instance IDs and model colours with known prototypes; simulator base pose",
+  "spawn_distribution": {
+    "cup_1": [
+      0.8,
+      0.92,
+      0.2,
+      0.4,
+      "surface"
+    ],
+    "cup_2": [
+      -1.1,
+      -0.9,
+      1.15,
+      1.4,
+      "floor"
+    ],
+    "bottle_1": [
+      1.28,
+      1.38,
+      -0.9,
+      -0.5,
+      "floor"
+    ],
+    "bottle_2": [
+      3.05,
+      3.25,
+      -0.7,
+      -0.3,
+      "floor"
+    ],
+    "paper_1": [
+      0.4,
+      0.8,
+      -1.1,
+      -0.8,
+      "floor"
+    ],
+    "paper_2": [
+      -0.95,
+      -0.7,
+      -1.3,
+      -1.0,
+      "floor"
+    ],
+    "glove_1": [
+      -1.35,
+      -1.15,
+      -2.0,
+      -1.85,
+      "floor"
+    ],
+    "glove_2": [
+      1.8,
+      2.2,
+      0.8,
+      1.1,
+      "floor"
+    ],
+    "wrapper_1": [
+      -1.5,
+      -1.4,
+      -0.1,
+      0.05,
+      "surface"
+    ],
+    "plasticpack_1": [
+      -1.0,
+      -0.85,
+      0.55,
+      0.75,
+      "floor"
+    ],
+    "towel_1": [
+      -1.3,
+      -1.25,
+      -1.28,
+      -1.16,
+      "surface"
+    ],
+    "towel_2": [
+      1.8,
+      2.2,
+      0.2,
+      0.35,
+      "surface"
+    ],
+    "gauze_1": [
+      -0.08,
+      0.08,
+      -1.64,
+      -1.58,
+      "surface"
+    ],
+    "personal_1": [
+      -2.5,
+      -2.3,
+      1.0,
+      1.4,
+      "floor"
+    ],
+    "personal_2": [
+      2.9,
+      3.2,
+      1.2,
+      1.5,
+      "floor"
+    ],
+    "slipper_1": [
+      0.72,
+      0.95,
+      -0.65,
+      -0.43,
+      "floor"
+    ]
+  },
+  "yaw_uniform_radians": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "spawn_acceptance": "Reject overlapping, wrong-support or grasp-validator-unreachable candidates",
+  "initial_positions": {
+    "cup_1": [
+      0.8462727204592306,
+      0.30599542273460156,
+      0.7899119221204548
+    ],
+    "cup_2": [
+      -0.9703236419305716,
+      1.2752074549892585,
+      0.054857847002229926
+    ],
+    "bottle_1": [
+      1.3667163763881256,
+      -0.6229012219905155,
+      0.0898578470022387
+    ],
+    "bottle_2": [
+      3.0998605785310622,
+      -0.3804920613032458,
+      0.08985784700222992
+    ],
+    "paper_1": [
+      0.47141681575846744,
+      -0.8018166604734779,
+      0.03989224457978384
+    ],
+    "paper_2": [
+      -0.9351590935272147,
+      -1.0031280010960608,
+      0.03989224457978384
+    ],
+    "glove_1": [
+      -1.2940148559859397,
+      -1.853402533977673,
+      0.03489224457978382
+    ],
+    "glove_2": [
+      1.8471261271313,
+      0.917401710339302,
+      0.03489224457978386
+    ],
+    "wrapper_1": [
+      -1.4718480347013232,
+      0.031320324663563964,
+      0.45663281815794354
+    ],
+    "plasticpack_1": [
+      -0.8602367201720522,
+      0.5958675560195837,
+      0.03989224457978386
+    ],
+    "towel_1": [
+      -1.2515530411207876,
+      -1.212774064192995,
+      0.48489224457978397
+    ],
+    "towel_2": [
+      1.9907881813322386,
+      0.2423055866759639,
+      0.7948922445797844
+    ],
+    "gauze_1": [
+      0.07933398474864409,
+      -1.6327657203129362,
+      0.7768922445797842
+    ],
+    "personal_1": [
+      -2.343225380727606,
+      1.199848007563228,
+      0.04489224457978386
+    ],
+    "personal_2": [
+      3.01101398479042,
+      1.386023785776139,
+      0.04489224457978382
+    ],
+    "slipper_1": [
+      0.7616350371081155,
+      -0.5418071988166463,
+      0.02989224457978382
+    ]
+  },
+  "spawn_unstable": [],
+  "source_sha256": {
+    "arm.py": "9621c01d78e0cb4c898b0521fc42a685a763bd2cd34abedf8890b3e74bb78bc5",
+    "config.py": "55e10a9c2c2aa83e0532916ad567bec40f5447eb6c2573f71fb7491aefd14d5e",
+    "controller.py": "e1e5082e0a18110cd27b3cf1d9375488bbdc557f3eb0f0756ac7d1a46c197be4",
+    "detection.py": "3fc4778519ab3378d7f9257a6d62401e3b668a23c456421b08a3077dc8d84387",
+    "grasp.py": "7c2a25ece6f201615f873373b3da995efbf2adc679047c1c39a2be9113761d4d",
+    "navigation.py": "970590a5ee7bfae1898ff799c81a983926aee43412990c45062a52e0248f712b",
+    "presentation.py": "28bc47d80da7f47405d04e597b5c0397a7d8ed92ab2b9f7f177105d1bb61bd00",
+    "raycast.py": "342d920da9c1eb40201bb4bdeb14fb0009c81782a0a1d5c034544b70e1d1ffdf",
+    "robot.py": "dc1059d9dcad4f5919a03a1290cf74e218f608dad744e3d5eb4c1a1a97cf4b13",
+    "scene.py": "af8fd356e3792aacd4b78c142f3664ede52f5199ad9a2b5600f9843abbb9a564",
+    "sorting.py": "dde6e166d85f6ec71e5039bd35a36fa86a6dff4aab42844da6584d805ebc1bd4",
+    "system.py": "4e21585988fee28c6662e1fa765be0d3f1d817d04382cef1ca8f5d4aaef1eeeb",
+    "telemetry.py": "aeaaff1b3bb0822fe8e86bbecad8573e914f6501dbc84e24a093c800afbd5782",
+    "test_env.py": "aedcf784fd59b8a6045cb0a122f7724d422157030ea653b888c4dadd3d736ece"
+  },
+  "model_sha256": {
+    "docking_station.xml": "f655d1f8d5f450988c419c5cf72eab374a497bf91d02d4aad20fc9e10f1744b2",
+    "hospital_assessment.xml": "b3023ce1524bfc4283acdfea02f306110755dc59438a23edeb294a545ad01a2d",
+    "hospital_clutter_manipulator.xml": "d9c807ef7a20681fdeed573fa830691e6e0334264e51977c0ac39f5d3763708f",
+    "hospital_clutter_manipulator_original.xml": "40a21187e5598fabda17500168db83fdb7fd12e8cd51c2ef9cc81ac499e91b63",
+    "hospital_design.xml": "076a010303dfe81c614e17f7fccaf407d808f5e14e1757ab1a9a22a2e6800068",
+    "hospital_nova3d.xml": "c33a99487cf2c2e3099443fe9ec0938a51bce4a1d5477162f316dfcbfbe67097",
+    "hospital_nova3d_visual.xml": "7ee84abf553ca887cc97822bb8751abcfaa5b50aeb6f7379ae788c7c2f11230a",
+    "scene.xml": "abddc062b740eb825610bef870327065c56c07ecdd29b036effd4be557e8e1f3",
+    "stretch.xml": "531516adfcadb82a18ed2d5283f85d01ea64df7de16b9c49c1d4240f11afe849",
+    "stretch_mj_3.3.0.xml": "f164c2ddb30e987e032ad2f184287810305a0907b6b57ed043c2516e1a062ae8",
+    "stretch_mj_3.3.0_lod.xml": "8347987c4a7f2f4b3902f29fb640c3aa175000434b379b43f4f775f91cd6a7fc"
+  },
+  "experiment_protocol_sha256": "e67b07d157e177c093f2e5ebe2180f05b16c164d60a5e063a534aa41423b5521",
+  "role": "frozen final experiment",
+  "scenario_state_sha256": "8b93b8356e2c357f5b51d8737e18039f4b53d106732595ab2efa93d48ea3df99",
+  "runtime": {
+    "python": "3.14.0",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "mujoco": "3.12.0",
+    "python_hash_seed": "0",
+    "executable": "C:\\Python314\\python.exe"
+  },
+  "phase_tracking_states": [
+    "DESCEND",
+    "LIFT",
+    "PREGRASP"
+  ],
+  "raw_encoding": "Lossless gzip CSV, 10,000 physics samples per part; 500 Hz; state before next control update",
+  "robot_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "robot_qvel_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "controller_instrumentation": [
+    "Same immutable MJCF/assets, 500 Hz physics, 50 Hz controller and task/category knowledge",
+    "Initial full integration state generated once per seed with revised geometric feasibility checker, restored only before time zero",
+    "Same orientation-aware final containment evaluator, 5 mm compliance tolerance",
+    "Same contact observer at 500 Hz; only floor/intended finger-target/support handling excluded; one-second episode gap",
+    "Historical contact counters disabled; no autonomy motion method modified by the measurement harness",
+    "Carry-drop calls counted once consistently; archived source remains unchanged",
+    "500 Hz lossless gzip CSV includes all robot qpos/qvel, current target position/velocity, arm reference/errors, actuator commands/forces and state/event linkage; full scene states saved before and after trials",
+    "PYTHONHASHSEED=0 and one native BLAS thread per worker; classification-vote ties resolved alphabetically"
+  ],
+  "sample_count": 99820,
+  "data_files": [
+    "proposed_seed2031_7afe3268_part001_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part002_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part003_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part004_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part005_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part006_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part007_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part008_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part009_real_trials.csv.gz",
+    "proposed_seed2031_7afe3268_part010_real_trials.csv.gz"
+  ]
+}

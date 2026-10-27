@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2019,
+  "sim_time_s": 930.04,
+  "state": "DROP_DEPLOY",
+  "placement_events": 15,
+  "collision_events": 0,
+  "wall_s": 695.9
+}

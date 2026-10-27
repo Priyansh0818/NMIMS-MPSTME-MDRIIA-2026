@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2003,
+  "sim_time_s": 1050.04,
+  "state": "RETRACT",
+  "placement_events": 16,
+  "collision_events": 3,
+  "wall_s": 792.6
+}

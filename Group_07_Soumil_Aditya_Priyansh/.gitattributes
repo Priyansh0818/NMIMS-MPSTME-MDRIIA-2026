@@ -1,0 +1,8 @@
+# Preserve audited source and measurement bytes on every checkout.
+# Frozen SHA-256 verification must survive Windows Git newline settings.
+* -text
+*.gz binary
+*.npz binary
+*.png binary
+*.docx binary
+*.pdf binary

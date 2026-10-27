@@ -1,0 +1,658 @@
+<mujocoinclude>
+  <asset>
+    <texture name="nova_suite_light_diffuser" type="2d" file="nova3d/textures/suite_light_diffuser.png" />
+    <texture name="nova_suite_oak_edge" type="2d" file="nova3d/textures/suite_oak_edge.png" />
+    <texture name="nova_suite_powder_coat" type="2d" file="nova3d/textures/suite_powder_coat.png" />
+    <texture name="nova_suite_return_oak" type="2d" file="nova3d/textures/suite_return_oak.png" />
+    <texture name="nova_suite_satin_metal" type="2d" file="nova3d/textures/suite_satin_metal.png" />
+    <texture name="nova_suite_teal_upholstery" type="2d" file="nova3d/textures/suite_teal_upholstery.png" />
+    <texture name="nova_suite_vinyl_warm_grey" type="2d" file="nova3d/textures/suite_vinyl_warm_grey.png" />
+    <texture name="nova_suite_warm_oak" type="2d" file="nova3d/textures/suite_warm_oak.png" />
+    <texture name="nova_suite_white_linen" type="2d" file="nova3d/textures/suite_white_linen.png" />
+    <material name="nova_suite_ivory_laminate" rgba="0.88 0.88 0.82 1" specular="0.25" shininess="0.19" />
+    <material name="nova_suite_warm_plaster" rgba="0.86 0.85 0.79 1" specular="0.25" shininess="0.03999999999999998" />
+    <material name="nova_suite_teal_polymer" rgba="0.15 0.43 0.43 1" specular="0.25" shininess="0.14" />
+    <material name="nova_suite_teal_upholstery" rgba="1 1 1 1" specular="0.12" shininess="0.06" texture="nova_suite_teal_upholstery" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_teal_seam" rgba="0.12 0.33 0.33 1" specular="0.25" shininess="0.07" />
+    <material name="nova_suite_warm_oak" rgba="1 1 1 1" specular="0.25" shininess="0.175" texture="nova_suite_warm_oak" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_oak_edge" rgba="1 1 1 1" specular="0.25" shininess="0.18" texture="nova_suite_oak_edge" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_satin_metal" rgba="1 1 1 1" specular="0.25" shininess="0.29000000000000004" texture="nova_suite_satin_metal" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_graphite" rgba="0.15 0.2 0.21 1" specular="0.25" shininess="0.14" />
+    <material name="nova_suite_rubber" rgba="0.1 0.13 0.14 1" specular="0.25" shininess="0.030000000000000027" />
+    <material name="nova_suite_white_linen" rgba="1 1 1 1" specular="0.12" shininess="0.03" texture="nova_suite_white_linen" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_linen_shadow" rgba="0.77 0.8 0.76 1" specular="0.12" shininess="0.03" />
+    <material name="nova_suite_curtain" rgba="0.67 0.79 0.74 1" specular="0.25" shininess="0.034999999999999976" />
+    <material name="nova_suite_curtain_mesh" rgba="0.83 0.87 0.8 1" specular="0.25" shininess="0.04999999999999999" />
+    <material name="nova_suite_sign_ink" rgba="0.1 0.28 0.29 1" specular="0.25" shininess="0.10999999999999999" />
+    <material name="nova_suite_recycling_blue" rgba="0.21 0.43 0.58 1" specular="0.25" shininess="0.15000000000000002" />
+    <material name="nova_suite_return_oak" rgba="1 1 1 1" specular="0.25" shininess="0.175" texture="nova_suite_return_oak" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_glass" rgba="0.6 0.78 0.8 0.24" specular="0.25" shininess="0.425" />
+    <material name="nova_suite_vinyl_warm_grey" rgba="1 1 1 1" specular="0.25" shininess="0.12" texture="nova_suite_vinyl_warm_grey" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_vinyl_weld_seam" rgba="0.61 0.62 0.59 1" specular="0.25" shininess="0.08000000000000002" />
+    <material name="nova_suite_floor_teal_inlay" rgba="0.25 0.47 0.46 1" specular="0.25" shininess="0.10499999999999998" />
+    <material name="nova_suite_powder_coat" rgba="1 1 1 1" specular="0.25" shininess="0.16499999999999998" texture="nova_suite_powder_coat" texuniform="false" texrepeat="1 1" />
+    <material name="nova_suite_light_diffuser" rgba="1 1 1 1" specular="0.25" shininess="0.175" texture="nova_suite_light_diffuser" texuniform="false" texrepeat="1 1" emission="0.25" />
+    <texture name="nova_sky" type="skybox" builtin="gradient" rgb1=".22 .29 .34" rgb2=".07 .11 .14" width="512" height="3072" />
+    <mesh name="nova_suite07__hospital_bed__caster_tires" file="nova3d/meshes/suite07__hospital_bed__caster_tires.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__caster_hubs_and_stems" file="nova3d/meshes/suite07__hospital_bed__caster_hubs_and_stems.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__caster_forks" file="nova3d/meshes/suite07__hospital_bed__caster_forks.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__lower_chassis" file="nova3d/meshes/suite07__hospital_bed__lower_chassis.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__chassis_inset" file="nova3d/meshes/suite07__hospital_bed__chassis_inset.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__lift_column_lower" file="nova3d/meshes/suite07__hospital_bed__lift_column_lower.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__lift_column_upper" file="nova3d/meshes/suite07__hospital_bed__lift_column_upper.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__mattress_deck" file="nova3d/meshes/suite07__hospital_bed__mattress_deck.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__deck_teal_bumper" file="nova3d/meshes/suite07__hospital_bed__deck_teal_bumper.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__mattress_visual_cover" file="nova3d/meshes/suite07__hospital_bed__mattress_visual_cover.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__mattress_lower_welt" file="nova3d/meshes/suite07__hospital_bed__mattress_lower_welt.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__headboard_outer_moulding" file="nova3d/meshes/suite07__hospital_bed__headboard_outer_moulding.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__headboard_teal_insert" file="nova3d/meshes/suite07__hospital_bed__headboard_teal_insert.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__headboard_oak_accent" file="nova3d/meshes/suite07__hospital_bed__headboard_oak_accent.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__footboard_outer_moulding" file="nova3d/meshes/suite07__hospital_bed__footboard_outer_moulding.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__footboard_teal_insert" file="nova3d/meshes/suite07__hospital_bed__footboard_teal_insert.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__footboard_chart_mount" file="nova3d/meshes/suite07__hospital_bed__footboard_chart_mount.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__footboard_identity_card" file="nova3d/meshes/suite07__hospital_bed__footboard_identity_card.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__footboard_identity_text" file="nova3d/meshes/suite07__hospital_bed__footboard_identity_text.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__left_lowered_side_rail" file="nova3d/meshes/suite07__hospital_bed__left_lowered_side_rail.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__left_rail_release_housing" file="nova3d/meshes/suite07__hospital_bed__left_rail_release_housing.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__left_rail_lower_member" file="nova3d/meshes/suite07__hospital_bed__left_rail_lower_member.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__left_rail_pivots" file="nova3d/meshes/suite07__hospital_bed__left_rail_pivots.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__right_lowered_side_rail" file="nova3d/meshes/suite07__hospital_bed__right_lowered_side_rail.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__right_rail_release_housing" file="nova3d/meshes/suite07__hospital_bed__right_rail_release_housing.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__right_rail_lower_member" file="nova3d/meshes/suite07__hospital_bed__right_rail_lower_member.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__right_rail_pivots" file="nova3d/meshes/suite07__hospital_bed__right_rail_pivots.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__headboard_grip" file="nova3d/meshes/suite07__hospital_bed__headboard_grip.obj" inertia="shell" />
+    <mesh name="nova_suite07__hospital_bed__brake_pedal" file="nova3d/meshes/suite07__hospital_bed__brake_pedal.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__caster_tires" file="nova3d/meshes/suite07__bedside_table__caster_tires.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__caster_hubs_and_stems" file="nova3d/meshes/suite07__bedside_table__caster_hubs_and_stems.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__caster_forks" file="nova3d/meshes/suite07__bedside_table__caster_forks.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__plinth" file="nova3d/meshes/suite07__bedside_table__plinth.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__case_left" file="nova3d/meshes/suite07__bedside_table__case_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__case_right" file="nova3d/meshes/suite07__bedside_table__case_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__case_back" file="nova3d/meshes/suite07__bedside_table__case_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__case_bottom" file="nova3d/meshes/suite07__bedside_table__case_bottom.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__open_shelf" file="nova3d/meshes/suite07__bedside_table__open_shelf.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__upper_cabinet_face_visual" file="nova3d/meshes/suite07__bedside_table__upper_cabinet_face_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__upper_face_handle" file="nova3d/meshes/suite07__bedside_table__upper_face_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__tabletop_visual_skin" file="nova3d/meshes/suite07__bedside_table__tabletop_visual_skin.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__tabletop_oak_apron" file="nova3d/meshes/suite07__bedside_table__tabletop_oak_apron.obj" inertia="shell" />
+    <mesh name="nova_suite07__bedside_table__handle_mounting_caps" file="nova3d/meshes/suite07__bedside_table__handle_mounting_caps.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__legs" file="nova3d/meshes/suite07__visitor_sofa__legs.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__floor_pads" file="nova3d/meshes/suite07__visitor_sofa__floor_pads.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__oak_base_rail" file="nova3d/meshes/suite07__visitor_sofa__oak_base_rail.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__upholstered_deck" file="nova3d/meshes/suite07__visitor_sofa__upholstered_deck.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__left_seat_visual_cover" file="nova3d/meshes/suite07__visitor_sofa__left_seat_visual_cover.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__left_seat_welt" file="nova3d/meshes/suite07__visitor_sofa__left_seat_welt.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__left_back_cushion" file="nova3d/meshes/suite07__visitor_sofa__left_back_cushion.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__right_seat_visual_cover" file="nova3d/meshes/suite07__visitor_sofa__right_seat_visual_cover.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__right_seat_welt" file="nova3d/meshes/suite07__visitor_sofa__right_seat_welt.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__right_back_cushion" file="nova3d/meshes/suite07__visitor_sofa__right_back_cushion.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__back_shell" file="nova3d/meshes/suite07__visitor_sofa__back_shell.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__left_arm_upholstery" file="nova3d/meshes/suite07__visitor_sofa__left_arm_upholstery.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__left_oak_arm_cap" file="nova3d/meshes/suite07__visitor_sofa__left_oak_arm_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__right_arm_upholstery" file="nova3d/meshes/suite07__visitor_sofa__right_arm_upholstery.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_sofa__right_oak_arm_cap" file="nova3d/meshes/suite07__visitor_sofa__right_oak_arm_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__legs" file="nova3d/meshes/suite07__visitor_chair__legs.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__floor_pads" file="nova3d/meshes/suite07__visitor_chair__floor_pads.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__seat_underframe" file="nova3d/meshes/suite07__visitor_chair__seat_underframe.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__seat_visual_cover" file="nova3d/meshes/suite07__visitor_chair__seat_visual_cover.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__back_cushion" file="nova3d/meshes/suite07__visitor_chair__back_cushion.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__back_oak_shell" file="nova3d/meshes/suite07__visitor_chair__back_oak_shell.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__left_arm_support" file="nova3d/meshes/suite07__visitor_chair__left_arm_support.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__left_oak_arm_cap" file="nova3d/meshes/suite07__visitor_chair__left_oak_arm_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__right_arm_support" file="nova3d/meshes/suite07__visitor_chair__right_arm_support.obj" inertia="shell" />
+    <mesh name="nova_suite07__visitor_chair__right_oak_arm_cap" file="nova3d/meshes/suite07__visitor_chair__right_oak_arm_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__legs" file="nova3d/meshes/suite07__coffee_table__legs.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__floor_pads" file="nova3d/meshes/suite07__coffee_table__floor_pads.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__oak_apron" file="nova3d/meshes/suite07__coffee_table__oak_apron.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__top_visual_skin" file="nova3d/meshes/suite07__coffee_table__top_visual_skin.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__lower_magazine_shelf" file="nova3d/meshes/suite07__coffee_table__lower_magazine_shelf.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__lower_shelf_front_support" file="nova3d/meshes/suite07__coffee_table__lower_shelf_front_support.obj" inertia="shell" />
+    <mesh name="nova_suite07__coffee_table__lower_shelf_rear_support" file="nova3d/meshes/suite07__coffee_table__lower_shelf_rear_support.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__caster_tires" file="nova3d/meshes/suite07__medical_cart__caster_tires.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__caster_hubs_and_stems" file="nova3d/meshes/suite07__medical_cart__caster_hubs_and_stems.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__caster_forks" file="nova3d/meshes/suite07__medical_cart__caster_forks.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__lower_chassis" file="nova3d/meshes/suite07__medical_cart__lower_chassis.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__lower_open_shelf" file="nova3d/meshes/suite07__medical_cart__lower_open_shelf.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__left_case_side" file="nova3d/meshes/suite07__medical_cart__left_case_side.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__right_case_side" file="nova3d/meshes/suite07__medical_cart__right_case_side.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__case_back" file="nova3d/meshes/suite07__medical_cart__case_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_1_visual" file="nova3d/meshes/suite07__medical_cart__storage_face_1_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_1_handle" file="nova3d/meshes/suite07__medical_cart__storage_face_1_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_1_label_holder" file="nova3d/meshes/suite07__medical_cart__storage_face_1_label_holder.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_2_visual" file="nova3d/meshes/suite07__medical_cart__storage_face_2_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_2_handle" file="nova3d/meshes/suite07__medical_cart__storage_face_2_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_2_label_holder" file="nova3d/meshes/suite07__medical_cart__storage_face_2_label_holder.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_3_visual" file="nova3d/meshes/suite07__medical_cart__storage_face_3_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_3_handle" file="nova3d/meshes/suite07__medical_cart__storage_face_3_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__storage_face_3_label_holder" file="nova3d/meshes/suite07__medical_cart__storage_face_3_label_holder.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__top_visual_skin" file="nova3d/meshes/suite07__medical_cart__top_visual_skin.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__left_corner_frame" file="nova3d/meshes/suite07__medical_cart__left_corner_frame.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__right_corner_frame" file="nova3d/meshes/suite07__medical_cart__right_corner_frame.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__push_handle" file="nova3d/meshes/suite07__medical_cart__push_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__medical_cart__push_handle_grip" file="nova3d/meshes/suite07__medical_cart__push_handle_grip.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__recessed_plinth" file="nova3d/meshes/suite07__sink_counter__recessed_plinth.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__left_case_side" file="nova3d/meshes/suite07__sink_counter__left_case_side.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__right_case_side" file="nova3d/meshes/suite07__sink_counter__right_case_side.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__cabinet_bottom" file="nova3d/meshes/suite07__sink_counter__cabinet_bottom.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__cabinet_back" file="nova3d/meshes/suite07__sink_counter__cabinet_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__left_cabinet_face_visual" file="nova3d/meshes/suite07__sink_counter__left_cabinet_face_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__left_cabinet_handle" file="nova3d/meshes/suite07__sink_counter__left_cabinet_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__right_cabinet_face_visual" file="nova3d/meshes/suite07__sink_counter__right_cabinet_face_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__right_cabinet_handle" file="nova3d/meshes/suite07__sink_counter__right_cabinet_handle.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__counter_with_sink_cutout" file="nova3d/meshes/suite07__sink_counter__counter_with_sink_cutout.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__basin_rolled_rim" file="nova3d/meshes/suite07__sink_counter__basin_rolled_rim.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__basin_inner_surface" file="nova3d/meshes/suite07__sink_counter__basin_inner_surface.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__basin_drain" file="nova3d/meshes/suite07__sink_counter__basin_drain.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__tap_deck_rosette" file="nova3d/meshes/suite07__sink_counter__tap_deck_rosette.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__tap_swan_spout" file="nova3d/meshes/suite07__sink_counter__tap_swan_spout.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__tap_lever" file="nova3d/meshes/suite07__sink_counter__tap_lever.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__backsplash" file="nova3d/meshes/suite07__sink_counter__backsplash.obj" inertia="shell" />
+    <mesh name="nova_suite07__sink_counter__backsplash_teal_cap" file="nova3d/meshes/suite07__sink_counter__backsplash_teal_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__outer_skin_left" file="nova3d/meshes/suite07__trash_bin__outer_skin_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__outer_skin_right" file="nova3d/meshes/suite07__trash_bin__outer_skin_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__outer_skin_front" file="nova3d/meshes/suite07__trash_bin__outer_skin_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__outer_skin_back" file="nova3d/meshes/suite07__trash_bin__outer_skin_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__rim_left" file="nova3d/meshes/suite07__trash_bin__rim_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__rim_right" file="nova3d/meshes/suite07__trash_bin__rim_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__rim_front" file="nova3d/meshes/suite07__trash_bin__rim_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__rim_back" file="nova3d/meshes/suite07__trash_bin__rim_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__front_label_backing" file="nova3d/meshes/suite07__trash_bin__front_label_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__front_label_caption" file="nova3d/meshes/suite07__trash_bin__front_label_caption.obj" inertia="shell" />
+    <mesh name="nova_suite07__trash_bin__front_label_number" file="nova3d/meshes/suite07__trash_bin__front_label_number.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__outer_skin_left" file="nova3d/meshes/suite07__recycling_bin__outer_skin_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__outer_skin_right" file="nova3d/meshes/suite07__recycling_bin__outer_skin_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__outer_skin_front" file="nova3d/meshes/suite07__recycling_bin__outer_skin_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__outer_skin_back" file="nova3d/meshes/suite07__recycling_bin__outer_skin_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__rim_left" file="nova3d/meshes/suite07__recycling_bin__rim_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__rim_right" file="nova3d/meshes/suite07__recycling_bin__rim_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__rim_front" file="nova3d/meshes/suite07__recycling_bin__rim_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__rim_back" file="nova3d/meshes/suite07__recycling_bin__rim_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__front_label_backing" file="nova3d/meshes/suite07__recycling_bin__front_label_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__front_label_caption" file="nova3d/meshes/suite07__recycling_bin__front_label_caption.obj" inertia="shell" />
+    <mesh name="nova_suite07__recycling_bin__front_label_number" file="nova3d/meshes/suite07__recycling_bin__front_label_number.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__outer_skin_left" file="nova3d/meshes/suite07__laundry_basket__outer_skin_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__outer_skin_right" file="nova3d/meshes/suite07__laundry_basket__outer_skin_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__outer_skin_front" file="nova3d/meshes/suite07__laundry_basket__outer_skin_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__outer_skin_back" file="nova3d/meshes/suite07__laundry_basket__outer_skin_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__rim_left" file="nova3d/meshes/suite07__laundry_basket__rim_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__rim_right" file="nova3d/meshes/suite07__laundry_basket__rim_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__rim_front" file="nova3d/meshes/suite07__laundry_basket__rim_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__rim_back" file="nova3d/meshes/suite07__laundry_basket__rim_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__front_label_backing" file="nova3d/meshes/suite07__laundry_basket__front_label_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__front_label_caption" file="nova3d/meshes/suite07__laundry_basket__front_label_caption.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__front_label_number" file="nova3d/meshes/suite07__laundry_basket__front_label_number.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__left_vent_recess_decals" file="nova3d/meshes/suite07__laundry_basket__left_vent_recess_decals.obj" inertia="shell" />
+    <mesh name="nova_suite07__laundry_basket__right_vent_recess_decals" file="nova3d/meshes/suite07__laundry_basket__right_vent_recess_decals.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__outer_skin_left" file="nova3d/meshes/suite07__return_tray__outer_skin_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__outer_skin_right" file="nova3d/meshes/suite07__return_tray__outer_skin_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__outer_skin_front" file="nova3d/meshes/suite07__return_tray__outer_skin_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__outer_skin_back" file="nova3d/meshes/suite07__return_tray__outer_skin_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__rim_left" file="nova3d/meshes/suite07__return_tray__rim_left.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__rim_right" file="nova3d/meshes/suite07__return_tray__rim_right.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__rim_front" file="nova3d/meshes/suite07__return_tray__rim_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__rim_back" file="nova3d/meshes/suite07__return_tray__rim_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__front_label_backing" file="nova3d/meshes/suite07__return_tray__front_label_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__front_label_caption" file="nova3d/meshes/suite07__return_tray__front_label_caption.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__legs" file="nova3d/meshes/suite07__return_tray__legs.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__floor_pads" file="nova3d/meshes/suite07__return_tray__floor_pads.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__undertray_frame_front" file="nova3d/meshes/suite07__return_tray__undertray_frame_front.obj" inertia="shell" />
+    <mesh name="nova_suite07__return_tray__undertray_frame_back" file="nova3d/meshes/suite07__return_tray__undertray_frame_back.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__oak_identification_rail" file="nova3d/meshes/suite07__sorting_station__oak_identification_rail.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__ivory_header_panel" file="nova3d/meshes/suite07__sorting_station__ivory_header_panel.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__sorting_station_title" file="nova3d/meshes/suite07__sorting_station__sorting_station_title.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__trash_bin_direction_marker" file="nova3d/meshes/suite07__sorting_station__trash_bin_direction_marker.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__trash_bin_wall_label" file="nova3d/meshes/suite07__sorting_station__trash_bin_wall_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__recycling_bin_direction_marker" file="nova3d/meshes/suite07__sorting_station__recycling_bin_direction_marker.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__recycling_bin_wall_label" file="nova3d/meshes/suite07__sorting_station__recycling_bin_wall_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__laundry_basket_direction_marker" file="nova3d/meshes/suite07__sorting_station__laundry_basket_direction_marker.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__laundry_basket_wall_label" file="nova3d/meshes/suite07__sorting_station__laundry_basket_wall_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__return_tray_direction_marker" file="nova3d/meshes/suite07__sorting_station__return_tray_direction_marker.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__return_tray_wall_label" file="nova3d/meshes/suite07__sorting_station__return_tray_wall_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__sorting_station__rail_mounting_screws" file="nova3d/meshes/suite07__sorting_station__rail_mounting_screws.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__wall_backboard" file="nova3d/meshes/suite07__linen_shelves__wall_backboard.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__left_upright" file="nova3d/meshes/suite07__linen_shelves__left_upright.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__right_upright" file="nova3d/meshes/suite07__linen_shelves__right_upright.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__top_cap" file="nova3d/meshes/suite07__linen_shelves__top_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__bottom_cap" file="nova3d/meshes/suite07__linen_shelves__bottom_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1" file="nova3d/meshes/suite07__linen_shelves__shelf_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_oak_nosing" file="nova3d/meshes/suite07__linen_shelves__shelf_1_oak_nosing.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_support_pins" file="nova3d/meshes/suite07__linen_shelves__shelf_1_support_pins.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_left_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_1_left_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_1_right_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_1_right_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2" file="nova3d/meshes/suite07__linen_shelves__shelf_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_oak_nosing" file="nova3d/meshes/suite07__linen_shelves__shelf_2_oak_nosing.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_support_pins" file="nova3d/meshes/suite07__linen_shelves__shelf_2_support_pins.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_left_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_2_left_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_2_right_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_2_right_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3" file="nova3d/meshes/suite07__linen_shelves__shelf_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_oak_nosing" file="nova3d/meshes/suite07__linen_shelves__shelf_3_oak_nosing.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_support_pins" file="nova3d/meshes/suite07__linen_shelves__shelf_3_support_pins.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_left_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_3_left_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_linen_1" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_fold_1" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_linen_2" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_fold_2" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_linen_3" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_linen_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__shelf_3_right_fold_3" file="nova3d/meshes/suite07__linen_shelves__shelf_3_right_fold_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__linen_header_backing" file="nova3d/meshes/suite07__linen_shelves__linen_header_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__linen_header_text" file="nova3d/meshes/suite07__linen_shelves__linen_header_text.obj" inertia="shell" />
+    <mesh name="nova_suite07__linen_shelves__wall_fixing_heads" file="nova3d/meshes/suite07__linen_shelves__wall_fixing_heads.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__ceiling_track_outer" file="nova3d/meshes/suite07__privacy_curtain__ceiling_track_outer.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__ceiling_track_shadow_channel" file="nova3d/meshes/suite07__privacy_curtain__ceiling_track_shadow_channel.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_1_plate" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_plate.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_1_arm" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_arm.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_1_brace" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_1_brace.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_2_plate" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_plate.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_2_arm" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_arm.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_2_brace" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_2_brace.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_3_plate" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_plate.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_3_arm" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_arm.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__wall_bracket_3_brace" file="nova3d/meshes/suite07__privacy_curtain__wall_bracket_3_brace.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__gathered_curtain_fabric" file="nova3d/meshes/suite07__privacy_curtain__gathered_curtain_fabric.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__gathered_header_fabric" file="nova3d/meshes/suite07__privacy_curtain__gathered_header_fabric.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_1" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_2" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_3" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_3.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_4" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_4.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_5" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_5.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_6" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_6.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_7" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_7.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_8" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_8.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_9" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_9.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_10" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_10.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_hanger_11" file="nova3d/meshes/suite07__privacy_curtain__curtain_hanger_11.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_tieback" file="nova3d/meshes/suite07__privacy_curtain__curtain_tieback.obj" inertia="shell" />
+    <mesh name="nova_suite07__privacy_curtain__curtain_tieback_wall_anchor" file="nova3d/meshes/suite07__privacy_curtain__curtain_tieback_wall_anchor.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_panel_west" file="nova3d/meshes/suite07__room__north_wall_panel_west.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_panel_centre" file="nova3d/meshes/suite07__room__north_wall_panel_centre.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_panel_east" file="nova3d/meshes/suite07__room__north_wall_panel_east.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_wainscot" file="nova3d/meshes/suite07__room__north_wall_wainscot.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_oak_cap" file="nova3d/meshes/suite07__room__north_wall_oak_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_coved_skirt" file="nova3d/meshes/suite07__room__north_wall_coved_skirt.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_upper_trim" file="nova3d/meshes/suite07__room__north_wall_upper_trim.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_south_pier" file="nova3d/meshes/suite07__room__east_wall_south_pier.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_north_pier" file="nova3d/meshes/suite07__room__east_wall_north_pier.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_window_spandrel" file="nova3d/meshes/suite07__room__east_wall_window_spandrel.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_window_header" file="nova3d/meshes/suite07__room__east_wall_window_header.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_wainscot" file="nova3d/meshes/suite07__room__east_wall_wainscot.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_oak_cap" file="nova3d/meshes/suite07__room__east_wall_oak_cap.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_coved_skirt" file="nova3d/meshes/suite07__room__east_wall_coved_skirt.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_upper_trim" file="nova3d/meshes/suite07__room__east_wall_upper_trim.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_lower_frame" file="nova3d/meshes/suite07__room__east_glazing_lower_frame.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_upper_frame" file="nova3d/meshes/suite07__room__east_glazing_upper_frame.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_south_mullion" file="nova3d/meshes/suite07__room__east_glazing_south_mullion.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_middle_mullion" file="nova3d/meshes/suite07__room__east_glazing_middle_mullion.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_north_mullion" file="nova3d/meshes/suite07__room__east_glazing_north_mullion.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_south_glass" file="nova3d/meshes/suite07__room__east_glazing_south_glass.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_glazing_north_glass" file="nova3d/meshes/suite07__room__east_glazing_north_glass.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_window_oak_sill" file="nova3d/meshes/suite07__room__east_window_oak_sill.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_clock_backplate" file="nova3d/meshes/suite07__room__north_wall_clock_backplate.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_clock_face" file="nova3d/meshes/suite07__room__north_wall_clock_face.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_clock_hands" file="nova3d/meshes/suite07__room__north_wall_clock_hands.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_wall_clock_ticks" file="nova3d/meshes/suite07__room__north_wall_clock_ticks.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_air_grille_frame" file="nova3d/meshes/suite07__room__north_air_grille_frame.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_air_grille_shadow" file="nova3d/meshes/suite07__room__north_air_grille_shadow.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_air_grille_louvres" file="nova3d/meshes/suite07__room__north_air_grille_louvres.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_air_grille_fasteners" file="nova3d/meshes/suite07__room__north_air_grille_fasteners.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_protection_rail" file="nova3d/meshes/suite07__room__east_wall_protection_rail.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__east_wall_protection_rail_backing" file="nova3d/meshes/suite07__room__east_wall_protection_rail_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_patient_information_backing" file="nova3d/meshes/suite07__room__north_patient_information_backing.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_patient_information_face" file="nova3d/meshes/suite07__room__north_patient_information_face.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_patient_information_header" file="nova3d/meshes/suite07__room__north_patient_information_header.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__north_patient_information_title" file="nova3d/meshes/suite07__room__north_patient_information_title.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_1_label" file="nova3d/meshes/suite07__room__care_board_row_1_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_1_rule" file="nova3d/meshes/suite07__room__care_board_row_1_rule.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_2_label" file="nova3d/meshes/suite07__room__care_board_row_2_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_2_rule" file="nova3d/meshes/suite07__room__care_board_row_2_rule.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_3_label" file="nova3d/meshes/suite07__room__care_board_row_3_label.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_row_3_rule" file="nova3d/meshes/suite07__room__care_board_row_3_rule.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__care_board_mounting_caps" file="nova3d/meshes/suite07__room__care_board_mounting_caps.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_floor_visual" file="nova3d/meshes/suite07__room__vinyl_floor_visual.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_heat_weld_seam_1" file="nova3d/meshes/suite07__room__vinyl_heat_weld_seam_1.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_heat_weld_seam_2" file="nova3d/meshes/suite07__room__vinyl_heat_weld_seam_2.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_teal_perimeter_north" file="nova3d/meshes/suite07__room__vinyl_teal_perimeter_north.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_teal_perimeter_south" file="nova3d/meshes/suite07__room__vinyl_teal_perimeter_south.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_teal_perimeter_east" file="nova3d/meshes/suite07__room__vinyl_teal_perimeter_east.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__vinyl_teal_perimeter_west" file="nova3d/meshes/suite07__room__vinyl_teal_perimeter_west.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__visitor_ceiling_luminaire_housing" file="nova3d/meshes/suite07__room__visitor_ceiling_luminaire_housing.obj" inertia="shell" />
+    <mesh name="nova_suite07__room__visitor_ceiling_luminaire_diffuser" file="nova3d/meshes/suite07__room__visitor_ceiling_luminaire_diffuser.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <geom name="nova_suite07__hospital_bed__caster_tires" type="mesh" mesh="nova_suite07__hospital_bed__caster_tires" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__caster_hubs_and_stems" type="mesh" mesh="nova_suite07__hospital_bed__caster_hubs_and_stems" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__caster_forks" type="mesh" mesh="nova_suite07__hospital_bed__caster_forks" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__lower_chassis" type="mesh" mesh="nova_suite07__hospital_bed__lower_chassis" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__chassis_inset" type="mesh" mesh="nova_suite07__hospital_bed__chassis_inset" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__lift_column_lower" type="mesh" mesh="nova_suite07__hospital_bed__lift_column_lower" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__lift_column_upper" type="mesh" mesh="nova_suite07__hospital_bed__lift_column_upper" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__mattress_deck" type="mesh" mesh="nova_suite07__hospital_bed__mattress_deck" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__deck_teal_bumper" type="mesh" mesh="nova_suite07__hospital_bed__deck_teal_bumper" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__mattress_visual_cover" type="mesh" mesh="nova_suite07__hospital_bed__mattress_visual_cover" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__mattress_lower_welt" type="mesh" mesh="nova_suite07__hospital_bed__mattress_lower_welt" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__headboard_outer_moulding" type="mesh" mesh="nova_suite07__hospital_bed__headboard_outer_moulding" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__headboard_teal_insert" type="mesh" mesh="nova_suite07__hospital_bed__headboard_teal_insert" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__headboard_oak_accent" type="mesh" mesh="nova_suite07__hospital_bed__headboard_oak_accent" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__footboard_outer_moulding" type="mesh" mesh="nova_suite07__hospital_bed__footboard_outer_moulding" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__footboard_teal_insert" type="mesh" mesh="nova_suite07__hospital_bed__footboard_teal_insert" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__footboard_chart_mount" type="mesh" mesh="nova_suite07__hospital_bed__footboard_chart_mount" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__footboard_identity_card" type="mesh" mesh="nova_suite07__hospital_bed__footboard_identity_card" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__footboard_identity_text" type="mesh" mesh="nova_suite07__hospital_bed__footboard_identity_text" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__left_lowered_side_rail" type="mesh" mesh="nova_suite07__hospital_bed__left_lowered_side_rail" material="nova_suite_powder_coat" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__left_rail_release_housing" type="mesh" mesh="nova_suite07__hospital_bed__left_rail_release_housing" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__left_rail_lower_member" type="mesh" mesh="nova_suite07__hospital_bed__left_rail_lower_member" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__left_rail_pivots" type="mesh" mesh="nova_suite07__hospital_bed__left_rail_pivots" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__right_lowered_side_rail" type="mesh" mesh="nova_suite07__hospital_bed__right_lowered_side_rail" material="nova_suite_powder_coat" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__right_rail_release_housing" type="mesh" mesh="nova_suite07__hospital_bed__right_rail_release_housing" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__right_rail_lower_member" type="mesh" mesh="nova_suite07__hospital_bed__right_rail_lower_member" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__right_rail_pivots" type="mesh" mesh="nova_suite07__hospital_bed__right_rail_pivots" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__headboard_grip" type="mesh" mesh="nova_suite07__hospital_bed__headboard_grip" material="nova_suite_powder_coat" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__hospital_bed__brake_pedal" type="mesh" mesh="nova_suite07__hospital_bed__brake_pedal" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__caster_tires" type="mesh" mesh="nova_suite07__bedside_table__caster_tires" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__caster_hubs_and_stems" type="mesh" mesh="nova_suite07__bedside_table__caster_hubs_and_stems" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__caster_forks" type="mesh" mesh="nova_suite07__bedside_table__caster_forks" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__plinth" type="mesh" mesh="nova_suite07__bedside_table__plinth" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__case_left" type="mesh" mesh="nova_suite07__bedside_table__case_left" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__case_right" type="mesh" mesh="nova_suite07__bedside_table__case_right" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__case_back" type="mesh" mesh="nova_suite07__bedside_table__case_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__case_bottom" type="mesh" mesh="nova_suite07__bedside_table__case_bottom" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__open_shelf" type="mesh" mesh="nova_suite07__bedside_table__open_shelf" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__upper_cabinet_face_visual" type="mesh" mesh="nova_suite07__bedside_table__upper_cabinet_face_visual" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__upper_face_handle" type="mesh" mesh="nova_suite07__bedside_table__upper_face_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__tabletop_visual_skin" type="mesh" mesh="nova_suite07__bedside_table__tabletop_visual_skin" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__tabletop_oak_apron" type="mesh" mesh="nova_suite07__bedside_table__tabletop_oak_apron" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__bedside_table__handle_mounting_caps" type="mesh" mesh="nova_suite07__bedside_table__handle_mounting_caps" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__legs" type="mesh" mesh="nova_suite07__visitor_sofa__legs" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__floor_pads" type="mesh" mesh="nova_suite07__visitor_sofa__floor_pads" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__oak_base_rail" type="mesh" mesh="nova_suite07__visitor_sofa__oak_base_rail" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__upholstered_deck" type="mesh" mesh="nova_suite07__visitor_sofa__upholstered_deck" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__left_seat_visual_cover" type="mesh" mesh="nova_suite07__visitor_sofa__left_seat_visual_cover" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__left_seat_welt" type="mesh" mesh="nova_suite07__visitor_sofa__left_seat_welt" material="nova_suite_teal_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__left_back_cushion" type="mesh" mesh="nova_suite07__visitor_sofa__left_back_cushion" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__right_seat_visual_cover" type="mesh" mesh="nova_suite07__visitor_sofa__right_seat_visual_cover" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__right_seat_welt" type="mesh" mesh="nova_suite07__visitor_sofa__right_seat_welt" material="nova_suite_teal_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__right_back_cushion" type="mesh" mesh="nova_suite07__visitor_sofa__right_back_cushion" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__back_shell" type="mesh" mesh="nova_suite07__visitor_sofa__back_shell" material="nova_suite_teal_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__left_arm_upholstery" type="mesh" mesh="nova_suite07__visitor_sofa__left_arm_upholstery" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__left_oak_arm_cap" type="mesh" mesh="nova_suite07__visitor_sofa__left_oak_arm_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__right_arm_upholstery" type="mesh" mesh="nova_suite07__visitor_sofa__right_arm_upholstery" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_sofa__right_oak_arm_cap" type="mesh" mesh="nova_suite07__visitor_sofa__right_oak_arm_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__legs" type="mesh" mesh="nova_suite07__visitor_chair__legs" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__floor_pads" type="mesh" mesh="nova_suite07__visitor_chair__floor_pads" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__seat_underframe" type="mesh" mesh="nova_suite07__visitor_chair__seat_underframe" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__seat_visual_cover" type="mesh" mesh="nova_suite07__visitor_chair__seat_visual_cover" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__back_cushion" type="mesh" mesh="nova_suite07__visitor_chair__back_cushion" material="nova_suite_teal_upholstery" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__back_oak_shell" type="mesh" mesh="nova_suite07__visitor_chair__back_oak_shell" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__left_arm_support" type="mesh" mesh="nova_suite07__visitor_chair__left_arm_support" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__left_oak_arm_cap" type="mesh" mesh="nova_suite07__visitor_chair__left_oak_arm_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__right_arm_support" type="mesh" mesh="nova_suite07__visitor_chair__right_arm_support" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__visitor_chair__right_oak_arm_cap" type="mesh" mesh="nova_suite07__visitor_chair__right_oak_arm_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__legs" type="mesh" mesh="nova_suite07__coffee_table__legs" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__floor_pads" type="mesh" mesh="nova_suite07__coffee_table__floor_pads" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__oak_apron" type="mesh" mesh="nova_suite07__coffee_table__oak_apron" material="nova_suite_oak_edge" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__top_visual_skin" type="mesh" mesh="nova_suite07__coffee_table__top_visual_skin" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__lower_magazine_shelf" type="mesh" mesh="nova_suite07__coffee_table__lower_magazine_shelf" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__lower_shelf_front_support" type="mesh" mesh="nova_suite07__coffee_table__lower_shelf_front_support" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__coffee_table__lower_shelf_rear_support" type="mesh" mesh="nova_suite07__coffee_table__lower_shelf_rear_support" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__caster_tires" type="mesh" mesh="nova_suite07__medical_cart__caster_tires" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__caster_hubs_and_stems" type="mesh" mesh="nova_suite07__medical_cart__caster_hubs_and_stems" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__caster_forks" type="mesh" mesh="nova_suite07__medical_cart__caster_forks" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__lower_chassis" type="mesh" mesh="nova_suite07__medical_cart__lower_chassis" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__lower_open_shelf" type="mesh" mesh="nova_suite07__medical_cart__lower_open_shelf" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__left_case_side" type="mesh" mesh="nova_suite07__medical_cart__left_case_side" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__right_case_side" type="mesh" mesh="nova_suite07__medical_cart__right_case_side" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__case_back" type="mesh" mesh="nova_suite07__medical_cart__case_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_1_visual" type="mesh" mesh="nova_suite07__medical_cart__storage_face_1_visual" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_1_handle" type="mesh" mesh="nova_suite07__medical_cart__storage_face_1_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_1_label_holder" type="mesh" mesh="nova_suite07__medical_cart__storage_face_1_label_holder" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_2_visual" type="mesh" mesh="nova_suite07__medical_cart__storage_face_2_visual" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_2_handle" type="mesh" mesh="nova_suite07__medical_cart__storage_face_2_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_2_label_holder" type="mesh" mesh="nova_suite07__medical_cart__storage_face_2_label_holder" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_3_visual" type="mesh" mesh="nova_suite07__medical_cart__storage_face_3_visual" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_3_handle" type="mesh" mesh="nova_suite07__medical_cart__storage_face_3_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__storage_face_3_label_holder" type="mesh" mesh="nova_suite07__medical_cart__storage_face_3_label_holder" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__top_visual_skin" type="mesh" mesh="nova_suite07__medical_cart__top_visual_skin" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__left_corner_frame" type="mesh" mesh="nova_suite07__medical_cart__left_corner_frame" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__right_corner_frame" type="mesh" mesh="nova_suite07__medical_cart__right_corner_frame" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__push_handle" type="mesh" mesh="nova_suite07__medical_cart__push_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__medical_cart__push_handle_grip" type="mesh" mesh="nova_suite07__medical_cart__push_handle_grip" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__recessed_plinth" type="mesh" mesh="nova_suite07__sink_counter__recessed_plinth" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__left_case_side" type="mesh" mesh="nova_suite07__sink_counter__left_case_side" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__right_case_side" type="mesh" mesh="nova_suite07__sink_counter__right_case_side" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__cabinet_bottom" type="mesh" mesh="nova_suite07__sink_counter__cabinet_bottom" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__cabinet_back" type="mesh" mesh="nova_suite07__sink_counter__cabinet_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__left_cabinet_face_visual" type="mesh" mesh="nova_suite07__sink_counter__left_cabinet_face_visual" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__left_cabinet_handle" type="mesh" mesh="nova_suite07__sink_counter__left_cabinet_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__right_cabinet_face_visual" type="mesh" mesh="nova_suite07__sink_counter__right_cabinet_face_visual" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__right_cabinet_handle" type="mesh" mesh="nova_suite07__sink_counter__right_cabinet_handle" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__counter_with_sink_cutout" type="mesh" mesh="nova_suite07__sink_counter__counter_with_sink_cutout" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__basin_rolled_rim" type="mesh" mesh="nova_suite07__sink_counter__basin_rolled_rim" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__basin_inner_surface" type="mesh" mesh="nova_suite07__sink_counter__basin_inner_surface" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__basin_drain" type="mesh" mesh="nova_suite07__sink_counter__basin_drain" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__tap_deck_rosette" type="mesh" mesh="nova_suite07__sink_counter__tap_deck_rosette" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__tap_swan_spout" type="mesh" mesh="nova_suite07__sink_counter__tap_swan_spout" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__tap_lever" type="mesh" mesh="nova_suite07__sink_counter__tap_lever" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__backsplash" type="mesh" mesh="nova_suite07__sink_counter__backsplash" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sink_counter__backsplash_teal_cap" type="mesh" mesh="nova_suite07__sink_counter__backsplash_teal_cap" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__outer_skin_left" type="mesh" mesh="nova_suite07__trash_bin__outer_skin_left" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__outer_skin_right" type="mesh" mesh="nova_suite07__trash_bin__outer_skin_right" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__outer_skin_front" type="mesh" mesh="nova_suite07__trash_bin__outer_skin_front" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__outer_skin_back" type="mesh" mesh="nova_suite07__trash_bin__outer_skin_back" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__rim_left" type="mesh" mesh="nova_suite07__trash_bin__rim_left" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__rim_right" type="mesh" mesh="nova_suite07__trash_bin__rim_right" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__rim_front" type="mesh" mesh="nova_suite07__trash_bin__rim_front" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__rim_back" type="mesh" mesh="nova_suite07__trash_bin__rim_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__front_label_backing" type="mesh" mesh="nova_suite07__trash_bin__front_label_backing" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__front_label_caption" type="mesh" mesh="nova_suite07__trash_bin__front_label_caption" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__trash_bin__front_label_number" type="mesh" mesh="nova_suite07__trash_bin__front_label_number" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__outer_skin_left" type="mesh" mesh="nova_suite07__recycling_bin__outer_skin_left" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__outer_skin_right" type="mesh" mesh="nova_suite07__recycling_bin__outer_skin_right" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__outer_skin_front" type="mesh" mesh="nova_suite07__recycling_bin__outer_skin_front" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__outer_skin_back" type="mesh" mesh="nova_suite07__recycling_bin__outer_skin_back" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__rim_left" type="mesh" mesh="nova_suite07__recycling_bin__rim_left" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__rim_right" type="mesh" mesh="nova_suite07__recycling_bin__rim_right" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__rim_front" type="mesh" mesh="nova_suite07__recycling_bin__rim_front" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__rim_back" type="mesh" mesh="nova_suite07__recycling_bin__rim_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__front_label_backing" type="mesh" mesh="nova_suite07__recycling_bin__front_label_backing" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__front_label_caption" type="mesh" mesh="nova_suite07__recycling_bin__front_label_caption" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__recycling_bin__front_label_number" type="mesh" mesh="nova_suite07__recycling_bin__front_label_number" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__outer_skin_left" type="mesh" mesh="nova_suite07__laundry_basket__outer_skin_left" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__outer_skin_right" type="mesh" mesh="nova_suite07__laundry_basket__outer_skin_right" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__outer_skin_front" type="mesh" mesh="nova_suite07__laundry_basket__outer_skin_front" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__outer_skin_back" type="mesh" mesh="nova_suite07__laundry_basket__outer_skin_back" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__rim_left" type="mesh" mesh="nova_suite07__laundry_basket__rim_left" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__rim_right" type="mesh" mesh="nova_suite07__laundry_basket__rim_right" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__rim_front" type="mesh" mesh="nova_suite07__laundry_basket__rim_front" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__rim_back" type="mesh" mesh="nova_suite07__laundry_basket__rim_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__front_label_backing" type="mesh" mesh="nova_suite07__laundry_basket__front_label_backing" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__front_label_caption" type="mesh" mesh="nova_suite07__laundry_basket__front_label_caption" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__front_label_number" type="mesh" mesh="nova_suite07__laundry_basket__front_label_number" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__left_vent_recess_decals" type="mesh" mesh="nova_suite07__laundry_basket__left_vent_recess_decals" material="nova_suite_teal_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__laundry_basket__right_vent_recess_decals" type="mesh" mesh="nova_suite07__laundry_basket__right_vent_recess_decals" material="nova_suite_teal_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__outer_skin_left" type="mesh" mesh="nova_suite07__return_tray__outer_skin_left" material="nova_suite_return_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__outer_skin_right" type="mesh" mesh="nova_suite07__return_tray__outer_skin_right" material="nova_suite_return_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__outer_skin_front" type="mesh" mesh="nova_suite07__return_tray__outer_skin_front" material="nova_suite_return_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__outer_skin_back" type="mesh" mesh="nova_suite07__return_tray__outer_skin_back" material="nova_suite_return_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__rim_left" type="mesh" mesh="nova_suite07__return_tray__rim_left" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__rim_right" type="mesh" mesh="nova_suite07__return_tray__rim_right" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__rim_front" type="mesh" mesh="nova_suite07__return_tray__rim_front" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__rim_back" type="mesh" mesh="nova_suite07__return_tray__rim_back" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__front_label_backing" type="mesh" mesh="nova_suite07__return_tray__front_label_backing" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__front_label_caption" type="mesh" mesh="nova_suite07__return_tray__front_label_caption" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__legs" type="mesh" mesh="nova_suite07__return_tray__legs" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__floor_pads" type="mesh" mesh="nova_suite07__return_tray__floor_pads" material="nova_suite_rubber" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__undertray_frame_front" type="mesh" mesh="nova_suite07__return_tray__undertray_frame_front" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__return_tray__undertray_frame_back" type="mesh" mesh="nova_suite07__return_tray__undertray_frame_back" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__oak_identification_rail" type="mesh" mesh="nova_suite07__sorting_station__oak_identification_rail" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__ivory_header_panel" type="mesh" mesh="nova_suite07__sorting_station__ivory_header_panel" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__sorting_station_title" type="mesh" mesh="nova_suite07__sorting_station__sorting_station_title" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__trash_bin_direction_marker" type="mesh" mesh="nova_suite07__sorting_station__trash_bin_direction_marker" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__trash_bin_wall_label" type="mesh" mesh="nova_suite07__sorting_station__trash_bin_wall_label" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__recycling_bin_direction_marker" type="mesh" mesh="nova_suite07__sorting_station__recycling_bin_direction_marker" material="nova_suite_recycling_blue" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__recycling_bin_wall_label" type="mesh" mesh="nova_suite07__sorting_station__recycling_bin_wall_label" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__laundry_basket_direction_marker" type="mesh" mesh="nova_suite07__sorting_station__laundry_basket_direction_marker" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__laundry_basket_wall_label" type="mesh" mesh="nova_suite07__sorting_station__laundry_basket_wall_label" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__return_tray_direction_marker" type="mesh" mesh="nova_suite07__sorting_station__return_tray_direction_marker" material="nova_suite_return_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__return_tray_wall_label" type="mesh" mesh="nova_suite07__sorting_station__return_tray_wall_label" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__sorting_station__rail_mounting_screws" type="mesh" mesh="nova_suite07__sorting_station__rail_mounting_screws" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__wall_backboard" type="mesh" mesh="nova_suite07__linen_shelves__wall_backboard" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__left_upright" type="mesh" mesh="nova_suite07__linen_shelves__left_upright" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__right_upright" type="mesh" mesh="nova_suite07__linen_shelves__right_upright" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__top_cap" type="mesh" mesh="nova_suite07__linen_shelves__top_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__bottom_cap" type="mesh" mesh="nova_suite07__linen_shelves__bottom_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_oak_nosing" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_oak_nosing" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_support_pins" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_support_pins" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_left_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_left_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_1_right_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_1_right_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_oak_nosing" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_oak_nosing" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_support_pins" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_support_pins" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_left_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_left_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_2_right_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_2_right_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_oak_nosing" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_oak_nosing" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_support_pins" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_support_pins" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_left_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_left_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_linen_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_linen_1" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_fold_1" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_fold_1" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_linen_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_linen_2" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_fold_2" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_fold_2" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_linen_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_linen_3" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__shelf_3_right_fold_3" type="mesh" mesh="nova_suite07__linen_shelves__shelf_3_right_fold_3" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__linen_header_backing" type="mesh" mesh="nova_suite07__linen_shelves__linen_header_backing" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__linen_header_text" type="mesh" mesh="nova_suite07__linen_shelves__linen_header_text" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__linen_shelves__wall_fixing_heads" type="mesh" mesh="nova_suite07__linen_shelves__wall_fixing_heads" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__ceiling_track_outer" type="mesh" mesh="nova_suite07__privacy_curtain__ceiling_track_outer" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__ceiling_track_shadow_channel" type="mesh" mesh="nova_suite07__privacy_curtain__ceiling_track_shadow_channel" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_1_plate" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_1_plate" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_1_arm" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_1_arm" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_1_brace" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_1_brace" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_2_plate" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_2_plate" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_2_arm" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_2_arm" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_2_brace" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_2_brace" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_3_plate" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_3_plate" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_3_arm" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_3_arm" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__wall_bracket_3_brace" type="mesh" mesh="nova_suite07__privacy_curtain__wall_bracket_3_brace" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__gathered_curtain_fabric" type="mesh" mesh="nova_suite07__privacy_curtain__gathered_curtain_fabric" material="nova_suite_curtain" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__gathered_header_fabric" type="mesh" mesh="nova_suite07__privacy_curtain__gathered_header_fabric" material="nova_suite_curtain_mesh" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_1" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_1" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_2" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_2" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_3" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_3" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_4" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_4" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_5" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_5" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_6" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_6" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_7" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_7" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_8" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_8" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_9" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_9" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_10" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_10" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_hanger_11" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_hanger_11" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_tieback" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_tieback" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__privacy_curtain__curtain_tieback_wall_anchor" type="mesh" mesh="nova_suite07__privacy_curtain__curtain_tieback_wall_anchor" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_panel_west" type="mesh" mesh="nova_suite07__room__north_wall_panel_west" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_panel_centre" type="mesh" mesh="nova_suite07__room__north_wall_panel_centre" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_panel_east" type="mesh" mesh="nova_suite07__room__north_wall_panel_east" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_wainscot" type="mesh" mesh="nova_suite07__room__north_wall_wainscot" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_oak_cap" type="mesh" mesh="nova_suite07__room__north_wall_oak_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_coved_skirt" type="mesh" mesh="nova_suite07__room__north_wall_coved_skirt" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_upper_trim" type="mesh" mesh="nova_suite07__room__north_wall_upper_trim" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_south_pier" type="mesh" mesh="nova_suite07__room__east_wall_south_pier" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_north_pier" type="mesh" mesh="nova_suite07__room__east_wall_north_pier" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_window_spandrel" type="mesh" mesh="nova_suite07__room__east_wall_window_spandrel" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_window_header" type="mesh" mesh="nova_suite07__room__east_wall_window_header" material="nova_suite_warm_plaster" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_wainscot" type="mesh" mesh="nova_suite07__room__east_wall_wainscot" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_oak_cap" type="mesh" mesh="nova_suite07__room__east_wall_oak_cap" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_coved_skirt" type="mesh" mesh="nova_suite07__room__east_wall_coved_skirt" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_upper_trim" type="mesh" mesh="nova_suite07__room__east_wall_upper_trim" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_lower_frame" type="mesh" mesh="nova_suite07__room__east_glazing_lower_frame" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_upper_frame" type="mesh" mesh="nova_suite07__room__east_glazing_upper_frame" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_south_mullion" type="mesh" mesh="nova_suite07__room__east_glazing_south_mullion" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_middle_mullion" type="mesh" mesh="nova_suite07__room__east_glazing_middle_mullion" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_north_mullion" type="mesh" mesh="nova_suite07__room__east_glazing_north_mullion" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_south_glass" type="mesh" mesh="nova_suite07__room__east_glazing_south_glass" material="nova_suite_glass" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_glazing_north_glass" type="mesh" mesh="nova_suite07__room__east_glazing_north_glass" material="nova_suite_glass" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_window_oak_sill" type="mesh" mesh="nova_suite07__room__east_window_oak_sill" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_clock_backplate" type="mesh" mesh="nova_suite07__room__north_wall_clock_backplate" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_clock_face" type="mesh" mesh="nova_suite07__room__north_wall_clock_face" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_clock_hands" type="mesh" mesh="nova_suite07__room__north_wall_clock_hands" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_wall_clock_ticks" type="mesh" mesh="nova_suite07__room__north_wall_clock_ticks" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_air_grille_frame" type="mesh" mesh="nova_suite07__room__north_air_grille_frame" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_air_grille_shadow" type="mesh" mesh="nova_suite07__room__north_air_grille_shadow" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_air_grille_louvres" type="mesh" mesh="nova_suite07__room__north_air_grille_louvres" material="nova_suite_ivory_laminate" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_air_grille_fasteners" type="mesh" mesh="nova_suite07__room__north_air_grille_fasteners" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_protection_rail" type="mesh" mesh="nova_suite07__room__east_wall_protection_rail" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__east_wall_protection_rail_backing" type="mesh" mesh="nova_suite07__room__east_wall_protection_rail_backing" material="nova_suite_graphite" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_patient_information_backing" type="mesh" mesh="nova_suite07__room__north_patient_information_backing" material="nova_suite_warm_oak" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_patient_information_face" type="mesh" mesh="nova_suite07__room__north_patient_information_face" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_patient_information_header" type="mesh" mesh="nova_suite07__room__north_patient_information_header" material="nova_suite_teal_polymer" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__north_patient_information_title" type="mesh" mesh="nova_suite07__room__north_patient_information_title" material="nova_suite_white_linen" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_1_label" type="mesh" mesh="nova_suite07__room__care_board_row_1_label" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_1_rule" type="mesh" mesh="nova_suite07__room__care_board_row_1_rule" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_2_label" type="mesh" mesh="nova_suite07__room__care_board_row_2_label" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_2_rule" type="mesh" mesh="nova_suite07__room__care_board_row_2_rule" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_3_label" type="mesh" mesh="nova_suite07__room__care_board_row_3_label" material="nova_suite_sign_ink" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_row_3_rule" type="mesh" mesh="nova_suite07__room__care_board_row_3_rule" material="nova_suite_linen_shadow" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__care_board_mounting_caps" type="mesh" mesh="nova_suite07__room__care_board_mounting_caps" material="nova_suite_satin_metal" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_floor_visual" type="mesh" mesh="nova_suite07__room__vinyl_floor_visual" material="nova_suite_vinyl_warm_grey" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_heat_weld_seam_1" type="mesh" mesh="nova_suite07__room__vinyl_heat_weld_seam_1" material="nova_suite_vinyl_weld_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_heat_weld_seam_2" type="mesh" mesh="nova_suite07__room__vinyl_heat_weld_seam_2" material="nova_suite_vinyl_weld_seam" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_teal_perimeter_north" type="mesh" mesh="nova_suite07__room__vinyl_teal_perimeter_north" material="nova_suite_floor_teal_inlay" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_teal_perimeter_south" type="mesh" mesh="nova_suite07__room__vinyl_teal_perimeter_south" material="nova_suite_floor_teal_inlay" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_teal_perimeter_east" type="mesh" mesh="nova_suite07__room__vinyl_teal_perimeter_east" material="nova_suite_floor_teal_inlay" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__vinyl_teal_perimeter_west" type="mesh" mesh="nova_suite07__room__vinyl_teal_perimeter_west" material="nova_suite_floor_teal_inlay" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__visitor_ceiling_luminaire_housing" type="mesh" mesh="nova_suite07__room__visitor_ceiling_luminaire_housing" material="nova_suite_powder_coat" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_suite07__room__visitor_ceiling_luminaire_diffuser" type="mesh" mesh="nova_suite07__room__visitor_ceiling_luminaire_diffuser" material="nova_suite_light_diffuser" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_stage" type="plane" pos="0 0 -.09" size="20 20 .01" rgba=".12 .16 .18 1" group="5" contype="0" conaffinity="0" mass="0" />
+    <geom name="nova_plinth" type="box" pos=".35 0 -.049" size="3.17 2.52 .027" rgba=".16 .22 .24 1" group="5" contype="0" conaffinity="0" mass="0" />
+    <light name="nova_front_fill" pos="-3 -4 5" dir=".3 .3 -1" diffuse=".55 .57 .58" specular=".15 .15 .15" castshadow="false" />
+  </worldbody>
+</mujocoinclude>

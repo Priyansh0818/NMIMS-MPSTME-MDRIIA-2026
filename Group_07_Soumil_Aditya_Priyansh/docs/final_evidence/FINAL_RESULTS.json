@@ -1,0 +1,173 @@
+{
+  "complete": true,
+  "role": "100-run audited simulated evidence; not clinical effectiveness",
+  "analysis_sha256": "7d688373b352da33646c623785383ad5af182af259acfb0a39d2afde3b1d7f79",
+  "business_sha256": "95fe31c2ab3a438e520b8a187bdeb66f269dfd5adab3b2a3b22a676684127a6b",
+  "conditions": {
+    "baseline": {
+      "restricted_completion_time_s": {
+        "mean": 1800.0,
+        "sd": 0.0,
+        "n": 50
+      },
+      "reach_lift_rmse_m": {
+        "mean": 0.051762112288412765,
+        "sd": 0.00805875965291282,
+        "n": 50
+      },
+      "collision_events": {
+        "mean": 16.96,
+        "sd": 6.3179691906401025,
+        "n": 50
+      },
+      "carry_drops": {
+        "mean": 0.78,
+        "sd": 1.0159945363825456,
+        "n": 50
+      },
+      "elapsed_s": {
+        "mean": 1105.5708,
+        "sd": 222.16219150440702,
+        "n": 50
+      },
+      "lift_effort_N2s": {
+        "mean": 64609.62898227356,
+        "sd": 22321.152938393716
+      },
+      "successful_rooms": 0,
+      "correct_objects": 606,
+      "samples": 27639270
+    },
+    "proposed": {
+      "restricted_completion_time_s": {
+        "mean": 1342.812,
+        "sd": 412.4925065788147,
+        "n": 50
+      },
+      "reach_lift_rmse_m": {
+        "mean": 0.051541361613042534,
+        "sd": 0.0030073536215814143,
+        "n": 50
+      },
+      "collision_events": {
+        "mean": 0.9,
+        "sd": 1.2163847404233143,
+        "n": 50
+      },
+      "carry_drops": {
+        "mean": 0.2,
+        "sd": 0.45175395145262565,
+        "n": 50
+      },
+      "elapsed_s": {
+        "mean": 851.9888,
+        "sd": 305.08160027622455,
+        "n": 50
+      },
+      "lift_effort_N2s": {
+        "mean": 34042.16246195058,
+        "sd": 13164.707445359878
+      },
+      "successful_rooms": 28,
+      "correct_objects": 663,
+      "samples": 21299720
+    }
+  },
+  "primary_comparison": {
+    "available": true,
+    "test": "Independent two-sided Welch t-test",
+    "t": 7.837251099623215,
+    "df": 49.0,
+    "p": 3.391003307116647e-10,
+    "ci95": [
+      339.95892671474905,
+      574.4170732852507
+    ],
+    "n_baseline": 50,
+    "n_proposed": 50,
+    "mean_baseline": 1800.0,
+    "mean_proposed": 1342.8120000000001,
+    "sd_baseline": 0.0,
+    "sd_proposed": 412.4925065788147,
+    "difference_baseline_minus_proposed": 457.1879999999999,
+    "cohen_d": 1.5674502199246432
+  },
+  "business": {
+    "scope": "Illustrative ward scenario; simulated decluttering only; no clinical effectiveness or admission revenue claim",
+    "telemetry_role": "Final simulated performance + unvalidated business assumptions",
+    "trial_count": 50,
+    "success_probability": 0.56,
+    "success_probability_kind": "measured final trials",
+    "robot_attempt_min": 14.199813333333333,
+    "robot_success_cycle_min": 16.393214285714286,
+    "manual_staff_min": 15.2,
+    "assisted_staff_min": 13.997990666666666,
+    "handling_staff_min": 1,
+    "monitoring_staff_min": 0.7099906666666667,
+    "fallback_staff_min": 2.288,
+    "residual_staff_min": 10,
+    "manual_room_ready_min": 15.2,
+    "assisted_room_ready_min": 27.48781333333333,
+    "room_ready_change_min": -12.287813333333332,
+    "room_ready_reduction_fraction": -0.8084087719298245,
+    "H_reclaimed_staff_hours_day": 0.1502511666666666,
+    "released_staff_hours_year": 54.841675833333284,
+    "annual_rooms": 2737.5,
+    "reference_annual_staff_hours": 693.5,
+    "baseline_annual_cost_reference_units": 1.0,
+    "capital_reference_units": 0.58,
+    "nonstaff_annual_cost_reference_units": 0.1,
+    "fixed_maintenance_reference_units": 0.08,
+    "variable_energy_reference_units": 0.02,
+    "assisted_staff_value_reference_units": 0.9209204385964913,
+    "cash_annual_cost_reference_units": 1.1,
+    "resource_annual_cost_reference_units": 1.0209204385964914,
+    "cash_saving_reference_units_year": -0.10000000000000009,
+    "kappa_cash": 1.1,
+    "NCRI_cash": -0.10000000000000009,
+    "kappa_resource": 1.0209204385964914,
+    "NCRI_resource": -0.020920438596491397,
+    "cash_payback": {
+      "finite": false,
+      "years": null,
+      "months": null,
+      "P_payback": null,
+      "within_life": false
+    },
+    "resource_value_payback": {
+      "finite": false,
+      "years": null,
+      "months": null,
+      "P_payback": null,
+      "within_life": false
+    },
+    "break_even": {
+      "cash_realization_for_positive_savings": 1.264549249201616,
+      "cash_realization_for_payback_within_life": 2.7314263782754904,
+      "daily_rooms_for_positive_cash_savings": null,
+      "daily_rooms_for_payback_within_life": null,
+      "maximum_monitoring_fraction_for_staff_time_release": 0.13464965736638795
+    },
+    "queue_manual": {
+      "stable": true,
+      "wait_minutes": 4.7344262295081965,
+      "system_minutes": 19.934426229508198,
+      "wait_probability": 0.2375,
+      "lambda_per_hour": 0.9375,
+      "mu_per_hour_per_cell": 3.947368421052632,
+      "c": 1,
+      "rho": 0.2375
+    },
+    "queue_assisted": {
+      "stable": true,
+      "wait_minutes": 20.693909371852953,
+      "system_minutes": 48.18172270518629,
+      "wait_probability": 0.42949708333333336,
+      "lambda_per_hour": 0.9375,
+      "mu_per_hour_per_cell": 2.1827854865137812,
+      "c": 1,
+      "rho": 0.4294970833333333
+    },
+    "queue_assumptions": "Poisson arrivals, exponential service, FCFS, identical combined robot/staff cells, infinite queue, no setup overlap; not a fitted hospital queue"
+  }
+}

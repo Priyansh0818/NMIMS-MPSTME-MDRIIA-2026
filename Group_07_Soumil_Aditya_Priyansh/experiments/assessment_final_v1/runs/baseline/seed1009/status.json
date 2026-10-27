@@ -1,0 +1,9 @@
+{
+  "condition": "baseline",
+  "seed": 1009,
+  "sim_time_s": 1320.06,
+  "state": "NAV_VANTAGE",
+  "placement_events": 13,
+  "collision_events": 24,
+  "wall_s": 1030.1
+}

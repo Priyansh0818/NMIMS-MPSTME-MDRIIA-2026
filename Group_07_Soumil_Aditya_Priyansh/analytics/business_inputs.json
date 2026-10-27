@@ -1,0 +1,36 @@
+{
+  "scope": "One hypothetical ward; sequential decluttering plus unchanged residual cleaning. Illustrative assumptions, not measured hospital economics.",
+  "normalization_reference": {
+    "daily_rooms": 7.5,
+    "operating_days": 365,
+    "staff_minutes_per_room": 15.2,
+    "basis": "Fixed reference case inherited from the starter: 5.2 assumed clutter staff-minutes plus 10 assumed residual staff-minutes. One cost unit is that reference year's productive staff labour cost; no wage or procurement quote is asserted. Reference values stay fixed when active scenarios change."
+  },
+  "inputs": {
+    "daily_rooms": {"value": 7.5, "unit": "rooms/day", "kind": "assumption", "basis": "Legacy ward throughput, unverified; not the separate 30-discharge hospital case.", "bounds": [0.1, 100]},
+    "operating_days": {"value": 365, "unit": "days/year", "kind": "assumption", "basis": "Illustrative year-round ward operation.", "bounds": [1, 365]},
+    "operating_hours": {"value": 8, "unit": "hours/day", "kind": "assumption", "basis": "Arrivals spread across an assumed eight-hour dispatch window; not observed hospital arrivals.", "bounds": [1, 24]},
+    "parallel_cells": {"value": 1, "unit": "paired robot/staff workcells", "kind": "assumption", "basis": "One dedicated robot per housekeeping service cell; c also scales capital and fixed maintenance.", "bounds": [1, 10]},
+    "manual_clutter_elapsed_min": {"value": 5.2, "unit": "elapsed minutes/room", "kind": "assumption", "basis": "Legacy starter value; no matching manual decluttering time study is available.", "bounds": [0.01, 120]},
+    "manual_clutter_staff_min": {"value": 5.2, "unit": "staff-minutes/room", "kind": "assumption", "basis": "Assumes one worker actively clears clutter throughout the 5.2-minute manual stage.", "bounds": [0.01, 240]},
+    "residual_elapsed_min": {"value": 10, "unit": "elapsed minutes/room", "kind": "assumption", "basis": "Unverified residual cleaning duration; held identical in manual and assisted cases. CDC-PROC supports retaining cleaning/disinfection scope, not this numeric duration.", "bounds": [0.01, 240]},
+    "residual_staff_min": {"value": 10, "unit": "staff-minutes/room", "kind": "assumption", "basis": "Unverified residual staff requirement; unchanged between cases.", "bounds": [0.01, 480]},
+    "handling_elapsed_min": {"value": 1, "unit": "elapsed minutes/room", "kind": "assumption", "basis": "Illustrative setup/release time outside the robot cycle.", "bounds": [0, 60]},
+    "handling_staff_min": {"value": 1, "unit": "staff-minutes/room", "kind": "assumption", "basis": "Illustrative active setup/release labour, additional to monitoring and residual work.", "bounds": [0, 120]},
+    "monitoring_fraction": {"value": 0.05, "unit": "fraction of robot elapsed time attended", "kind": "assumption", "basis": "Unvalidated 5% attendance scenario; full attendance remains available in sensitivity. Not demonstrated by MuJoCo autonomy.", "bounds": [0, 1]},
+    "cash_realization_fraction": {"value": 0, "unit": "fraction of released labour value converted to reduced expenditure", "kind": "assumption", "basis": "Conservative default: reallocated staff remain employed, so time released does not automatically reduce payroll. EFFICIENCY distinguishes cash and non-cash benefits.", "bounds": [0, 1]},
+    "pilot_success_probability": {"value": 0.9, "unit": "probability per robot attempt", "kind": "assumption", "basis": "Illustrative failure allowance while final trials run. Explicitly NOT estimated as 100% from one successful pilot. Ignored in final-data mode.", "bounds": [0, 1]},
+    "pilot_failure_attempt_min": {"value": 30, "unit": "elapsed minutes per failed attempt", "kind": "assumption", "basis": "Uses the experiment's 1800-second horizon as an illustrative upper-bound failed-cycle scenario, not a measured failed-cycle mean. Ignored in final-data mode.", "bounds": [0, 120]},
+    "capex_ratio_per_cell": {"value": 0.58, "unit": "reference annual labour-cost units per robot", "kind": "assumption", "basis": "Legacy illustrative capital ratio; not a supplier quote. No currency or validated purchase cost is claimed.", "bounds": [0, 10]},
+    "maintenance_ratio_per_cell_year": {"value": 0.08, "unit": "reference annual labour-cost units per robot-year", "kind": "assumption", "basis": "Illustrative maintenance ratio for sensitivity, not measured maintenance or a vendor estimate.", "bounds": [0, 2]},
+    "energy_ratio_reference_year": {"value": 0.02, "unit": "reference annual labour-cost units at reference annual throughput", "kind": "assumption", "basis": "Illustrative energy/consumables allowance scales with room count. MuJoCo squared actuator effort is NOT electrical energy.", "bounds": [0, 2]},
+    "life_years": {"value": 5, "unit": "years", "kind": "assumption", "basis": "Illustrative service life; not a warranty or measured robot life.", "bounds": [0.1, 30]}
+  },
+  "sources": [
+    {"id": "PILOT", "title": "Audited 16-object MuJoCo pilot, seed 9010", "location": "capstone/experiments/assessment_v1/pilot_analysis/analysis.json", "checked": "2026-10-21", "supports": "One measured simulated successful clearing duration only. No human labour, clinical effect, reliability population estimate or procurement cost."},
+    {"id": "CDC-PROC", "title": "CDC Environmental Cleaning Procedures, section 4.2.3", "url": "https://www.cdc.gov/healthcare-associated-infections/hcp/cleaning-global/procedures.html", "checked": "2026-10-21", "supports": "Terminal cleaning after discharge includes cleaning/disinfection beyond decluttering; those tasks remain in the model. Does not validate the 10-minute assumption."},
+    {"id": "EFFICIENCY", "title": "UK Government Efficiency Framework, sections 4.1-4.5", "url": "https://www.gov.uk/government/publications/the-government-efficiency-framework/the-government-efficiency-framework--2", "checked": "2026-10-21", "supports": "Separates direct spending reductions from time/productivity benefits without a reduced budget. No UK financial rate is imported into this Indian academic scenario."},
+    {"id": "BARTS", "title": "Barts Health: How co-bots are creating a cleaner future, 29 April 2026", "url": "https://www.bartshealth.nhs.uk/news/how-cobots-are-creating-a-cleaner-future-at-barts-health-18557/", "checked": "2026-10-21", "supports": "Qualitative example of cleaning staff time reallocation. Different robots/tasks; no numeric transfer to our manipulator."},
+    {"id": "QUEUE", "title": "Larson and Odoni, Urban Operations Research, section 4.6.2 (MIT-hosted text)", "url": "https://web.mit.edu/urban_or_book/www/book/chapter4/4.6.2.html", "checked": "2026-10-21", "supports": "Identical exponential servers, Poisson arrivals, FCFS and infinite waiting capacity for M/M/c. These assumptions are illustrative here, not fitted to hospital data."}
+  ]
+}

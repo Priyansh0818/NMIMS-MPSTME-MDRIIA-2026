@@ -1,0 +1,2 @@
+timestamp,object,type,class,destination,obj_x,obj_y,nav_time,grasp_attempts,grasp_success,collisions,pickup_time,sort_time,total_time,result
+199.6,slipper_1,slipper,ITEM_RETURN,return_tray,0.834,-0.536,150.4,0,1,5,61.6,0.0,191.6,DEPLOY_TIMEOUT

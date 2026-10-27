@@ -1,0 +1,258 @@
+{
+  "SPAWN": {
+    "cup_1": [
+      0.8,
+      0.92,
+      0.2,
+      0.4,
+      "surface"
+    ],
+    "cup_2": [
+      -1.1,
+      -0.9,
+      1.15,
+      1.4,
+      "floor"
+    ],
+    "bottle_1": [
+      1.28,
+      1.38,
+      -0.9,
+      -0.5,
+      "floor"
+    ],
+    "bottle_2": [
+      3.05,
+      3.25,
+      -0.7,
+      -0.3,
+      "floor"
+    ],
+    "paper_1": [
+      0.4,
+      0.8,
+      -1.1,
+      -0.8,
+      "floor"
+    ],
+    "paper_2": [
+      -0.95,
+      -0.7,
+      -1.3,
+      -1.0,
+      "floor"
+    ],
+    "glove_1": [
+      -1.35,
+      -1.15,
+      -2.0,
+      -1.85,
+      "floor"
+    ],
+    "glove_2": [
+      1.8,
+      2.2,
+      0.8,
+      1.1,
+      "floor"
+    ],
+    "wrapper_1": [
+      -1.5,
+      -1.4,
+      -0.1,
+      0.05,
+      "surface"
+    ],
+    "plasticpack_1": [
+      -1.0,
+      -0.85,
+      0.55,
+      0.75,
+      "floor"
+    ],
+    "towel_1": [
+      -1.3,
+      -1.25,
+      -1.28,
+      -1.16,
+      "surface"
+    ],
+    "towel_2": [
+      1.8,
+      2.2,
+      0.2,
+      0.35,
+      "surface"
+    ],
+    "gauze_1": [
+      -0.08,
+      0.08,
+      -1.64,
+      -1.58,
+      "surface"
+    ],
+    "personal_1": [
+      -2.5,
+      -2.3,
+      1.0,
+      1.4,
+      "floor"
+    ],
+    "personal_2": [
+      2.9,
+      3.2,
+      1.2,
+      1.5,
+      "floor"
+    ],
+    "slipper_1": [
+      0.72,
+      0.95,
+      -0.65,
+      -0.43,
+      "floor"
+    ]
+  },
+  "SPAWN_JITTER_YAW": true,
+  "CATEGORY_OF_TYPE": {
+    "cup": "RECYCLABLE",
+    "bottle": "RECYCLABLE",
+    "paper": "RECYCLABLE",
+    "wrapper": "TRASH",
+    "plasticpack": "TRASH",
+    "glove": "BIO_WASTE",
+    "gauze": "BIO_WASTE",
+    "towel": "LAUNDRY",
+    "personal": "ITEM_RETURN",
+    "slipper": "ITEM_RETURN"
+  },
+  "TYPE_PROTOTYPES": {
+    "cup": [
+      0.11,
+      0.07,
+      [
+        0.95,
+        0.45,
+        0.15
+      ]
+    ],
+    "bottle": [
+      0.18,
+      0.06,
+      [
+        0.2,
+        0.5,
+        0.95
+      ]
+    ],
+    "paper": [
+      0.08,
+      0.07,
+      [
+        0.97,
+        0.97,
+        0.97
+      ]
+    ],
+    "glove": [
+      0.07,
+      0.06,
+      [
+        0.3,
+        0.75,
+        0.85
+      ]
+    ],
+    "wrapper": [
+      0.13,
+      0.05,
+      [
+        0.95,
+        0.85,
+        0.15
+      ]
+    ],
+    "plasticpack": [
+      0.08,
+      0.05,
+      [
+        0.75,
+        0.9,
+        0.8
+      ]
+    ],
+    "towel": [
+      0.09,
+      0.08,
+      [
+        0.15,
+        0.65,
+        0.45
+      ]
+    ],
+    "gauze": [
+      0.09,
+      0.06,
+      [
+        0.95,
+        0.55,
+        0.6
+      ]
+    ],
+    "personal": [
+      0.09,
+      0.056,
+      [
+        0.25,
+        0.25,
+        0.3
+      ]
+    ],
+    "slipper": [
+      0.06,
+      0.23,
+      [
+        0.52,
+        0.22,
+        0.65
+      ]
+    ]
+  },
+  "CATEGORY_TO_ZONE": {
+    "TRASH": "trash_bin",
+    "BIO_WASTE": "trash_bin",
+    "RECYCLABLE": "recycling_bin",
+    "LAUNDRY": "laundry_basket",
+    "ITEM_RETURN": "return_tray"
+  },
+  "ZONES": {
+    "trash_bin": {
+      "body": "trash_bin",
+      "ix": 0.15,
+      "iy": 0.15,
+      "rim_z": 0.4,
+      "floor_z": 0.02
+    },
+    "recycling_bin": {
+      "body": "recycling_bin",
+      "ix": 0.15,
+      "iy": 0.15,
+      "rim_z": 0.4,
+      "floor_z": 0.02
+    },
+    "laundry_basket": {
+      "body": "laundry_basket",
+      "ix": 0.18,
+      "iy": 0.14,
+      "rim_z": 0.36,
+      "floor_z": 0.02
+    },
+    "return_tray": {
+      "body": "return_tray",
+      "ix": 0.17,
+      "iy": 0.13,
+      "rim_z": 0.71,
+      "floor_z": 0.61
+    }
+  }
+}

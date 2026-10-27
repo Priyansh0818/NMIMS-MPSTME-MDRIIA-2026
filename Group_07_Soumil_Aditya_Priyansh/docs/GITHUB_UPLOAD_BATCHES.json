@@ -1,0 +1,149 @@
+{
+  "core_excludes": [
+    "analytics/submission_trials/baseline/",
+    "analytics/submission_trials/proposed/"
+  ],
+  "evidence_batches": [
+    {
+      "paths": [
+        "analytics/submission_trials/baseline/seed1000",
+        "analytics/submission_trials/baseline/seed1001",
+        "analytics/submission_trials/baseline/seed1002",
+        "analytics/submission_trials/baseline/seed1003",
+        "analytics/submission_trials/baseline/seed1004",
+        "analytics/submission_trials/baseline/seed1005",
+        "analytics/submission_trials/baseline/seed1006",
+        "analytics/submission_trials/baseline/seed1007",
+        "analytics/submission_trials/baseline/seed1008",
+        "analytics/submission_trials/baseline/seed1009",
+        "analytics/submission_trials/baseline/seed1010",
+        "analytics/submission_trials/baseline/seed1011"
+      ],
+      "bytes": 744401683
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/baseline/seed1012",
+        "analytics/submission_trials/baseline/seed1013",
+        "analytics/submission_trials/baseline/seed1014",
+        "analytics/submission_trials/baseline/seed1015",
+        "analytics/submission_trials/baseline/seed1016",
+        "analytics/submission_trials/baseline/seed1017",
+        "analytics/submission_trials/baseline/seed1018",
+        "analytics/submission_trials/baseline/seed1019",
+        "analytics/submission_trials/baseline/seed1020",
+        "analytics/submission_trials/baseline/seed1021",
+        "analytics/submission_trials/baseline/seed1022",
+        "analytics/submission_trials/baseline/seed1023"
+      ],
+      "bytes": 732503303
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/baseline/seed1024",
+        "analytics/submission_trials/baseline/seed1025",
+        "analytics/submission_trials/baseline/seed1026",
+        "analytics/submission_trials/baseline/seed1027",
+        "analytics/submission_trials/baseline/seed1028",
+        "analytics/submission_trials/baseline/seed1029",
+        "analytics/submission_trials/baseline/seed1030",
+        "analytics/submission_trials/baseline/seed1031",
+        "analytics/submission_trials/baseline/seed1032",
+        "analytics/submission_trials/baseline/seed1033",
+        "analytics/submission_trials/baseline/seed1034",
+        "analytics/submission_trials/baseline/seed1035"
+      ],
+      "bytes": 727086384
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/baseline/seed1036",
+        "analytics/submission_trials/baseline/seed1037",
+        "analytics/submission_trials/baseline/seed1038",
+        "analytics/submission_trials/baseline/seed1039",
+        "analytics/submission_trials/baseline/seed1040",
+        "analytics/submission_trials/baseline/seed1041",
+        "analytics/submission_trials/baseline/seed1042",
+        "analytics/submission_trials/baseline/seed1043",
+        "analytics/submission_trials/baseline/seed1044",
+        "analytics/submission_trials/baseline/seed1045",
+        "analytics/submission_trials/baseline/seed1046",
+        "analytics/submission_trials/baseline/seed1047",
+        "analytics/submission_trials/baseline/seed1048"
+      ],
+      "bytes": 728664827
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/baseline/seed1049",
+        "analytics/submission_trials/proposed/seed2000",
+        "analytics/submission_trials/proposed/seed2001",
+        "analytics/submission_trials/proposed/seed2002",
+        "analytics/submission_trials/proposed/seed2003",
+        "analytics/submission_trials/proposed/seed2004",
+        "analytics/submission_trials/proposed/seed2005",
+        "analytics/submission_trials/proposed/seed2006",
+        "analytics/submission_trials/proposed/seed2007",
+        "analytics/submission_trials/proposed/seed2008",
+        "analytics/submission_trials/proposed/seed2009",
+        "analytics/submission_trials/proposed/seed2010",
+        "analytics/submission_trials/proposed/seed2011",
+        "analytics/submission_trials/proposed/seed2012",
+        "analytics/submission_trials/proposed/seed2013",
+        "analytics/submission_trials/proposed/seed2014",
+        "analytics/submission_trials/proposed/seed2015"
+      ],
+      "bytes": 745766453
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/proposed/seed2016",
+        "analytics/submission_trials/proposed/seed2017",
+        "analytics/submission_trials/proposed/seed2018",
+        "analytics/submission_trials/proposed/seed2019",
+        "analytics/submission_trials/proposed/seed2020",
+        "analytics/submission_trials/proposed/seed2021",
+        "analytics/submission_trials/proposed/seed2022",
+        "analytics/submission_trials/proposed/seed2023",
+        "analytics/submission_trials/proposed/seed2024",
+        "analytics/submission_trials/proposed/seed2025",
+        "analytics/submission_trials/proposed/seed2026",
+        "analytics/submission_trials/proposed/seed2027",
+        "analytics/submission_trials/proposed/seed2028",
+        "analytics/submission_trials/proposed/seed2029",
+        "analytics/submission_trials/proposed/seed2030",
+        "analytics/submission_trials/proposed/seed2031"
+      ],
+      "bytes": 723250659
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/proposed/seed2032",
+        "analytics/submission_trials/proposed/seed2033",
+        "analytics/submission_trials/proposed/seed2034",
+        "analytics/submission_trials/proposed/seed2035",
+        "analytics/submission_trials/proposed/seed2036",
+        "analytics/submission_trials/proposed/seed2037",
+        "analytics/submission_trials/proposed/seed2038",
+        "analytics/submission_trials/proposed/seed2039",
+        "analytics/submission_trials/proposed/seed2040",
+        "analytics/submission_trials/proposed/seed2041",
+        "analytics/submission_trials/proposed/seed2042",
+        "analytics/submission_trials/proposed/seed2043",
+        "analytics/submission_trials/proposed/seed2044",
+        "analytics/submission_trials/proposed/seed2045",
+        "analytics/submission_trials/proposed/seed2046",
+        "analytics/submission_trials/proposed/seed2047"
+      ],
+      "bytes": 727024868
+    },
+    {
+      "paths": [
+        "analytics/submission_trials/proposed/seed2048",
+        "analytics/submission_trials/proposed/seed2049"
+      ],
+      "bytes": 110879509
+    }
+  ],
+  "instruction": "Commit and PUSH each batch before adding the next; no single final giant push."
+}

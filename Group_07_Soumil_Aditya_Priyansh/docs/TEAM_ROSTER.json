@@ -1,96 +1,36 @@
 {
   "group_id": "MDRIIA_GROUP_07",
   "folder_name": "Group_07_Soumil_Aditya_Priyansh",
-  "domain": "Autonomous Mobile Manipulator for Hospital Clutter Classification and Grasp Planning",
-  "authorized_title": "How can an autonomous mobile manipulator simulated in MuJoCo for clutter classification and grasp planning reduce daily patient-room turnaround time for hospital housekeeping staff from the baseline 10-20 minutes per room?",
+  "domain": "Hospital room decluttering with a MuJoCo mobile manipulator",
   "members": [
     {
+      "name": "Soumil Patro",
       "roll_no": "E050",
       "sap_id": "70362400035",
-      "name": "Soumil Patro",
-      "role": "Lead Mobile Base Navigation & SLAM Engineer",
-      "assigned_branch": "feat/e050-lead-mobile-base-nav",
-      "viva_focus": "Holonomic mobile base positioning, hospital bedside clearance, obstacle avoidance in narrow patient suites, and coordinated base-arm docking."
+      "github_username": "soumilpatro",
+      "role": "CSBS Business & Techno-economic Systems Analyst"
     },
     {
-      "roll_no": "E062",
-      "sap_id": "70362400075",
       "name": "Aditya Raju Shah",
-      "role": "Manipulator Arm Kinematics & Vision-Based Grasping Specialist",
-      "assigned_branch": "feat/e062-manipulator-arm-kine",
-      "viva_focus": "Inverse kinematics Jacobian damping, 6-DOF grasp pose generation, push-to-grasp non-prehensile primitives, and bedside clutter classification."
+      "roll_no": "E062",
+      "sap_id": "70362400033",
+      "github_username": "adityashah0705-svg",
+      "role": "Autonomous Navigation / Vision Specialist + Telemetry QA Lead"
     },
     {
-      "roll_no": "E066",
-      "sap_id": "70362400078",
       "name": "Priyansh Thakkar",
-      "role": "CSBS Hospital Workflow Efficiency & Room Turnover Business Analyst",
-      "assigned_branch": "feat/e066-csbs-hospital-workfl",
-      "viva_focus": "Hospital room turnaround time reduction (from 15 min to < 6 min), bed vacancy acceleration, and housekeeping labor cost parity models."
-    }
-  ],
-  "foundational_papers": [
-    {
-      "id": 1,
-      "authors": "Murali et al.",
-      "year": 2020,
-      "title": "6-DOF Grasping for Target-driven Object Manipulation in Clutter",
-      "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
-      "doi": "https://doi.org/10.1109/ICRA40945.2020.9197318",
-      "lead": "Aditya Raju Shah (E062)"
-    },
-    {
-      "id": 2,
-      "authors": "Mahler et al.",
-      "year": 2019,
-      "title": "Learning ambidextrous robot grasping policies",
-      "venue": "Science Robotics",
-      "doi": "https://doi.org/10.1126/scirobotics.aau4984",
-      "lead": "Aditya Raju Shah (E062)"
-    },
-    {
-      "id": 3,
-      "authors": "Berscheid et al.",
-      "year": 2019,
-      "title": "Robot Learning of Shifting Objects for Grasping in Cluttered Environments",
-      "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
-      "doi": "https://doi.org/10.1109/IROS40897.2019.8968042",
-      "lead": "Aditya Raju Shah (E062) & Soumil Patro (E050)"
-    },
-    {
-      "id": 4,
-      "authors": "Dogar & Srinivasa",
-      "year": 2012,
-      "title": "Physics-Based Grasp Planning Through Clutter",
-      "venue": "Robotics: Science and Systems (RSS)",
-      "doi": "https://doi.org/10.15607/RSS.2012.VIII.008",
-      "lead": "Soumil Patro (E050)"
-    },
-    {
-      "id": 5,
-      "authors": "Carling & Bartley",
-      "year": 2010,
-      "title": "Evaluating hygienic cleaning in health care settings: What you do not know can harm your patients",
-      "venue": "American Journal of Infection Control",
-      "doi": "https://doi.org/10.1016/j.ajic.2010.03.004",
-      "lead": "Priyansh Thakkar (E066)"
-    },
-    {
-      "id": 6,
-      "authors": "Wang et al.",
-      "year": 2025,
-      "title": "Learning Dual-Arm Push and Grasp Synergy in Dense Clutter",
-      "venue": "IEEE Robotics and Automation Letters",
-      "doi": "https://doi.org/10.1109/LRA.2025.3557753",
-      "lead": "Priyansh Thakkar (E066) & Aditya Raju Shah (E062)"
+      "roll_no": "E066",
+      "sap_id": "70362400038",
+      "github_username": "Priyansh0818",
+      "role": "Lead Robotics Systems Architect"
     }
   ],
   "project_showcase": {
     "platform": "LinkedIn Video",
-    "linkedin_url": "PENDING_SUBMISSION",
-    "video_poster_path": "docs/figures/video_poster.png",
-    "video_duration_target": "60-90 seconds",
-    "submission_status": "PENDING",
-    "submission_instructions": "Paste your published LinkedIn post URL into 'linkedin_url' and submit a Pull Request"
-  }
+    "linkedin_url": "https://lnkd.in/p/di2s32-6",
+    "video_duration_seconds": 204.433333,
+    "submission_status": "URL supplied by team; local video verified"
+  },
+  "evidence_scope": "100 audited simulated runs; not clinical effectiveness",
+  "roles_basis": "Team-confirmed capstone allocation; not a claim about individual historical authorship"
 }

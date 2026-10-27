@@ -1,0 +1,2334 @@
+{
+  "inputs": {
+    "daily_rooms": 7.5,
+    "operating_days": 365,
+    "operating_hours": 8,
+    "parallel_cells": 1,
+    "manual_clutter_elapsed_min": 5.2,
+    "manual_clutter_staff_min": 5.2,
+    "residual_elapsed_min": 10,
+    "residual_staff_min": 10,
+    "handling_elapsed_min": 1,
+    "handling_staff_min": 1,
+    "monitoring_fraction": 0.05,
+    "cash_realization_fraction": 0,
+    "pilot_success_probability": 0.9,
+    "pilot_failure_attempt_min": 30,
+    "capex_ratio_per_cell": 0.58,
+    "maintenance_ratio_per_cell_year": 0.08,
+    "energy_ratio_reference_year": 0.02,
+    "life_years": 5
+  },
+  "metadata": {
+    "scope": "One hypothetical ward; sequential decluttering plus unchanged residual cleaning. Illustrative assumptions, not measured hospital economics.",
+    "normalization_reference": {
+      "daily_rooms": 7.5,
+      "operating_days": 365,
+      "staff_minutes_per_room": 15.2,
+      "basis": "Fixed reference case inherited from the starter: 5.2 assumed clutter staff-minutes plus 10 assumed residual staff-minutes. One cost unit is that reference year's productive staff labour cost; no wage or procurement quote is asserted. Reference values stay fixed when active scenarios change."
+    },
+    "inputs": {
+      "daily_rooms": {
+        "value": 7.5,
+        "unit": "rooms/day",
+        "kind": "assumption",
+        "basis": "Legacy ward throughput, unverified; not the separate 30-discharge hospital case.",
+        "bounds": [
+          0.1,
+          100
+        ]
+      },
+      "operating_days": {
+        "value": 365,
+        "unit": "days/year",
+        "kind": "assumption",
+        "basis": "Illustrative year-round ward operation.",
+        "bounds": [
+          1,
+          365
+        ]
+      },
+      "operating_hours": {
+        "value": 8,
+        "unit": "hours/day",
+        "kind": "assumption",
+        "basis": "Arrivals spread across an assumed eight-hour dispatch window; not observed hospital arrivals.",
+        "bounds": [
+          1,
+          24
+        ]
+      },
+      "parallel_cells": {
+        "value": 1,
+        "unit": "paired robot/staff workcells",
+        "kind": "assumption",
+        "basis": "One dedicated robot per housekeeping service cell; c also scales capital and fixed maintenance.",
+        "bounds": [
+          1,
+          10
+        ]
+      },
+      "manual_clutter_elapsed_min": {
+        "value": 5.2,
+        "unit": "elapsed minutes/room",
+        "kind": "assumption",
+        "basis": "Legacy starter value; no matching manual decluttering time study is available.",
+        "bounds": [
+          0.01,
+          120
+        ]
+      },
+      "manual_clutter_staff_min": {
+        "value": 5.2,
+        "unit": "staff-minutes/room",
+        "kind": "assumption",
+        "basis": "Assumes one worker actively clears clutter throughout the 5.2-minute manual stage.",
+        "bounds": [
+          0.01,
+          240
+        ]
+      },
+      "residual_elapsed_min": {
+        "value": 10,
+        "unit": "elapsed minutes/room",
+        "kind": "assumption",
+        "basis": "Unverified residual cleaning duration; held identical in manual and assisted cases. CDC-PROC supports retaining cleaning/disinfection scope, not this numeric duration.",
+        "bounds": [
+          0.01,
+          240
+        ]
+      },
+      "residual_staff_min": {
+        "value": 10,
+        "unit": "staff-minutes/room",
+        "kind": "assumption",
+        "basis": "Unverified residual staff requirement; unchanged between cases.",
+        "bounds": [
+          0.01,
+          480
+        ]
+      },
+      "handling_elapsed_min": {
+        "value": 1,
+        "unit": "elapsed minutes/room",
+        "kind": "assumption",
+        "basis": "Illustrative setup/release time outside the robot cycle.",
+        "bounds": [
+          0,
+          60
+        ]
+      },
+      "handling_staff_min": {
+        "value": 1,
+        "unit": "staff-minutes/room",
+        "kind": "assumption",
+        "basis": "Illustrative active setup/release labour, additional to monitoring and residual work.",
+        "bounds": [
+          0,
+          120
+        ]
+      },
+      "monitoring_fraction": {
+        "value": 0.05,
+        "unit": "fraction of robot elapsed time attended",
+        "kind": "assumption",
+        "basis": "Unvalidated 5% attendance scenario; full attendance remains available in sensitivity. Not demonstrated by MuJoCo autonomy.",
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      "cash_realization_fraction": {
+        "value": 0,
+        "unit": "fraction of released labour value converted to reduced expenditure",
+        "kind": "assumption",
+        "basis": "Conservative default: reallocated staff remain employed, so time released does not automatically reduce payroll. EFFICIENCY distinguishes cash and non-cash benefits.",
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      "pilot_success_probability": {
+        "value": 0.9,
+        "unit": "probability per robot attempt",
+        "kind": "assumption",
+        "basis": "Illustrative failure allowance while final trials run. Explicitly NOT estimated as 100% from one successful pilot. Ignored in final-data mode.",
+        "bounds": [
+          0,
+          1
+        ]
+      },
+      "pilot_failure_attempt_min": {
+        "value": 30,
+        "unit": "elapsed minutes per failed attempt",
+        "kind": "assumption",
+        "basis": "Uses the experiment's 1800-second horizon as an illustrative upper-bound failed-cycle scenario, not a measured failed-cycle mean. Ignored in final-data mode.",
+        "bounds": [
+          0,
+          120
+        ]
+      },
+      "capex_ratio_per_cell": {
+        "value": 0.58,
+        "unit": "reference annual labour-cost units per robot",
+        "kind": "assumption",
+        "basis": "Legacy illustrative capital ratio; not a supplier quote. No currency or validated purchase cost is claimed.",
+        "bounds": [
+          0,
+          10
+        ]
+      },
+      "maintenance_ratio_per_cell_year": {
+        "value": 0.08,
+        "unit": "reference annual labour-cost units per robot-year",
+        "kind": "assumption",
+        "basis": "Illustrative maintenance ratio for sensitivity, not measured maintenance or a vendor estimate.",
+        "bounds": [
+          0,
+          2
+        ]
+      },
+      "energy_ratio_reference_year": {
+        "value": 0.02,
+        "unit": "reference annual labour-cost units at reference annual throughput",
+        "kind": "assumption",
+        "basis": "Illustrative energy/consumables allowance scales with room count. MuJoCo squared actuator effort is NOT electrical energy.",
+        "bounds": [
+          0,
+          2
+        ]
+      },
+      "life_years": {
+        "value": 5,
+        "unit": "years",
+        "kind": "assumption",
+        "basis": "Illustrative service life; not a warranty or measured robot life.",
+        "bounds": [
+          0.1,
+          30
+        ]
+      }
+    },
+    "sources": [
+      {
+        "id": "PILOT",
+        "title": "Audited 16-object MuJoCo pilot, seed 9010",
+        "location": "capstone/experiments/assessment_v1/pilot_analysis/analysis.json",
+        "checked": "2026-10-21",
+        "supports": "One measured simulated successful clearing duration only. No human labour, clinical effect, reliability population estimate or procurement cost."
+      },
+      {
+        "id": "CDC-PROC",
+        "title": "CDC Environmental Cleaning Procedures, section 4.2.3",
+        "url": "https://www.cdc.gov/healthcare-associated-infections/hcp/cleaning-global/procedures.html",
+        "checked": "2026-10-21",
+        "supports": "Terminal cleaning after discharge includes cleaning/disinfection beyond decluttering; those tasks remain in the model. Does not validate the 10-minute assumption."
+      },
+      {
+        "id": "EFFICIENCY",
+        "title": "UK Government Efficiency Framework, sections 4.1-4.5",
+        "url": "https://www.gov.uk/government/publications/the-government-efficiency-framework/the-government-efficiency-framework--2",
+        "checked": "2026-10-21",
+        "supports": "Separates direct spending reductions from time/productivity benefits without a reduced budget. No UK financial rate is imported into this Indian academic scenario."
+      },
+      {
+        "id": "BARTS",
+        "title": "Barts Health: How co-bots are creating a cleaner future, 29 April 2026",
+        "url": "https://www.bartshealth.nhs.uk/news/how-cobots-are-creating-a-cleaner-future-at-barts-health-18557/",
+        "checked": "2026-10-21",
+        "supports": "Qualitative example of cleaning staff time reallocation. Different robots/tasks; no numeric transfer to our manipulator."
+      },
+      {
+        "id": "QUEUE",
+        "title": "Larson and Odoni, Urban Operations Research, section 4.6.2 (MIT-hosted text)",
+        "url": "https://web.mit.edu/urban_or_book/www/book/chapter4/4.6.2.html",
+        "checked": "2026-10-21",
+        "supports": "Identical exponential servers, Poisson arrivals, FCFS and infinite waiting capacity for M/M/c. These assumptions are illustrative here, not fitted to hospital data."
+      }
+    ]
+  },
+  "measurements": {
+    "mode": "final",
+    "label": "Final simulated performance + unvalidated business assumptions",
+    "trial_count": 50,
+    "successful_cycle_min": 16.393214285714286,
+    "actual_mean_attempt_min": 14.199813333333333,
+    "observed_success_probability": 0.56,
+    "provenance": {
+      "report": "D:\\P\\NMIMS-MPSTME-MDRIIA-2026\\Group_07_Soumil_Aditya_Priyansh\\delivery\\Group_07_Soumil_Aditya_Priyansh\\experiments\\assessment_final_v1\\analysis\\analysis.json",
+      "sha256": "7d688373b352da33646c623785383ad5af182af259acfb0a39d2afde3b1d7f79",
+      "seeds": [
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2037,
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2048,
+        2049
+      ],
+      "raw_audit_passed": true,
+      "time_basis": "MuJoCo simulated elapsed seconds / 60, never PC wall time"
+    }
+  },
+  "outputs": {
+    "scope": "Illustrative ward scenario; simulated decluttering only; no clinical effectiveness or admission revenue claim",
+    "telemetry_role": "Final simulated performance + unvalidated business assumptions",
+    "trial_count": 50,
+    "success_probability": 0.56,
+    "success_probability_kind": "measured final trials",
+    "robot_attempt_min": 14.199813333333333,
+    "robot_success_cycle_min": 16.393214285714286,
+    "manual_staff_min": 15.2,
+    "assisted_staff_min": 13.997990666666666,
+    "handling_staff_min": 1,
+    "monitoring_staff_min": 0.7099906666666667,
+    "fallback_staff_min": 2.288,
+    "residual_staff_min": 10,
+    "manual_room_ready_min": 15.2,
+    "assisted_room_ready_min": 27.48781333333333,
+    "room_ready_change_min": -12.287813333333332,
+    "room_ready_reduction_fraction": -0.8084087719298245,
+    "H_reclaimed_staff_hours_day": 0.1502511666666666,
+    "released_staff_hours_year": 54.841675833333284,
+    "annual_rooms": 2737.5,
+    "reference_annual_staff_hours": 693.5,
+    "baseline_annual_cost_reference_units": 1.0,
+    "capital_reference_units": 0.58,
+    "nonstaff_annual_cost_reference_units": 0.1,
+    "fixed_maintenance_reference_units": 0.08,
+    "variable_energy_reference_units": 0.02,
+    "assisted_staff_value_reference_units": 0.9209204385964913,
+    "cash_annual_cost_reference_units": 1.1,
+    "resource_annual_cost_reference_units": 1.0209204385964914,
+    "cash_saving_reference_units_year": -0.10000000000000009,
+    "kappa_cash": 1.1,
+    "NCRI_cash": -0.10000000000000009,
+    "kappa_resource": 1.0209204385964914,
+    "NCRI_resource": -0.020920438596491397,
+    "cash_payback": {
+      "finite": false,
+      "years": null,
+      "months": null,
+      "P_payback": null,
+      "within_life": false
+    },
+    "resource_value_payback": {
+      "finite": false,
+      "years": null,
+      "months": null,
+      "P_payback": null,
+      "within_life": false
+    },
+    "break_even": {
+      "cash_realization_for_positive_savings": 1.264549249201616,
+      "cash_realization_for_payback_within_life": 2.7314263782754904,
+      "daily_rooms_for_positive_cash_savings": null,
+      "daily_rooms_for_payback_within_life": null,
+      "maximum_monitoring_fraction_for_staff_time_release": 0.13464965736638795
+    },
+    "queue_manual": {
+      "stable": true,
+      "wait_minutes": 4.7344262295081965,
+      "system_minutes": 19.934426229508198,
+      "wait_probability": 0.2375,
+      "lambda_per_hour": 0.9375,
+      "mu_per_hour_per_cell": 3.947368421052632,
+      "c": 1,
+      "rho": 0.2375
+    },
+    "queue_assisted": {
+      "stable": true,
+      "wait_minutes": 20.693909371852953,
+      "system_minutes": 48.18172270518629,
+      "wait_probability": 0.42949708333333336,
+      "lambda_per_hour": 0.9375,
+      "mu_per_hour_per_cell": 2.1827854865137812,
+      "c": 1,
+      "rho": 0.4294970833333333
+    },
+    "queue_assumptions": "Poisson arrivals, exponential service, FCFS, identical combined robot/staff cells, infinite queue, no setup overlap; not a fitted hospital queue"
+  },
+  "sensitivity": [
+    {
+      "input": "daily_rooms",
+      "case": "low",
+      "value": 5.25,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.13428571428571434,
+      "NCRI_resource": -0.05520615288220543,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.10517581666666662
+    },
+    {
+      "input": "daily_rooms",
+      "case": "high",
+      "value": 9.75,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.08153846153846156,
+      "NCRI_resource": -0.0024589001349528683,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.19532651666666656
+    },
+    {
+      "input": "operating_days",
+      "case": "low",
+      "value": 255.49999999999997,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.13428571428571434,
+      "NCRI_resource": -0.05520615288220543,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "operating_days",
+      "case": "high",
+      "value": 365,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "operating_hours",
+      "case": "low",
+      "value": 5.6,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "operating_hours",
+      "case": "high",
+      "value": 10.4,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "parallel_cells",
+      "case": "low",
+      "value": 1,
+      "basis": "integer capacity scenario, one vs two paired cells",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "parallel_cells",
+      "case": "high",
+      "value": 2,
+      "basis": "integer capacity scenario, one vs two paired cells",
+      "NCRI_cash": -0.17999999999999994,
+      "NCRI_resource": -0.10092043859649125,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "manual_clutter_elapsed_min",
+      "case": "low",
+      "value": 3.6399999999999997,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "manual_clutter_elapsed_min",
+      "case": "high",
+      "value": 6.760000000000001,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "manual_clutter_staff_min",
+      "case": "low",
+      "value": 3.6399999999999997,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.11143695014662747,
+      "NCRI_resource": -0.0873600195503419,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.04105116666666664
+    },
+    {
+      "input": "manual_clutter_staff_min",
+      "case": "high",
+      "value": 6.760000000000001,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.09069212410501204,
+      "NCRI_resource": 0.03315091487669075,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.2594511666666668
+    },
+    {
+      "input": "residual_elapsed_min",
+      "case": "low",
+      "value": 7.0,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "residual_elapsed_min",
+      "case": "high",
+      "value": 13.0,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "residual_staff_min",
+      "case": "low",
+      "value": 7.0,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.12459016393442623,
+      "NCRI_resource": -0.02606480874316941,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "residual_staff_min",
+      "case": "high",
+      "value": 13.0,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.08351648351648366,
+      "NCRI_resource": -0.017472014652014867,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "handling_elapsed_min",
+      "case": "low",
+      "value": 0.7,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "handling_elapsed_min",
+      "case": "high",
+      "value": 1.3,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "handling_staff_min",
+      "case": "low",
+      "value": 0.7,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.0011835964912279007,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1877511666666667
+    },
+    {
+      "input": "handling_staff_min",
+      "case": "high",
+      "value": 1.3,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.04065728070175445,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.11275116666666651
+    },
+    {
+      "input": "monitoring_fraction",
+      "case": "low",
+      "value": 0.034999999999999996,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.00690746491228067,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.17687581666666663
+    },
+    {
+      "input": "monitoring_fraction",
+      "case": "high",
+      "value": 0.065,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.03493341228070168,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.12362651666666657
+    },
+    {
+      "input": "cash_realization_fraction",
+      "case": "low",
+      "value": 0.0,
+      "basis": "full feasible realization range [0,1]",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "cash_realization_fraction",
+      "case": "high",
+      "value": 1.0,
+      "basis": "full feasible realization range [0,1]",
+      "NCRI_cash": -0.020920438596491397,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "capex_ratio_per_cell",
+      "case": "low",
+      "value": 0.40599999999999997,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "capex_ratio_per_cell",
+      "case": "high",
+      "value": 0.754,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "maintenance_ratio_per_cell_year",
+      "case": "low",
+      "value": 0.055999999999999994,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.07600000000000007,
+      "NCRI_resource": 0.003079561403508735,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "maintenance_ratio_per_cell_year",
+      "case": "high",
+      "value": 0.10400000000000001,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.12400000000000011,
+      "NCRI_resource": -0.04492043859649142,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "energy_ratio_reference_year",
+      "case": "low",
+      "value": 0.013999999999999999,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.09400000000000008,
+      "NCRI_resource": -0.014920438596491392,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "energy_ratio_reference_year",
+      "case": "high",
+      "value": 0.026000000000000002,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.1060000000000001,
+      "NCRI_resource": -0.026920438596491403,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "life_years",
+      "case": "low",
+      "value": 3.5,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    },
+    {
+      "input": "life_years",
+      "case": "high",
+      "value": 6.5,
+      "basis": "one input at a time +/-30%, limited to physical bounds",
+      "NCRI_cash": -0.10000000000000009,
+      "NCRI_resource": -0.020920438596491397,
+      "P_payback_cash": null,
+      "H_reclaimed": 0.1502511666666666
+    }
+  ],
+  "curves": {
+    "realization": [
+      {
+        "x": 0.0,
+        "NCRI": -0.10000000000000009,
+        "P": null
+      },
+      {
+        "x": 0.01,
+        "NCRI": -0.09920920438596492,
+        "P": null
+      },
+      {
+        "x": 0.02,
+        "NCRI": -0.09841840877192976,
+        "P": null
+      },
+      {
+        "x": 0.03,
+        "NCRI": -0.09762761315789481,
+        "P": null
+      },
+      {
+        "x": 0.04,
+        "NCRI": -0.09683681754385964,
+        "P": null
+      },
+      {
+        "x": 0.05,
+        "NCRI": -0.0960460219298247,
+        "P": null
+      },
+      {
+        "x": 0.06,
+        "NCRI": -0.09525522631578953,
+        "P": null
+      },
+      {
+        "x": 0.07,
+        "NCRI": -0.09446443070175436,
+        "P": null
+      },
+      {
+        "x": 0.08,
+        "NCRI": -0.09367363508771942,
+        "P": null
+      },
+      {
+        "x": 0.09,
+        "NCRI": -0.09288283947368425,
+        "P": null
+      },
+      {
+        "x": 0.1,
+        "NCRI": -0.09209204385964909,
+        "P": null
+      },
+      {
+        "x": 0.11,
+        "NCRI": -0.09130124824561414,
+        "P": null
+      },
+      {
+        "x": 0.12,
+        "NCRI": -0.09051045263157897,
+        "P": null
+      },
+      {
+        "x": 0.13,
+        "NCRI": -0.08971965701754381,
+        "P": null
+      },
+      {
+        "x": 0.14,
+        "NCRI": -0.08892886140350886,
+        "P": null
+      },
+      {
+        "x": 0.15,
+        "NCRI": -0.0881380657894737,
+        "P": null
+      },
+      {
+        "x": 0.16,
+        "NCRI": -0.08734727017543875,
+        "P": null
+      },
+      {
+        "x": 0.17,
+        "NCRI": -0.08655647456140358,
+        "P": null
+      },
+      {
+        "x": 0.18,
+        "NCRI": -0.08576567894736842,
+        "P": null
+      },
+      {
+        "x": 0.19,
+        "NCRI": -0.08497488333333347,
+        "P": null
+      },
+      {
+        "x": 0.2,
+        "NCRI": -0.0841840877192983,
+        "P": null
+      },
+      {
+        "x": 0.21,
+        "NCRI": -0.08339329210526314,
+        "P": null
+      },
+      {
+        "x": 0.22,
+        "NCRI": -0.0826024964912282,
+        "P": null
+      },
+      {
+        "x": 0.23,
+        "NCRI": -0.08181170087719303,
+        "P": null
+      },
+      {
+        "x": 0.24,
+        "NCRI": -0.08102090526315786,
+        "P": null
+      },
+      {
+        "x": 0.25,
+        "NCRI": -0.08023010964912292,
+        "P": null
+      },
+      {
+        "x": 0.26,
+        "NCRI": -0.07943931403508775,
+        "P": null
+      },
+      {
+        "x": 0.27,
+        "NCRI": -0.07864851842105258,
+        "P": null
+      },
+      {
+        "x": 0.28,
+        "NCRI": -0.07785772280701764,
+        "P": null
+      },
+      {
+        "x": 0.29,
+        "NCRI": -0.07706692719298247,
+        "P": null
+      },
+      {
+        "x": 0.3,
+        "NCRI": -0.07627613157894753,
+        "P": null
+      },
+      {
+        "x": 0.31,
+        "NCRI": -0.07548533596491236,
+        "P": null
+      },
+      {
+        "x": 0.32,
+        "NCRI": -0.07469454035087719,
+        "P": null
+      },
+      {
+        "x": 0.33,
+        "NCRI": -0.07390374473684225,
+        "P": null
+      },
+      {
+        "x": 0.34,
+        "NCRI": -0.07311294912280708,
+        "P": null
+      },
+      {
+        "x": 0.35,
+        "NCRI": -0.07232215350877191,
+        "P": null
+      },
+      {
+        "x": 0.36,
+        "NCRI": -0.07153135789473697,
+        "P": null
+      },
+      {
+        "x": 0.37,
+        "NCRI": -0.0707405622807018,
+        "P": null
+      },
+      {
+        "x": 0.38,
+        "NCRI": -0.06994976666666664,
+        "P": null
+      },
+      {
+        "x": 0.39,
+        "NCRI": -0.06915897105263169,
+        "P": null
+      },
+      {
+        "x": 0.4,
+        "NCRI": -0.06836817543859652,
+        "P": null
+      },
+      {
+        "x": 0.41,
+        "NCRI": -0.06757737982456158,
+        "P": null
+      },
+      {
+        "x": 0.42,
+        "NCRI": -0.06678658421052641,
+        "P": null
+      },
+      {
+        "x": 0.43,
+        "NCRI": -0.06599578859649124,
+        "P": null
+      },
+      {
+        "x": 0.44,
+        "NCRI": -0.0652049929824563,
+        "P": null
+      },
+      {
+        "x": 0.45,
+        "NCRI": -0.06441419736842113,
+        "P": null
+      },
+      {
+        "x": 0.46,
+        "NCRI": -0.06362340175438597,
+        "P": null
+      },
+      {
+        "x": 0.47,
+        "NCRI": -0.06283260614035102,
+        "P": null
+      },
+      {
+        "x": 0.48,
+        "NCRI": -0.062041810526315855,
+        "P": null
+      },
+      {
+        "x": 0.49,
+        "NCRI": -0.06125101491228069,
+        "P": null
+      },
+      {
+        "x": 0.5,
+        "NCRI": -0.06046021929824574,
+        "P": null
+      },
+      {
+        "x": 0.51,
+        "NCRI": -0.059669423684210576,
+        "P": null
+      },
+      {
+        "x": 0.52,
+        "NCRI": -0.05887862807017541,
+        "P": null
+      },
+      {
+        "x": 0.53,
+        "NCRI": -0.058087832456140465,
+        "P": null
+      },
+      {
+        "x": 0.54,
+        "NCRI": -0.0572970368421053,
+        "P": null
+      },
+      {
+        "x": 0.55,
+        "NCRI": -0.05650624122807035,
+        "P": null
+      },
+      {
+        "x": 0.56,
+        "NCRI": -0.055715445614035186,
+        "P": null
+      },
+      {
+        "x": 0.57,
+        "NCRI": -0.05492465000000002,
+        "P": null
+      },
+      {
+        "x": 0.58,
+        "NCRI": -0.054133854385965074,
+        "P": null
+      },
+      {
+        "x": 0.59,
+        "NCRI": -0.05334305877192991,
+        "P": null
+      },
+      {
+        "x": 0.6,
+        "NCRI": -0.05255226315789474,
+        "P": null
+      },
+      {
+        "x": 0.61,
+        "NCRI": -0.051761467543859796,
+        "P": null
+      },
+      {
+        "x": 0.62,
+        "NCRI": -0.05097067192982463,
+        "P": null
+      },
+      {
+        "x": 0.63,
+        "NCRI": -0.05017987631578946,
+        "P": null
+      },
+      {
+        "x": 0.64,
+        "NCRI": -0.04938908070175452,
+        "P": null
+      },
+      {
+        "x": 0.65,
+        "NCRI": -0.04859828508771935,
+        "P": null
+      },
+      {
+        "x": 0.66,
+        "NCRI": -0.047807489473684406,
+        "P": null
+      },
+      {
+        "x": 0.67,
+        "NCRI": -0.04701669385964924,
+        "P": null
+      },
+      {
+        "x": 0.68,
+        "NCRI": -0.04622589824561407,
+        "P": null
+      },
+      {
+        "x": 0.69,
+        "NCRI": -0.04543510263157913,
+        "P": null
+      },
+      {
+        "x": 0.7,
+        "NCRI": -0.04464430701754396,
+        "P": null
+      },
+      {
+        "x": 0.71,
+        "NCRI": -0.043853511403508794,
+        "P": null
+      },
+      {
+        "x": 0.72,
+        "NCRI": -0.04306271578947385,
+        "P": null
+      },
+      {
+        "x": 0.73,
+        "NCRI": -0.04227192017543868,
+        "P": null
+      },
+      {
+        "x": 0.74,
+        "NCRI": -0.041481124561403515,
+        "P": null
+      },
+      {
+        "x": 0.75,
+        "NCRI": -0.04069032894736857,
+        "P": null
+      },
+      {
+        "x": 0.76,
+        "NCRI": -0.0398995333333334,
+        "P": null
+      },
+      {
+        "x": 0.77,
+        "NCRI": -0.03910873771929824,
+        "P": null
+      },
+      {
+        "x": 0.78,
+        "NCRI": -0.03831794210526329,
+        "P": null
+      },
+      {
+        "x": 0.79,
+        "NCRI": -0.037527146491228125,
+        "P": null
+      },
+      {
+        "x": 0.8,
+        "NCRI": -0.03673635087719318,
+        "P": null
+      },
+      {
+        "x": 0.81,
+        "NCRI": -0.03594555526315801,
+        "P": null
+      },
+      {
+        "x": 0.82,
+        "NCRI": -0.035154759649122846,
+        "P": null
+      },
+      {
+        "x": 0.83,
+        "NCRI": -0.0343639640350879,
+        "P": null
+      },
+      {
+        "x": 0.84,
+        "NCRI": -0.033573168421052735,
+        "P": null
+      },
+      {
+        "x": 0.85,
+        "NCRI": -0.03278237280701757,
+        "P": null
+      },
+      {
+        "x": 0.86,
+        "NCRI": -0.03199157719298262,
+        "P": null
+      },
+      {
+        "x": 0.87,
+        "NCRI": -0.031200781578947456,
+        "P": null
+      },
+      {
+        "x": 0.88,
+        "NCRI": -0.03040998596491229,
+        "P": null
+      },
+      {
+        "x": 0.89,
+        "NCRI": -0.029619190350877345,
+        "P": null
+      },
+      {
+        "x": 0.9,
+        "NCRI": -0.028828394736842178,
+        "P": null
+      },
+      {
+        "x": 0.91,
+        "NCRI": -0.028037599122807233,
+        "P": null
+      },
+      {
+        "x": 0.92,
+        "NCRI": -0.027246803508772066,
+        "P": null
+      },
+      {
+        "x": 0.93,
+        "NCRI": -0.0264560078947369,
+        "P": null
+      },
+      {
+        "x": 0.94,
+        "NCRI": -0.025665212280701954,
+        "P": null
+      },
+      {
+        "x": 0.95,
+        "NCRI": -0.024874416666666788,
+        "P": null
+      },
+      {
+        "x": 0.96,
+        "NCRI": -0.02408362105263162,
+        "P": null
+      },
+      {
+        "x": 0.97,
+        "NCRI": -0.023292825438596676,
+        "P": null
+      },
+      {
+        "x": 0.98,
+        "NCRI": -0.02250202982456151,
+        "P": null
+      },
+      {
+        "x": 0.99,
+        "NCRI": -0.021711234210526342,
+        "P": null
+      },
+      {
+        "x": 1.0,
+        "NCRI": -0.020920438596491397,
+        "P": null
+      }
+    ],
+    "attendance": [
+      {
+        "x": 0.0,
+        "H": 0.23899999999999988,
+        "NCRI_resource": 0.025789473684210584
+      },
+      {
+        "x": 0.01,
+        "H": 0.22125023333333324,
+        "NCRI_resource": 0.01644749122807021
+      },
+      {
+        "x": 0.02,
+        "H": 0.20350046666666666,
+        "NCRI_resource": 0.007105508771929947
+      },
+      {
+        "x": 0.03,
+        "H": 0.18575069999999982,
+        "NCRI_resource": -0.002236473684210649
+      },
+      {
+        "x": 0.04,
+        "H": 0.16800093333333319,
+        "NCRI_resource": -0.011578456140350912
+      },
+      {
+        "x": 0.05,
+        "H": 0.1502511666666666,
+        "NCRI_resource": -0.020920438596491397
+      },
+      {
+        "x": 0.06,
+        "H": 0.1325014,
+        "NCRI_resource": -0.03026242105263166
+      },
+      {
+        "x": 0.07,
+        "H": 0.11475163333333338,
+        "NCRI_resource": -0.0396044035087717
+      },
+      {
+        "x": 0.08,
+        "H": 0.09700186666666655,
+        "NCRI_resource": -0.04894638596491241
+      },
+      {
+        "x": 0.09,
+        "H": 0.07925209999999994,
+        "NCRI_resource": -0.05828836842105267
+      },
+      {
+        "x": 0.1,
+        "H": 0.061502333333333326,
+        "NCRI_resource": -0.06763035087719294
+      },
+      {
+        "x": 0.11,
+        "H": 0.04375256666666649,
+        "NCRI_resource": -0.07697233333333342
+      },
+      {
+        "x": 0.12,
+        "H": 0.02600279999999988,
+        "NCRI_resource": -0.08631431578947368
+      },
+      {
+        "x": 0.13,
+        "H": 0.00825303333333327,
+        "NCRI_resource": -0.09565629824561395
+      },
+      {
+        "x": 0.14,
+        "H": -0.00949673333333334,
+        "NCRI_resource": -0.10499828070175443
+      },
+      {
+        "x": 0.15,
+        "H": -0.02724649999999995,
+        "NCRI_resource": -0.1143402631578947
+      },
+      {
+        "x": 0.16,
+        "H": -0.044996266666666784,
+        "NCRI_resource": -0.12368224561403518
+      },
+      {
+        "x": 0.17,
+        "H": -0.0627460333333334,
+        "NCRI_resource": -0.13302422807017567
+      },
+      {
+        "x": 0.18,
+        "H": -0.0804958,
+        "NCRI_resource": -0.1423662105263157
+      },
+      {
+        "x": 0.19,
+        "H": -0.09824556666666684,
+        "NCRI_resource": -0.1517081929824562
+      },
+      {
+        "x": 0.2,
+        "H": -0.11599533333333367,
+        "NCRI_resource": -0.16105017543859668
+      },
+      {
+        "x": 0.21,
+        "H": -0.13374510000000006,
+        "NCRI_resource": -0.17039215789473694
+      },
+      {
+        "x": 0.22,
+        "H": -0.15149486666666645,
+        "NCRI_resource": -0.17973414035087698
+      },
+      {
+        "x": 0.23,
+        "H": -0.16924463333333373,
+        "NCRI_resource": -0.1890761228070179
+      },
+      {
+        "x": 0.24,
+        "H": -0.18699440000000012,
+        "NCRI_resource": -0.19841810526315795
+      },
+      {
+        "x": 0.25,
+        "H": -0.2047441666666665,
+        "NCRI_resource": -0.20776008771929821
+      },
+      {
+        "x": 0.26,
+        "H": -0.22249393333333334,
+        "NCRI_resource": -0.21710207017543848
+      },
+      {
+        "x": 0.27,
+        "H": -0.24024370000000017,
+        "NCRI_resource": -0.22644405263157918
+      },
+      {
+        "x": 0.28,
+        "H": -0.25799346666666656,
+        "NCRI_resource": -0.23578603508771923
+      },
+      {
+        "x": 0.29,
+        "H": -0.2757432333333334,
+        "NCRI_resource": -0.2451280175438595
+      },
+      {
+        "x": 0.3,
+        "H": -0.2934930000000003,
+        "NCRI_resource": -0.2544700000000002
+      },
+      {
+        "x": 0.31,
+        "H": -0.31124276666666667,
+        "NCRI_resource": -0.26381198245614046
+      },
+      {
+        "x": 0.32,
+        "H": -0.32899253333333345,
+        "NCRI_resource": -0.27315396491228094
+      },
+      {
+        "x": 0.33,
+        "H": -0.3467423000000002,
+        "NCRI_resource": -0.2824959473684212
+      },
+      {
+        "x": 0.34,
+        "H": -0.3644920666666666,
+        "NCRI_resource": -0.29183792982456147
+      },
+      {
+        "x": 0.35,
+        "H": -0.382241833333333,
+        "NCRI_resource": -0.30117991228070173
+      },
+      {
+        "x": 0.36,
+        "H": -0.3999916000000004,
+        "NCRI_resource": -0.31052189473684244
+      },
+      {
+        "x": 0.37,
+        "H": -0.4177413666666668,
+        "NCRI_resource": -0.3198638771929825
+      },
+      {
+        "x": 0.38,
+        "H": -0.43549113333333317,
+        "NCRI_resource": -0.32920585964912275
+      },
+      {
+        "x": 0.39,
+        "H": -0.45324090000000034,
+        "NCRI_resource": -0.33854784210526345
+      },
+      {
+        "x": 0.4,
+        "H": -0.4709906666666667,
+        "NCRI_resource": -0.3478898245614037
+      },
+      {
+        "x": 0.41,
+        "H": -0.4887404333333331,
+        "NCRI_resource": -0.35723180701754376
+      },
+      {
+        "x": 0.42,
+        "H": -0.5064902,
+        "NCRI_resource": -0.36657378947368424
+      },
+      {
+        "x": 0.43,
+        "H": -0.5242399666666668,
+        "NCRI_resource": -0.3759157719298247
+      },
+      {
+        "x": 0.44,
+        "H": -0.5419897333333332,
+        "NCRI_resource": -0.38525775438596477
+      },
+      {
+        "x": 0.45,
+        "H": -0.5597395000000002,
+        "NCRI_resource": -0.39459973684210525
+      },
+      {
+        "x": 0.46,
+        "H": -0.5774892666666669,
+        "NCRI_resource": -0.40394171929824574
+      },
+      {
+        "x": 0.47,
+        "H": -0.5952390333333333,
+        "NCRI_resource": -0.413283701754386
+      },
+      {
+        "x": 0.48,
+        "H": -0.6129888000000001,
+        "NCRI_resource": -0.4226256842105265
+      },
+      {
+        "x": 0.49,
+        "H": -0.6307385666666669,
+        "NCRI_resource": -0.43196766666666675
+      },
+      {
+        "x": 0.5,
+        "H": -0.6484883333333333,
+        "NCRI_resource": -0.441309649122807
+      },
+      {
+        "x": 0.51,
+        "H": -0.6662381,
+        "NCRI_resource": -0.4506516315789475
+      },
+      {
+        "x": 0.52,
+        "H": -0.683987866666667,
+        "NCRI_resource": -0.45999361403508776
+      },
+      {
+        "x": 0.53,
+        "H": -0.7017376333333334,
+        "NCRI_resource": -0.469335596491228
+      },
+      {
+        "x": 0.54,
+        "H": -0.7194874000000002,
+        "NCRI_resource": -0.47867757894736873
+      },
+      {
+        "x": 0.55,
+        "H": -0.737237166666667,
+        "NCRI_resource": -0.488019561403509
+      },
+      {
+        "x": 0.56,
+        "H": -0.7549869333333334,
+        "NCRI_resource": -0.49736154385964926
+      },
+      {
+        "x": 0.57,
+        "H": -0.7727366999999998,
+        "NCRI_resource": -0.5067035263157895
+      },
+      {
+        "x": 0.58,
+        "H": -0.7904864666666666,
+        "NCRI_resource": -0.51604550877193
+      },
+      {
+        "x": 0.59,
+        "H": -0.8082362333333335,
+        "NCRI_resource": -0.5253874912280703
+      },
+      {
+        "x": 0.6,
+        "H": -0.8259859999999999,
+        "NCRI_resource": -0.5347294736842105
+      },
+      {
+        "x": 0.61,
+        "H": -0.8437357666666667,
+        "NCRI_resource": -0.544071456140351
+      },
+      {
+        "x": 0.62,
+        "H": -0.8614855333333336,
+        "NCRI_resource": -0.5534134385964915
+      },
+      {
+        "x": 0.63,
+        "H": -0.8792352999999999,
+        "NCRI_resource": -0.5627554210526315
+      },
+      {
+        "x": 0.64,
+        "H": -0.8969850666666669,
+        "NCRI_resource": -0.572097403508772
+      },
+      {
+        "x": 0.65,
+        "H": -0.9147348333333336,
+        "NCRI_resource": -0.5814393859649125
+      },
+      {
+        "x": 0.66,
+        "H": -0.9324846,
+        "NCRI_resource": -0.5907813684210526
+      },
+      {
+        "x": 0.67,
+        "H": -0.9502343666666668,
+        "NCRI_resource": -0.600123350877193
+      },
+      {
+        "x": 0.68,
+        "H": -0.9679841333333337,
+        "NCRI_resource": -0.6094653333333337
+      },
+      {
+        "x": 0.69,
+        "H": -0.9857339,
+        "NCRI_resource": -0.6188073157894738
+      },
+      {
+        "x": 0.7,
+        "H": -1.0034836666666664,
+        "NCRI_resource": -0.6281492982456138
+      },
+      {
+        "x": 0.71,
+        "H": -1.0212334333333333,
+        "NCRI_resource": -0.6374912807017543
+      },
+      {
+        "x": 0.72,
+        "H": -1.0389832,
+        "NCRI_resource": -0.6468332631578948
+      },
+      {
+        "x": 0.73,
+        "H": -1.0567329666666665,
+        "NCRI_resource": -0.6561752456140351
+      },
+      {
+        "x": 0.74,
+        "H": -1.0744827333333333,
+        "NCRI_resource": -0.6655172280701755
+      },
+      {
+        "x": 0.75,
+        "H": -1.0922325000000002,
+        "NCRI_resource": -0.6748592105263158
+      },
+      {
+        "x": 0.76,
+        "H": -1.1099822666666666,
+        "NCRI_resource": -0.6842011929824561
+      },
+      {
+        "x": 0.77,
+        "H": -1.1277320333333334,
+        "NCRI_resource": -0.6935431754385963
+      },
+      {
+        "x": 0.78,
+        "H": -1.1454818000000002,
+        "NCRI_resource": -0.702885157894737
+      },
+      {
+        "x": 0.79,
+        "H": -1.1632315666666666,
+        "NCRI_resource": -0.7122271403508771
+      },
+      {
+        "x": 0.8,
+        "H": -1.1809813333333332,
+        "NCRI_resource": -0.7215691228070176
+      },
+      {
+        "x": 0.81,
+        "H": -1.1987311000000003,
+        "NCRI_resource": -0.7309111052631581
+      },
+      {
+        "x": 0.82,
+        "H": -1.2164808666666667,
+        "NCRI_resource": -0.7402530877192983
+      },
+      {
+        "x": 0.83,
+        "H": -1.234230633333333,
+        "NCRI_resource": -0.7495950701754386
+      },
+      {
+        "x": 0.84,
+        "H": -1.2519804000000003,
+        "NCRI_resource": -0.7589370526315793
+      },
+      {
+        "x": 0.85,
+        "H": -1.2697301666666667,
+        "NCRI_resource": -0.7682790350877193
+      },
+      {
+        "x": 0.86,
+        "H": -1.287479933333333,
+        "NCRI_resource": -0.7776210175438596
+      },
+      {
+        "x": 0.87,
+        "H": -1.3052297000000004,
+        "NCRI_resource": -0.7869630000000003
+      },
+      {
+        "x": 0.88,
+        "H": -1.3229794666666668,
+        "NCRI_resource": -0.7963049824561406
+      },
+      {
+        "x": 0.89,
+        "H": -1.3407292333333332,
+        "NCRI_resource": -0.8056469649122808
+      },
+      {
+        "x": 0.9,
+        "H": -1.358479,
+        "NCRI_resource": -0.8149889473684209
+      },
+      {
+        "x": 0.91,
+        "H": -1.3762287666666668,
+        "NCRI_resource": -0.8243309298245614
+      },
+      {
+        "x": 0.92,
+        "H": -1.3939785333333332,
+        "NCRI_resource": -0.8336729122807018
+      },
+      {
+        "x": 0.93,
+        "H": -1.4117283,
+        "NCRI_resource": -0.8430148947368421
+      },
+      {
+        "x": 0.94,
+        "H": -1.4294780666666662,
+        "NCRI_resource": -0.8523568771929821
+      },
+      {
+        "x": 0.95,
+        "H": -1.4472278333333333,
+        "NCRI_resource": -0.8616988596491231
+      },
+      {
+        "x": 0.96,
+        "H": -1.4649776,
+        "NCRI_resource": -0.8710408421052631
+      },
+      {
+        "x": 0.97,
+        "H": -1.4827273666666665,
+        "NCRI_resource": -0.8803828245614034
+      },
+      {
+        "x": 0.98,
+        "H": -1.5004771333333333,
+        "NCRI_resource": -0.8897248070175439
+      },
+      {
+        "x": 0.99,
+        "H": -1.5182269,
+        "NCRI_resource": -0.8990667894736843
+      },
+      {
+        "x": 1.0,
+        "H": -1.5359766666666665,
+        "NCRI_resource": -0.9084087719298246
+      }
+    ],
+    "queue": [
+      {
+        "arrival": 0.024010640351651596,
+        "manual_wait": 0.0930228018307056,
+        "assisted_wait": 0.30572896528479954,
+        "assisted_rho": 0.011000000000000001
+      },
+      {
+        "arrival": 0.04802128070330319,
+        "manual_wait": 0.1871911990438525,
+        "assisted_wait": 0.6183352692569871,
+        "assisted_rho": 0.022000000000000002
+      },
+      {
+        "arrival": 0.07203192105495479,
+        "manual_wait": 0.2825264851287028,
+        "assisted_wait": 0.9380536091003103,
+        "assisted_rho": 0.033
+      },
+      {
+        "arrival": 0.09604256140660639,
+        "manual_wait": 0.3790504845815854,
+        "assisted_wait": 1.2651294839609486,
+        "assisted_rho": 0.044000000000000004
+      },
+      {
+        "arrival": 0.12005320175825798,
+        "manual_wait": 0.47678556956224616,
+        "assisted_wait": 1.5998198236331573,
+        "assisted_rho": 0.05500000000000001
+      },
+      {
+        "arrival": 0.14406384210990958,
+        "manual_wait": 0.5757546771811155,
+        "assisted_wait": 1.9423936616702355,
+        "assisted_rho": 0.066
+      },
+      {
+        "arrival": 0.16807448246156118,
+        "manual_wait": 0.6759813274455545,
+        "assisted_wait": 2.293132856626941,
+        "assisted_rho": 0.07700000000000001
+      },
+      {
+        "arrival": 0.19208512281321277,
+        "manual_wait": 0.7774896418945721,
+        "assisted_wait": 2.652332865497076,
+        "assisted_rho": 0.08800000000000001
+      },
+      {
+        "arrival": 0.21609576316486434,
+        "manual_wait": 0.8803043629530267,
+        "assisted_wait": 3.0203035738068813,
+        "assisted_rho": 0.099
+      },
+      {
+        "arrival": 0.24010640351651596,
+        "manual_wait": 0.9844508740379284,
+        "assisted_wait": 3.3973701872659174,
+        "assisted_rho": 0.11000000000000001
+      },
+      {
+        "arrival": 0.26411704386816753,
+        "manual_wait": 1.089955220451164,
+        "assisted_wait": 3.7838741903678423,
+        "assisted_rho": 0.121
+      },
+      {
+        "arrival": 0.28812768421981916,
+        "manual_wait": 1.1968441310947695,
+        "assisted_wait": 4.180174377880185,
+        "assisted_rho": 0.132
+      },
+      {
+        "arrival": 0.3121383245714707,
+        "manual_wait": 1.3051450410467687,
+        "assisted_wait": 4.586647965772073,
+        "assisted_rho": 0.14300000000000002
+      },
+      {
+        "arrival": 0.33614896492312235,
+        "manual_wait": 1.4148861150376506,
+        "assisted_wait": 5.003691788810088,
+        "assisted_rho": 0.15400000000000003
+      },
+      {
+        "arrival": 0.3601596052747739,
+        "manual_wait": 1.5260962718696591,
+        "assisted_wait": 5.431723592814372,
+        "assisted_rho": 0.165
+      },
+      {
+        "arrival": 0.38417024562642554,
+        "manual_wait": 1.6388052098233907,
+        "assisted_wait": 5.871183430420713,
+        "assisted_rho": 0.17600000000000002
+      },
+      {
+        "arrival": 0.40818088597807717,
+        "manual_wait": 1.753043433098573,
+        "assisted_wait": 6.322535170151703,
+        "assisted_rho": 0.18700000000000003
+      },
+      {
+        "arrival": 0.4321915263297287,
+        "manual_wait": 1.8688422793384702,
+        "assisted_wait": 6.786268129675809,
+        "assisted_rho": 0.198
+      },
+      {
+        "arrival": 0.4562021666813803,
+        "manual_wait": 1.9862339482901032,
+        "assisted_wait": 7.2628988453434475,
+        "assisted_rho": 0.20900000000000002
+      },
+      {
+        "arrival": 0.48021280703303193,
+        "manual_wait": 2.1052515316553144,
+        "assisted_wait": 7.7529729914529915,
+        "assisted_rho": 0.22000000000000003
+      },
+      {
+        "arrival": 0.5042234473846835,
+        "manual_wait": 2.2259290441908393,
+        "assisted_wait": 8.257067464239272,
+        "assisted_rho": 0.231
+      },
+      {
+        "arrival": 0.5282340877363351,
+        "manual_wait": 2.3483014561187554,
+        "assisted_wait": 8.775792647317502,
+        "assisted_rho": 0.242
+      },
+      {
+        "arrival": 0.5522447280879867,
+        "manual_wait": 2.472404726912201,
+        "assisted_wait": 9.309794877286928,
+        "assisted_rho": 0.25300000000000006
+      },
+      {
+        "arrival": 0.5762553684396383,
+        "manual_wait": 2.598275840524905,
+        "assisted_wait": 9.859759130434783,
+        "assisted_rho": 0.264
+      },
+      {
+        "arrival": 0.6002660087912899,
+        "manual_wait": 2.7259528421370574,
+        "assisted_wait": 10.42641195402299,
+        "assisted_rho": 0.275
+      },
+      {
+        "arrival": 0.6242766491429415,
+        "manual_wait": 2.8554748764941977,
+        "assisted_wait": 11.010524668534082,
+        "assisted_rho": 0.28600000000000003
+      },
+      {
+        "arrival": 0.6482872894945932,
+        "manual_wait": 2.9868822279202756,
+        "assisted_wait": 11.612916870554772,
+        "assisted_rho": 0.2970000000000001
+      },
+      {
+        "arrival": 0.6722979298462447,
+        "manual_wait": 3.120216362090799,
+        "assisted_wait": 12.234460269749523,
+        "assisted_rho": 0.30800000000000005
+      },
+      {
+        "arrival": 0.6963085701978963,
+        "manual_wait": 3.2555199696570987,
+        "assisted_wait": 12.87608289769946,
+        "assisted_rho": 0.319
+      },
+      {
+        "arrival": 0.7203192105495478,
+        "manual_wait": 3.3928370118180644,
+        "assisted_wait": 13.538773731343285,
+        "assisted_rho": 0.33
+      },
+      {
+        "arrival": 0.7443298509011996,
+        "manual_wait": 3.532212767941581,
+        "assisted_wait": 14.223587779463843,
+        "assisted_rho": 0.3410000000000001
+      },
+      {
+        "arrival": 0.7683404912528511,
+        "manual_wait": 3.673693885344027,
+        "assisted_wait": 14.9316516872428,
+        "assisted_rho": 0.35200000000000004
+      },
+      {
+        "arrival": 0.7923511316045027,
+        "manual_wait": 3.8173284313427995,
+        "assisted_wait": 15.664169921507066,
+        "assisted_rho": 0.36300000000000004
+      },
+      {
+        "arrival": 0.8163617719561543,
+        "manual_wait": 3.9631659477038657,
+        "assisted_wait": 16.422431608093717,
+        "assisted_rho": 0.37400000000000005
+      },
+      {
+        "arrival": 0.8403724123078059,
+        "manual_wait": 4.111257507613919,
+        "assisted_wait": 17.207818102981037,
+        "assisted_rho": 0.38500000000000006
+      },
+      {
+        "arrival": 0.8643830526594574,
+        "manual_wait": 4.261655775314784,
+        "assisted_wait": 18.021811390728477,
+        "assisted_rho": 0.396
+      },
+      {
+        "arrival": 0.888393693011109,
+        "manual_wait": 4.414415068546313,
+        "assisted_wait": 18.866003417650365,
+        "assisted_rho": 0.40700000000000003
+      },
+      {
+        "arrival": 0.9124043333627606,
+        "manual_wait": 4.569591423953324,
+        "assisted_wait": 19.742106483390607,
+        "assisted_rho": 0.41800000000000004
+      },
+      {
+        "arrival": 0.9364149737144124,
+        "manual_wait": 4.727242665622064,
+        "assisted_wait": 20.651964833625225,
+        "assisted_rho": 0.4290000000000001
+      },
+      {
+        "arrival": 0.9604256140660639,
+        "manual_wait": 4.887428476922229,
+        "assisted_wait": 21.597567619047624,
+        "assisted_rho": 0.44000000000000006
+      },
+      {
+        "arrival": 0.9844362544177153,
+        "manual_wait": 5.050210475842129,
+        "assisted_wait": 22.581063412264726,
+        "assisted_rho": 0.451
+      },
+      {
+        "arrival": 1.008446894769367,
+        "manual_wait": 5.215652294016703,
+        "assisted_wait": 23.60477650557621,
+        "assisted_rho": 0.462
+      },
+      {
+        "arrival": 1.0324575351210186,
+        "manual_wait": 5.383819659661342,
+        "assisted_wait": 24.67122524984187,
+        "assisted_rho": 0.47300000000000003
+      },
+      {
+        "arrival": 1.0564681754726701,
+        "manual_wait": 5.554780484638626,
+        "assisted_wait": 25.78314273901809,
+        "assisted_rho": 0.484
+      },
+      {
+        "arrival": 1.080478815824322,
+        "manual_wait": 5.72860495590021,
+        "assisted_wait": 26.943500198019812,
+        "assisted_rho": 0.4950000000000001
+      },
+      {
+        "arrival": 1.1044894561759735,
+        "manual_wait": 5.905365631562571,
+        "assisted_wait": 28.15553349527666,
+        "assisted_rho": 0.5060000000000001
+      },
+      {
+        "arrival": 1.1285000965276248,
+        "manual_wait": 6.085137541892913,
+        "assisted_wait": 29.42277327812284,
+        "assisted_rho": 0.517
+      },
+      {
+        "arrival": 1.1525107368792766,
+        "manual_wait": 6.267998295500479,
+        "assisted_wait": 30.749079322033907,
+        "assisted_rho": 0.528
+      },
+      {
+        "arrival": 1.1765213772309282,
+        "manual_wait": 6.454028191049018,
+        "assisted_wait": 32.138679797541585,
+        "assisted_rho": 0.539
+      },
+      {
+        "arrival": 1.2005320175825798,
+        "manual_wait": 6.643310334828307,
+        "assisted_wait": 33.596216296296305,
+        "assisted_rho": 0.55
+      },
+      {
+        "arrival": 1.2245426579342313,
+        "manual_wait": 6.835930764546294,
+        "assisted_wait": 35.12679562642369,
+        "assisted_rho": 0.561
+      },
+      {
+        "arrival": 1.248553298285883,
+        "manual_wait": 7.031978579729351,
+        "assisted_wait": 36.73604959501557,
+        "assisted_rho": 0.5720000000000001
+      },
+      {
+        "arrival": 1.2725639386375347,
+        "manual_wait": 7.231546079145807,
+        "assisted_wait": 38.43020425259793,
+        "assisted_rho": 0.5830000000000001
+      },
+      {
+        "arrival": 1.2965745789891865,
+        "manual_wait": 7.434728905698106,
+        "assisted_wait": 40.21616039408871,
+        "assisted_rho": 0.5940000000000002
+      },
+      {
+        "arrival": 1.3205852193408378,
+        "manual_wait": 7.641626199261454,
+        "assisted_wait": 42.10158751054854,
+        "assisted_rho": 0.6050000000000001
+      },
+      {
+        "arrival": 1.3445958596924894,
+        "manual_wait": 7.852340757982149,
+        "assisted_wait": 44.0950338888889,
+        "assisted_rho": 0.6160000000000001
+      },
+      {
+        "arrival": 1.3686065000441408,
+        "manual_wait": 8.066979208586833,
+        "assisted_wait": 46.20605619302948,
+        "assisted_rho": 0.627
+      },
+      {
+        "arrival": 1.3926171403957925,
+        "manual_wait": 8.285652186295684,
+        "assisted_wait": 48.44537267034991,
+        "assisted_rho": 0.638
+      },
+      {
+        "arrival": 1.416627780747444,
+        "manual_wait": 8.508474524977188,
+        "assisted_wait": 50.825045166191835,
+        "assisted_rho": 0.649
+      },
+      {
+        "arrival": 1.4406384210990957,
+        "manual_wait": 8.7355654582313,
+        "assisted_wait": 53.35869647058824,
+        "assisted_rho": 0.66
+      },
+      {
+        "arrival": 1.4646490614507472,
+        "manual_wait": 8.967048832140767,
+        "assisted_wait": 56.061771266464035,
+        "assisted_rho": 0.671
+      },
+      {
+        "arrival": 1.4886597018023993,
+        "manual_wait": 9.203053330488299,
+        "assisted_wait": 58.951851236897326,
+        "assisted_rho": 0.6820000000000002
+      },
+      {
+        "arrival": 1.5126703421540506,
+        "manual_wait": 9.44371271329998,
+        "assisted_wait": 62.04903791530947,
+        "assisted_rho": 0.6930000000000001
+      },
+      {
+        "arrival": 1.5366809825057022,
+        "manual_wait": 9.689166069644314,
+        "assisted_wait": 65.37642090090092,
+        "assisted_rho": 0.7040000000000001
+      },
+      {
+        "arrival": 1.5606916228573537,
+        "manual_wait": 9.939558085690493,
+        "assisted_wait": 68.960654502924,
+        "assisted_rho": 0.7150000000000001
+      },
+      {
+        "arrival": 1.5847022632090053,
+        "manual_wait": 10.195039329111648,
+        "assisted_wait": 72.83267328467156,
+        "assisted_rho": 0.7260000000000001
+      },
+      {
+        "arrival": 1.6087129035606569,
+        "manual_wait": 10.45576655100761,
+        "assisted_wait": 77.02858717363755,
+        "assisted_rho": 0.7370000000000001
+      },
+      {
+        "arrival": 1.6327235439123087,
+        "manual_wait": 10.721903006619428,
+        "assisted_wait": 81.59081100529106,
+        "assisted_rho": 0.7480000000000001
+      },
+      {
+        "arrival": 1.65673418426396,
+        "manual_wait": 10.99361879621441,
+        "assisted_wait": 86.56950340248964,
+        "assisted_rho": 0.759
+      },
+      {
+        "arrival": 1.6807448246156118,
+        "manual_wait": 11.27109122763743,
+        "assisted_wait": 92.02441855072469,
+        "assisted_rho": 0.7700000000000001
+      },
+      {
+        "arrival": 1.704755464967263,
+        "manual_wait": 11.554505202152233,
+        "assisted_wait": 98.02731604261791,
+        "assisted_rho": 0.7809999999999999
+      },
+      {
+        "arrival": 1.7287661053189147,
+        "manual_wait": 11.844053625337228,
+        "assisted_wait": 104.66513538461538,
+        "assisted_rho": 0.792
+      },
+      {
+        "arrival": 1.7527767456705665,
+        "manual_wait": 12.139937844954396,
+        "assisted_wait": 112.04423404399327,
+        "assisted_rho": 0.803
+      },
+      {
+        "arrival": 1.776787386022218,
+        "manual_wait": 12.442368117880148,
+        "assisted_wait": 120.29612931899646,
+        "assisted_rho": 0.8140000000000001
+      },
+      {
+        "arrival": 1.8007980263738697,
+        "manual_wait": 12.75156410837349,
+        "assisted_wait": 129.58540571428577,
+        "assisted_rho": 0.8250000000000001
+      },
+      {
+        "arrival": 1.8248086667255212,
+        "manual_wait": 13.067755420162989,
+        "assisted_wait": 140.12080455284556,
+        "assisted_rho": 0.8360000000000001
+      },
+      {
+        "arrival": 1.8488193070771728,
+        "manual_wait": 13.391182165061139,
+        "assisted_wait": 152.171097342048,
+        "assisted_rho": 0.8470000000000001
+      },
+      {
+        "arrival": 1.8728299474288248,
+        "manual_wait": 13.722095571065458,
+        "assisted_wait": 166.08833690140875,
+        "assisted_rho": 0.8580000000000002
+      },
+      {
+        "arrival": 1.8968405877804764,
+        "manual_wait": 14.060758633182877,
+        "assisted_wait": 182.34282279898255,
+        "assisted_rho": 0.8690000000000002
+      },
+      {
+        "arrival": 1.9208512281321277,
+        "manual_wait": 14.407446810520929,
+        "assisted_wait": 201.57729777777797,
+        "assisted_rho": 0.8800000000000001
+      },
+      {
+        "arrival": 1.9448618684837793,
+        "manual_wait": 14.762448773528801,
+        "assisted_wait": 224.69396036697268,
+        "assisted_rho": 0.8910000000000001
+      },
+      {
+        "arrival": 1.9688725088354306,
+        "manual_wait": 15.126067205648665,
+        "assisted_wait": 253.00007782312917,
+        "assisted_rho": 0.902
+      },
+      {
+        "arrival": 1.9928831491870824,
+        "manual_wait": 15.498619664056209,
+        "assisted_wait": 288.4640640613029,
+        "assisted_rho": 0.913
+      },
+      {
+        "arrival": 2.016893789538734,
+        "manual_wait": 15.880439504634875,
+        "assisted_wait": 334.1939410526318,
+        "assisted_rho": 0.924
+      },
+      {
+        "arrival": 2.040904429890386,
+        "manual_wait": 16.27187687684672,
+        "assisted_wait": 395.40162256410355,
+        "assisted_rho": 0.9350000000000002
+      },
+      {
+        "arrival": 2.064915070242037,
+        "manual_wait": 16.673299794740554,
+        "assisted_wait": 481.54576691358056,
+        "assisted_rho": 0.9460000000000001
+      },
+      {
+        "arrival": 2.088925710593689,
+        "manual_wait": 17.085095290983162,
+        "assisted_wait": 611.7636595348856,
+        "assisted_rho": 0.9570000000000001
+      },
+      {
+        "arrival": 2.1129363509453403,
+        "manual_wait": 17.507670661520184,
+        "assisted_wait": 831.5063533333337,
+        "assisted_rho": 0.968
+      },
+      {
+        "arrival": 2.136946991296992,
+        "manual_wait": 17.941454809280764,
+        "assisted_wait": 1281.4556787301653,
+        "assisted_rho": 0.9790000000000001
+      },
+      {
+        "arrival": 2.160957631648644,
+        "manual_wait": 18.38689969624411,
+        "assisted_wait": 2721.293520000054,
+        "assisted_rho": 0.9900000000000002
+      },
+      {
+        "arrival": 2.184968272000295,
+        "manual_wait": 18.84448191420247,
+        "assisted_wait": null,
+        "assisted_rho": 1.0010000000000001
+      },
+      {
+        "arrival": 2.208978912351947,
+        "manual_wait": 19.31470438569632,
+        "assisted_wait": null,
+        "assisted_rho": 1.0120000000000002
+      },
+      {
+        "arrival": 2.232989552703599,
+        "manual_wait": 19.79809820788371,
+        "assisted_wait": null,
+        "assisted_rho": 1.0230000000000004
+      },
+      {
+        "arrival": 2.2570001930552497,
+        "manual_wait": 20.295224653555735,
+        "assisted_wait": null,
+        "assisted_rho": 1.034
+      },
+      {
+        "arrival": 2.2810108334069015,
+        "manual_wait": 20.806677345148607,
+        "assisted_wait": null,
+        "assisted_rho": 1.045
+      },
+      {
+        "arrival": 2.3050214737585533,
+        "manual_wait": 21.33308461945611,
+        "assisted_wait": null,
+        "assisted_rho": 1.056
+      },
+      {
+        "arrival": 2.3290321141102046,
+        "manual_wait": 21.8751121028483,
+        "assisted_wait": null,
+        "assisted_rho": 1.067
+      },
+      {
+        "arrival": 2.3530427544618564,
+        "manual_wait": 22.43346551918777,
+        "assisted_wait": null,
+        "assisted_rho": 1.078
+      },
+      {
+        "arrival": 2.3770533948135077,
+        "manual_wait": 23.00889375534978,
+        "assisted_wait": null,
+        "assisted_rho": 1.089
+      },
+      {
+        "arrival": 2.4010640351651595,
+        "manual_wait": 23.602192212346424,
+        "assisted_wait": null,
+        "assisted_rho": 1.1
+      }
+    ]
+  }
+}

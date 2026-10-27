@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+*.mp4
+*.mov
+~$*
+analytics/demo*/
+analytics/live_demo/
