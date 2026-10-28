@@ -1,0 +1,9 @@
+{
+  "condition": "baseline",
+  "seed": 1026,
+  "sim_time_s": 1260.06,
+  "state": "SCAN",
+  "placement_events": 13,
+  "collision_events": 16,
+  "wall_s": 941.0
+}
