@@ -1,0 +1,17 @@
+timestamp,object,type,class,destination,obj_x,obj_y,nav_time,grasp_attempts,grasp_success,collisions,pickup_time,sort_time,total_time,result
+47.0,slipper_1,slipper,ITEM_RETURN,return_tray,0.765,-0.571,21.6,1,1,1,10.1,28.8,39.0,CLEANED
+83.8,glove_2,glove,BIO_WASTE,trash_bin,2.170,0.856,18.0,1,1,1,13.7,18.6,32.3,CLEANED
+116.4,cup_2,cup,RECYCLABLE,recycling_bin,-0.956,1.175,11.6,1,1,1,11.9,17.3,29.2,CLEANED
+144.3,cup_1,cup,RECYCLABLE,recycling_bin,0.867,0.254,11.3,0,0,0,22.7,0.0,24.4,NO_DROP_POSE
+210.8,paper_1,paper,RECYCLABLE,recycling_bin,0.412,-0.826,43.2,1,1,2,40.7,20.9,61.6,CLEANED
+241.9,plasticpack_1,plasticpack,TRASH,trash_bin,-0.885,0.702,13.2,1,1,1,14.0,13.6,27.6,CLEANED
+285.0,wrapper_1,wrapper,TRASH,trash_bin,-1.428,0.042,22.7,1,1,0,17.5,22.1,39.6,CLEANED
+340.4,personal_1,personal,ITEM_RETURN,return_tray,-2.315,1.328,35.9,1,1,1,20.8,31.1,51.9,CLEANED
+379.2,towel_2,towel,LAUNDRY,laundry_basket,1.910,0.294,14.4,1,1,0,18.3,15.6,33.9,CLEANED
+417.1,personal_2,personal,ITEM_RETURN,return_tray,3.005,1.343,17.5,1,1,1,16.9,17.6,34.5,CLEANED
+467.9,bottle_2,bottle,RECYCLABLE,recycling_bin,3.130,-0.348,28.0,1,1,1,19.2,26.7,45.9,CLEANED
+533.7,bottle_1,bottle,RECYCLABLE,recycling_bin,1.327,-0.684,45.0,1,1,1,35.2,26.7,61.9,CLEANED
+594.7,paper_2,paper,RECYCLABLE,recycling_bin,-0.761,-1.083,40.9,1,1,1,26.2,31.0,57.2,CLEANED
+652.5,towel_1,towel,LAUNDRY,laundry_basket,-1.254,-1.176,37.6,1,1,0,31.7,22.6,54.3,CLEANED
+734.0,gauze_1,gauze,BIO_WASTE,trash_bin,0.071,-1.606,59.1,1,1,1,53.6,24.6,78.2,CLEANED
+795.6,glove_1,glove,BIO_WASTE,trash_bin,-1.299,-1.953,42.5,1,1,1,29.8,28.6,58.4,CLEANED
