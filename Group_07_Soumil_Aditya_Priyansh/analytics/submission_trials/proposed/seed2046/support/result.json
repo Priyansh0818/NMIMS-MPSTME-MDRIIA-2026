@@ -1,0 +1,331 @@
+{
+  "run_id": "proposed_seed2046_a018eb12",
+  "condition": "proposed",
+  "trial": 0,
+  "seed": 2046,
+  "sim_time_s": 71.8,
+  "objects_total": 16,
+  "detected": 15,
+  "detection_acc": 0.938,
+  "classification_acc": 1.0,
+  "cleaned": 0,
+  "failed": 16,
+  "grasp_attempts": 1,
+  "carry_drops": 0,
+  "grasp_success_rate": 1.0,
+  "nav_legs": 2,
+  "nav_success_rate": 1.0,
+  "collision_events": 0,
+  "collisions_per_object": 0.0,
+  "avg_pickup_s": null,
+  "avg_sort_s": null,
+  "total_clean_time_s": 71.8,
+  "wall_s": 77.2,
+  "run_status": "safe_stop",
+  "study_eligible": true,
+  "elapsed_s": 71.82000000001052,
+  "horizon_s": 1800.0,
+  "restricted_completion_time_s": 1800.0,
+  "physics_hz": 500.0,
+  "samples": 35910,
+  "unexpected_contact_samples": 0,
+  "effort_by_actuator": [
+    4948.339314019063,
+    5086.833357203129,
+    2167.7904395843657,
+    119.69846136967912,
+    0.10630563410817526,
+    0.014597479644052832,
+    0.1792192543698475,
+    36661.914480180836,
+    3.7079489228127217e-06,
+    0.0006376514422285573
+  ],
+  "reach_lift_rmse_m": 0.04811071212478126,
+  "reach_lift_samples": 2280,
+  "navigation_path_rmse_m": 0.011646443605388662,
+  "navigation_samples": 11760,
+  "docking": [
+    {
+      "time_s": 11.280000000000936,
+      "error_m": 0.039942703490109775
+    }
+  ],
+  "grasp_events": [
+    {
+      "time_s": 18.2399999999997,
+      "object": "slipper_1",
+      "type": "slipper",
+      "success": true
+    }
+  ],
+  "items": {
+    "cup_1": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.8507548280349093,
+        0.20724168766776843,
+        0.7899121609814642
+      ],
+      "half_extents_m": [
+        0.03500096285693971,
+        0.03500028632468054,
+        0.055000639236491594
+      ],
+      "contained": false
+    },
+    "cup_2": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        -0.923809685663126,
+        1.3936019565717495,
+        0.05485784700222985
+      ],
+      "half_extents_m": [
+        0.035000002430314245,
+        0.03500000049031141,
+        0.055
+      ],
+      "contained": false
+    },
+    "bottle_1": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        1.300543643141545,
+        -0.8352699791735854,
+        0.08985784700222994
+      ],
+      "half_extents_m": [
+        0.030000000275793283,
+        0.030000001360056382,
+        0.09
+      ],
+      "contained": false
+    },
+    "bottle_2": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        3.100931810660496,
+        -0.38349639559574444,
+        0.08985784700222996
+      ],
+      "half_extents_m": [
+        0.03000000084348924,
+        0.03000000194595199,
+        0.09
+      ],
+      "contained": false
+    },
+    "paper_1": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.5190102433761284,
+        -1.0854935406614419,
+        0.03989224457978386
+      ],
+      "half_extents_m": [
+        0.04803144917378059,
+        0.04803144917378057,
+        0.04000000000000005
+      ],
+      "contained": false
+    },
+    "paper_2": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        -0.8378826923788669,
+        -1.0472719540334283,
+        0.039892244579783805
+      ],
+      "half_extents_m": [
+        0.04574078267639531,
+        0.04574078267639531,
+        0.04000000000000002
+      ],
+      "contained": false
+    },
+    "glove_1": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        -1.1515961792530127,
+        -1.9293831589439643,
+        0.03489224457978387
+      ],
+      "half_extents_m": [
+        0.03206391971524586,
+        0.027518526943377516,
+        0.035000000000537594
+      ],
+      "contained": false
+    },
+    "glove_2": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        1.8088721434198696,
+        1.0518909866377284,
+        0.03489224457978385
+      ],
+      "half_extents_m": [
+        0.03378886003910222,
+        0.02970441688113577,
+        0.035000000000800086
+      ],
+      "contained": false
+    },
+    "wrapper_1": {
+      "type": "wrapper",
+      "destination": "trash_bin",
+      "position_m": [
+        -1.4484212892679285,
+        -0.017083129397678712,
+        0.45663281815730106
+      ],
+      "half_extents_m": [
+        0.025,
+        0.025,
+        0.065
+      ],
+      "contained": false
+    },
+    "plasticpack_1": {
+      "type": "plasticpack",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.9199944790400278,
+        0.7389571358790986,
+        0.039892244579783846
+      ],
+      "half_extents_m": [
+        0.029548206306522072,
+        0.026122049430981592,
+        0.04000000000065974
+      ],
+      "contained": false
+    },
+    "towel_1": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        -1.2807812224459878,
+        -1.2260050616885412,
+        0.4848922445797835
+      ],
+      "half_extents_m": [
+        0.05553324477194331,
+        0.0555332447719433,
+        0.045
+      ],
+      "contained": false
+    },
+    "towel_2": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        1.9421892510966394,
+        0.268901791950899,
+        0.7948922445797839
+      ],
+      "half_extents_m": [
+        0.05632152005837955,
+        0.05632152005837955,
+        0.04500000000000007
+      ],
+      "contained": false
+    },
+    "gauze_1": {
+      "type": "gauze",
+      "destination": "trash_bin",
+      "position_m": [
+        0.02368441189169738,
+        -1.6104225227097548,
+        0.7768922445797842
+      ],
+      "half_extents_m": [
+        0.041687248902593364,
+        0.041687248903215776,
+        0.045000000000879295
+      ],
+      "contained": false
+    },
+    "personal_1": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        -2.47956518761762,
+        1.1451081185638132,
+        0.044892244579783865
+      ],
+      "half_extents_m": [
+        0.024114189570820555,
+        0.03146401826033691,
+        0.045000000000526896
+      ],
+      "contained": false
+    },
+    "personal_2": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        3.0541495011903814,
+        1.3328075794984824,
+        0.04489224457978384
+      ],
+      "half_extents_m": [
+        0.020243304806648897,
+        0.029386393883580046,
+        0.045000000000349295
+      ],
+      "contained": false
+    },
+    "slipper_1": {
+      "type": "slipper",
+      "destination": "return_tray",
+      "position_m": [
+        1.6035392098548185,
+        2.0121491779978777,
+        0.7326703563310302
+      ],
+      "half_extents_m": [
+        0.07214200190909766,
+        0.12383465496792677,
+        0.03798135673418524
+      ],
+      "contained": false
+    }
+  },
+  "protocol_sha256": "e67b07d157e177c093f2e5ebe2180f05b16c164d60a5e063a534aa41423b5521",
+  "scenario_state_sha256": "764b599f31ca6e07369e33c2e7028583e48ba7c5a50173e0fa57ec3b990c7ec2",
+  "final_source_check": true,
+  "state_events_sha256": "178808fa11913c5cc073196f2589bb379408732a568e731aedf7f92f668fec91",
+  "manifest_file": "manifest_proposed_seed2046_a018eb12.json",
+  "raw_files": [
+    {
+      "path": "proposed_seed2046_a018eb12_part001_real_trials.csv.gz",
+      "sha256": "b0001a4b8b9c01bbecd9c8842bd0d6813edf6d1309ff1915cb0681d0a52a417d",
+      "bytes": 5736493
+    },
+    {
+      "path": "proposed_seed2046_a018eb12_part002_real_trials.csv.gz",
+      "sha256": "2685fc9ce9d92d3710dbeef52e5b96307d7b68bc83346e15c4e4427e95033618",
+      "bytes": 6095838
+    },
+    {
+      "path": "proposed_seed2046_a018eb12_part003_real_trials.csv.gz",
+      "sha256": "bc413c3d9d53466ab943134c117d85037175d458f320e724a19e57013fe50656",
+      "bytes": 5514533
+    },
+    {
+      "path": "proposed_seed2046_a018eb12_part004_real_trials.csv.gz",
+      "sha256": "31c99117ab10923aa5cb9416c4e1b094638bb0ff1d8ecdfe1f4ff64e1d4f0d22",
+      "bytes": 3126886
+    }
+  ]
+}
