@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2007,
+  "sim_time_s": 990.04,
+  "state": "DESCEND",
+  "placement_events": 15,
+  "collision_events": 0,
+  "wall_s": 625.8
+}

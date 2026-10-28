@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2014,
+  "sim_time_s": 900.03,
+  "state": "NAV_DROP",
+  "placement_events": 15,
+  "collision_events": 0,
+  "wall_s": 4610.0
+}

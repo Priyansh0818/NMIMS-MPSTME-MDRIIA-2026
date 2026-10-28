@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2002,
+  "sim_time_s": 960.04,
+  "state": "PREGRASP",
+  "placement_events": 15,
+  "collision_events": 0,
+  "wall_s": 937.9
+}

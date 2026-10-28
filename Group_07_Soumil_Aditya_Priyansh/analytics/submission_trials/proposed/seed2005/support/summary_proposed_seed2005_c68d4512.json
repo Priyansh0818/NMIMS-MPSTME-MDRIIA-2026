@@ -1,0 +1,457 @@
+{
+  "run_id": "proposed_seed2005_c68d4512",
+  "condition": "proposed",
+  "trial": 0,
+  "seed": 2005,
+  "sim_time_s": 907.0,
+  "objects_total": 16,
+  "detected": 16,
+  "detection_acc": 1.0,
+  "classification_acc": 1.0,
+  "cleaned": 16,
+  "failed": 0,
+  "grasp_attempts": 16,
+  "carry_drops": 0,
+  "grasp_success_rate": 1.0,
+  "nav_legs": 32,
+  "nav_success_rate": 1.0,
+  "collision_events": 0,
+  "collisions_per_object": 0.0,
+  "avg_pickup_s": 23.4,
+  "avg_sort_s": 27.5,
+  "total_clean_time_s": 907.0,
+  "wall_s": 563.5,
+  "run_status": "completed",
+  "study_eligible": true,
+  "elapsed_s": 906.9599999923415,
+  "horizon_s": 1800.0,
+  "restricted_completion_time_s": 906.9599999923415,
+  "physics_hz": 500.0,
+  "samples": 453480,
+  "unexpected_contact_samples": 0,
+  "effort_by_actuator": [
+    95384.80467622231,
+    107564.48373182402,
+    33917.41349169298,
+    2366.98952683222,
+    0.6993996923913017,
+    0.22317963767314672,
+    1.1413690289356853,
+    432810.16986252245,
+    4.773117791301515e-05,
+    0.008375351813526843
+  ],
+  "reach_lift_rmse_m": 0.05112281413881781,
+  "reach_lift_samples": 49680,
+  "navigation_path_rmse_m": 0.009796717397097393,
+  "navigation_samples": 235560,
+  "docking": [
+    {
+      "time_s": 10.940000000000822,
+      "error_m": 0.030433296891187983
+    },
+    {
+      "time_s": 63.800000000029215,
+      "error_m": 0.032156384540096235
+    },
+    {
+      "time_s": 109.1599999999235,
+      "error_m": 0.02348254145270544
+    },
+    {
+      "time_s": 149.9599999999951,
+      "error_m": 0.047637432268834136
+    },
+    {
+      "time_s": 203.7000000002517,
+      "error_m": 0.03875728632818975
+    },
+    {
+      "time_s": 259.44000000051784,
+      "error_m": 0.0175688150766025
+    },
+    {
+      "time_s": 312.1200000007694,
+      "error_m": 0.04705850167896167
+    },
+    {
+      "time_s": 363.32000000101385,
+      "error_m": 0.008359107725674676
+    },
+    {
+      "time_s": 417.46000000127236,
+      "error_m": 0.030041200218844613
+    },
+    {
+      "time_s": 464.8000000014984,
+      "error_m": 0.03000094632333222
+    },
+    {
+      "time_s": 521.3200000014607,
+      "error_m": 0.029510929454215212
+    },
+    {
+      "time_s": 587.4999999998957,
+      "error_m": 0.027747340158562353
+    },
+    {
+      "time_s": 671.7799999979028,
+      "error_m": 0.035091433726673095
+    },
+    {
+      "time_s": 722.6599999966996,
+      "error_m": 0.04128314506172259
+    },
+    {
+      "time_s": 781.1999999953154,
+      "error_m": 0.032323737210450613
+    },
+    {
+      "time_s": 865.9799999933106,
+      "error_m": 0.025022763659970148
+    }
+  ],
+  "grasp_events": [
+    {
+      "time_s": 17.77999999999971,
+      "object": "slipper_1",
+      "type": "slipper",
+      "success": true
+    },
+    {
+      "time_s": 71.42000000000293,
+      "object": "glove_2",
+      "type": "glove",
+      "success": true
+    },
+    {
+      "time_s": 116.57999999999394,
+      "object": "cup_2",
+      "type": "cup",
+      "success": true
+    },
+    {
+      "time_s": 156.56000000000628,
+      "object": "plasticpack_1",
+      "type": "plasticpack",
+      "success": true
+    },
+    {
+      "time_s": 215.52000000003645,
+      "object": "cup_1",
+      "type": "cup",
+      "success": true
+    },
+    {
+      "time_s": 271.2000000000433,
+      "object": "towel_2",
+      "type": "towel",
+      "success": true
+    },
+    {
+      "time_s": 319.3399999999995,
+      "object": "personal_2",
+      "type": "personal",
+      "success": true
+    },
+    {
+      "time_s": 371.09999999995244,
+      "object": "bottle_1",
+      "type": "bottle",
+      "success": true
+    },
+    {
+      "time_s": 428.2399999999005,
+      "object": "wrapper_1",
+      "type": "wrapper",
+      "success": true
+    },
+    {
+      "time_s": 472.5399999998602,
+      "object": "personal_1",
+      "type": "personal",
+      "success": true
+    },
+    {
+      "time_s": 528.6199999998092,
+      "object": "bottle_2",
+      "type": "bottle",
+      "success": true
+    },
+    {
+      "time_s": 594.7199999997491,
+      "object": "paper_1",
+      "type": "paper",
+      "success": true
+    },
+    {
+      "time_s": 678.2399999996732,
+      "object": "paper_2",
+      "type": "paper",
+      "success": true
+    },
+    {
+      "time_s": 733.419999999623,
+      "object": "towel_1",
+      "type": "towel",
+      "success": true
+    },
+    {
+      "time_s": 794.4599999995675,
+      "object": "gauze_1",
+      "type": "gauze",
+      "success": true
+    },
+    {
+      "time_s": 872.4999999994965,
+      "object": "glove_1",
+      "type": "glove",
+      "success": true
+    }
+  ],
+  "items": {
+    "cup_1": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.18499339995691347,
+        2.106733499543662,
+        0.054856745072457434
+      ],
+      "half_extents_m": [
+        0.059182754657616014,
+        0.04203389162717446,
+        0.03500372884584024
+      ],
+      "contained": true
+    },
+    "cup_2": {
+      "type": "cup",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.1923766493568091,
+        1.9110526522708597,
+        0.05488736171456552
+      ],
+      "half_extents_m": [
+        0.0646730297823164,
+        0.055108979169864104,
+        0.035092066109882095
+      ],
+      "contained": true
+    },
+    "bottle_1": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.2556359690179619,
+        1.9846151875484594,
+        0.04994853766758444
+      ],
+      "half_extents_m": [
+        0.09244340461144668,
+        0.038414382364829615,
+        0.030176642513457305
+      ],
+      "contained": true
+    },
+    "bottle_2": {
+      "type": "bottle",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.08061105764332552,
+        2.0311669887930863,
+        0.04995026581831789
+      ],
+      "half_extents_m": [
+        0.03061129981933931,
+        0.09020974222035756,
+        0.030172915480052635
+      ],
+      "contained": true
+    },
+    "paper_1": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.2360183685996956,
+        2.0409633348519214,
+        0.09499164455453925
+      ],
+      "half_extents_m": [
+        0.0430748853385163,
+        0.055691377770250024,
+        0.05819582145191244
+      ],
+      "contained": true
+    },
+    "paper_2": {
+      "type": "paper",
+      "destination": "recycling_bin",
+      "position_m": [
+        0.1027452722553298,
+        2.1000352125208326,
+        0.12015862604540646
+      ],
+      "half_extents_m": [
+        0.052762573080939755,
+        0.049966007821982523,
+        0.043088893139066234
+      ],
+      "contained": true
+    },
+    "glove_1": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.4184540345335809,
+        2.020925612842655,
+        0.06345024166923799
+      ],
+      "half_extents_m": [
+        0.05034327953654848,
+        0.03601863233519295,
+        0.04368269460629584
+      ],
+      "contained": true
+    },
+    "glove_2": {
+      "type": "glove",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.6045937957970373,
+        2.0673482627242654,
+        0.05489224612641502
+      ],
+      "half_extents_m": [
+        0.0357500732750919,
+        0.037997699425823914,
+        0.03500001196727146
+      ],
+      "contained": true
+    },
+    "wrapper_1": {
+      "type": "wrapper",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.41326382949660034,
+        1.9518826696682954,
+        0.044770758160533775
+      ],
+      "half_extents_m": [
+        0.06331343508712459,
+        0.036492619144553186,
+        0.025019925434574906
+      ],
+      "contained": true
+    },
+    "plasticpack_1": {
+      "type": "plasticpack",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.5439895913652045,
+        2.0398702682724843,
+        0.04489224380650659
+      ],
+      "half_extents_m": [
+        0.04468127827005652,
+        0.03460919749392731,
+        0.02500000655187967
+      ],
+      "contained": true
+    },
+    "towel_1": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        0.879127328580061,
+        2.0893631492442646,
+        0.05989224457978382
+      ],
+      "half_extents_m": [
+        0.0432114584218095,
+        0.0478288830071222,
+        0.04000000000000001
+      ],
+      "contained": true
+    },
+    "towel_2": {
+      "type": "towel",
+      "destination": "laundry_basket",
+      "position_m": [
+        0.9276054443504392,
+        1.9983836802745787,
+        0.06489224457978379
+      ],
+      "half_extents_m": [
+        0.041764546751593766,
+        0.041764546751593766,
+        0.04500000000000011
+      ],
+      "contained": true
+    },
+    "gauze_1": {
+      "type": "gauze",
+      "destination": "trash_bin",
+      "position_m": [
+        -0.5287462762234924,
+        1.978539937256758,
+        0.06489224457978376
+      ],
+      "half_extents_m": [
+        0.03671158441104958,
+        0.0367115844111771,
+        0.04500000000114966
+      ],
+      "contained": true
+    },
+    "personal_1": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        1.502545141273008,
+        2.0734599297993395,
+        0.6278922445797833
+      ],
+      "half_extents_m": [
+        0.038213741383510226,
+        0.05050697357504502,
+        0.018000000000000016
+      ],
+      "contained": true
+    },
+    "personal_2": {
+      "type": "personal",
+      "destination": "return_tray",
+      "position_m": [
+        1.6231442294884286,
+        2.0557621382500195,
+        0.6877171430643755
+      ],
+      "half_extents_m": [
+        0.04648430782923107,
+        0.05295196487209776,
+        0.01801866974628427
+      ],
+      "contained": true
+    },
+    "slipper_1": {
+      "type": "slipper",
+      "destination": "return_tray",
+      "position_m": [
+        1.6321350837807913,
+        2.0089694289921747,
+        0.6398496276900922
+      ],
+      "half_extents_m": [
+        0.04200652472630152,
+        0.11500448809323996,
+        0.030026038224292156
+      ],
+      "contained": true
+    }
+  },
+  "protocol_sha256": "e67b07d157e177c093f2e5ebe2180f05b16c164d60a5e063a534aa41423b5521",
+  "scenario_state_sha256": "b1901397ebc5cf901edcce1dd9fe9509e8072c97482434c6451f76f9b0437f85",
+  "final_source_check": true
+}
