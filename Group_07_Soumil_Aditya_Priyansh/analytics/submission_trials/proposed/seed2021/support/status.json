@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2021,
+  "sim_time_s": 960.04,
+  "state": "PREGRASP",
+  "placement_events": 15,
+  "collision_events": 3,
+  "wall_s": 2574.5
+}

@@ -1,0 +1,9 @@
+{
+  "condition": "proposed",
+  "seed": 2026,
+  "sim_time_s": 1020.04,
+  "state": "REFINE",
+  "placement_events": 15,
+  "collision_events": 2,
+  "wall_s": 999.4
+}
