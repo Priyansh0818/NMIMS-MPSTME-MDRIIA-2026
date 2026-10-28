@@ -70,6 +70,13 @@
   ],
   "package_scope": "Full GitHub project with all 100-run reduced CSV records",
   "copied_trial_records_hash_verified_at_upload": 5642,
-  "github_push_status": "Prepared locally; not yet pushed",
-  "video_delivery": "Separate Teams attachment and LinkedIn"
+  "github_push_status": "All eight evidence batches pushed and remote commits verified",
+  "video_delivery": "Separate Teams attachment and LinkedIn",
+  "github_project_url": "https://github.com/Priyansh0818/NMIMS-MPSTME-MDRIIA-2026/tree/feat/e066-capstone-submission/Group_07_Soumil_Aditya_Priyansh",
+  "course_pull_request": "https://github.com/sunny-nanade/NMIMS-MPSTME-MDRIIA-2026/pull/6",
+  "course_pull_request_state": "Open; awaiting faculty review",
+  "csv_shards_tracked": 4942,
+  "trial_and_support_files_tracked": 5642,
+  "upload_batches_completed": 8,
+  "github_upload_verification": "docs/GITHUB_SUBMISSION_RECEIPT.json"
 }

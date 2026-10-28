@@ -1,0 +1,29 @@
+{
+  "repository": "Priyansh0818/NMIMS-MPSTME-MDRIIA-2026",
+  "branch": "feat/e066-capstone-submission",
+  "remote_head_verified": "e9f9c68672316920e46ecc4d4a06e1fb08221b29",
+  "runs": 100,
+  "csv_shards_tracked": 4942,
+  "trial_and_support_files_tracked": 5642,
+  "changed_files_confined_to_group07": true,
+  "working_tree_clean": true,
+  "latest_dossier_bytes_match_team_packet": true,
+  "model_smoke_passed": true,
+  "business_reproduction_passed": true,
+  "collaborator_invitations_sent": [
+    "soumilpatro",
+    "adityashah0705-svg"
+  ],
+  "personal_peer_and_authorship_qualifications_preserved": true,
+  "course_pull_request": "https://github.com/sunny-nanade/NMIMS-MPSTME-MDRIIA-2026/pull/6",
+  "course_pull_request_state": "Open; faculty review required; not merged by assistant",
+  "project_url": "https://github.com/Priyansh0818/NMIMS-MPSTME-MDRIIA-2026/tree/feat/e066-capstone-submission/Group_07_Soumil_Aditya_Priyansh",
+  "upload_batches_completed": 8,
+  "verified_evidence_commit": "e9f9c68672316920e46ecc4d4a06e1fb08221b29",
+  "recorded_at_utc": "2026-10-28T05:42:59.369675+00:00",
+  "collaborator_status_last_checked": {
+    "soumilpatro": "Write access confirmed",
+    "adityashah0705-svg": "Invitation sent; write access not yet confirmed"
+  },
+  "individual_commit_requirement": "Teammates must make genuine commits from their own accounts; invitations alone do not establish contribution credit."
+}

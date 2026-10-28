@@ -1,3 +1,21 @@
+# GitHub submission status
+
+The complete project and all eight data batches have been pushed to:
+https://github.com/Priyansh0818/NMIMS-MPSTME-MDRIIA-2026/tree/feat/e066-capstone-submission/Group_07_Soumil_Aditya_Priyansh
+
+Faculty pull request: https://github.com/sunny-nanade/NMIMS-MPSTME-MDRIIA-2026/pull/6
+
+The PR is open for faculty review. See GITHUB_SUBMISSION_RECEIPT.json for
+the verified data counts and evidence commit. Both teammates were invited;
+Soumil's write access was confirmed. Each teammate must make their own genuine
+commits. No colleague's author identity or contribution history was fabricated.
+
+The manual upload instructions below are retained for reference. Statements
+about not having created a fork or pushed were preparation-time notes and are
+superseded by this status and the receipt. Do not repeat the eight data imports.
+
+---
+
 # GitHub upload guide
 
 ## Current account access checked 27 October

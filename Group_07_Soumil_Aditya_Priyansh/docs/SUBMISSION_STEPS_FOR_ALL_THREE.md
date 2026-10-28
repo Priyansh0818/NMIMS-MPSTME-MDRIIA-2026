@@ -1,3 +1,9 @@
+# Current submission update
+
+GitHub upload and course pull request are complete; faculty merge is pending.
+The historical setup commands below need not be rerun. See
+GITHUB_SUBMISSION_RECEIPT.json for links and the verified evidence commit.
+
 # Submission steps for Group 07
 
 Checked 27 October 2026. Team: Priyansh — Lead Robotics Systems Architect;
@@ -25,8 +31,10 @@ Each of Priyansh, Soumil and Aditya uses their OWN college Teams account:
 4. Click Turn in and check submission status/confirmation. Attaching alone is not
    submission. All three must do this personally under the course's explicit rule.
 
-Only the final PDF is required on Teams. The project folder, Word source,
-measurement CSVs and video file are delivered through the other channels.
+Faculty subsequently requested the project on Teams as well. Attach the smaller
+Teams project ZIP, the final PDF and the video; the complete measured CSV export
+is now delivered through GitHub. Each member must personally click Turn in.
+See GITHUB_SUBMISSION_RECEIPT.json for the actual completed GitHub upload.
 The published assignment deadline was 26 October 2026, 23:59 IST. If Teams offers
 Turn in late, use it. If submissions are closed, faculty must reopen the assignment.
 Official UI instructions:
