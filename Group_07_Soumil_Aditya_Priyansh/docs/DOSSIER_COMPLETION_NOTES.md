@@ -28,7 +28,7 @@ reproduction for every reported run. No final statistics are pending.
 2. Confirm the original AI-tool/conversation attribution for candidate AI-error
    audit entries; do not present a draft case as a personally witnessed event.
 3. Review the business assumptions and FMEA judgments.
-4. Final local video verified: delivery/video/Group_07_Hospital_Decluttering_Final.mp4, 204.43 s (03:24). Simulation, business graphs and all three speaking members are present. The URL remains for the team to add after publication.
+4. Final local video verified: delivery/video/Group_07_Hospital_Decluttering_Final.mp4, 203.73 s (03:23.73). Simulation, business graphs and all three speaking members are present. The previous LinkedIn post was deleted by the team; replacement upload and the new URL are pending.
 5. Maximum peer scores are entered at the user's request as provisional ratings, with prepared viva questions. Videos have not been assessed for these scores. Supply Group 08 video for a real best-moment timestamp; Group 01 video remains unavailable.
 6. All three supplied signature images were cropped/rotated and inserted on 27 October. Members still need to complete their own declarations and consent choices.
    The supplied dossier has no teacher-signature requirement.

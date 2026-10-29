@@ -13,8 +13,8 @@ by preparing these instructions.
 
 ## Finish the shared dossier first
 
-The saved Word/PDF contain all three supplied signatures. The final local video is verified at 03:24.43, and the three video-content checks
-are Yes. The published LinkedIn URL remains to be entered. Maximum peer scores
+The saved Word/PDF contain all three supplied signatures. The final local video is verified at 03:23.73, and the three video-content checks
+are Yes. The previous LinkedIn post was deleted; the replacement upload and its URL are pending. Maximum peer scores
 are provisional user-requested ratings; actual video assessment/timestamps remain
 pending. Personal figures are explicitly provisional placeholders for member
 editing; originality/viva/consent confirmations remain pending.

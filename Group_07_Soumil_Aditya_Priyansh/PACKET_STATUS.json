@@ -6,7 +6,12 @@
   "linkedin_video_complete": false,
   "peer_reviews_complete": false,
   "submission_ready": false,
-  "oversize_files_over_50MB": [],
+  "oversize_files_over_50MB": [
+    {
+      "path": "Group_07_Hospital_Decluttering_Final.mp4",
+      "bytes": 65090768
+    }
+  ],
   "root": "D:\\P\\NMIMS-MPSTME-MDRIIA-2026\\Group_07_Soumil_Aditya_Priyansh\\delivery\\Group_07_Soumil_Aditya_Priyansh",
   "model_smoke_passed": true,
   "business_reproduction_passed": true,
@@ -48,15 +53,15 @@
   "signature_layout_visually_checked": true,
   "signature_insertion_date": "2026-10-27",
   "local_showcase_video_verified": true,
-  "local_video_duration_seconds": 204.433333,
+  "local_video_duration_seconds": 203.733333,
   "personal_entries_provisional_for_member_editing": true,
   "provisional_peer_maximum_scores_entered_at_user_request": true,
-  "latest_user_dossier_sha256": "fbf38a35ffc859081359789d6ea41fba2ca49242cf3c872f23a3fbde63191ac6",
-  "latest_pdf_sha256": "3acf00c5e498f7266b23c31ab6b3d34c1131e8a3fbf764697d12e2f542d80ead",
+  "latest_user_dossier_sha256": "d2ff1ee967071889237505b7e2334cddc8324d8c3571dbc09e7b1a1d99aa2569",
+  "latest_pdf_sha256": "27c898d13bce08128a75157b8df377f98a067b8bf3a38d1a0eda35704ba1a29f",
   "latest_pdf_pages": 8,
   "latest_pdf_visually_checked": true,
-  "linkedin_url_supplied_by_team": "https://lnkd.in/p/di2s32-6",
-  "video_in_project_folder": false,
+  "linkedin_url_supplied_by_team": null,
+  "video_in_project_folder": true,
   "latest_dossier_answer_controls": 212,
   "latest_dossier_unanswered_controls": 0,
   "technical_source_files_compared_to_working_copy": 536,
@@ -71,12 +76,16 @@
   "package_scope": "Full GitHub project with all 100-run reduced CSV records",
   "copied_trial_records_hash_verified_at_upload": 5642,
   "github_push_status": "All eight evidence batches pushed and remote commits verified",
-  "video_delivery": "Separate Teams attachment and LinkedIn",
+  "video_delivery": "Corrected MP4 in project folder and Teams; LinkedIn replacement pending",
   "github_project_url": "https://github.com/Priyansh0818/NMIMS-MPSTME-MDRIIA-2026/tree/feat/e066-capstone-submission/Group_07_Soumil_Aditya_Priyansh",
   "course_pull_request": "https://github.com/sunny-nanade/NMIMS-MPSTME-MDRIIA-2026/pull/6",
   "course_pull_request_state": "Open; awaiting faculty review",
   "csv_shards_tracked": 4942,
   "trial_and_support_files_tracked": 5642,
   "upload_batches_completed": 8,
-  "github_upload_verification": "docs/GITHUB_SUBMISSION_RECEIPT.json"
+  "github_upload_verification": "docs/GITHUB_SUBMISSION_RECEIPT.json",
+  "linkedin_video_status": "Previous post deleted by team; replacement upload pending",
+  "video_revision_date": "2026-10-29",
+  "video_revision": "Off-script word removed before results take",
+  "local_video_sha256": "dba178a540864f44f53bdb22590cf7125d9c0a138a028c26cfa4125027f7c158"
 }

@@ -1,3 +1,10 @@
+# Video revision 29 October 2026
+
+At the team's request, the corrected 03:23.73 showcase MP4 is included at the
+project root. This supersedes the older instructions below that excluded video
+files. The deleted LinkedIn post URL has been removed; replacement upload is
+pending. Do not report the showcase as published until the team supplies its new URL.
+
 # GitHub submission status
 
 The complete project and all eight data batches have been pushed to:

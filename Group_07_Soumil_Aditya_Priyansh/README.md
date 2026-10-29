@@ -80,9 +80,11 @@ repeat a full audit of every measurement file. Output is docs/rebuilt_figures/.
 ## Dossier and submission status
 
 The team's supplied Word dossier and its matching eight-page PDF are in docs/.
-All three supplied signatures are present. The final local showcase is 03:24.43;
-the team supplied LinkedIn URL is https://lnkd.in/p/di2s32-6. The MP4 is delivered
-separately through Teams/LinkedIn and is not committed to Git.
+All three supplied signatures are present. The corrected local showcase is
+03:23.73 (203.73 seconds). Its MP4 is included at the project root as
+Group_07_Hospital_Decluttering_Final.mp4. The previous LinkedIn post was deleted
+by the team; replacement upload and its new URL are pending. The dossier records
+that status instead of linking to the deleted post.
 
 The supplied dossier still labels personal and peer-review entries provisional;
 Group 01's best-moment timestamp is unavailable. Individual historical authorship,
