@@ -7,7 +7,7 @@ is recorded as a later scenario for the live demo/viva, with the original
 conservative no-payback case retained for reproduction. Robot evidence is unchanged.
 
 The supplied peer-review entries are preserved. Group 08 has timestamp 1:00;
-Group 01 still states that its video was unavailable and no timestamp was assessed.
+Group 01 now has the team-supplied timestamp 01:15.
 Personal learning entries and peer ratings retain their provisional qualifications.
 Original AI-tool attribution, individual historical authorship and proposed FMEA
 judgments still require team confirmation; no historical facts were invented.

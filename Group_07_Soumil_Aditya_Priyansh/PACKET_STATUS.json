@@ -56,8 +56,8 @@
   "local_video_duration_seconds": 203.733333,
   "personal_entries_provisional_for_member_editing": true,
   "provisional_peer_maximum_scores_entered_at_user_request": true,
-  "latest_user_dossier_sha256": "f7747fcd683bc2f92061080d4b554af2633f44fc7fabeab69fd3c3570ca98471",
-  "latest_pdf_sha256": "e7c7af009280a6b296fcf59dfb3f5323d9411408c82a205615764e1573b1408b",
+  "latest_user_dossier_sha256": "384ffbf70e8f3eebf4a37b5cd96fb09051b8d749347cc96dbe7231d30537ac44",
+  "latest_pdf_sha256": "90ff9d1a154b02ea3933a9f8e9c48514d2d6a4f93d6a713d23ceae1285392a47",
   "latest_pdf_pages": 8,
   "latest_pdf_visually_checked": true,
   "linkedin_url_supplied_by_team": "https://lnkd.in/p/diSXTY-2",
@@ -67,7 +67,6 @@
   "technical_source_files_compared_to_working_copy": 536,
   "technical_source_differences": [],
   "remaining_dossier_notes": [
-    "Group 01 best-moment timestamp unavailable",
     "Personal and peer tables retain provisional notes",
     "Historical authorship and original AI tools require confirmation",
     "FMEA scores labelled proposed/team review",
@@ -91,5 +90,6 @@
   "business_revision_date": "2026-10-30",
   "business_revision_scope": "Conditional partial cleanup; 100% avoided spending assumption; original conservative case retained",
   "business_revision_github_status": "Prepared locally; not pushed",
-  "business_test_count": 15
+  "business_test_count": 15,
+  "peer_group01_timestamp": "01:15"
 }

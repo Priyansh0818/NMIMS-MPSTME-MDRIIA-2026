@@ -96,7 +96,7 @@ retains the original conservative business case; the later conditional scenario
 is documented separately for the live demo/viva.
 
 The supplied dossier still labels personal and peer-review entries provisional;
-Group 01's best-moment timestamp is unavailable. Individual historical authorship,
+Group 01's timestamp is 01:15, as supplied by the team. Individual historical authorship,
 original AI-tool attribution and proposed FMEA ratings still request confirmation.
 Preserve those qualifications when assessing this submission. The team's entered
 commit-share values are declarations, not independently verified Git statistics.
