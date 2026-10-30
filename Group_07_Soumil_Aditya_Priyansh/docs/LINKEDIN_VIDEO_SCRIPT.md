@@ -1,3 +1,5 @@
+> **Business revision, 30 October 2026:** The video retains the original conservative no-payback case. The later conditional partial-cleanup case is documented in [BUSINESS_REVISION_VIVA.md](BUSINESS_REVISION_VIVA.md) and the current dossier. Explain it live; no new robot measurements or video edits are implied. LinkedIn: https://lnkd.in/p/diSXTY-2.
+
 # Group 07 LinkedIn video script
 
 Target 3 minutes 45 seconds, leaving 15 seconds of headroom. Rehearse with a

@@ -46,6 +46,10 @@ class Measurements:
     actual_mean_attempt_min:float|None
     observed_success_probability:float|None
     provenance:dict
+    remaining_object_fraction:float|None=None
+    cleanup_policy:str='full_redo'
+    inspection_staff_min:float=0.
+    inspection_elapsed_min:float=0.
 
 
 def load_inputs(path=DEFAULT_INPUTS):
@@ -80,7 +84,20 @@ def load_measurements(mode='pilot',study=None):
         actual_mean_attempt_min=statistics.mean(r['elapsed_s']/60 for r in records) if mode=='final' else None,
         observed_success_probability=sum(r['completion_success'] for r in records)/len(records) if mode=='final' else None,
         provenance=dict(report=str(path.resolve()),sha256=sha(path),seeds=[r['seed'] for r in records],
-                        raw_audit_passed=True,time_basis='MuJoCo simulated elapsed seconds / 60, never PC wall time'))
+                        raw_audit_passed=True,time_basis='MuJoCo simulated elapsed seconds / 60, never PC wall time'),
+        remaining_object_fraction=statistics.mean((r['objects_total']-r['correct_placements'])/r['objects_total'] for r in records) if mode=='final' else None)
+
+
+def deployment_measurements(m,data):
+    scenario=data.get('deployment_scenario',{})
+    policy=scenario.get('cleanup_policy','full_redo')
+    if policy not in ('full_redo','remaining_objects'): raise ValueError('Unknown cleanup policy')
+    staff=float(scenario.get('inspection_staff_min',0)); elapsed=float(scenario.get('inspection_elapsed_min',0))
+    if not all(math.isfinite(v) and 0<=v<=60 for v in (staff,elapsed)): raise ValueError('Invalid inspection time')
+    if policy=='remaining_objects' and (m.mode!='final' or m.remaining_object_fraction is None):
+        raise ValueError('Partial cleanup requires audited final placement counts')
+    label=m.label if policy=='full_redo' else 'CONDITIONAL DEPLOYMENT: partial human cleanup + assumed avoided spending; not measured hospital savings'
+    return replace(m,cleanup_policy=policy,inspection_staff_min=staff,inspection_elapsed_min=elapsed,label=label)
 
 
 def queue_mmc(arrivals_per_hour,service_minutes,c=1):
@@ -115,12 +132,14 @@ def calculate(p,reference,measurements):
         robot_min=success*measurements.successful_cycle_min+(1-success)*p.pilot_failure_attempt_min
     failure=1-success
     # Staff minutes sum across workers. Elapsed time is a separate serial process.
-    fallback_staff=failure*p.manual_clutter_staff_min
-    fallback_elapsed=failure*p.manual_clutter_elapsed_min
+    fallback_work=measurements.remaining_object_fraction if measurements.cleanup_policy=='remaining_objects' else failure
+    if fallback_work is None or not 0<=fallback_work<=1: raise ValueError('Invalid fallback work fraction')
+    fallback_staff=fallback_work*p.manual_clutter_staff_min
+    fallback_elapsed=fallback_work*p.manual_clutter_elapsed_min
     manual_staff=p.manual_clutter_staff_min+p.residual_staff_min
-    assisted_staff=p.handling_staff_min+p.monitoring_fraction*robot_min+fallback_staff+p.residual_staff_min
+    assisted_staff=p.handling_staff_min+p.monitoring_fraction*robot_min+fallback_staff+p.residual_staff_min+measurements.inspection_staff_min
     manual_elapsed=p.manual_clutter_elapsed_min+p.residual_elapsed_min
-    assisted_elapsed=p.handling_elapsed_min+robot_min+fallback_elapsed+p.residual_elapsed_min
+    assisted_elapsed=p.handling_elapsed_min+robot_min+fallback_elapsed+p.residual_elapsed_min+measurements.inspection_elapsed_min
     annual_rooms=p.daily_rooms*p.operating_days
     reference_rooms=reference['daily_rooms']*reference['operating_days']
     reference_hours=reference_rooms*reference['staff_minutes_per_room']/60
@@ -147,7 +166,7 @@ def calculate(p,reference,measurements):
     marginal_cash=p.cash_realization_fraction*max(marginal_staff,0)+min(marginal_staff,0)-p.energy_ratio_reference_year/reference_rooms
     volume_break=fixed_cost/(p.operating_days*marginal_cash) if marginal_cash>0 else None
     volume_life=(fixed_cost+capital/p.life_years)/(p.operating_days*marginal_cash) if marginal_cash>0 else None
-    monitoring_break=(p.manual_clutter_staff_min-p.handling_staff_min-fallback_staff)/robot_min if robot_min>0 else None
+    monitoring_break=(p.manual_clutter_staff_min-p.handling_staff_min-fallback_staff-measurements.inspection_staff_min)/robot_min if robot_min>0 else None
     arrival=p.daily_rooms/p.operating_hours
     return dict(
         scope='Illustrative ward scenario; simulated decluttering only; no clinical effectiveness or admission revenue claim',
@@ -157,6 +176,8 @@ def calculate(p,reference,measurements):
         manual_staff_min=manual_staff,assisted_staff_min=assisted_staff,
         handling_staff_min=p.handling_staff_min,monitoring_staff_min=p.monitoring_fraction*robot_min,
         fallback_staff_min=fallback_staff,residual_staff_min=p.residual_staff_min,
+        fallback_work_fraction=fallback_work,cleanup_policy=measurements.cleanup_policy,
+        inspection_staff_min=measurements.inspection_staff_min,inspection_elapsed_min=measurements.inspection_elapsed_min,
         manual_room_ready_min=manual_elapsed,assisted_room_ready_min=assisted_elapsed,
         room_ready_change_min=manual_elapsed-assisted_elapsed,
         room_ready_reduction_fraction=(manual_elapsed-assisted_elapsed)/manual_elapsed,
@@ -219,7 +240,13 @@ def curves(p,data,m):
 
 
 def payload(p,data,m):
-    return dict(inputs=asdict(p),metadata=data,measurements=asdict(m),outputs=calculate(p,data['normalization_reference'],m),
+    m=deployment_measurements(m,data)
+    original_path=Path(__file__).with_name('business_inputs_conservative.json')
+    conservative=None
+    if original_path.exists():
+        original,original_data=load_inputs(original_path)
+        conservative=calculate(original,original_data['normalization_reference'],replace(m,cleanup_policy='full_redo',inspection_staff_min=0.,inspection_elapsed_min=0.,label='Historical conservative case: final simulation + unvalidated business assumptions'))
+    return dict(inputs=asdict(p),metadata=data,measurements=asdict(m),outputs=calculate(p,data['normalization_reference'],m),conservative_comparison=conservative,
                 sensitivity=sensitivity(p,data,m),curves=curves(p,data,m))
 
 
@@ -232,7 +259,7 @@ def exports(p,data,m,output):
         writer=csv.DictWriter(stream,fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
     make_figures(contents,output)
     write_report(contents,output)
-    print(json.dumps(dict(role=m.label,H_reclaimed=contents['outputs']['H_reclaimed_staff_hours_day'],
+    print(json.dumps(dict(role=contents['measurements']['label'],H_reclaimed=contents['outputs']['H_reclaimed_staff_hours_day'],
                          NCRI_cash=contents['outputs']['NCRI_cash'],cash_payback=contents['outputs']['cash_payback']),indent=2))
     return contents
 
@@ -298,15 +325,22 @@ def write_report(contents,output):
     for source in contents['metadata']['sources']:
         link=source.get('url',source.get('location'))
         lines.append(f"- **{source['id']}**: [{source['title']}]({link}). {source['supports']}")
-    lines+=['','## What remains before final dossier use','',
-            'Replace or validate assumptions with the team; confirm FMEA judgments; switch to --mode final only after all trial audits finish. A complete simulation experiment still does not measure wages, supervision, procurement cost or clinical cleaning effectiveness.',
+    scenario=contents['metadata'].get('deployment_scenario')
+    if scenario:
+        lines+=['','## Conditional partial-cleanup deployment','',json.dumps(scenario),
+                '',f"Measured unresolved-object fraction: {contents['measurements']['remaining_object_fraction']:.5f}; full-room success remains {r['success_probability']:.3f}. Object-count credit assumes equal manual effort per item and reusable robot placements after inspection, not measured human performance.",
+                '', 'The full cash-realization setting assumes genuinely avoided paid work. It does not demonstrate revenue, actual payroll reductions or procurement viability. Room readiness remains slower than the assumed manual case. Inter-ward travel, charging, deployment staffing and peak demand require field validation.']
+    comparison=contents.get('conservative_comparison')
+    if comparison: lines+=['','## Original conservative comparison','',f"Original 7.5-room/day full-redo case: H={comparison['H_reclaimed_staff_hours_day']:.5f} staff-h/day; cash NCRI={comparison['NCRI_cash']:.3f}; no finite cash payback. Retained for comparison; frozen simulation results are unchanged."]
+    lines+=['','## What remains before claiming hospital savings','',
+            'Validate the manual cleanup baseline, inspection, partial-work reuse, procurement and maintenance costs, dispatch window and actual spending reduction. Confirm FMEA judgments. A complete simulation experiment does not measure these hospital economics.',
             '', 'Payback is simple, undiscounted and excludes financing, tax, residual value and replacement costs. Labour value and cash-budget effects are shown separately.']
     (output/'BUSINESS_REPORT.md').write_text('\n'.join(lines),encoding='utf-8')
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--mode',choices=['pilot','final'],default='pilot')
+    parser.add_argument('--mode',choices=['pilot','final'],default='final')
     parser.add_argument('--inputs',type=Path,default=DEFAULT_INPUTS)
     parser.add_argument('--study',type=Path)
     parser.add_argument('--output',type=Path,default=ROOT/'docs/business_provisional')

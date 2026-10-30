@@ -1,3 +1,5 @@
+> **Business revision, 30 October 2026:** The video retains the original conservative no-payback case. The later conditional partial-cleanup case is documented in [BUSINESS_REVISION_VIVA.md](BUSINESS_REVISION_VIVA.md) and the current dossier. Explain it live; no new robot measurements or video edits are implied. LinkedIn: https://lnkd.in/p/diSXTY-2.
+
 # Viva rehearsal notes
 
 Use this as a study aid; explain the code and formulas in your own words.

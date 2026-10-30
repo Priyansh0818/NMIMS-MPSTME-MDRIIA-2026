@@ -9,7 +9,7 @@ import webbrowser
 from hospital_business import payload,validate
 
 ASSETS=Path(__file__).resolve().parent
-EDITABLE={'daily_rooms','monitoring_fraction','cash_realization_fraction','capex_ratio_per_cell',
+EDITABLE={'operating_hours','daily_rooms','monitoring_fraction','cash_realization_fraction','capex_ratio_per_cell',
           'maintenance_ratio_per_cell_year','pilot_success_probability'}
 
 
@@ -49,4 +49,4 @@ def serve(parameters,data,measurements,port=8765,open_browser=False):
 
 if __name__=='__main__':
     from hospital_business import load_inputs,load_measurements
-    p,data=load_inputs(); serve(p,data,load_measurements(),open_browser=True)
+    p,data=load_inputs(); serve(p,data,load_measurements('final'),open_browser=True)

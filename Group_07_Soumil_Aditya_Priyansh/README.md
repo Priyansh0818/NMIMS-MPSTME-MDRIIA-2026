@@ -40,8 +40,16 @@ New live-demo logs are kept outside the submitted frozen evidence and ignored by
 50 baseline and 50 proposed runs were audited. Fully cleared rooms: 0/50 and
 28/50 respectively. Failures remain in the analysis under the prespecified
 1800-second restricted-time rule. See docs/final_evidence/FINAL_RESULTS.md.
-Default business assumptions produce about 0.150 staff-hours/day of reallocated
-capacity, cash NCRI -0.10 and no finite payback; capacity is not automatic cash saving.
+Business revision, 30 October 2026: the conditional partial-cleanup case releases
+0.525 staff-hours/day, with 7.81% cash NCRI and 44.54-month simple payback. This
+assumes 15 rooms/day, a 12-hour dispatch window, inspection and equal manual effort
+per unresolved object, and 100% of released labour value actually avoiding spending.
+These are unvalidated deployment assumptions, not measured profit. Elapsed room
+readiness remains slower (26.59 versus 15.20 minutes). At 75% cash realization,
+payback is 79.83 months; at 0%, there is no finite payback. The original conservative
+7.5-room/day, full-redo, no-cash-realization case is retained in
+analytics/business_inputs_conservative.json and docs/business_conservative/.
+See docs/BUSINESS_REVISION_VIVA.md for the unchanged-video explanation.
 
 ## Measured data and reproduction
 
@@ -82,9 +90,10 @@ repeat a full audit of every measurement file. Output is docs/rebuilt_figures/.
 The team's supplied Word dossier and its matching eight-page PDF are in docs/.
 All three supplied signatures are present. The corrected local showcase is
 03:23.73 (203.73 seconds). Its MP4 is included at the project root as
-Group_07_Hospital_Decluttering_Final.mp4. The previous LinkedIn post was deleted
-by the team; replacement upload and its new URL are pending. The dossier records
-that status instead of linking to the deleted post.
+Group_07_Hospital_Decluttering_Final.mp4. The team supplied the replacement
+LinkedIn post: https://lnkd.in/p/diSXTY-2. The dossier records this URL. The video
+retains the original conservative business case; the later conditional scenario
+is documented separately for the live demo/viva.
 
 The supplied dossier still labels personal and peer-review entries provisional;
 Group 01's best-moment timestamp is unavailable. Individual historical authorship,

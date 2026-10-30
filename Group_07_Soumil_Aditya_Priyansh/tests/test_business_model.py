@@ -14,7 +14,7 @@ from hospital_business import (load_inputs,load_measurements,calculate,queue_mmc
 class BusinessTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.p,cls.data=load_inputs(); cls.m=load_measurements('pilot')
+        cls.p,cls.data=load_inputs(ROOT/'analytics/business_inputs_conservative.json'); cls.m=load_measurements('pilot')
 
     def result(self,**changes):
         p=replace(self.p,**changes); validate(p,self.data)
